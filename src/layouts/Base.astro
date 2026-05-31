@@ -24,6 +24,7 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script is:inline>(function(){try{var t=localStorage.getItem('tc-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();</script>
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
@@ -67,8 +68,8 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   <a href="#main" class="tc-skip">Skip to content</a>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="/" aria-label="TrendingCities home">
-        <img src="/rising-skyline-mark.svg" alt="" width="28" height="28" />
+      <a class="brand brand--nav" href="/" aria-label="TrendingCities home">
+        <img class="brand__mark" src="/rising-skyline-mark.svg" alt="" />
         <span class="brand__word"><span>Trending</span><span class="brand__accent">Cities</span></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -82,6 +83,10 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
         <input type="search" class="nav-search__input" placeholder="Search 400+ cities" aria-label="Search cities" autocomplete="off" data-search-input />
         <div class="search-results" data-search-results hidden></div>
       </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
     </div>
   </header>
 
@@ -93,7 +98,7 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <div class="site-footer__inner">
       <div class="site-footer__brand">
         <a class="brand" href="/">
-          <img src="/rising-skyline-mark.svg" alt="" width="24" height="24" />
+          <img class="brand__mark" src="/rising-skyline-mark.svg" alt="" />
           <span class="brand__word"><span>Trending</span><span class="brand__accent">Cities</span></span>
         </a>
         <p class="tc-sm tc-secondary">Compare home prices across {CITY_COUNT} cities in {COUNTRY_COUNT} countries. Starter median-price data, {DATA_UPDATED}.</p>
@@ -125,6 +130,14 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     // @ts-nocheck
     function initIcons() { if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.9 } }); }
     initIcons();
+
+    // Dark-mode toggle
+    const tt = document.getElementById('theme-toggle');
+    if (tt) tt.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('tc-theme', next); } catch (e) {}
+    });
 
     // Site-wide city search (vanilla, no framework)
     let INDEX = null;

@@ -34,7 +34,7 @@ const withCoords = cities.filter((c) => typeof c.lat === 'number').length;
   <script is:inline define:vars={{ MAPTILER_KEY }}>
     const map = new maplibregl.Map({
       container: 'tc-map',
-      style: `https://api.maptiler.com/maps/dataviz-light/style.json?key=${MAPTILER_KEY}`,
+      style: `https://api.maptiler.com/maps/${document.documentElement.dataset.theme==='dark'?'dataviz-dark':'dataviz-light'}/style.json?key=${MAPTILER_KEY}`,
       center: [10, 25],
       zoom: 1.4,
       attributionControl: { compact: true },

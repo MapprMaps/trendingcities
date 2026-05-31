@@ -79,7 +79,7 @@ const MAPTILER_KEY = 'OdgircU0GgQPcolbaKt8';
     // ── location map + draggable pin ──
     let pin = null, map = null;
     const status = document.getElementById('loc-status');
-    map = new maplibregl.Map({ container: 'loc-map', style: `https://api.maptiler.com/maps/dataviz-light/style.json?key=${MAPTILER_KEY}`, center: [10, 25], zoom: 1.2 });
+    map = new maplibregl.Map({ container: 'loc-map', style: `https://api.maptiler.com/maps/${document.documentElement.dataset.theme==='dark'?'dataviz-dark':'dataviz-light'}/style.json?key=${MAPTILER_KEY}`, center: [10, 25], zoom: 1.2 });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
     function setPin(lat, lng, zoom) {
       if (!pin) {

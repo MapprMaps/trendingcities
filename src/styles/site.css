@@ -32,11 +32,13 @@ a { color: inherit; text-decoration: none; }
   max-width: 1200px; margin: 0 auto; padding: 10px 24px;
   display: flex; align-items: center; gap: 20px;
 }
-.brand { display: inline-flex; align-items: baseline; gap: 9px; font-weight: 700; font-size: 23px; }
-.brand img { height: 1.18em; width: auto; align-self: baseline; }
-.brand__word { font-family: 'Sora', var(--font-sans); font-weight: 700; font-size: 1em; letter-spacing: -0.025em; line-height: 1; }
+/* Brand lockup — mark optically centered on the wordmark, scaled up (logo fix 2026-05-31) */
+.brand { display: inline-flex; align-items: center; gap: 0.22em; font-weight: 700; letter-spacing: -0.02em; line-height: 1; font-size: 22px; color: var(--fg); }
+.brand__mark { width: 1.42em; height: 1.42em; flex: none; display: block; }
+.brand__word { font-family: 'Sora', var(--font-sans); font-weight: 700; white-space: nowrap; }
 .brand__word span:first-child { color: var(--fg); }
 .brand__accent { color: var(--primary); }
+.site-footer .brand { font-size: 20px; }
 .site-nav { display: flex; gap: 22px; margin-left: 8px; }
 .site-nav a { color: var(--fg-2); font-size: var(--text-sm); font-weight: 500; }
 .site-nav a:hover { color: var(--fg); }
@@ -164,3 +166,31 @@ a { color: inherit; text-decoration: none; }
 .tc-table td.num { white-space: nowrap; }
 select.tc-input { width: 100%; height: 44px; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2376859A' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 36px; cursor: pointer; }
 .compare-pickers label.tc-label { display: block; margin-bottom: 8px; }
+
+/* ============================================================================
+   Dark mode — remap the design tokens under [data-theme="dark"]. Components
+   read these vars, so the whole UI follows. Brand on dark per the guide.
+   ============================================================================ */
+[data-theme="dark"] {
+  --canvas: #0E1726; --canvas-tint: #0B1220; --surface: #16223A; --surface-2: #1C2A44; --surface-3: #243149;
+  --border: #243149; --border-strong: #34466A;
+  --fg: #F2F5FA; --fg-2: #9FB0C7; --fg-3: #75859B; --fg-4: #586a82;
+  --primary: #4F86F7; --primary-hover: #6E9DFA; --primary-press: #3C6FD8; --primary-tint: #16294A; --primary-tint-2: #1D335C; --primary-fg: #7FB0FF;
+  --ring: rgba(79,134,247,0.45);
+  --hot-tint: #2A2310; --up-tint: #102A1C; --down-tint: #2A1414; --risk-tint: #2A1A14;
+  --livability-tint: #102A27; --park-tint: #122A1B; --insight-tint: #1E1A33; --afford-tint: #122A1B; --neutral-tint: #243149;
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.4);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.3);
+  --shadow-md: 0 4px 14px rgba(0,0,0,.5), 0 2px 5px rgba(0,0,0,.3);
+  --shadow-lg: 0 14px 32px rgba(0,0,0,.55); --shadow-xl: 0 28px 56px rgba(0,0,0,.6);
+}
+[data-theme="dark"] .brand__accent { color: #7FB0FF; }
+[data-theme="dark"] .site-header { background: rgba(14,23,38,0.85); }
+
+/* theme toggle button */
+.theme-toggle { display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border:1px solid var(--border); border-radius:var(--r-md); background:var(--surface-2); color:var(--fg-2); cursor:pointer; flex:none; }
+.theme-toggle:hover { color:var(--fg); border-color:var(--border-strong); }
+.theme-toggle svg { width:18px; height:18px; }
+.theme-toggle .icon-dark { display:none; }
+[data-theme="dark"] .theme-toggle .icon-light { display:none; }
+[data-theme="dark"] .theme-toggle .icon-dark { display:inline; }
