@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.trendingcities.com/schemas/city-record-v1.json",
+  "title": "TrendingCities City Record v1",
+  "description": "The data contract between research agents (which emit records) and the site build pipeline (which ingests them). One record = one city/location. Every metric carries its own provenance so the UI can show per-metric source + 'last updated'.",
+  "type": "object",
+  "required": ["schema_version", "id", "city", "country", "country_code", "metrics", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "id": {
+      "type": "string",
+      "description": "Stable identity: {country-slug}/{city-slug}. Lowercase, hyphenated. Drives the URL /city/{id}/.",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "city": { "type": "string", "minLength": 1 },
+    "admin": { "type": "string", "description": "Optional state/region/province (e.g. 'New York', 'Bavaria')." },
+    "country": { "type": "string", "minLength": 1 },
+    "country_code": { "type": "string", "pattern": "^[A-Z]{2}$", "description": "ISO 3166-1 alpha-2." },
+    "region": {
+      "type": "string",
+      "description": "Optional continent/macro-region for grouping.",
+      "enum": ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Middle East"]
+    },
+    "coordinates": {
+      "type": "object",
+      "description": "Optional — for future maps.",
+      "required": ["lat", "lng"],
+      "additionalProperties": false,
+      "properties": {
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Map of metric_key -> MetricValue. Keys must come from the registry below. v1 requires the three home-price metrics; all others are optional and reserved for the roadmap.",
+      "required": ["home_price_1bed_usd", "home_price_2bed_usd", "home_price_3bed_usd"],
+      "propertyNames": {
+        "enum": [
+          "home_price_1bed_usd", "home_price_2bed_usd", "home_price_3bed_usd",
+          "price_per_sqm_usd",
+          "rent_1bed_usd_month", "rent_2bed_usd_month", "rent_3bed_usd_month",
+          "price_to_rent_ratio",
+          "cost_of_living_index", "median_household_income_usd", "local_purchasing_power_index",
+          "population", "population_growth_pct_yoy",
+          "safety_index", "healthcare_index", "climate_comfort_index", "air_quality_index",
+          "job_growth_pct_yoy", "unemployment_pct"
+        ]
+      },
+      "additionalProperties": { "$ref": "#/$defs/metricValue" }
+    },
+    "media": {
+      "type": "object",
+      "description": "Optional — SampleShots/Unsplash photo ids only (size at call site). Never invent scene descriptions.",
+      "additionalProperties": false,
+      "properties": {
+        "photo_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["compiled_by", "compiled_at", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "compiled_by": { "type": "string", "description": "Agent or pipeline that produced this record, e.g. 'felix-research:DE-2026-06'." },
+        "compiled_at": { "type": "string", "format": "date", "description": "YYYY-MM-DD the record was assembled." },
+        "status": { "enum": ["draft", "reviewed", "published"], "description": "Review gate. Only 'published' records are built into the live site." },
+        "review_notes": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "metricValue": {
+      "type": "object",
+      "required": ["value", "unit", "as_of", "sources", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "value": { "type": "number", "description": "The figure. Prices are absolute USD; indices are numeric per their unit." },
+        "unit": {
+          "enum": ["USD", "USD_per_month", "USD_per_sqm", "pct", "ratio", "count", "index_numbeo_nyc100", "score_0_100"],
+          "description": "index_numbeo_nyc100 = Numbeo-style index where New York City = 100."
+        },
+        "as_of": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$", "description": "When the underlying data is from (YYYY-MM or YYYY-MM-DD). Drives the UI 'last updated'." },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "enum": ["globalpropertyguide", "numbeo", "official_statistics", "web", "model_estimate"] },
+          "description": "One or more upstream sources cross-checked for this metric."
+        },
+        "source_urls": { "type": "array", "items": { "type": "string", "format": "uri" } },
+        "method": { "type": "string", "description": "e.g. 'median_listing', 'median_transaction', 'cross-source-median', 'model_estimate'." },
+        "confidence": { "enum": ["high", "medium", "low"], "description": "high = multiple sources agree; medium = single reputable source; low = sparse/estimated." },
+        "fx": {
+          "type": "object",
+          "description": "Present only when value was converted to USD from a local currency.",
+          "required": ["original_value", "original_currency", "rate", "rate_as_of"],
+          "additionalProperties": false,
+          "properties": {
+            "original_value": { "type": "number" },
+            "original_currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+            "rate": { "type": "number", "description": "USD per 1 unit of original_currency." },
+            "rate_as_of": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$" }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
