@@ -1,0 +1,44 @@
+---
+import Base from '../../../layouts/Base.astro';
+import CityRankingTable from '../../../components/CityRankingTable.astro';
+import { best2Under250k, medians, DATA_UPDATED } from '../../../lib/data';
+import { usdShort } from '../../../lib/format';
+
+const rows = best2Under250k;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'ItemList',
+  name: 'Best 2-bedroom homes under $250,000',
+  itemListElement: rows.slice(0, 25).map((c, i) => ({
+    '@type': 'ListItem', position: i + 1, name: `${c.city}, ${c.country}`,
+    url: `https://www.trendingcities.com${c.url}`,
+  })),
+};
+---
+<Base
+  title="Best 2-bed homes under $250k (2026) | TrendingCities"
+  description={`Cities where a 2-bedroom home costs under $250,000, ranked cheapest first. ${rows.length} markets qualify versus a global 2-bed median of ${usdShort(medians.two)}.`}
+  path="/rankings/best-2-bed-under-250k/"
+  jsonLd={jsonLd}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Rankings</span></div>
+      <span class="tc-label" style="color:var(--livability)">Ranking · value filter</span>
+      <h1 class="tc-h1">Best 2-bed under $250k</h1>
+      <p>{rows.length} cities where the median 2-bedroom home is under $250,000, cheapest first — a value cut for buyers with a fixed budget. Global 2-bed median is {usdShort(medians.two)}.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      {rows.length === 0 ? (
+        <div class="tc-callout"><div>No cities match this filter in the current dataset.</div></div>
+      ) : (
+        <CityRankingTable rows={rows} bed="two" primaryLabel="2-bed" limit={120} />
+      )}
+      <div class="tc-callout tc-callout--source" style="margin-top:24px">
+        <span data-lucide="info" aria-hidden="true"></span>
+        <div><strong>How this is ranked.</strong> Filtered to cities with a 2-bedroom median under $250,000 (USD), then sorted cheapest first. Starter dataset ({DATA_UPDATED}). <a href="/data/" style="color:var(--primary)">Methodology →</a></div>
+      </div>
+    </div>
+  </section>
+</Base>

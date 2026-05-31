@@ -1,0 +1,60 @@
+---
+import { vsMedian, type City, type Bed } from '../lib/data';
+import { usd, usdShort, pct } from '../lib/format';
+
+export interface Props { rows: City[]; bed: Bed; primaryLabel: string; limit?: number; }
+const { rows, bed, primaryLabel, limit = 100 } = Astro.props;
+const list = rows.slice(0, limit);
+const val = (c: City) => (bed === 'one' ? c.one : bed === 'two' ? c.two : c.three);
+---
+<table class="tc-table rank-table">
+  <thead>
+    <tr>
+      <th style="width:48px">#</th>
+      <th>City</th>
+      <th>Country</th>
+      <th class="num">1-bed</th>
+      <th class="num">2-bed</th>
+      <th class="num">3-bed</th>
+      <th class="num">vs median ({primaryLabel})</th>
+    </tr>
+  </thead>
+  <tbody>
+    {list.map((c, i) => {
+      const diff = vsMedian(val(c), bed);
+      const below = diff < 0;
+      return (
+        <tr>
+          <td><span class={`tc-rank ${i < 3 ? 'tc-rank--' + (i + 1) : ''}`}>{i + 1}</span></td>
+          <td><a href={c.url} style="font-weight:600;color:var(--fg)">{c.city}</a></td>
+          <td class="tc-secondary">{c.country}</td>
+          <td class="num tc-mono">{usd(c.one)}</td>
+          <td class="num tc-mono">{usd(c.two)}</td>
+          <td class="num tc-mono">{usd(c.three)}</td>
+          <td class="num"><span class={`tc-delta ${below ? 'tc-delta--up' : 'tc-delta--down'}`}>{pct(diff)}</span></td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+<div class="rank-cards">
+  {list.map((c, i) => {
+    const diff = vsMedian(val(c), bed);
+    const below = diff < 0;
+    return (
+      <a class="tc-card tc-card--interactive rankrow-card" href={c.url}>
+        <span class={`tc-rank ${i < 3 ? 'tc-rank--' + (i + 1) : ''}`}>{i + 1}</span>
+        <div class="rankrow-card__body">
+          <div class="rankrow-card__name">{c.city} <span class="tc-xs tc-muted" style="font-weight:400">· {c.country}</span></div>
+          <div class="rankrow-card__metrics">
+            <div><span class="tc-label">1-bed</span><span class="tc-metric">{usdShort(c.one)}</span></div>
+            <div><span class="tc-label">2-bed</span><span class="tc-metric">{usdShort(c.two)}</span></div>
+            <div><span class="tc-label">3-bed</span><span class="tc-metric">{usdShort(c.three)}</span></div>
+            <div><span class="tc-label">vs median</span><span class={`tc-delta ${below ? 'tc-delta--up' : 'tc-delta--down'}`}>{pct(diff)}</span></div>
+          </div>
+        </div>
+      </a>
+    );
+  })}
+</div>

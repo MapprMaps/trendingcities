@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import { CITY_COUNT, COUNTRY_COUNT, medians, DATA_VERSION, DATA_UPDATED, DATA_SOURCES } from '../../lib/data';
+import { usd } from '../../lib/format';
+---
+<Base
+  title="Data & methodology | TrendingCities"
+  description="What's in the TrendingCities dataset, how prices are normalized, the version and date, caveats, and what data is coming next."
+  path="/data/"
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Data</span></div>
+      <span class="tc-label">Transparency</span>
+      <h1 class="tc-h1">Data &amp; methodology</h1>
+      <p>How to read the numbers on TrendingCities — and what they don't yet tell you.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container prose">
+      <div class="tc-callout tc-callout--source" style="margin-bottom:28px">
+        <span data-lucide="database" aria-hidden="true"></span>
+        <div><strong>Starter dataset v{DATA_VERSION} · {DATA_UPDATED}.</strong> {CITY_COUNT} locations across {COUNTRY_COUNT} countries. This is an early, directional dataset published so the product is useful on day one — full provenance and methodology are still being attached.</div>
+      </div>
+
+      <h2 class="tc-h3">Where the data comes from</h2>
+      <p>The starter price figures are <strong>compiled from <a href="https://www.globalpropertyguide.com/home-price-trends" rel="noopener nofollow" target="_blank">GlobalPropertyGuide</a>, <a href="https://www.numbeo.com/" rel="noopener nofollow" target="_blank">Numbeo</a>, and general public web research</strong>. These are reputable aggregators of housing and cost-of-living data, but coverage, collection dates and methodology differ between them — so we treat the combined figures as directional, not authoritative. Per-source attribution and a per-metric "last updated" date are on the roadmap; until then, this page is the provenance record.</p>
+
+      <h2 class="tc-h3">What the columns mean</h2>
+      <p>Each location has three figures — the <strong>median purchase price</strong> of a 1-bedroom, 2-bedroom, and 3-bedroom home, expressed in <strong>US dollars</strong>. "Median" means the middle of the local market, so it's less skewed by a handful of very cheap or very expensive listings than an average would be.</p>
+      <ul>
+        <li><strong>1-bed / 2-bed / 3-bed price</strong> — median home-purchase price for that size, in USD.</li>
+        <li><strong>vs median</strong> — how a city compares to the whole dataset. Across all {CITY_COUNT} cities, the median is {usd(medians.one)} (1-bed), {usd(medians.two)} (2-bed) and {usd(medians.three)} (3-bed). A green number means cheaper than that global median; red means pricier.</li>
+        <li><strong>Country figures</strong> — on the country comparison, each country's number is the median of its cities in the dataset.</li>
+      </ul>
+
+      <h2 class="tc-h3">USD normalization</h2>
+      <p>All prices are stored and shown in US dollars so cities in different countries are directly comparable. Because currencies move, the dollar figure for a non-US city is a snapshot, not a live conversion. We show full precision in tables ({usd(540250)}) and abbreviate in tight UI ($540k).</p>
+
+      <h2 class="tc-h3">Caveats — read before you rely on this</h2>
+      <ul>
+        <li><strong>Directional, not a valuation.</strong> These medians are for comparing markets at a glance. They are not an appraisal of any specific home.</li>
+        <li><strong>Coverage varies.</strong> Some countries have many cities in the dataset; others have one. A single-city country reflects only that market.</li>
+        <li><strong>Provenance is still being attached.</strong> Until full source and date metadata is published per metric, treat figures as a well-informed starting point.</li>
+        <li><strong>No cost-of-income context yet.</strong> A low price in one country may still be expensive relative to local incomes — that context is coming (see below).</li>
+      </ul>
+
+      <h2 class="tc-h3">What's coming next</h2>
+      <p>Home prices are the first layer. TrendingCities will expand each city profile with the signals that actually decide where people live:</p>
+      <ul>
+        <li>Cost of living and local income (so prices are read against earnings)</li>
+        <li>Rent alongside purchase prices</li>
+        <li>Climate, safety, and job-market signals</li>
+        <li>Real city photography</li>
+        <li>Per-metric source labels and "last updated" dates throughout</li>
+      </ul>
+      <p class="tc-secondary">Have a better dataset or a correction? This is v1 and built to be improved.</p>
+    </div>
+  </section>
+</Base>

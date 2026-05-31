@@ -1,0 +1,117 @@
+---
+import Base from '../../layouts/Base.astro';
+import { cities, DATA_UPDATED } from '../../lib/data';
+
+// Compact map for the client: slug -> [city, country, one, two, three]
+const priceMap: Record<string, [string, string, number, number, number]> = {};
+for (const c of cities) priceMap[c.slug] = [c.city, c.country, c.one, c.two, c.three];
+const options = cities
+  .map((c) => ({ slug: c.slug, label: `${c.city}, ${c.country}` }))
+  .sort((a, b) => a.label.localeCompare(b.label));
+---
+<Base
+  title="Compare two cities — home prices side by side | TrendingCities"
+  description="Pick any two cities and compare 1, 2 and 3-bedroom median home prices side by side. See which is cheaper per bedroom type before you move."
+  path="/compare/"
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Compare</span></div>
+      <span class="tc-label" style="color:var(--insight)">Side by side</span>
+      <h1 class="tc-h1">Compare two cities</h1>
+      <p>Choose two locations to compare median 1, 2 and 3-bedroom prices. The cheaper price in each row is highlighted.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <div class="compare-pickers">
+        <div>
+          <label class="tc-label" for="sel-a">City A</label>
+          <select id="sel-a" class="tc-input" data-sel="a">
+            <option value="">Select a city…</option>
+            {options.map((o) => <option value={o.slug}>{o.label}</option>)}
+          </select>
+        </div>
+        <div>
+          <label class="tc-label" for="sel-b">City B</label>
+          <select id="sel-b" class="tc-input" data-sel="b">
+            <option value="">Select a city…</option>
+            {options.map((o) => <option value={o.slug}>{o.label}</option>)}
+          </select>
+        </div>
+      </div>
+
+      <div id="compare-out" hidden>
+        <div class="compare-grid" style="margin-bottom:16px">
+          <div class="tc-card compare-cell"><span class="tc-label">City A</span><span class="compare-cell__val" data-name="a"></span><span class="tc-sm tc-secondary" data-country="a"></span></div>
+          <div class="tc-card compare-cell"><span class="tc-label">City B</span><span class="compare-cell__val" data-name="b"></span><span class="tc-sm tc-secondary" data-country="b"></span></div>
+        </div>
+        <div id="compare-rows"></div>
+        <div class="tc-callout tc-callout--insight" style="margin-top:16px" id="compare-summary"></div>
+      </div>
+
+      <div id="compare-empty" class="tc-callout">
+        <span data-lucide="git-compare" aria-hidden="true"></span>
+        <div>Pick a city in each dropdown to see the comparison.</div>
+      </div>
+
+      <div class="tc-callout tc-callout--source" style="margin-top:24px">
+        <span data-lucide="database" aria-hidden="true"></span>
+        <div><strong>Source &amp; date.</strong> Median home-purchase prices in USD, starter dataset ({DATA_UPDATED}). Directional only. <a href="/data/" style="color:var(--primary)">Methodology →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/json" id="price-map" set:html={JSON.stringify(priceMap)}></script>
+  <script>
+    // @ts-nocheck
+    const MAP = JSON.parse(document.getElementById('price-map').textContent);
+    const selA = document.querySelector('[data-sel="a"]');
+    const selB = document.querySelector('[data-sel="b"]');
+    const out = document.getElementById('compare-out');
+    const empty = document.getElementById('compare-empty');
+    const rowsEl = document.getElementById('compare-rows');
+    const fmt = (n) => '$' + n.toLocaleString('en-US');
+    const beds = [['one', '1-bedroom'], ['two', '2-bedroom'], ['three', '3-bedroom']];
+    const idx = { one: 2, two: 3, three: 4 };
+
+    function render() {
+      const a = selA.value, b = selB.value;
+      if (!a || !b || !MAP[a] || !MAP[b]) { out.hidden = true; empty.hidden = false; return; }
+      empty.hidden = true; out.hidden = false;
+      const A = MAP[a], B = MAP[b];
+      out.querySelector('[data-name="a"]').textContent = A[0];
+      out.querySelector('[data-country="a"]').textContent = A[1];
+      out.querySelector('[data-name="b"]').textContent = B[0];
+      out.querySelector('[data-country="b"]').textContent = B[1];
+      let aWins = 0, bWins = 0;
+      rowsEl.innerHTML = beds.map(([key, label]) => {
+        const av = A[idx[key]], bv = B[idx[key]];
+        const aCheaper = av < bv, bCheaper = bv < av;
+        if (aCheaper) aWins++; if (bCheaper) bWins++;
+        const cell = (val, win) =>
+          `<div class="tc-card compare-cell ${win ? 'compare-cell--win' : ''}">
+             <span class="tc-label">${label}</span>
+             <span class="compare-cell__val">${fmt(val)}</span>
+             ${win ? '<span class="tc-badge tc-badge--park">Lower price</span>' : ''}
+           </div>`;
+        return `<div class="compare-row" style="margin-bottom:14px">${cell(av, aCheaper)}${cell(bv, bCheaper)}</div>`;
+      }).join('');
+      const sum = document.getElementById('compare-summary');
+      const winner = aWins > bWins ? A[0] : bWins > aWins ? B[0] : null;
+      sum.innerHTML = winner
+        ? `<span data-lucide="lightbulb"></span><div><strong>${winner}</strong> is cheaper across more bedroom types (${Math.max(aWins, bWins)} of 3).</div>`
+        : `<span data-lucide="lightbulb"></span><div>It's a mixed picture — each city is cheaper for different bedroom types.</div>`;
+      if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.9 } });
+      const u = new URL(window.location); u.searchParams.set('a', a); u.searchParams.set('b', b);
+      history.replaceState(null, '', u);
+    }
+    selA.addEventListener('change', render);
+    selB.addEventListener('change', render);
+    const p = new URLSearchParams(window.location.search);
+    if (p.get('a') && MAP[p.get('a')]) selA.value = p.get('a');
+    if (p.get('b') && MAP[p.get('b')]) selB.value = p.get('b');
+    render();
+  </script>
+</Base>

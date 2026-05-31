@@ -1,0 +1,40 @@
+---
+import Base from '../../../layouts/Base.astro';
+import CityRankingTable from '../../../components/CityRankingTable.astro';
+import { mostExpensive3, medians, DATA_UPDATED } from '../../../lib/data';
+import { usdShort } from '../../../lib/format';
+
+const rows = mostExpensive3;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'ItemList',
+  name: 'Most expensive cities for a 3-bedroom home',
+  itemListElement: rows.slice(0, 25).map((c, i) => ({
+    '@type': 'ListItem', position: i + 1, name: `${c.city}, ${c.country}`,
+    url: `https://www.trendingcities.com${c.url}`,
+  })),
+};
+---
+<Base
+  title="Most expensive cities for a 3-bed home (2026) | TrendingCities"
+  description={`The priciest markets in the dataset by 3-bedroom median price. Global median 3-bed is ${usdShort(medians.three)}; these cities sit far above it.`}
+  path="/rankings/most-expensive-3-bed/"
+  jsonLd={jsonLd}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Rankings</span></div>
+      <span class="tc-label" style="color:var(--down)">Ranking · highest 3-bed</span>
+      <h1 class="tc-h1">Most expensive cities (3-bed)</h1>
+      <p>Ranked by median 3-bedroom home price across {rows.length} cities. The global median 3-bed is {usdShort(medians.three)} — every city here is above it.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <CityRankingTable rows={rows} bed="three" primaryLabel="3-bed" limit={100} />
+      <div class="tc-callout tc-callout--source" style="margin-top:24px">
+        <span data-lucide="info" aria-hidden="true"></span>
+        <div><strong>How this is ranked.</strong> Cities sorted by 3-bedroom median purchase price (USD), starter dataset ({DATA_UPDATED}). "vs median" compares each city's 3-bed price to the global dataset median. <a href="/data/" style="color:var(--primary)">Methodology →</a></div>
+      </div>
+    </div>
+  </section>
+</Base>

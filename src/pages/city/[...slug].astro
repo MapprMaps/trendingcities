@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import CityCard from '../../components/CityCard.astro';
+import { cities, vsMedian, relatedTo, medians, DATA_UPDATED, DATA_VERSION, type City } from '../../lib/data';
+import { usd, usdShort, pct } from '../../lib/format';
+
+export function getStaticPaths() {
+  return cities.map((c) => ({ params: { slug: c.slug }, props: { city: c } }));
+}
+
+const { city } = Astro.props as { city: City };
+const related = relatedTo(city);
+
+const beds = [
+  { key: 'one' as const, label: '1-bedroom', price: city.one },
+  { key: 'two' as const, label: '2-bedroom', price: city.two },
+  { key: 'three' as const, label: '3-bedroom', price: city.three },
+];
+
+const d3 = vsMedian(city.three, 'three');
+const cheaper = d3 < 0;
+const summary = cheaper
+  ? `${city.city} is more affordable than most of the dataset. A 3-bedroom home runs about ${pct(d3)} versus the global median of ${usdShort(medians.three)}.`
+  : `${city.city} is one of the pricier markets here. A 3-bedroom home runs about ${pct(d3)} versus the global median of ${usdShort(medians.three)}.`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: `${city.city}, ${city.country}`,
+  address: { '@type': 'PostalAddress', addressLocality: city.city, addressCountry: city.country },
+  url: `https://www.trendingcities.com${city.url}`,
+};
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.trendingcities.com/' },
+    { '@type': 'ListItem', position: 2, name: city.country },
+    { '@type': 'ListItem', position: 3, name: city.city, item: `https://www.trendingcities.com${city.url}` },
+  ],
+};
+---
+<Base
+  title={`${city.city}, ${city.country} home prices — 1, 2 & 3-bed medians | TrendingCities`}
+  description={`Median home prices in ${city.city}, ${city.country}: 1-bed ${usd(city.one)}, 2-bed ${usd(city.two)}, 3-bed ${usd(city.three)}. See how ${city.city} compares to the global median.`}
+  path={city.url}
+  ogType="article"
+  jsonLd={[jsonLd, breadcrumbLd]}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a><span>/</span>
+        <span>{city.country}</span><span>/</span>
+        <span style="color:var(--fg-2)">{city.city}</span>
+      </div>
+      <h1 class="tc-h1">{city.city}</h1>
+      <div class="affordline">
+        <span class="tc-secondary">{city.country}</span>
+        <span class={`tc-badge ${cheaper ? 'tc-badge--park' : 'tc-badge--down'}`}>
+          {cheaper ? 'Below global median' : 'Above global median'} · {pct(d3)} (3-bed)
+        </span>
+      </div>
+      <p class="tc-lg tc-secondary" style="max-width:680px;margin-top:14px">{summary}</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:28px">
+    <div class="container">
+      <span class="tc-label" style="display:block;margin-bottom:12px">Median purchase price</span>
+      <div class="grid grid--prices">
+        {beds.map((b) => {
+          const diff = vsMedian(b.price, b.key);
+          const below = diff < 0;
+          return (
+            <div class="tc-card pricecard">
+              <span class="tc-label">{b.label}</span>
+              <span class="pricecard__val">{usd(b.price)}</span>
+              <span class="pricecard__sub">
+                <span class={`tc-delta ${below ? 'tc-delta--up' : 'tc-delta--down'}`}>{pct(diff)}</span>
+                vs global median {usdShort(medians[b.key])}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="tc-callout tc-callout--source">
+        <span data-lucide="database" aria-hidden="true"></span>
+        <div>
+          <strong>Source &amp; date.</strong> Median home-purchase prices in USD, starter dataset v{DATA_VERSION} ({DATA_UPDATED}). Directional figures for comparing markets — not a valuation of any specific property. <a href="/data/" style="color:var(--primary)">Methodology →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section section--tint" style="padding-top:48px">
+      <div class="container">
+        <div class="section__head">
+          <span class="tc-label">More in {city.country}</span>
+          <h2 class="tc-h3">Related locations</h2>
+        </div>
+        <div class="grid grid--cities">
+          {related.map((c) => <CityCard city={c} bed="three" />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="container">
+      <a class="tc-btn tc-btn--primary tc-btn--lg" href={`/compare/?a=${encodeURIComponent(city.slug)}`}>
+        <span data-lucide="git-compare" style="width:18px;height:18px"></span>
+        Compare {city.city} with another city
+      </a>
+    </div>
+  </section>
+</Base>

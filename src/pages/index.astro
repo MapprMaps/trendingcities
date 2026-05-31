@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import CityCard from '../components/CityCard.astro';
+import { mostExpensive3, mostAffordable1, countryRanking, cities, countries, medians, CITY_COUNT, COUNTRY_COUNT, DATA_UPDATED } from '../lib/data';
+import { usdShort } from '../lib/format';
+
+const topExpensive = mostExpensive3.slice(0, 6);
+const topAffordable = mostAffordable1.slice(0, 6);
+const topCountries = countryRanking.slice(0, 12);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'TrendingCities',
+    url: 'https://www.trendingcities.com/',
+    description: `Compare median home prices across ${CITY_COUNT} cities in ${COUNTRY_COUNT} countries.`,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://www.trendingcities.com/?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'TrendingCities',
+    url: 'https://www.trendingcities.com/',
+    logo: 'https://www.trendingcities.com/assets/logo-mark.svg',
+  },
+];
+---
+<Base
+  title="TrendingCities — Compare home prices across 400+ cities worldwide"
+  description={`Compare median 1, 2 and 3-bed home prices across ${CITY_COUNT} cities in ${COUNTRY_COUNT} countries. Find affordable markets, see how a city ranks, and compare two places side by side.`}
+  path="/"
+  jsonLd={jsonLd}
+>
+  <section class="hero">
+    <div class="tc-gridmotif"></div>
+    <div class="container hero__inner">
+      <p class="tc-label hero__eyebrow">City intelligence · Home prices</p>
+      <h1 class="tc-display">Find your next city.</h1>
+      <p class="hero__sub">Compare median home prices across {CITY_COUNT}+ cities in {COUNTRY_COUNT} countries — 1, 2 and 3-bedroom — and see at a glance where your money goes further.</p>
+      <div class="hero-search" data-search>
+        <span class="nav-search__icon" data-lucide="search" aria-hidden="true"></span>
+        <input type="search" class="hero-search__input" placeholder="Search a city — try Lisbon, Tokyo, Austin…" aria-label="Search cities" autocomplete="off" data-search-input />
+        <div class="search-results" data-search-results hidden></div>
+      </div>
+      <div class="hero__stats">
+        <span class="hero__stat"><b>{CITY_COUNT}</b><span class="tc-label">Cities</span></span>
+        <span class="hero__stat"><b>{COUNTRY_COUNT}</b><span class="tc-label">Countries</span></span>
+        <span class="hero__stat"><b>{usdShort(medians.three)}</b><span class="tc-label">Median 3-bed</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid metricgrid">
+        <div class="tc-card tc-card--flat citycard">
+          <span class="tc-label" style="color:var(--primary-fg)">Compare</span>
+          <p class="tc-secondary tc-sm">Search any city and see 1, 2 and 3-bed median prices, plus how it stacks up against the global median.</p>
+        </div>
+        <div class="tc-card tc-card--flat citycard">
+          <span class="tc-label" style="color:var(--livability)">Rank</span>
+          <p class="tc-secondary tc-sm">Browse the most expensive and most affordable markets, or filter for value — like the best 2-beds under $250k.</p>
+        </div>
+        <div class="tc-card tc-card--flat citycard">
+          <span class="tc-label" style="color:var(--park-strong)">Decide</span>
+          <p class="tc-secondary tc-sm">Put two cities side by side and see which is cheaper per bedroom type before you commit to a move.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <span class="tc-label">Top markets</span>
+        <h2 class="tc-h2">Most expensive right now</h2>
+        <p class="tc-secondary">Highest 3-bedroom median prices in the dataset.</p>
+      </div>
+      <div class="grid grid--cities">
+        {topExpensive.map((c) => <CityCard city={c} bed="three" />)}
+      </div>
+      <p style="margin-top:20px"><a class="tc-btn tc-btn--secondary" href="/rankings/most-expensive-3-bed/">See full ranking<span data-lucide="arrow-right" style="width:16px;height:16px"></span></a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="tc-label" style="color:var(--park-strong)">Value markets</span>
+        <h2 class="tc-h2">Most affordable</h2>
+        <p class="tc-secondary">Lowest 1-bedroom median prices — where entry costs are smallest.</p>
+      </div>
+      <div class="grid grid--cities">
+        {topAffordable.map((c) => <CityCard city={c} bed="one" />)}
+      </div>
+      <p style="margin-top:20px"><a class="tc-btn tc-btn--secondary" href="/rankings/most-affordable-1-bed/">See full ranking<span data-lucide="arrow-right" style="width:16px;height:16px"></span></a></p>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <span class="tc-label">Browse by country</span>
+        <h2 class="tc-h2">Where to start</h2>
+        <p class="tc-secondary">{COUNTRY_COUNT} countries in the dataset. Jump into the priciest markets, or search any city above.</p>
+      </div>
+      <div class="chips-row">
+        {topCountries.map((c) => (
+          <a class="tc-chip" href={`/city/${c.cities[0].slug}/`}>{c.country} <span class="tc-mono tc-muted">{usdShort(c.three)}</span></a>
+        ))}
+      </div>
+      <p style="margin-top:20px"><a class="tc-btn tc-btn--secondary" href="/rankings/country-comparison/">Compare all countries<span data-lucide="arrow-right" style="width:16px;height:16px"></span></a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tc-callout tc-callout--source">
+        <span data-lucide="database" aria-hidden="true"></span>
+        <div>
+          <strong>About this data.</strong> Prices are median home-purchase prices in USD for 1, 2 and 3-bedroom homes, compiled as a starter dataset ({DATA_UPDATED}) from GlobalPropertyGuide, Numbeo and public web research. It's directional — useful for comparing markets, not for valuing a specific property. Full provenance and methodology are in progress and will expand to cover cost of living, income, rent, climate, safety, jobs and photography.
+          <a href="/data/" style="display:inline-block;margin-top:8px;color:var(--primary)">Read the methodology →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

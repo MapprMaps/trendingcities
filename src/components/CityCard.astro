@@ -1,0 +1,27 @@
+---
+import type { City, Bed } from '../lib/data';
+import { vsMedian } from '../lib/data';
+import { usdShort, pct } from '../lib/format';
+
+export interface Props { city: City; bed?: Bed; }
+const { city, bed = 'three' } = Astro.props;
+const price = bed === 'one' ? city.one : bed === 'two' ? city.two : city.three;
+const diff = vsMedian(price, bed);
+const cheaper = diff < 0;
+const bedName = bed === 'one' ? '1-bed' : bed === 'two' ? '2-bed' : '3-bed';
+---
+<a class="tc-card tc-card--interactive citycard" href={city.url}>
+  <div class="citycard__top">
+    <span class="citycard__name">{city.city}</span>
+    <span class="citycard__country">{city.country}</span>
+  </div>
+  <div class="citycard__row">
+    <span class="citycard__price">
+      <span class="tc-label">{bedName} median</span>
+      <span class="tc-metric">{usdShort(price)}</span>
+    </span>
+    <span class={`tc-badge ${cheaper ? 'tc-badge--park' : 'tc-badge--down'}`}>
+      {cheaper ? 'Below median' : 'Above median'} {pct(diff)}
+    </span>
+  </div>
+</a>

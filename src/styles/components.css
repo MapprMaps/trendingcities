@@ -1,0 +1,212 @@
+/* ============================================================================
+   TrendingCities — Component styles. Import AFTER colors_and_type.css.
+   Cosmetic, portable rules for buttons, cards, badges, inputs, chips, tables,
+   metrics, callouts, sparklines. Mirror these as Tailwind components in prod.
+   ============================================================================ */
+
+/* === Buttons ============================================================== */
+.tc-btn {
+  --_bg: var(--surface); --_fg: var(--fg); --_bd: var(--border-strong);
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-sans); font-size: 14px; font-weight: var(--w-semibold);
+  line-height: 1; letter-spacing: -0.005em;
+  padding: 0 16px; height: 40px; border-radius: var(--r-md);
+  background: var(--_bg); color: var(--_fg); border: 1px solid var(--_bd);
+  cursor: pointer; white-space: nowrap; user-select: none;
+  transition: background .15s ease, border-color .15s ease, box-shadow .15s ease, transform .06s ease;
+}
+.tc-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.tc-btn:active { transform: translateY(0.5px); }
+.tc-btn .tc-i { width: 17px; height: 17px; }
+
+.tc-btn--primary { --_bg: var(--primary); --_fg: var(--fg-on-accent); --_bd: var(--primary); box-shadow: var(--shadow-xs); }
+.tc-btn--primary:hover { --_bg: var(--primary-hover); --_bd: var(--primary-hover); }
+.tc-btn--primary:active { --_bg: var(--primary-press); --_bd: var(--primary-press); }
+
+.tc-btn--secondary { --_bg: var(--surface); --_fg: var(--fg); --_bd: var(--border-strong); box-shadow: var(--shadow-xs); }
+.tc-btn--secondary:hover { --_bg: var(--surface-2); }
+
+.tc-btn--ghost { --_bg: transparent; --_fg: var(--fg-2); --_bd: transparent; }
+.tc-btn--ghost:hover { --_bg: var(--surface-3); --_fg: var(--fg); }
+
+.tc-btn--quiet { --_bg: var(--primary-tint); --_fg: var(--primary-fg); --_bd: transparent; }
+.tc-btn--quiet:hover { --_bg: var(--primary-tint-2); }
+
+.tc-btn--sm { height: 32px; padding: 0 12px; font-size: 13px; border-radius: var(--r-sm); }
+.tc-btn--lg { height: 48px; padding: 0 22px; font-size: 15.5px; border-radius: var(--r-lg); }
+.tc-btn--icon { width: 40px; padding: 0; }
+.tc-btn:disabled, .tc-btn[aria-disabled="true"] { opacity: .5; cursor: not-allowed; }
+
+/* === Cards ================================================================ */
+.tc-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-lg); box-shadow: var(--shadow-sm);
+}
+.tc-card--flat { box-shadow: none; }
+.tc-card--inset { background: var(--surface-2); border-color: transparent; box-shadow: none; }
+.tc-card--interactive { transition: box-shadow .18s ease, border-color .18s ease, transform .18s ease; cursor: pointer; }
+.tc-card--interactive:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); transform: translateY(-2px); }
+.tc-card__pad { padding: var(--sp-5); }
+
+/* === Badges / pills ======================================================= */
+.tc-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  height: 22px; padding: 0 9px; border-radius: var(--r-pill);
+  font-size: 12px; font-weight: var(--w-semibold); line-height: 1;
+  background: var(--neutral-tint); color: var(--neutral-fg);
+  letter-spacing: -0.003em; white-space: nowrap;
+}
+.tc-badge .tc-i { width: 13px; height: 13px; }
+.tc-badge--hot { background: var(--hot-tint); color: var(--hot-strong); }
+.tc-badge--up { background: var(--up-tint); color: var(--up-strong); }
+.tc-badge--down { background: var(--down-tint); color: var(--down-strong); }
+.tc-badge--risk { background: var(--risk-tint); color: var(--risk-strong); }
+.tc-badge--insight { background: var(--insight-tint); color: var(--insight-strong); }
+.tc-badge--livability { background: var(--livability-tint); color: var(--livability-strong); }
+.tc-badge--park { background: var(--park-tint); color: var(--park-strong); }
+.tc-badge--primary { background: var(--primary-tint); color: var(--primary-fg); }
+
+/* Rank badge — square mono numeral */
+.tc-rank {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 30px; height: 30px; padding: 0 7px; border-radius: var(--r-sm);
+  font-family: var(--font-mono); font-weight: var(--w-bold); font-size: 14px;
+  background: var(--surface-2); color: var(--fg-2); font-variant-numeric: tabular-nums;
+}
+.tc-rank--1 { background: var(--hot); color: #fff; }
+.tc-rank--2 { background: #C9CFD8; color: var(--fg); }
+.tc-rank--3 { background: #E7C9A6; color: #6B4A22; }
+
+/* === Trend delta (mono, signal-colored) =================================== */
+.tc-delta { display: inline-flex; align-items: center; gap: 3px; font-family: var(--font-mono);
+  font-weight: var(--w-semibold); font-size: 13px; font-variant-numeric: tabular-nums; }
+.tc-delta--up { color: var(--up-strong); }
+.tc-delta--down { color: var(--down-strong); }
+.tc-delta--flat { color: var(--fg-3); }
+
+/* === Inputs / search ====================================================== */
+.tc-input {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  height: 44px; padding: 0 14px; border-radius: var(--r-md);
+  background: var(--surface); border: 1px solid var(--border-strong);
+  color: var(--fg); font-size: 15px; transition: border-color .15s, box-shadow .15s;
+}
+.tc-input:focus-within { border-color: var(--primary); box-shadow: var(--focus-ring); }
+.tc-input input { border: 0; outline: 0; background: transparent; width: 100%; font: inherit; color: inherit; }
+.tc-input input::placeholder { color: var(--fg-4); }
+.tc-input .tc-i { width: 19px; height: 19px; color: var(--fg-3); flex: none; }
+.tc-input--hero { height: 60px; padding: 0 8px 0 20px; border-radius: var(--r-pill); box-shadow: var(--shadow-md); border-color: var(--border); font-size: 17px; }
+
+/* === Filter chips ========================================================= */
+.tc-chip {
+  display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px;
+  border-radius: var(--r-pill); border: 1px solid var(--border-strong);
+  background: var(--surface); color: var(--fg-2); font-size: 13.5px; font-weight: var(--w-medium);
+  cursor: pointer; transition: all .14s ease; white-space: nowrap;
+}
+.tc-chip:hover { background: var(--surface-2); color: var(--fg); }
+.tc-chip[aria-pressed="true"], .tc-chip.is-active {
+  background: var(--primary-tint); border-color: var(--primary); color: var(--primary-fg);
+}
+.tc-chip .tc-i { width: 15px; height: 15px; }
+
+/* === Data table =========================================================== */
+.tc-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 14px; }
+.tc-table thead th {
+  text-align: left; font-size: var(--text-label); letter-spacing: var(--ls-label);
+  text-transform: uppercase; font-weight: var(--w-semibold); color: var(--fg-3);
+  padding: 10px 16px; border-bottom: 1px solid var(--border); white-space: nowrap;
+}
+.tc-table tbody td { padding: 14px 16px; border-bottom: 1px solid var(--border); color: var(--fg-2); vertical-align: middle; }
+.tc-table tbody tr { transition: background .12s; }
+.tc-table tbody tr:hover { background: var(--surface-2); }
+.tc-table .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--fg); text-align: right; }
+.tc-table th.num { text-align: right; }
+
+/* === Metric block ========================================================= */
+.tc-metricblock { display: flex; flex-direction: column; gap: 6px; }
+.tc-metricblock .v { font-family: var(--font-mono); font-weight: var(--w-semibold); font-size: 26px; letter-spacing: -0.02em; color: var(--fg); font-variant-numeric: tabular-nums; }
+
+/* === Callouts (source / methodology / risk) =============================== */
+.tc-callout {
+  display: flex; gap: 12px; padding: 14px 16px; border-radius: var(--r-md);
+  background: var(--surface-2); border: 1px solid var(--border); font-size: 13.5px; line-height: 1.5; color: var(--fg-2);
+}
+.tc-callout .tc-i { width: 18px; height: 18px; flex: none; margin-top: 1px; }
+.tc-callout--source { background: var(--surface-2); }
+.tc-callout--source .tc-i { color: var(--fg-3); }
+.tc-callout--risk { background: var(--risk-tint); border-color: #F6CFC8; color: var(--risk-strong); }
+.tc-callout--insight { background: var(--insight-tint); border-color: #DCD3FA; color: var(--insight-strong); }
+
+/* === Map / grid motif backgrounds ========================================= */
+.tc-gridmotif {
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 28px 28px; background-position: -1px -1px;
+  opacity: .5;
+}
+
+/* === Divider ============================================================== */
+.tc-hr { height: 1px; background: var(--border); border: 0; }
+
+/* === Skeleton (loading) =================================================== */
+.tc-skel { background: linear-gradient(90deg, var(--surface-2) 25%, var(--surface-3) 37%, var(--surface-2) 63%);
+  background-size: 400% 100%; animation: tc-shimmer 1.4s ease infinite; border-radius: var(--r-sm); }
+@keyframes tc-shimmer { 0% { background-position: 100% 0; } 100% { background-position: 0 0; } }
+
+/* ============================================================================
+   IMAGE TREATMENT SYSTEM
+   Real photography (SampleShots.com / Unsplash) with a gradient fallback,
+   text-protection scrims, source credit, and a fixed set of aspect ratios.
+   ============================================================================ */
+.tc-photo {
+  position: relative; overflow: hidden; display: block;
+  background: var(--surface-2);           /* shows while loading */
+  border-radius: var(--r-lg);
+  isolation: isolate;
+}
+/* Fallback gradient sits UNDER the image — if the image 404s, this shows. */
+.tc-photo__fallback { position: absolute; inset: 0; z-index: 0; background: linear-gradient(150deg, var(--primary), var(--livability)); }
+.tc-photo__fallback::after { content: ''; position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,.10) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.10) 1px, transparent 1px);
+  background-size: 26px 26px; }
+.tc-photo > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  display: block; z-index: 1; opacity: 0; transition: opacity .5s ease; }
+.tc-photo > img.is-loaded { opacity: 1; }
+/* Subtle baseline tint so bright skylines never wash out overlaid UI */
+.tc-photo--tinted > img { filter: saturate(1.02); }
+
+/* Text-protection scrims (navy, never pure black) */
+.tc-scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.tc-scrim--bottom { background: linear-gradient(180deg, transparent 42%, rgba(10,17,30,.72)); }
+.tc-scrim--bottom-strong { background: linear-gradient(180deg, transparent 18%, rgba(10,17,30,.86)); }
+.tc-scrim--full { background: linear-gradient(165deg, rgba(10,17,30,.28) 0%, rgba(10,17,30,.62) 100%); }
+.tc-scrim--top { background: linear-gradient(180deg, rgba(10,17,30,.50), transparent 50%); }
+
+/* Content placed over a photo */
+.tc-photo__content { position: relative; z-index: 3; }
+
+/* Source / credit chip — bottom-right, mono, unobtrusive */
+.tc-credit { position: absolute; right: 8px; bottom: 7px; z-index: 3;
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: .01em;
+  color: rgba(255,255,255,.82); background: rgba(10,17,30,.42);
+  backdrop-filter: blur(3px); padding: 2px 7px; border-radius: var(--r-pill); }
+/* Caption — bottom-left, on the scrim */
+.tc-photo__cap { position: absolute; left: 12px; bottom: 10px; z-index: 3; color: #fff; }
+.tc-photo__cap .t { font-weight: 600; font-size: 14px; }
+.tc-photo__cap .s { font-size: 12px; color: rgba(255,255,255,.82); }
+
+/* Aspect ratios — the canonical set */
+.ar-hero    { aspect-ratio: 16 / 9;  border-radius: 0; }      /* full-bleed city hero */
+.ar-banner  { aspect-ratio: 21 / 9; }                          /* wide strip */
+.ar-card    { aspect-ratio: 3 / 2;  }                          /* city card photo */
+.ar-thumb   { aspect-ratio: 1 / 1;  border-radius: var(--r-md); } /* ranking row thumb */
+.ar-gallery { aspect-ratio: 4 / 5;  }                          /* gallery card (portrait) */
+.ar-gallery-wide { aspect-ratio: 3 / 2; }                      /* gallery card (landscape) */
+.ar-square  { aspect-ratio: 1 / 1;  }
+/* Mobile: heroes get taller so the city reads on a phone */
+@media (max-width: 640px){
+  .ar-hero { aspect-ratio: 4 / 5; }
+  .ar-banner { aspect-ratio: 16 / 9; }
+}

@@ -1,0 +1,40 @@
+---
+import Base from '../../../layouts/Base.astro';
+import CityRankingTable from '../../../components/CityRankingTable.astro';
+import { mostAffordable1, medians, DATA_UPDATED } from '../../../lib/data';
+import { usdShort } from '../../../lib/format';
+
+const rows = mostAffordable1;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'ItemList',
+  name: 'Most affordable cities for a 1-bedroom home',
+  itemListElement: rows.slice(0, 25).map((c, i) => ({
+    '@type': 'ListItem', position: i + 1, name: `${c.city}, ${c.country}`,
+    url: `https://www.trendingcities.com${c.url}`,
+  })),
+};
+---
+<Base
+  title="Most affordable cities for a 1-bed home (2026) | TrendingCities"
+  description={`The lowest entry prices in the dataset by 1-bedroom median. Global median 1-bed is ${usdShort(medians.one)}; these markets sit well below it.`}
+  path="/rankings/most-affordable-1-bed/"
+  jsonLd={jsonLd}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Rankings</span></div>
+      <span class="tc-label" style="color:var(--park-strong)">Ranking · lowest 1-bed</span>
+      <h1 class="tc-h1">Most affordable cities (1-bed)</h1>
+      <p>Ranked by median 1-bedroom home price across {rows.length} cities — the smallest entry costs first. The global median 1-bed is {usdShort(medians.one)}.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <CityRankingTable rows={rows} bed="one" primaryLabel="1-bed" limit={100} />
+      <div class="tc-callout tc-callout--source" style="margin-top:24px">
+        <span data-lucide="info" aria-hidden="true"></span>
+        <div><strong>How this is ranked.</strong> Cities sorted by 1-bedroom median purchase price (USD), ascending, starter dataset ({DATA_UPDATED}). A green "vs median" means cheaper than the global 1-bed median. <a href="/data/" style="color:var(--primary)">Methodology →</a></div>
+      </div>
+    </div>
+  </section>
+</Base>

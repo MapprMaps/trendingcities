@@ -1,0 +1,69 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { countryRanking, DATA_UPDATED, COUNTRY_COUNT } from '../../../lib/data';
+import { usd, usdShort } from '../../../lib/format';
+
+const rows = countryRanking;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'ItemList',
+  name: 'Country comparison — median home prices',
+  itemListElement: rows.slice(0, 25).map((c, i) => ({
+    '@type': 'ListItem', position: i + 1, name: c.country,
+  })),
+};
+---
+<Base
+  title="Country comparison — median home prices (2026) | TrendingCities"
+  description={`Compare median 1, 2 and 3-bed home prices across ${COUNTRY_COUNT} countries, ranked by 3-bed median. Each country's figure is the median of its cities in the dataset.`}
+  path="/rankings/country-comparison/"
+  jsonLd={jsonLd}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Rankings</span></div>
+      <span class="tc-label" style="color:var(--insight)">Ranking · countries</span>
+      <h1 class="tc-h1">Country comparison</h1>
+      <p>{COUNTRY_COUNT} countries ranked by median 3-bedroom price. Each country's number is the median across its cities in the dataset, so countries with a single city reflect that one market.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <table class="tc-table rank-table">
+        <thead>
+          <tr><th style="width:48px">#</th><th>Country</th><th class="num">Cities</th><th class="num">1-bed</th><th class="num">2-bed</th><th class="num">3-bed</th></tr>
+        </thead>
+        <tbody>
+          {rows.map((c, i) => (
+            <tr>
+              <td><span class={`tc-rank ${i < 3 ? 'tc-rank--' + (i + 1) : ''}`}>{i + 1}</span></td>
+              <td><a href={`/city/${c.cities[0].slug}/`} style="font-weight:600;color:var(--fg)">{c.country}</a></td>
+              <td class="num tc-mono tc-secondary">{c.count}</td>
+              <td class="num tc-mono">{usd(c.one)}</td>
+              <td class="num tc-mono">{usd(c.two)}</td>
+              <td class="num tc-mono">{usd(c.three)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div class="rank-cards">
+        {rows.map((c, i) => (
+          <a class="tc-card tc-card--interactive rankrow-card" href={`/city/${c.cities[0].slug}/`}>
+            <span class={`tc-rank ${i < 3 ? 'tc-rank--' + (i + 1) : ''}`}>{i + 1}</span>
+            <div class="rankrow-card__body">
+              <div class="rankrow-card__name">{c.country} <span class="tc-xs tc-muted" style="font-weight:400">· {c.count} {c.count === 1 ? 'city' : 'cities'}</span></div>
+              <div class="rankrow-card__metrics">
+                <div><span class="tc-label">1-bed</span><span class="tc-metric">{usdShort(c.one)}</span></div>
+                <div><span class="tc-label">2-bed</span><span class="tc-metric">{usdShort(c.two)}</span></div>
+                <div><span class="tc-label">3-bed</span><span class="tc-metric">{usdShort(c.three)}</span></div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="tc-callout tc-callout--source" style="margin-top:24px">
+        <span data-lucide="info" aria-hidden="true"></span>
+        <div><strong>How this is built.</strong> Country values are the median of all that country's cities in the starter dataset ({DATA_UPDATED}). Coverage varies — some countries have many cities, others one. <a href="/data/" style="color:var(--primary)">Methodology →</a></div>
+      </div>
+    </div>
+  </section>
+</Base>
