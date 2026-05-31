@@ -65,9 +65,13 @@ jobs:
             const AGENT_AUTHORS = ['aderosi']; // TODO: swap for a dedicated agent bot account
             const author = context.payload.pull_request.user.login;
             if (v.auto_mergeable && AGENT_AUTHORS.includes(author)) {
-              await github.rest.pulls.merge({ owner, repo, pull_number: number, merge_method: 'squash' });
-              await github.rest.issues.createComment({ owner, repo, issue_number: number,
-                body: '🤖 Auto-merged — passed QC, high-confidence, trusted agent author (`' + author + '`).' });
+              try {
+                await github.rest.pulls.merge({ owner, repo, pull_number: number, merge_method: 'squash' });
+                await github.rest.issues.createComment({ owner, repo, issue_number: number,
+                  body: '🤖 Auto-merged — passed QC, high-confidence, trusted agent author (`' + author + '`).' });
+              } catch (e) {
+                core.warning('auto-merge skipped (likely already merged): ' + e.message);
+              }
             }
 
             if (!v.overall_pass) core.setFailed('Data QC failed — see the report comment.');
