@@ -113,10 +113,14 @@ const breadcrumbLd = {
   )}
 
   <section class="section">
-    <div class="container">
+    <div class="container affordline">
       <a class="tc-btn tc-btn--primary tc-btn--lg" href={`/compare/?a=${encodeURIComponent(city.slug)}`}>
         <span data-lucide="git-compare" style="width:18px;height:18px"></span>
         Compare {city.city} with another city
+      </a>
+      <a class="tc-btn tc-btn--secondary tc-btn--lg" href={`/contribute/?city=${encodeURIComponent(city.slug)}`}>
+        <span data-lucide="pencil" style="width:18px;height:18px"></span>
+        Suggest a price update
       </a>
     </div>
   </section>

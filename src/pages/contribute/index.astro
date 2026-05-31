@@ -1,0 +1,104 @@
+---
+import Base from '../../layouts/Base.astro';
+const TURNSTILE_SITE_KEY = '0x4AAAAAADbOXIAOx9oyub8m';
+---
+<Base
+  title="Suggest a price update | TrendingCities"
+  description="Know a more accurate home price for a city? Suggest an update — it opens a reviewed pull request to the open dataset."
+  path="/contribute/"
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Contribute</span></div>
+      <span class="tc-label" style="color:var(--livability)">Community</span>
+      <h1 class="tc-h1">Suggest a price update</h1>
+      <p>Spotted a price that looks off, or know your city better than our data? Propose a correction. Every suggestion is checked automatically and reviewed by a human before it goes live — it opens a pull request to the open dataset.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container" style="max-width:640px">
+      <form id="contribute-form" class="tc-card" style="padding:24px; display:flex; flex-direction:column; gap:16px">
+        <div>
+          <span class="tc-label">City</span>
+          <div id="city-name" class="tc-metric" style="font-size:20px; margin-top:4px">—</div>
+          <input type="hidden" id="citySlug" />
+        </div>
+        <div class="metricgrid">
+          <label>
+            <span class="tc-label">1-bed median (USD)</span>
+            <input class="tc-input" type="number" id="one" min="5000" max="50000000" step="1000" placeholder="e.g. 350000" required />
+          </label>
+          <label>
+            <span class="tc-label">2-bed median (USD)</span>
+            <input class="tc-input" type="number" id="two" min="5000" max="50000000" step="1000" placeholder="e.g. 520000" required />
+          </label>
+          <label>
+            <span class="tc-label">3-bed median (USD)</span>
+            <input class="tc-input" type="number" id="three" min="5000" max="50000000" step="1000" placeholder="e.g. 760000" required />
+          </label>
+        </div>
+        <label>
+          <span class="tc-label">Source / note (optional)</span>
+          <textarea class="tc-input" id="note" rows="3" maxlength="280" placeholder="Where's this from? e.g. local listings, a portal, personal knowledge"></textarea>
+        </label>
+        <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY}></div>
+        <button class="tc-btn tc-btn--primary tc-btn--lg" type="submit" id="submit-btn">Submit suggestion</button>
+        <div id="form-msg" class="tc-callout" hidden></div>
+      </form>
+      <p class="tc-sm tc-muted" style="margin-top:14px">Submitting opens a public pull request labeled <code>community-submission</code>. Prices are in USD; we use the median for a city. Nothing changes the live site until a maintainer approves it.</p>
+    </div>
+  </section>
+
+  <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script>
+    // @ts-nocheck
+    const p = new URLSearchParams(location.search);
+    const slug = p.get('city') || '';
+    document.getElementById('citySlug').value = slug;
+    // resolve the city name from the search index
+    fetch('/search-index.json').then(r => r.json()).then(idx => {
+      const m = idx.find(c => c.url === `/city/${slug}/`);
+      document.getElementById('city-name').textContent = m ? `${m.city}, ${m.country}` : (slug || 'Choose a city from any city page');
+    });
+
+    const form = document.getElementById('contribute-form');
+    const msg = document.getElementById('form-msg');
+    const btn = document.getElementById('submit-btn');
+    const show = (text, ok) => {
+      msg.hidden = false;
+      msg.className = 'tc-callout ' + (ok ? 'tc-callout--source' : 'tc-callout--risk');
+      msg.innerHTML = text;
+    };
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!slug) { show('Open this from a city page so we know which city you mean.', false); return; }
+      const token = (document.querySelector('[name="cf-turnstile-response"]') || {}).value;
+      if (!token) { show('Please complete the anti-spam check.', false); return; }
+      const payload = {
+        citySlug: slug,
+        one: Number(document.getElementById('one').value),
+        two: Number(document.getElementById('two').value),
+        three: Number(document.getElementById('three').value),
+        note: document.getElementById('note').value,
+        turnstileToken: token,
+      };
+      btn.disabled = true; btn.textContent = 'Submitting…';
+      try {
+        const res = await fetch('/api/contribute', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+        const data = await res.json();
+        if (res.ok && data.ok) {
+          show(`Thank you — your suggestion was submitted for review. <a href="${data.pr}" target="_blank" rel="noopener">Track it here</a>.`, true);
+          form.querySelectorAll('input,textarea,button').forEach(el => el.disabled = true);
+        } else {
+          show(data.error || 'Something went wrong. Please try again.', false);
+          btn.disabled = false; btn.textContent = 'Submit suggestion';
+          if (window.turnstile) window.turnstile.reset();
+        }
+      } catch {
+        show('Network error. Please try again.', false);
+        btn.disabled = false; btn.textContent = 'Submit suggestion';
+      }
+    });
+  </script>
+</Base>
