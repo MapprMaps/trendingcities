@@ -1,0 +1,33 @@
+name: Build & deploy to Cloudflare Pages
+
+# Auto-deploy on merge to main (the PR-driven data model: merge a data PR -> live).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Deploy to Cloudflare Pages
+        env:
+          # Repo secret — use a NARROW token (Account > Cloudflare Pages:Edit only),
+          # NOT the master CF token. See README.
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 6ea32b6bb4a098a3ab05487ff356399c
+        run: npx wrangler pages deploy dist --project-name=trendingcities-web --branch=main
