@@ -1,17 +1,33 @@
-import raw from '../data/prices.json';
+// Per-city record files are the dataset source of truth (data/cities/**.json),
+// each conforming to city-record.schema.json. The FILE PATH is the slug.
+const recordModules = import.meta.glob('/data/cities/**/*.json', { eager: true }) as Record<
+  string,
+  { default: CityRecord }
+>;
 
 export type Bed = 'one' | 'two' | 'three';
 
-export interface RawRow {
-  country: string;
+interface MetricValue {
+  value: number;
+  unit: string;
+  as_of: string;
+  sources: string[];
+  confidence?: string;
+  method?: string;
+}
+export interface CityRecord {
+  schema_version: string;
+  id: string;
   city: string;
-  one_bed_usd: number;
-  two_bed_usd: number;
-  three_bed_usd: number;
+  country: string;
+  country_code: string;
+  metrics: Record<string, MetricValue>;
+  provenance: { compiled_by: string; compiled_at: string; status: string };
 }
 
 export interface City {
   country: string;
+  countryCode: string;
   countrySlug: string;
   city: string;
   citySlug: string;
@@ -20,6 +36,8 @@ export interface City {
   one: number;
   two: number;
   three: number;
+  asOf: string;       // metric as_of (e.g. "2026-05")
+  sources: string[];  // upstream sources for the price metrics
 }
 
 export const DATA_VERSION = '2026.1';
@@ -40,32 +58,35 @@ export function slugify(s: string): string {
 }
 
 function build(): City[] {
-  const rows = raw as RawRow[];
-  const seen = new Set<string>();
   const out: City[] = [];
-  for (const r of rows) {
-    const countrySlug = slugify(r.country);
-    let citySlug = slugify(r.city);
-    let slug = `${countrySlug}/${citySlug}`;
-    let n = 2;
-    while (seen.has(slug)) {
-      citySlug = `${slugify(r.city)}-${n++}`;
-      slug = `${countrySlug}/${citySlug}`;
-    }
-    seen.add(slug);
+  for (const [path, mod] of Object.entries(recordModules)) {
+    const rec = mod.default;
+    if (rec?.provenance?.status !== 'published') continue; // only published records go live
+    // Slug is the file path: /data/cities/{countrySlug}/{citySlug}.json
+    const m = path.match(/\/data\/cities\/([^/]+)\/([^/]+)\.json$/);
+    if (!m) continue;
+    const countrySlug = m[1];
+    const citySlug = m[2];
+    const one = rec.metrics.home_price_1bed_usd;
+    const two = rec.metrics.home_price_2bed_usd;
+    const three = rec.metrics.home_price_3bed_usd;
+    if (!one || !two || !three) continue;
     out.push({
-      country: r.country,
+      country: rec.country,
+      countryCode: rec.country_code,
       countrySlug,
-      city: r.city,
+      city: rec.city,
       citySlug,
-      slug,
-      url: `/city/${slug}/`,
-      one: r.one_bed_usd,
-      two: r.two_bed_usd,
-      three: r.three_bed_usd,
+      slug: `${countrySlug}/${citySlug}`,
+      url: `/city/${countrySlug}/${citySlug}/`,
+      one: one.value,
+      two: two.value,
+      three: three.value,
+      asOf: three.as_of || two.as_of || one.as_of,
+      sources: three.sources || [],
     });
   }
-  return out;
+  return out.sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city));
 }
 
 export const cities: City[] = build();
