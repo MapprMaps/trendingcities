@@ -32,8 +32,9 @@ a { color: inherit; text-decoration: none; }
   max-width: 1200px; margin: 0 auto; padding: 10px 24px;
   display: flex; align-items: center; gap: 20px;
 }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; }
-.brand__word { font-family: 'Sora', var(--font-sans); font-weight: 700; letter-spacing: -0.025em; }
+.brand { display: inline-flex; align-items: baseline; gap: 9px; font-weight: 700; font-size: 23px; }
+.brand img { height: 1.18em; width: auto; align-self: baseline; }
+.brand__word { font-family: 'Sora', var(--font-sans); font-weight: 700; font-size: 1em; letter-spacing: -0.025em; line-height: 1; }
 .brand__word span:first-child { color: var(--fg); }
 .brand__accent { color: var(--primary); }
 .site-nav { display: flex; gap: 22px; margin-left: 8px; }
