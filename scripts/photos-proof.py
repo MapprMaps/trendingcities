@@ -33,8 +33,9 @@ def candidates(token, city, country, lat, lng):
         url = s.get("image_url")
         if url:
             out.append({"image_url": url, "title": s.get("title", ""), "source": s.get("source", ""),
-                        "photographer": s.get("photographer") or s.get("author") or "",
-                        "license": s.get("license_name", ""), "id": s.get("id") or s.get("photo_id") or ""})
+                        "photographer": s.get("photographer_name", ""), "username": s.get("photographer_username", ""),
+                        "ss_url": s.get("ss_photo_url", ""),
+                        "license": s.get("license_name", ""), "id": s.get("photo_id") or s.get("source_id") or ""})
     return out[:6]
 
 def pick_best(city, country, cands):
@@ -78,6 +79,7 @@ def main():
         rec["media"] = {"photo_ids": [ch["id"]] if ch["id"] else [],
             "hero": {"url": re.sub(r"w=\d+", "w=1600", ch["image_url"]),
                      "title": ch["title"], "photographer": ch["photographer"],
+                     "username": ch.get("username", ""), "ss_url": ch.get("ss_url", ""),
                      "source": ch["source"], "license": ch["license"]}}
         json.dump(rec, open(f, "w"), indent=2, ensure_ascii=False); open(f, "a").write("\n")
         print(f"  {slug}: picked #{idx+1}/{len(cands)} — {ch['title'][:45]} (by {ch['photographer'] or ch['source']})")

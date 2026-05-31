@@ -22,12 +22,12 @@ export interface CityRecord {
   country: string;
   country_code: string;
   coordinates?: { lat: number; lng: number };
-  media?: { photo_ids?: string[]; hero?: { url: string; title: string; photographer: string; source: string; license: string } };
+  media?: { photo_ids?: string[]; hero?: Hero };
   metrics: Record<string, MetricValue>;
   provenance: { compiled_by: string; compiled_at: string; status: string };
 }
 
-export interface Hero { url: string; title: string; photographer: string; source: string; license: string; }
+export interface Hero { url: string; title: string; photographer: string; username?: string; ss_url?: string; source: string; license: string; }
 
 export interface City {
   country: string;

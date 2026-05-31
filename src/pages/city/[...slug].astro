@@ -65,7 +65,15 @@ const breadcrumbLd = {
           </div>
         </div>
       </div>
-      <span class="city-hero__credit">Photo: {city.hero.photographer || 'Unknown'} / {city.hero.source === 'unsplash' ? 'Unsplash' : city.hero.source}</span>
+      <span class="city-hero__credit">
+        Photo: {city.hero.username && city.hero.source === 'unsplash'
+          ? <a href={`https://unsplash.com/@${city.hero.username}?utm_source=trendingcities&utm_medium=referral`} target="_blank" rel="noopener nofollow">{city.hero.photographer}</a>
+          : (city.hero.photographer || 'Unknown')}
+        {' / '}
+        {city.hero.source === 'unsplash'
+          ? <a href="https://unsplash.com/?utm_source=trendingcities&utm_medium=referral" target="_blank" rel="noopener nofollow">Unsplash</a>
+          : (city.hero.source === 'flickr' ? 'Flickr' : city.hero.source)}
+      </span>
     </section>
     <section class="section" style="padding-block:28px 0">
       <div class="container"><p class="tc-lg tc-secondary" style="max-width:680px;margin:0">{summary}</p></div>
