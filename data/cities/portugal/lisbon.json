@@ -8,38 +8,38 @@
     "home_price_1bed_usd": {
       "value": 510399,
       "unit": "USD",
-      "as_of": "2026-05",
+      "as_of": "2026-06",
       "sources": [
         "globalpropertyguide",
         "numbeo",
         "web"
       ],
       "method": "cross-source-median",
-      "confidence": "medium"
+      "confidence": "high"
     },
     "home_price_2bed_usd": {
       "value": 719200,
       "unit": "USD",
-      "as_of": "2026-05",
+      "as_of": "2026-06",
       "sources": [
         "globalpropertyguide",
         "numbeo",
         "web"
       ],
       "method": "cross-source-median",
-      "confidence": "medium"
+      "confidence": "high"
     },
     "home_price_3bed_usd": {
       "value": 794600,
       "unit": "USD",
-      "as_of": "2026-05",
+      "as_of": "2026-06",
       "sources": [
         "globalpropertyguide",
         "numbeo",
         "web"
       ],
       "method": "cross-source-median",
-      "confidence": "medium"
+      "confidence": "high"
     }
   },
   "provenance": {
