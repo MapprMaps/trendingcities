@@ -31,8 +31,13 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     ? <meta name="robots" content="noindex, nofollow" />
     : <meta name="robots" content="index, follow, max-image-preview:large" />}
   <meta name="theme-color" content="#1F62E8" />
-  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap" rel="stylesheet" />
 
   <!-- Open Graph -->
   <meta property="og:type" content={ogType} />
@@ -63,7 +68,7 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="/" aria-label="TrendingCities home">
-        <img src="/assets/logo-mark.svg" alt="" width="28" height="28" />
+        <img src="/rising-skyline-mark.svg" alt="" width="28" height="28" />
         <span class="brand__word"><span>Trending</span><span class="brand__accent">Cities</span></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -87,7 +92,7 @@ const jsonLdArr = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <div class="site-footer__inner">
       <div class="site-footer__brand">
         <a class="brand" href="/">
-          <img src="/assets/logo-mark.svg" alt="" width="24" height="24" />
+          <img src="/rising-skyline-mark.svg" alt="" width="24" height="24" />
           <span class="brand__word"><span>Trending</span><span class="brand__accent">Cities</span></span>
         </a>
         <p class="tc-sm tc-secondary">Compare home prices across {CITY_COUNT} cities in {COUNTRY_COUNT} countries. Starter median-price data, {DATA_UPDATED}.</p>
