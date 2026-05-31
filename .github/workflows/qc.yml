@@ -64,7 +64,10 @@ jobs:
             // Empty list => auto-merge effectively off (safe default).
             const AGENT_AUTHORS = ['trendingcities-agent[bot]']; // dedicated agent bot identity (GitHub App)
             const author = context.payload.pull_request.user.login;
-            if (v.auto_mergeable && AGENT_AUTHORS.includes(author)) {
+            // Community submissions are ALWAYS human-reviewed, even if clean — the
+            // bot Function labels them, and that label excludes them from auto-merge.
+            const isCommunity = (context.payload.pull_request.labels || []).map(l => l.name).includes('community-submission');
+            if (v.auto_mergeable && AGENT_AUTHORS.includes(author) && !isCommunity) {
               try {
                 await github.rest.pulls.merge({ owner, repo, pull_number: number, merge_method: 'squash' });
                 await github.rest.issues.createComment({ owner, repo, issue_number: number,

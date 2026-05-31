@@ -49,7 +49,9 @@ def check_record(path, rec, base_rec, validate):
         elif not (PRICE_MIN <= v <= PRICE_MAX):
             errors.append(f"{k} price {v} outside sane bounds [{PRICE_MIN:,}–{PRICE_MAX:,}]")
     if None not in (one, two, three) and not (one <= two <= three):
-        errors.append(f"price ordering off: 1bed {one:,} / 2bed {two:,} / 3bed {three:,} (expect 1≤2≤3)")
+        # Warning, not a hard error: a premium small unit can legitimately outprice
+        # a larger one. Flags for human review (blocks auto-merge) without failing the PR.
+        warnings.append(f"price ordering unusual: 1bed {one:,} / 2bed {two:,} / 3bed {three:,} (expected 1≤2≤3) — confirm it's real")
     confidences = []
     for k, mv in mt.items():
         if not mv.get("sources"):
