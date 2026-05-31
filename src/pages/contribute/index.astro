@@ -2,12 +2,15 @@
 import Base from '../../layouts/Base.astro';
 import countries from '../../data/countries.json';
 const TURNSTILE_SITE_KEY = '0x4AAAAAADbOXIAOx9oyub8m';
+const MAPTILER_KEY = 'OdgircU0GgQPcolbaKt8';
 ---
 <Base
   title="Suggest a price update or add a city | TrendingCities"
   description="Know a more accurate home price, or a city we're missing? Suggest an update or add a new city — it opens a reviewed pull request to the open dataset."
   path="/contribute/"
 >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+
   <section class="page-head">
     <div class="container">
       <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Contribute</span></div>
@@ -23,15 +26,12 @@ const TURNSTILE_SITE_KEY = '0x4AAAAAADbOXIAOx9oyub8m';
   <section class="section" style="padding-top:24px">
     <div class="container" style="max-width:640px">
       <form id="contribute-form" class="tc-card" style="padding:24px; display:flex; flex-direction:column; gap:16px">
-        <!-- update mode: show the city -->
         <div data-when="update">
           <span class="tc-label">City</span>
           <div id="city-name" class="tc-metric" style="font-size:20px; margin-top:4px">—</div>
         </div>
-        <!-- new mode: pick country + name -->
         <div data-when="new" hidden>
-          <label>
-            <span class="tc-label">Country</span>
+          <label><span class="tc-label">Country</span>
             <select class="tc-input" id="country">
               <option value="">Select a country…</option>
               {countries.map((c) => <option value={c.code} data-name={c.name}>{c.name}</option>)}
@@ -39,9 +39,8 @@ const TURNSTILE_SITE_KEY = '0x4AAAAAADbOXIAOx9oyub8m';
           </label>
         </div>
         <div data-when="new" hidden>
-          <label>
-            <span class="tc-label">City / area name</span>
-            <input class="tc-input" type="text" id="cityName" maxlength="80" placeholder="e.g. Porto, or Lisbon (Belém)" />
+          <label><span class="tc-label">City / area name</span>
+            <input class="tc-input" type="text" id="cityName" maxlength="80" placeholder="e.g. Porto" />
           </label>
         </div>
 
@@ -50,6 +49,16 @@ const TURNSTILE_SITE_KEY = '0x4AAAAAADbOXIAOx9oyub8m';
           <label><span class="tc-label">2-bed median (USD)</span><input class="tc-input" type="number" id="two" min="5000" max="50000000" step="1000" placeholder="520000" required /></label>
           <label><span class="tc-label">3-bed median (USD)</span><input class="tc-input" type="number" id="three" min="5000" max="50000000" step="1000" placeholder="760000" required /></label>
         </div>
+
+        <div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+            <span class="tc-label">Location <span class="tc-muted" style="font-weight:400;text-transform:none;letter-spacing:0">— drag the pin to the exact spot</span></span>
+            <button type="button" class="tc-btn tc-btn--quiet tc-btn--sm" id="locate-btn" data-when="new" hidden>Find on map</button>
+          </div>
+          <div id="loc-map" style="height:260px;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-top:6px;background:var(--surface-2)"></div>
+          <div class="tc-xs tc-muted" id="loc-status" style="margin-top:6px">Set the city above, then drop the pin where it belongs.</div>
+        </div>
+
         <label><span class="tc-label">Source / note (optional)</span><textarea class="tc-input" id="note" rows="3" maxlength="280" placeholder="Where's this from? e.g. local listings, a portal, personal knowledge"></textarea></label>
         <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY}></div>
         <button class="tc-btn tc-btn--primary tc-btn--lg" type="submit" id="submit-btn">Submit suggestion</button>
@@ -59,49 +68,86 @@ const TURNSTILE_SITE_KEY = '0x4AAAAAADbOXIAOx9oyub8m';
     </div>
   </section>
 
+  <script is:inline src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-  <script>
-    // @ts-nocheck
+  <script is:inline define:vars={{ MAPTILER_KEY }}>
     const p = new URLSearchParams(location.search);
     const slug = p.get('city') || '';
     const mode = slug ? 'update' : 'new';
     document.querySelectorAll('[data-when]').forEach(el => { el.hidden = el.getAttribute('data-when') !== mode; });
+
+    // ── location map + draggable pin ──
+    let pin = null, map = null;
+    const status = document.getElementById('loc-status');
+    map = new maplibregl.Map({ container: 'loc-map', style: `https://api.maptiler.com/maps/dataviz-light/style.json?key=${MAPTILER_KEY}`, center: [10, 25], zoom: 1.2 });
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+    function setPin(lat, lng, zoom) {
+      if (!pin) {
+        pin = new maplibregl.Marker({ draggable: true, color: '#1F62E8' }).setLngLat([lng, lat]).addTo(map);
+        pin.on('dragend', () => { status.textContent = 'Pin set — drag again if it\'s not exact.'; });
+      } else pin.setLngLat([lng, lat]);
+      map.flyTo({ center: [lng, lat], zoom: zoom || 11 });
+      status.textContent = 'Pin set — drag it if it\'s not exactly right.';
+    }
+    async function geocode(q) {
+      try {
+        const r = await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(q));
+        const d = await r.json();
+        return d[0] ? { lat: +d[0].lat, lng: +d[0].lon } : null;
+      } catch { return null; }
+    }
 
     if (mode === 'update') {
       document.getElementById('mode-new').hidden = false;
       fetch('/search-index.json').then(r => r.json()).then(idx => {
         const m = idx.find(c => c.url === `/city/${slug}/`);
         document.getElementById('city-name').textContent = m ? `${m.city}, ${m.country}` : slug;
+        if (m && typeof m.lat === 'number') setPin(m.lat, m.lng, 11);
+        else status.textContent = "We don't have this city's location yet — drop a pin to add it.";
       });
+      // let the user click the map to place a pin if none
+      map.on('click', (e) => setPin(e.lngLat.lat, e.lngLat.lng, map.getZoom()));
     } else {
       document.getElementById('form-title').textContent = 'Add a city';
-      document.getElementById('form-intro').textContent = "Don't see a city in our data? Add it. Pick the country, name the city, and give the three median prices. It opens a reviewed pull request before anything goes live.";
+      document.getElementById('form-intro').textContent = "Don't see a city in our data? Add it. Pick the country, name the city, place it on the map, and give the three median prices.";
+      const locate = async () => {
+        const sel = document.getElementById('country');
+        const country = sel.options[sel.selectedIndex] ? sel.options[sel.selectedIndex].getAttribute('data-name') : '';
+        const city = document.getElementById('cityName').value.trim();
+        if (!country || !city) { status.textContent = 'Pick a country and enter a city name first.'; return; }
+        status.textContent = 'Finding…';
+        const g = await geocode(`${city.replace(/[()]/g,'')}, ${country}`) || await geocode(`${country}`);
+        if (g) setPin(g.lat, g.lng, 10); else status.textContent = "Couldn't find it — click the map to drop the pin yourself.";
+      };
+      document.getElementById('locate-btn').addEventListener('click', locate);
+      document.getElementById('cityName').addEventListener('blur', () => { if (!pin) locate(); });
+      map.on('click', (e) => setPin(e.lngLat.lat, e.lngLat.lng, map.getZoom()));
     }
 
+    // ── submit ──
     const form = document.getElementById('contribute-form');
     const msg = document.getElementById('form-msg');
     const btn = document.getElementById('submit-btn');
     const show = (text, ok) => { msg.hidden = false; msg.className = 'tc-callout ' + (ok ? 'tc-callout--source' : 'tc-callout--risk'); msg.innerHTML = text; };
-
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const token = (document.querySelector('[name="cf-turnstile-response"]') || {}).value;
       if (!token) { show('Please complete the anti-spam check.', false); return; }
+      if (!pin) { show('Please place the pin on the map so we know where this is.', false); return; }
+      const ll = pin.getLngLat();
       const payload = {
-        mode,
+        mode, turnstileToken: token,
         one: Number(document.getElementById('one').value),
         two: Number(document.getElementById('two').value),
         three: Number(document.getElementById('three').value),
         note: document.getElementById('note').value,
-        turnstileToken: token,
+        coordinates: { lat: Math.round(ll.lat * 1e5) / 1e5, lng: Math.round(ll.lng * 1e5) / 1e5 },
       };
-      if (mode === 'update') {
-        payload.citySlug = slug;
-      } else {
+      if (mode === 'update') payload.citySlug = slug;
+      else {
         const sel = document.getElementById('country');
-        const opt = sel.options[sel.selectedIndex];
         payload.countryCode = sel.value;
-        payload.country = opt ? opt.getAttribute('data-name') : '';
+        payload.country = sel.options[sel.selectedIndex] ? sel.options[sel.selectedIndex].getAttribute('data-name') : '';
         payload.city = document.getElementById('cityName').value.trim();
         if (!payload.countryCode || !payload.city) { show('Please choose a country and enter a city name.', false); return; }
       }
@@ -112,11 +158,7 @@ const TURNSTILE_SITE_KEY = '0x4AAAAAADbOXIAOx9oyub8m';
         if (res.ok && data.ok) {
           show(`Thank you — your ${mode === 'new' ? 'new city' : 'suggestion'} was submitted for review. <a href="${data.pr}" target="_blank" rel="noopener">Track it here</a>.`, true);
           form.querySelectorAll('input,textarea,button,select').forEach(el => el.disabled = true);
-        } else {
-          show(data.error || 'Something went wrong. Please try again.', false);
-          btn.disabled = false; btn.textContent = 'Submit suggestion';
-          if (window.turnstile) window.turnstile.reset();
-        }
+        } else { show(data.error || 'Something went wrong. Please try again.', false); btn.disabled = false; btn.textContent = 'Submit suggestion'; if (window.turnstile) window.turnstile.reset(); }
       } catch { show('Network error. Please try again.', false); btn.disabled = false; btn.textContent = 'Submit suggestion'; }
     });
   </script>

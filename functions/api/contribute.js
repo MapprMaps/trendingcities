@@ -63,6 +63,12 @@ export async function onRequestPost({ request, env }) {
   const asOf = new Date().toISOString().slice(0, 7);
   const cleanNote = (typeof note === 'string' ? note : '').slice(0, 280);
 
+  // confirmed pin coordinates (required for new cities, optional for updates)
+  const co = input.coordinates || {};
+  const hasCoords = typeof co.lat === 'number' && typeof co.lng === 'number'
+    && Math.abs(co.lat) <= 90 && Math.abs(co.lng) <= 180;
+  if (mode === 'new' && !hasCoords) return json({ error: 'Please place the location pin on the map.' }, 400);
+
   let path, rec, sha = undefined, label, title, displayName;
 
   if (mode === 'new') {
@@ -98,6 +104,9 @@ export async function onRequestPost({ request, env }) {
     displayName = `${rec.city}, ${rec.country}`;
     title = `Community: ${displayName} price update`;
   }
+
+  // confirmed pin → record coordinates
+  if (hasCoords) rec.coordinates = { lat: Math.round(co.lat * 1e5) / 1e5, lng: Math.round(co.lng * 1e5) / 1e5 };
 
   // 3. branch → commit → PR → label
   const updated = btoa(unescape(encodeURIComponent(JSON.stringify(rec, null, 2) + '\n')));
