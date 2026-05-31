@@ -26,14 +26,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install --quiet jsonschema
-      - name: Use trusted QC code from base (a PR can't alter its own judge)
+      - name: QC against the LATEST base branch (not the stale PR base.sha)
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: git checkout "$BASE_SHA" -- scripts/ schema/
-      - name: Run QC
-        env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: python scripts/qc-data-pr.py "$BASE_SHA"
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          git fetch --no-tags --depth=50 origin "$BASE_REF"
+          BASE=$(git rev-parse FETCH_HEAD)
+          # trusted QC code + schema come from base, so a PR can't alter its own judge
+          git checkout "$BASE" -- scripts/ schema/
+          python scripts/qc-data-pr.py "$BASE"
       - name: Report, label, maybe auto-merge
         uses: actions/github-script@v7
         with:
