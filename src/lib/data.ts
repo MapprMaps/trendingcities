@@ -21,6 +21,7 @@ export interface CityRecord {
   city: string;
   country: string;
   country_code: string;
+  coordinates?: { lat: number; lng: number };
   metrics: Record<string, MetricValue>;
   provenance: { compiled_by: string; compiled_at: string; status: string };
 }
@@ -38,6 +39,8 @@ export interface City {
   three: number;
   asOf: string;       // metric as_of (e.g. "2026-05")
   sources: string[];  // upstream sources for the price metrics
+  lat?: number;
+  lng?: number;
 }
 
 export const DATA_VERSION = '2026.1';
@@ -84,6 +87,8 @@ function build(): City[] {
       three: three.value,
       asOf: three.as_of || two.as_of || one.as_of,
       sources: three.sources || [],
+      lat: rec.coordinates?.lat,
+      lng: rec.coordinates?.lng,
     });
   }
   return out.sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city));

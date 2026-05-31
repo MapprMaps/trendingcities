@@ -1,0 +1,671 @@
+[
+  {
+    "city": "Vienna (District 21)",
+    "country": "Austria",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Sarajevo (Center)",
+    "country": "Bosnia and Herzegovina",
+    "coords": {
+      "lat": 43.85539,
+      "lng": 18.40806
+    },
+    "importance": 0.252,
+    "matched": "Sarajevo City Center, 1, Vrbanja, Sarajevo, Mjesna zajednica Marijin D"
+  },
+  {
+    "city": "Sao Paulo (Vila Olimpia)",
+    "country": "Brazil",
+    "coords": {
+      "lat": -23.58548,
+      "lng": -46.68202
+    },
+    "importance": 0.34,
+    "matched": "Agência Reguladora de Serviços Públicos Delegados de Transporte do Est"
+  },
+  {
+    "city": "Sofia (Center)",
+    "country": "Bulgaria",
+    "coords": {
+      "lat": 42.69162,
+      "lng": 23.35359
+    },
+    "importance": 0.243,
+    "matched": "Serdika Center, 48, бул. Ситняково, кв. Подуяне, София, Оборище, Столи"
+  },
+  {
+    "city": "Cambodia (combined)",
+    "country": "Cambodia",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Chroy Changvar",
+    "country": "Cambodia",
+    "coords": {
+      "lat": 11.5895,
+      "lng": 104.93501
+    },
+    "importance": 0.147,
+    "matched": "សង្កាត់ជ្រោយចង្វា, ខណ្ឌជ្រោយចង្វារ, រាជធានីភ្នំពេញ, 121001, ព្រះរាជាណា"
+  },
+  {
+    "city": "Kep and Kampot",
+    "country": "Cambodia",
+    "coords": {
+      "lat": 10.60866,
+      "lng": 104.17933
+    },
+    "importance": 0.0,
+    "matched": "Kep Tours and Travel, Street 722, កំពត, ខេត្តកំពត, 070216, ព្រះរាជាណាច"
+  },
+  {
+    "city": "Koh Rong and Koh Rong Samloem",
+    "country": "Cambodia",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Toronto (Downtown)",
+    "country": "Canada",
+    "coords": {
+      "lat": 43.64944,
+      "lng": -79.39746
+    },
+    "importance": 0.08,
+    "matched": "Hyatt House Downtown Toronto, 180, Spadina—Fort York, Toronto, Golden "
+  },
+  {
+    "city": "Santiago (Santa Isabel)",
+    "country": "Chile",
+    "coords": {
+      "lat": -33.44595,
+      "lng": -70.61558
+    },
+    "importance": 0.0,
+    "matched": "Universidad Central de Chile Vicente Kovacevic, 1186, Avenida Santa Is"
+  },
+  {
+    "city": "Medellin (El Poblado)",
+    "country": "Colombia",
+    "coords": {
+      "lat": 6.22726,
+      "lng": -75.57197
+    },
+    "importance": 0.08,
+    "matched": "Colombia, Comuna 14 - El Poblado, Perímetro Urbano Medellín, Medellín,"
+  },
+  {
+    "city": "San Jose (Rohrmoser)",
+    "country": "Costa Rica",
+    "coords": {
+      "lat": 9.94509,
+      "lng": -84.11831
+    },
+    "importance": 0.0,
+    "matched": "BCR, Boulevard Ernesto Rohrmoser, Asunción, Pavas, San José, Área Metr"
+  },
+  {
+    "city": "Punta Cana/Bavaro",
+    "country": "Dominican Republic",
+    "coords": {
+      "lat": 18.60017,
+      "lng": -68.41964
+    },
+    "importance": 0.0,
+    "matched": "Punta Cana, Avenida Barceló, Verón, Higüey, La Altagracia, 41201, Repú"
+  },
+  {
+    "city": "Cairo (6th of October)",
+    "country": "Egypt",
+    "coords": {
+      "lat": 30.11688,
+      "lng": 30.91637
+    },
+    "importance": 0.287,
+    "matched": "مطار غرب القاهرة العسكري, Drop-off, الشيخ زايد, الجيزة, مصر"
+  },
+  {
+    "city": "Cairo (New Cairo)",
+    "country": "Egypt",
+    "coords": {
+      "lat": 30.08354,
+      "lng": 31.64159
+    },
+    "importance": 0.356,
+    "matched": "Telecom Egypt, طريق الوادي, Madinaty, القاهرة, 19519, مصر"
+  },
+  {
+    "city": "Tallinn (Centre)",
+    "country": "Estonia",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Helsinki (Centre)",
+    "country": "Finland",
+    "coords": {
+      "lat": 60.16874,
+      "lng": 24.94089
+    },
+    "importance": 0.147,
+    "matched": "Keskusta, Kluuvi, Eteläinen suurpiiri, Helsinki, Helsingin seutukunta,"
+  },
+  {
+    "city": "Paris (16eme)",
+    "country": "France",
+    "coords": {
+      "lat": 48.85679,
+      "lng": 2.27248
+    },
+    "importance": 0.0,
+    "matched": "Orpi, 21, Avenue Mozart, Quartier de la Muette, Paris 16e Arrondisseme"
+  },
+  {
+    "city": "Tbilisi (Saburtalo)",
+    "country": "Georgia",
+    "coords": {
+      "lat": 41.72471,
+      "lng": 44.71665
+    },
+    "importance": 0.0,
+    "matched": "Georgia, 4, ვაჟა-ფშაველას გამზირის V კვარტალი, საბურთალო, ვაჟა-ფშაველა"
+  },
+  {
+    "city": "Tbilisi (Vake)",
+    "country": "Georgia",
+    "coords": {
+      "lat": 41.7063,
+      "lng": 44.76877
+    },
+    "importance": 0.272,
+    "matched": "შვეიცარიის საელჩო საქართველოში, 12, შალვა რადიანის ქუჩა, ვაკე, ვაკის რ"
+  },
+  {
+    "city": "Berlin (Mitte)",
+    "country": "Germany",
+    "coords": {
+      "lat": 52.53322,
+      "lng": 13.3598
+    },
+    "importance": 0.067,
+    "matched": "Berlin-Mitte, Berlin, Deutschland"
+  },
+  {
+    "city": "Munich (District Munich)",
+    "country": "Germany",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Athens (Center)",
+    "country": "Greece",
+    "coords": {
+      "lat": 37.97394,
+      "lng": 23.7078
+    },
+    "importance": 0.0,
+    "matched": "ΚΕΝΤΡΟ ΑΘΗΝΩΝ, 142, Πειραιώς, Ρουφ, Συνοικία Ρουφ, Πετράλωνα, 3η Κοινό"
+  },
+  {
+    "city": "Athens (Kolonaki-Lykavittos)",
+    "country": "Greece",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Kowloon (Hung Hom)",
+    "country": "Hong Kong",
+    "coords": {
+      "lat": 22.30142,
+      "lng": 114.189
+    },
+    "importance": 0.351,
+    "matched": "香港嘉里酒店 Kerry Hotel Hong Kong, 華信街 Wa Shun Street, 大環 Tai Wan, 紅磡 Hung "
+  },
+  {
+    "city": "New Territories",
+    "country": "Hong Kong",
+    "coords": {
+      "lat": 22.43007,
+      "lng": 114.07242
+    },
+    "importance": 0.267,
+    "matched": "新界 New Territories, 香港 Hong Kong, 中国"
+  },
+  {
+    "city": "Outlying Islands",
+    "country": "Hong Kong",
+    "coords": {
+      "lat": 22.22474,
+      "lng": 114.10963
+    },
+    "importance": 0.0,
+    "matched": "離島廢物轉運設施 - 榕樹灣站 Outlying Islands Transfer Facilities - Yung Shue Wan, "
+  },
+  {
+    "city": "Budapest (District VI)",
+    "country": "Hungary",
+    "coords": {
+      "lat": 47.51246,
+      "lng": 19.07898
+    },
+    "importance": 0.0,
+    "matched": "Deloitte Hungary, 84/c, Dózsa György út, Terézváros, VI. kerület, Buda"
+  },
+  {
+    "city": "Budapest (District VII)",
+    "country": "Hungary",
+    "coords": {
+      "lat": 47.50174,
+      "lng": 19.07213
+    },
+    "importance": 0.0,
+    "matched": "Flat in Hungary Ingatlaniroda, 10, Almássy tér, Erzsébetváros, VII. ke"
+  },
+  {
+    "city": "Iceland (all)",
+    "country": "Iceland",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Bali (Villas)",
+    "country": "Indonesia",
+    "coords": {
+      "lat": -5.59051,
+      "lng": 105.66067
+    },
+    "importance": 0.213,
+    "matched": "Bali Agung, Lampung Selatan, Lampung, Sumatera, Indonesia"
+  },
+  {
+    "city": "Milan (Garibaldi-Porto Venezia)",
+    "country": "Italy",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Tokyo (Central City)",
+    "country": "Japan",
+    "coords": {
+      "lat": 34.68996,
+      "lng": 135.50643
+    },
+    "importance": 0.0,
+    "matched": "Tokyo Rokumeikan, 浮世小路, 今橋二丁目, 中央区, 大阪市, 大阪府, 541-0043, 日本"
+  },
+  {
+    "city": "Belair",
+    "country": "Luxembourg",
+    "coords": {
+      "lat": 49.61146,
+      "lng": 6.10792
+    },
+    "importance": 0.353,
+    "matched": "Belair, Luxembourg, Canton Luxembourg, Lëtzebuerg"
+  },
+  {
+    "city": "Center",
+    "country": "Luxembourg",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Luxembourg (all)",
+    "country": "Luxembourg",
+    "coords": {
+      "lat": 49.50452,
+      "lng": 6.27647
+    },
+    "importance": 0.0,
+    "matched": "BIL, Allée Saint-Christophe, Brill, Mondorf-les-Bains, Canton Remich, "
+  },
+  {
+    "city": "Luxembourg City",
+    "country": "Luxembourg",
+    "coords": {
+      "lat": 49.60105,
+      "lng": 6.06399
+    },
+    "importance": 0.0,
+    "matched": "Sky Bar Luxembourg, Route de Longwy, City Concorde, Bertrange, Canton "
+  },
+  {
+    "city": "Iskander Puteri",
+    "country": "Malaysia",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Flic en Flac",
+    "country": "Mauritius",
+    "coords": {
+      "lat": -20.27897,
+      "lng": 57.36914
+    },
+    "importance": 0.147,
+    "matched": "Flic en Flac, Flic en Flac VCA, Black River, 90512, Mauritius / Mauric"
+  },
+  {
+    "city": "Grand Baie",
+    "country": "Mauritius",
+    "coords": {
+      "lat": -20.01302,
+      "lng": 57.58463
+    },
+    "importance": 0.347,
+    "matched": "Grand Baie, Grand Baie VCA, East, Riviere du Rempart, 30529, Mauritius"
+  },
+  {
+    "city": "Mexico City (Miguel Hidalgo)",
+    "country": "Mexico",
+    "coords": {
+      "lat": 19.4157,
+      "lng": -99.21369
+    },
+    "importance": 0.35,
+    "matched": "Embajada de Corea del Sur, 110, Calle Lope Díaz de Armendáriz, Lomas d"
+  },
+  {
+    "city": "Auckland (apartments)",
+    "country": "New Zealand",
+    "coords": {
+      "lat": -36.84796,
+      "lng": 174.77064
+    },
+    "importance": 0.0,
+    "matched": "Pullman Auckland Hotel And Apartments, Princes Street, Britomart, City"
+  },
+  {
+    "city": "Christchurch (townhouses)",
+    "country": "New Zealand",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Wellington (apartments)",
+    "country": "New Zealand",
+    "coords": {
+      "lat": -41.27346,
+      "lng": 174.78339
+    },
+    "importance": 0.0,
+    "matched": "Proximity Apartments Wellington, 172, Thorndon Quay, Pipitea, Wellingt"
+  },
+  {
+    "city": "Skopje (Centre)",
+    "country": "North Macedonia",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Panama City (San Francisco)",
+    "country": "Panama",
+    "coords": {
+      "lat": 9.00374,
+      "lng": -79.49377
+    },
+    "importance": 0.08,
+    "matched": "Parque Panamá Viejo, Parque Lefevre, Distrito de Panamá, Provincia de "
+  },
+  {
+    "city": "Panama Coclé",
+    "country": "Panama",
+    "coords": {
+      "lat": 8.24591,
+      "lng": -80.50427
+    },
+    "importance": 0.08,
+    "matched": "Panamá SeaFood Group, Aguadulce, Coclé, Panamá"
+  },
+  {
+    "city": "Lima (Miraflores)",
+    "country": "Peru",
+    "coords": {
+      "lat": -12.10785,
+      "lng": -77.02828
+    },
+    "importance": 0.344,
+    "matched": "Ministerio de Justicia y Derechos Humanos, 350, Jirón Scipión Llona, B"
+  },
+  {
+    "city": "Metro Manila (Taguig City)",
+    "country": "Philippines",
+    "coords": {
+      "lat": 14.53265,
+      "lng": 121.05179
+    },
+    "importance": 0.297,
+    "matched": "Yankee Candle Venice Grand Canal Mall Philippines, Venezia Drive, McKi"
+  },
+  {
+    "city": "Warsaw (Downtown)",
+    "country": "Poland",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Isla Verde",
+    "country": "Puerto Rico",
+    "coords": {
+      "lat": 18.44374,
+      "lng": -66.0256
+    },
+    "importance": 0.303,
+    "matched": "Isla Verde, Cangrejo Arriba, Carolina, Puerto Rico, 00979, United Stat"
+  },
+  {
+    "city": "Doha (Pearl)",
+    "country": "Qatar",
+    "coords": {
+      "lat": 25.373,
+      "lng": 51.54438
+    },
+    "importance": 0.0,
+    "matched": "BEN HARB - بن حرب, gate 12, Marina way 12 , Porto Arabia - Pearl qatar"
+  },
+  {
+    "city": "Lusail (Centre)",
+    "country": "Qatar",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Gorenjska",
+    "country": "Slovenia",
+    "coords": {
+      "lat": 46.26361,
+      "lng": 14.15894
+    },
+    "importance": 0.067,
+    "matched": "Gorenjska regija, Slovenija"
+  },
+  {
+    "city": "Dolphin Coast",
+    "country": "South Africa",
+    "coords": {
+      "lat": -33.6813,
+      "lng": 26.66342
+    },
+    "importance": 0.0,
+    "matched": "Dolphin Coast Nursing Home, 10, Northwood Road, Ndlambe Ward 4, Boesma"
+  },
+  {
+    "city": "Barcelona (Eixample)",
+    "country": "Spain",
+    "coords": {
+      "lat": 41.40551,
+      "lng": 2.1758
+    },
+    "importance": 0.0,
+    "matched": "Master Centre d'Estudis Spain S.l., 463, Carrer de Provença, la Sagrad"
+  },
+  {
+    "city": "Stockholm (Centre)",
+    "country": "Sweden",
+    "coords": {
+      "lat": 59.35457,
+      "lng": 18.05571
+    },
+    "importance": 0.0,
+    "matched": "Stockholm Resilience Centre, Albanovägen, Albano, Norra Djurgården, No"
+  },
+  {
+    "city": "Taipei City",
+    "country": "Taiwan",
+    "coords": {
+      "lat": 25.08146,
+      "lng": 121.47805
+    },
+    "importance": 0.0,
+    "matched": "臺灣土地銀行, 100, 中山一路, 恆德里, 蘆洲區, 新北市, 24753, 臺灣"
+  },
+  {
+    "city": "Bangkok (Pathum Wan)",
+    "country": "Thailand",
+    "coords": {
+      "lat": 13.72608,
+      "lng": 100.54768
+    },
+    "importance": 0.0,
+    "matched": "Warabimochi Kamakura (One Bangkok), 1877 B1 Unit A1, ถนนพระรามที่ 4, บ"
+  },
+  {
+    "city": "Chon Buri (Pattaya)",
+    "country": "Thailand",
+    "coords": {
+      "lat": 12.9065,
+      "lng": 100.87024
+    },
+    "importance": 0.08,
+    "matched": "ทาบาลีคอนโด, เมืองพัทยา, ห้วยใหญ่, อำเภอบางละมุง, จังหวัดชลบุรี, ประเท"
+  },
+  {
+    "city": "Istanbul (all)",
+    "country": "Turkey",
+    "coords": {
+      "lat": 40.98209,
+      "lng": 29.02524
+    },
+    "importance": 0.072,
+    "matched": "All Saints Moda İngiliz Kilisesi, 8, Yusuf Kamil Paşa Sokağı, Moda, Ca"
+  },
+  {
+    "city": "Istanbul (Kadıköy)",
+    "country": "Turkey",
+    "coords": {
+      "lat": 40.96699,
+      "lng": 29.05759
+    },
+    "importance": 0.0,
+    "matched": "Orbea Bicycle Turkey, Operatör Cemil Topuzlu Caddesi, Caddebostan Maha"
+  },
+  {
+    "city": "Abu Dhabi (Al Reem Is.)",
+    "country": "United Arab Emirates",
+    "coords": {
+      "lat": 24.4688,
+      "lng": 54.37101
+    },
+    "importance": 0.136,
+    "matched": "جزيرة أبو ظبي, أبو ظبي, أبوظبي, أبو ظبي, الإمارات العربية المتحدة"
+  },
+  {
+    "city": "Abu Dhabi (all)",
+    "country": "United Arab Emirates",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Dubai (all)",
+    "country": "United Arab Emirates",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Dubai (Business Bay)",
+    "country": "United Arab Emirates",
+    "coords": {
+      "lat": 25.18437,
+      "lng": 55.25966
+    },
+    "importance": 0.0,
+    "matched": "Nexx Home Healthcare Services, Marasi Dr - Business Bay - Dubai - Unit"
+  },
+  {
+    "city": "Dubai (Downtown)",
+    "country": "United Arab Emirates",
+    "coords": {
+      "lat": 25.18437,
+      "lng": 55.25966
+    },
+    "importance": 0.0,
+    "matched": "Nexx Home Healthcare Services, Marasi Dr - Business Bay - Dubai - Unit"
+  },
+  {
+    "city": "Dubai (JLT)",
+    "country": "United Arab Emirates",
+    "coords": {
+      "lat": 25.06553,
+      "lng": 55.1394
+    },
+    "importance": 0.105,
+    "matched": "Preatoni Tower, JLT Cluster L, تلال الإمارات, أبراج بحيرات الجميرا, دب"
+  },
+  {
+    "city": "Dubai (JVC)",
+    "country": "United Arab Emirates",
+    "coords": null,
+    "importance": 0,
+    "matched": "NO RESULT"
+  },
+  {
+    "city": "Montevideo (Centro)",
+    "country": "Uruguay",
+    "coords": {
+      "lat": -34.90344,
+      "lng": -56.19672
+    },
+    "importance": 0.053,
+    "matched": "Avenida Uruguay, Centro, Montevideo, 11100, Uruguay"
+  },
+  {
+    "city": "Montevideo (Pocitos)",
+    "country": "Uruguay",
+    "coords": {
+      "lat": -34.90329,
+      "lng": -56.15618
+    },
+    "importance": 0.0,
+    "matched": "República, 2700, Avenida General Rivera, Pocitos, Montevideo, 11601, U"
+  },
+  {
+    "city": "Ho Chi Minh City (District 2)",
+    "country": "Vietnam",
+    "coords": {
+      "lat": 10.78797,
+      "lng": 106.70496
+    },
+    "importance": 0.375,
+    "matched": "Bảo tàng Lịch sử Thành phố Hồ Chí Minh, 2, Nguyễn Thị Minh Khai, Khu p"
+  }
+]
