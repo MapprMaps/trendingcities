@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 56.14963,
     "lng": 10.2134
+  },
+  "media": {
+    "photo_ids": [
+      "Z5zyZylTKRY"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1596150368199-1dddc9fc34cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NzEyOTM5NjV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Vanishing Avenue: Brick Corridor Toward a Harbor Skyline",
+      "photographer": "Kaiison",
+      "username": "kaiison",
+      "ss_url": "https://www.sampleshots.com/photos/Z5zyZylTKRY/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

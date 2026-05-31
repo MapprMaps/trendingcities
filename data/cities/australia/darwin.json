@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -12.46044,
     "lng": 130.84105
+  },
+  "media": {
+    "photo_ids": [
+      "20646554843"
+    ],
+    "hero": {
+      "url": "https://live.staticflickr.com/5735/20646554843_04b4bb5edd_b.jpg",
+      "title": "Aerial View of Darwin Waterfront and Surroundings from Level 14 of the Charles Darwin Centre",
+      "photographer": "Geoff Whalan",
+      "username": "Geoff Whalan",
+      "ss_url": "https://www.sampleshots.com/flickr-photos/20646554843/",
+      "source": "flickr",
+      "license": "Attribution-NonCommercial-NoDerivs License"
+    }
   }
 }

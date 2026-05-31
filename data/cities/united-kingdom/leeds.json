@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 53.79742,
     "lng": -1.54379
+  },
+  "media": {
+    "photo_ids": [
+      "4zbITfP0-jM"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1526637201259-da59cb348242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTgxMzI2OTZ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Mosaic from Above",
+      "photographer": "Benjamin Elliott",
+      "username": "benjaminelliott",
+      "ss_url": "https://www.sampleshots.com/photos/4zbITfP0-jM/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

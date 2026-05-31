@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 46.26361,
     "lng": 14.15894
+  },
+  "media": {
+    "photo_ids": [
+      "9nO8SrRu-bw"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1632911010899-005841a68cab?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDU0MTUwMDl8&ixlib=rb-4.0.3",
+      "title": "Serene Heights: Overlooking the Lakeside Village",
+      "photographer": "George Bakos",
+      "username": "georgebakos",
+      "ss_url": "https://www.sampleshots.com/photos/9nO8SrRu-bw/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

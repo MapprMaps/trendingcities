@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 55.86115,
     "lng": -4.25017
+  },
+  "media": {
+    "photo_ids": [
+      "xKdTulV46F0"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1704322624412-84ca3103ecfa?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTYyMzE0MDV8&ixlib=rb-4.1.0",
+      "title": "Reflections of Modernity: A Waterfront Symphony",
+      "photographer": "Phil Reid",
+      "username": "philreid",
+      "ss_url": "https://www.sampleshots.com/photos/xKdTulV46F0/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

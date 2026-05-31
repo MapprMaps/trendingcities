@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 51.21819,
     "lng": 22.55468
+  },
+  "media": {
+    "photo_ids": [
+      "nuTLCLjEI-M"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1641654818423-3b2b9c633e53?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI5Mjg2MDh8&ixlib=rb-4.0.3",
+      "title": "Skyward View Over Historic Urban Rooftops",
+      "photographer": "Maksym Harbar",
+      "username": "maksym_harbar",
+      "ss_url": "https://www.sampleshots.com/photos/nuTLCLjEI-M/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

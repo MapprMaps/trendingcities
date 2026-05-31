@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 50.82764,
     "lng": 3.26599
+  },
+  "media": {
+    "photo_ids": [
+      "jcF5klZYUaA"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1623544377060-5340dd22acf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3Njg1NDA0OTV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Sunset Over the Winding Canal: Brick-and-Glass Cityscape",
+      "photographer": "Zieben VH",
+      "username": "zieben_vh",
+      "ss_url": "https://www.sampleshots.com/photos/jcF5klZYUaA/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 29.75894,
     "lng": -95.3677
+  },
+  "media": {
+    "photo_ids": [
+      "xyPxcqh8Tt8"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1470082719408-b2843ab5c9ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjIxNTA2NTd8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Giants Amidst Morning Mist",
+      "photographer": "Vlad Busuioc",
+      "username": "juvx",
+      "ss_url": "https://www.sampleshots.com/photos/xyPxcqh8Tt8/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

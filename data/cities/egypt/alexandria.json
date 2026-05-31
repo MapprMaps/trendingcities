@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 31.19918,
     "lng": 29.89517
+  },
+  "media": {
+    "photo_ids": [
+      "zpmvpEXM_Qc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1594808815295-52034d585f56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTM5NjM3ODZ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Fleet of Serenity: Alexandria's Maritime Harmony",
+      "photographer": "Flo P",
+      "username": "nattyflo",
+      "ss_url": "https://www.sampleshots.com/photos/zpmvpEXM_Qc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

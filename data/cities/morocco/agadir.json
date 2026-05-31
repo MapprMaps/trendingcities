@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 30.42052,
     "lng": -9.58385
+  },
+  "media": {
+    "photo_ids": [
+      "CKSpHJNR93U"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1630172006681-a0b1d335c9e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTM3OTE4MzV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Serene Reflections at Agadir Marina",
+      "photographer": "Hamza Yasri",
+      "username": "noone41",
+      "ss_url": "https://www.sampleshots.com/photos/CKSpHJNR93U/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 41.99622,
     "lng": 21.43189
+  },
+  "media": {
+    "photo_ids": [
+      "Om51rhiCGxk"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1570654672073-fc434f47e6a4?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMzNDQ1MDh8&ixlib=rb-4.0.3",
+      "title": "Urban Melody at the Foot of the Hills",
+      "photographer": "Aleksandar Kyng",
+      "username": "aleksandarkyng",
+      "ss_url": "https://www.sampleshots.com/photos/Om51rhiCGxk/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

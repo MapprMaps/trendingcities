@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 43.2964,
     "lng": 5.37779
+  },
+  "media": {
+    "photo_ids": [
+      "fdIP6cMSCxM"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1609860582694-046ac11743be?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI3MTk3MDF8&ixlib=rb-4.0.3",
+      "title": "Harbor Harmony: Cityscape by the Sea",
+      "photographer": "Elisa Cardigan",
+      "username": "elisacardigan",
+      "ss_url": "https://www.sampleshots.com/photos/fdIP6cMSCxM/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

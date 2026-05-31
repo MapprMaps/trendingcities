@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 52.23337,
     "lng": 21.07115
+  },
+  "media": {
+    "photo_ids": [
+      "BP5R8q0SEOQ"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1709189469688-2764657b1359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3Nzc2MDE3NDh8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Clocktower Rising Over a Patchwork Cityscape",
+      "photographer": "Jakub Żerdzicki",
+      "username": "jakubzerdzicki",
+      "ss_url": "https://www.sampleshots.com/photos/BP5R8q0SEOQ/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

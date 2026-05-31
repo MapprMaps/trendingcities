@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -36.85209,
     "lng": 174.76318
+  },
+  "media": {
+    "photo_ids": [
+      "yRAlbTrxkVE"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1618130075625-36e167d7c9aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGNvbGxlY3Rpb258MXxIZkNlWWYwMEJ1QXx8fHx8Mnx8MTczOTcxODczNnw&ixlib=rb-4.0.3&q=80&w=1600",
+      "title": "Urban Silhouette Across Tranquil Waters",
+      "photographer": "Raquel Moss",
+      "username": "raquelxmoss",
+      "ss_url": "https://www.sampleshots.com/photos/yRAlbTrxkVE/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

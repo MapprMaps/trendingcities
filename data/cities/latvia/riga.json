@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 56.9494,
     "lng": 24.10518
+  },
+  "media": {
+    "photo_ids": [
+      "jFqUJacYIsw"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1522054541898-adc6abd570e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjIyMzc5NzB8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Morning Serenity Over Riga's Skyline",
+      "photographer": "Gilly",
+      "username": "gillyberlin",
+      "ss_url": "https://www.sampleshots.com/photos/jFqUJacYIsw/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 3.07394,
     "lng": 101.51853
+  },
+  "media": {
+    "photo_ids": [
+      "oAG6gC5tGgg"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1613909276405-8eb828a708ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTA4MzE5ODZ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Horizon at Twilight",
+      "photographer": "Iqram Zainudin",
+      "username": "iqramzai",
+      "ss_url": "https://www.sampleshots.com/photos/oAG6gC5tGgg/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

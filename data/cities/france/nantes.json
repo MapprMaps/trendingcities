@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 47.21864,
     "lng": -1.55414
+  },
+  "media": {
+    "photo_ids": [
+      "rzFYSzC49zE"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1583571985035-2c73e7148fcd?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI3MDc2NTl8&ixlib=rb-4.0.3",
+      "title": "Expansive Urban Horizon Under Cloud-Kissed Skies",
+      "photographer": "Simon PALLARD",
+      "username": "simonpallard",
+      "ss_url": "https://www.sampleshots.com/photos/rzFYSzC49zE/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

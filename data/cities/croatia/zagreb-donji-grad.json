@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 45.80973,
     "lng": 15.96985
+  },
+  "media": {
+    "photo_ids": [
+      "rpphVi-wVs4"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1574456676380-40c9a9701a04?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMyMzk1MTh8&ixlib=rb-4.0.3",
+      "title": "Sunlit Rooftops of Zagreb",
+      "photographer": "Erin East",
+      "username": "mserineast",
+      "ss_url": "https://www.sampleshots.com/photos/rpphVi-wVs4/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

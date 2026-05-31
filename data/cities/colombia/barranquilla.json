@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 10.99386,
     "lng": -74.79261
+  },
+  "media": {
+    "photo_ids": [
+      "JzrTU1ruTnc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1587332064870-7ccfa02a94ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTI3OTcwNTB8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Skyward Glimpse of Barranquilla's Urban Landscape",
+      "photographer": "Dawin Rizzo",
+      "username": "dawinrizzo",
+      "ss_url": "https://www.sampleshots.com/photos/JzrTU1ruTnc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

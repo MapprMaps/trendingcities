@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 48.77845,
     "lng": 9.18001
+  },
+  "media": {
+    "photo_ids": [
+      "QYuJ6EE0mxw"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1722722835129-62f50e5f6389?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTI5NzE0NTN8&ixlib=rb-4.1.0",
+      "title": "The Heart of Stuttgart: A Stroll Through History",
+      "photographer": "Rob Hall",
+      "username": "robhall02",
+      "ss_url": "https://www.sampleshots.com/photos/QYuJ6EE0mxw/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

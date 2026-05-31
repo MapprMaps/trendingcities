@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -34.90589,
     "lng": -56.19131
+  },
+  "media": {
+    "photo_ids": [
+      "hv02Pqy8Tmw"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1602009906342-7c5c87346832?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjU3MjgwOTF8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Montevideo City",
+      "photographer": "Alexis Magnone",
+      "username": "alemagnone",
+      "ss_url": "https://www.sampleshots.com/photos/hv02Pqy8Tmw/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

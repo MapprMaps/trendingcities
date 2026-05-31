@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 50.11064,
     "lng": 8.68209
+  },
+  "media": {
+    "photo_ids": [
+      "vvDnZ_BypTs"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1668775955814-cd231f778adc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjU0MDQ0NzN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "a city skyline with a body of water in front of it",
+      "photographer": "Justin Luca Krause",
+      "username": "justinkra",
+      "ss_url": "https://www.sampleshots.com/photos/vvDnZ_BypTs/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 13.65317,
     "lng": 100.81826
+  },
+  "media": {
+    "photo_ids": [
+      "tOVo3jdyJqA"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1575656499764-c9794a3cbe33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NzM5MzI3MTN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Cylindrical Spire at Sunset: Cityscape’s Quiet Dominance",
+      "photographer": "Tuan Nguyen",
+      "username": "tuannguyen728",
+      "ss_url": "https://www.sampleshots.com/photos/tOVo3jdyJqA/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

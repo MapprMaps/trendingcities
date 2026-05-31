@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 36.76479,
     "lng": -4.4422
+  },
+  "media": {
+    "photo_ids": [
+      "mPw1d9pwZsI"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1612972806701-9cffb7470ed2?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDIwNzA3ODR8&ixlib=rb-4.0.3",
+      "title": "Sunlit Panorama of Malaga's Coastline",
+      "photographer": "Bas van der Linden",
+      "username": "basvdlinden98",
+      "ss_url": "https://www.sampleshots.com/photos/mPw1d9pwZsI/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

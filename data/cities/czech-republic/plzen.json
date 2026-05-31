@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 49.74774,
     "lng": 13.37752
+  },
+  "media": {
+    "photo_ids": [
+      "g0SwmavDd0c"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1658631708811-c57cbac2aa61?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMxMzcxMDd8&ixlib=rb-4.0.3",
+      "title": "Rooftop Mosaic Overlooking Historic Streets",
+      "photographer": "Victoria Chernitsova",
+      "username": "vichernika",
+      "ss_url": "https://www.sampleshots.com/photos/g0SwmavDd0c/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

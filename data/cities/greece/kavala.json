@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 40.93692,
     "lng": 24.41228
+  },
+  "media": {
+    "photo_ids": [
+      "53oNMGCRBMg"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1692086996356-d4bfc75b7d44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGNvbGxlY3Rpb258M3xCd3lkNGNIQnNnQXx8fHx8Mnx8MTc0MTE2OTM2OXw&ixlib=rb-4.0.3&q=80&w=1600",
+      "title": "Vibrant Tapestry of Kavala's Coastal Charm",
+      "photographer": "Chriso C",
+      "username": "chriso7",
+      "ss_url": "https://www.sampleshots.com/photos/53oNMGCRBMg/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

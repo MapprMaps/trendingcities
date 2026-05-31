@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 11.23209,
     "lng": -74.19509
+  },
+  "media": {
+    "photo_ids": [
+      "gv_DR74H3gc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1648927966984-5aaa6fb032e7?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDIzMzg1MTd8&ixlib=rb-4.0.3",
+      "title": "Serene Harbor: Boats Resting Under a Clear Sky",
+      "photographer": "William Pate",
+      "username": "willpate",
+      "ss_url": "https://www.sampleshots.com/photos/gv_DR74H3gc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

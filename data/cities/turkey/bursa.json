@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 40.18257,
     "lng": 29.0675
+  },
+  "media": {
+    "photo_ids": [
+      "5FcIdTnYUHU"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1585950425263-265dfd7a7094?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMyMzExODR8&ixlib=rb-4.0.3",
+      "title": "Urban Symmetry: The Journey Ahead",
+      "photographer": "Jiban Gezki",
+      "username": "mnur2020",
+      "ss_url": "https://www.sampleshots.com/photos/5FcIdTnYUHU/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 44.17672,
     "lng": 28.65076
+  },
+  "media": {
+    "photo_ids": [
+      "7yApPxqMFtE"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1630472099253-22a7ef314dbe?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDM0MTcyMjF8&ixlib=rb-4.0.3",
+      "title": "Seaside Skyline from Above",
+      "photographer": "Rx' Diaconu",
+      "username": "roxanadd",
+      "ss_url": "https://www.sampleshots.com/photos/7yApPxqMFtE/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

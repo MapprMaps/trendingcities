@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 63.43045,
     "lng": 10.39521
+  },
+  "media": {
+    "photo_ids": [
+      "FrIEdrTV6wY"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1667861669119-11c7539d12cc?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDM4MjU4MDl8&ixlib=rb-4.0.3",
+      "title": "Colorful Facades Along Trondheim's Waterfront",
+      "photographer": "Jonas Schöne",
+      "username": "schoene",
+      "ss_url": "https://www.sampleshots.com/photos/FrIEdrTV6wY/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

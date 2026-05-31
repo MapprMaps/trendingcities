@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 46.6357,
     "lng": 6.53207
+  },
+  "media": {
+    "photo_ids": [
+      "dQTNnp1Jb8E"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1603646049799-736bb072cec5?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMxNDcxNjN8&ixlib=rb-4.0.3",
+      "title": "Urban Panorama with Alpine Backdrop",
+      "photographer": "Nolan Krattinger",
+      "username": "odes",
+      "ss_url": "https://www.sampleshots.com/photos/dQTNnp1Jb8E/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

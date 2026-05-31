@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 53.34938,
     "lng": -6.26056
+  },
+  "media": {
+    "photo_ids": [
+      "Z6t2-hfunng"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1662042494231-f8bc6fd93f2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjkwMTUzNTJ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Arc Over the Liffey: The Samuel Beckett Bridge Framing Dublin's Skyline",
+      "photographer": "Carlos Torres",
+      "username": "elcarito",
+      "ss_url": "https://www.sampleshots.com/photos/Z6t2-hfunng/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 42.6977,
     "lng": 23.32174
+  },
+  "media": {
+    "photo_ids": [
+      "BniZvM_UKq8"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1455529141151-d17aac90e709?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDE5Mzc4NzV8&ixlib=rb-4.0.3",
+      "title": "Urban Tapestry from Above",
+      "photographer": "Georgi Kalaydzhiev",
+      "username": "jorok",
+      "ss_url": "https://www.sampleshots.com/photos/BniZvM_UKq8/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

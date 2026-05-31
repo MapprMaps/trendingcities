@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 45.75384,
     "lng": 21.22575
+  },
+  "media": {
+    "photo_ids": [
+      "u6BErka9Fvs"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1692017554125-fab59f2a3434?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMzNDgzNTJ8&ixlib=rb-4.0.3",
+      "title": "Vibrant Facades of Timisoara's Historic Quarter",
+      "photographer": "Red Frog Galati",
+      "username": "redfroggalati",
+      "ss_url": "https://www.sampleshots.com/photos/u6BErka9Fvs/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

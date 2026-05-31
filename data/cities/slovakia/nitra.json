@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 48.31295,
     "lng": 18.08946
+  },
+  "media": {
+    "photo_ids": [
+      "x7fydZvDdzQ"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1725607766896-843aaea62026?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMzNTU4Njl8&ixlib=rb-4.0.3",
+      "title": "Evening Glow Over Nitra's Historic Silhouette",
+      "photographer": "Tomas Valent",
+      "username": "equivalent",
+      "ss_url": "https://www.sampleshots.com/photos/x7fydZvDdzQ/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

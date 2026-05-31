@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 3.09888,
     "lng": 101.64542
+  },
+  "media": {
+    "photo_ids": [
+      "xiknhkC8t5Y"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1587887061780-66de5fff0cf4?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDM0MTM4Mjh8&ixlib=rb-4.0.3",
+      "title": "Urban Mosaic of Petaling Jaya",
+      "photographer": "Alfred",
+      "username": "alfredsd",
+      "ss_url": "https://www.sampleshots.com/photos/xiknhkC8t5Y/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

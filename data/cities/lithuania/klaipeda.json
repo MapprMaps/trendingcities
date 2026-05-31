@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 55.71275,
     "lng": 21.13505
+  },
+  "media": {
+    "photo_ids": [
+      "P-hRe4b8b9g"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1600110306971-6e13c9d52341?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTgzMDU0ODh8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Historic Harbor Serenity",
+      "photographer": "Arvydas Venckus",
+      "username": "arvydasv",
+      "ss_url": "https://www.sampleshots.com/photos/P-hRe4b8b9g/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

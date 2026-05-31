@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 43.25608,
     "lng": -79.87286
+  },
+  "media": {
+    "photo_ids": [
+      "4nWO9dvFUQQ"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1474502602016-93ddf42348aa?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI3MDY1MTd8&ixlib=rb-4.0.3",
+      "title": "Urban Horizon at Dawn's Edge",
+      "photographer": "Nadine E",
+      "username": "nadineshaabana",
+      "ss_url": "https://www.sampleshots.com/photos/4nWO9dvFUQQ/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

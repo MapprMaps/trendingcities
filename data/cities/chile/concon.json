@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -32.922,
     "lng": -71.51596
+  },
+  "media": {
+    "photo_ids": [
+      "eIzO16v2Kiw"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1581265550420-1954130f0884?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3Njc4MzQ2OTV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Footprints to the Skyline: Sand-Dune Frame Meets Distant Towers",
+      "photographer": "Trevor Vannoy",
+      "username": "tvannoy",
+      "ss_url": "https://www.sampleshots.com/photos/eIzO16v2Kiw/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

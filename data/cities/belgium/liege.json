@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 50.47081,
     "lng": 5.77357
+  },
+  "media": {
+    "photo_ids": [
+      "dVKsR0A6rdY"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1582584238513-a6d9c0eb9079?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI3MDY3MDJ8&ixlib=rb-4.0.3",
+      "title": "Urban Symphony Beneath Expansive Skies",
+      "photographer": "Albert Dehon",
+      "username": "albdhn",
+      "ss_url": "https://www.sampleshots.com/photos/dVKsR0A6rdY/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 34.69324,
     "lng": 135.19438
+  },
+  "media": {
+    "photo_ids": [
+      "xsjigA9CVq4"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1672492642573-e568b5a8bb3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjExMTM4MDV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Serene Skyline of Kobe at Dusk",
+      "photographer": "Clark Gu",
+      "username": "atluminon",
+      "ss_url": "https://www.sampleshots.com/photos/xsjigA9CVq4/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

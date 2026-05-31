@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 59.85861,
     "lng": 17.63874
+  },
+  "media": {
+    "photo_ids": [
+      "sXL7haSTU1o"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1595537814477-ce4e9d1d4e80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTYwODAyOTN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Autumnal Skyline: Spires Against the Sky",
+      "photographer": "Yang Yang",
+      "username": "mauriceyang",
+      "ss_url": "https://www.sampleshots.com/photos/sXL7haSTU1o/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

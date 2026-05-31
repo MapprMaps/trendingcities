@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 43.51164,
     "lng": 16.43997
+  },
+  "media": {
+    "photo_ids": [
+      "cPVRm1DsqRI"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1658739669280-6d4d0433835e?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTYxMjQ5MDh8&ixlib=rb-4.1.0",
+      "title": "A Tapestry of History and Nature Overlooking the Coast",
+      "photographer": "Arthur Hinton",
+      "username": "arthurhinton",
+      "ss_url": "https://www.sampleshots.com/photos/cPVRm1DsqRI/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

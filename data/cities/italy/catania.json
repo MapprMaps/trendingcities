@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 37.50236,
     "lng": 15.08737
+  },
+  "media": {
+    "photo_ids": [
+      "SYu314pVpd8"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1709376838085-5d3d555d9b33?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI2Njg0NjZ8&ixlib=rb-4.0.3",
+      "title": "Urban Skyline Beneath the Majestic Peak",
+      "photographer": "Lukas Janßen",
+      "username": "aloe_vera",
+      "ss_url": "https://www.sampleshots.com/photos/SYu314pVpd8/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

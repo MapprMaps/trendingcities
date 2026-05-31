@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -20.67188,
     "lng": -40.49846
+  },
+  "media": {
+    "photo_ids": [
+      "kYO9AbcKDuQ"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1674646517207-3ee9c0a12e1e?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDM0NDE0NzF8&ixlib=rb-4.0.3",
+      "title": "Coastal Harmony: Urban Edge Meets Ocean Waves",
+      "photographer": "wallace silva",
+      "username": "wsilvasjb",
+      "ss_url": "https://www.sampleshots.com/photos/kYO9AbcKDuQ/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

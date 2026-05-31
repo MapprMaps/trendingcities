@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 49.26087,
     "lng": -123.11395
+  },
+  "media": {
+    "photo_ids": [
+      "w6jlN-4Xg5k"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1721020914050-6cdaeede12cd?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI2NTcwMjZ8&ixlib=rb-4.0.3",
+      "title": "Urban Oasis with Majestic Mountain Backdrop",
+      "photographer": "Ibrahim Zada",
+      "username": "izada",
+      "ss_url": "https://www.sampleshots.com/photos/w6jlN-4Xg5k/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

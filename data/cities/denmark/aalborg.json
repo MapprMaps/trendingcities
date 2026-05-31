@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 57.04626,
     "lng": 9.92153
+  },
+  "media": {
+    "photo_ids": [
+      "ItScuDBcZyc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1592819847775-6310d3834c92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTk0NzIxNTB8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Green Oasis Amidst Urban Serenity",
+      "photographer": "Javier Rincón",
+      "username": "mj_rincon",
+      "ss_url": "https://www.sampleshots.com/photos/ItScuDBcZyc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

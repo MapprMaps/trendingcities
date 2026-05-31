@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -12.04598,
     "lng": -77.03059
+  },
+  "media": {
+    "photo_ids": [
+      "4YAhiaZkUfs"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1489171084589-9b5031ebcf9b?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDIzMzI0MTd8&ixlib=rb-4.0.3",
+      "title": "Urban Oasis Amidst the Skyline",
+      "photographer": "Dan Gold",
+      "username": "danielcgold",
+      "ss_url": "https://www.sampleshots.com/photos/4YAhiaZkUfs/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

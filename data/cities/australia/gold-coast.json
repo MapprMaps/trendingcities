@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -28.00237,
     "lng": 153.4146
+  },
+  "media": {
+    "photo_ids": [
+      "o5TTYcAlbHc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1582761370596-77a6a42350d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGNvbGxlY3Rpb258MXxDclF5cnRyWmdJY3x8fHx8Mnx8MTc0MDYyMzYwMXw&ixlib=rb-4.0.3&q=80&w=1600",
+      "title": "Golden Horizon Over Urban Waves",
+      "photographer": "City of Gold Coast",
+      "username": "cityofgoldcoast",
+      "ss_url": "https://www.sampleshots.com/photos/o5TTYcAlbHc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

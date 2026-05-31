@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 4.78546,
     "lng": -75.78832
+  },
+  "media": {
+    "photo_ids": [
+      "bF5Lj0xB6D4"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1580231615908-ff91f07c3432?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMyODA2NTh8&ixlib=rb-4.0.3",
+      "title": "Golden Hour in Pereira's Heart",
+      "photographer": "Cristhian Valencia",
+      "username": "vlycser",
+      "ss_url": "https://www.sampleshots.com/photos/bF5Lj0xB6D4/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

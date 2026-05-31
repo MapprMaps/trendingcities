@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 49.84195,
     "lng": 24.03159
+  },
+  "media": {
+    "photo_ids": [
+      "pid5i6gBe0I"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1629805491891-8e17a72248e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjIyMTY3MDN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Timeless Towers: A Glimpse into Lviv's Skyline",
+      "photographer": "Anna Berdnik",
+      "username": "berdnika",
+      "ss_url": "https://www.sampleshots.com/photos/pid5i6gBe0I/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

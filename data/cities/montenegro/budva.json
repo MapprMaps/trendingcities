@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 42.28857,
     "lng": 18.84195
+  },
+  "media": {
+    "photo_ids": [
+      "3XIMtgEnD0c"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1642108244589-c77e9ac85a07?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjE3NDEyOTV8&ixlib=rb-4.1.0",
+      "title": "Coastal Serenity: A Glimpse of Historic Montenegro",
+      "photographer": "Mujo Hasanovic",
+      "username": "mujoh",
+      "ss_url": "https://www.sampleshots.com/photos/3XIMtgEnD0c/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

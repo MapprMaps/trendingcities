@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 59.91333,
     "lng": 10.73897
+  },
+  "media": {
+    "photo_ids": [
+      "s4JItrHdDNc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1715614178466-9b66323de388?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA4OTgzMTJ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Architectural Harmony by the Fjord",
+      "photographer": "Andriy Oliynyk",
+      "username": "oliynykan",
+      "ss_url": "https://www.sampleshots.com/photos/s4JItrHdDNc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

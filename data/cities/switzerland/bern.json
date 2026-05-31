@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 46.94847,
     "lng": 7.45217
+  },
+  "media": {
+    "photo_ids": [
+      "jF7U3wadbd0"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1594093880970-7b4295e8b6c3?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI5MTYwNjd8&ixlib=rb-4.0.3",
+      "title": "Historic Skyline Embrace",
+      "photographer": "Omar M.",
+      "username": "omareightysix",
+      "ss_url": "https://www.sampleshots.com/photos/jF7U3wadbd0/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

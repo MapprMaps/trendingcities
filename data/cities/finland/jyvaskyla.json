@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 62.24167,
     "lng": 25.74958
+  },
+  "media": {
+    "photo_ids": [
+      "Nu7Kr7w7O1c"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1593947593622-43676fb47751?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NzAzOTQwODN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Sunlit Patchwork: A Bird's-Eye View of a Hillside Town",
+      "photographer": "K8",
+      "username": "_k8_",
+      "ss_url": "https://www.sampleshots.com/photos/Nu7Kr7w7O1c/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

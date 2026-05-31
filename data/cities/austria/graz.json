@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 47.07087,
     "lng": 15.43828
+  },
+  "media": {
+    "photo_ids": [
+      "ZxR3uOSqxlM"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1581867572176-84ba15ce4906?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMxMDI5MDZ8&ixlib=rb-4.0.3",
+      "title": "Urban Ascent: Funicular Journey Above Graz",
+      "photographer": "Daniela Turcanu",
+      "username": "protopopica",
+      "ss_url": "https://www.sampleshots.com/photos/ZxR3uOSqxlM/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

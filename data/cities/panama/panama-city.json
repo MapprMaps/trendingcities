@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 8.97145,
     "lng": -79.53418
+  },
+  "media": {
+    "photo_ids": [
+      "rhHIEtBPD5A"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1598041543955-0d88c390f3b5?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDIwMzA0MTJ8&ixlib=rb-4.0.3",
+      "title": "Vertical Symphony by the Sea",
+      "photographer": "JACQUELINE BRANDWAYN",
+      "username": "lajaxx",
+      "ss_url": "https://www.sampleshots.com/photos/rhHIEtBPD5A/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

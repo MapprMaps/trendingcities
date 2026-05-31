@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 18.44374,
     "lng": -66.0256
+  },
+  "media": {
+    "photo_ids": [
+      "wo5Ayd4HbaE"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1566447086402-f05c04098057?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDU0MTU0MTV8&ixlib=rb-4.0.3",
+      "title": "Urban Harmony Under Cloud-Kissed Skies",
+      "photographer": "Stephanie Klepacki",
+      "username": "sklepacki",
+      "ss_url": "https://www.sampleshots.com/photos/wo5Ayd4HbaE/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

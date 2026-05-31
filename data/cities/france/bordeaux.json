@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 44.84123,
     "lng": -0.58004
+  },
+  "media": {
+    "photo_ids": [
+      "m_xxm-o2KxE"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1707257833324-365c896c607a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA1NzQ1OTV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Guardian of the City: A Sentinel in the Skyline",
+      "photographer": "Tiphaine Sauveur",
+      "username": "by_tifn",
+      "ss_url": "https://www.sampleshots.com/photos/m_xxm-o2KxE/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

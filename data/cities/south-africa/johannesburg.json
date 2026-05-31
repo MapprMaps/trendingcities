@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -26.205,
     "lng": 28.04972
+  },
+  "media": {
+    "photo_ids": [
+      "_h-L45TSmGM"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1636706519609-988babca3dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTc1OTI1NjB8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Glow: Cityscape with Evening Train",
+      "photographer": "Simon Hurry",
+      "username": "bullterriere",
+      "ss_url": "https://www.sampleshots.com/photos/_h-L45TSmGM/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

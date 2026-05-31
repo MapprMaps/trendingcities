@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 4.65338,
     "lng": -74.08363
+  },
+  "media": {
+    "photo_ids": [
+      "cmo76qKvNaU"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1622432866666-26f106904a19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTU3OTk3MTJ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Canopy: Aerial Harmony Meets Architectural Heights",
+      "photographer": "Alejandro Alfaro M",
+      "username": "alejo9226",
+      "ss_url": "https://www.sampleshots.com/photos/cmo76qKvNaU/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

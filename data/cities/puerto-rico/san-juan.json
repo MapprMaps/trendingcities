@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 18.38424,
     "lng": -66.05344
+  },
+  "media": {
+    "photo_ids": [
+      "6j8jvldZwgo"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1602025324203-b0d03c868993?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI3MDc1NzF8&ixlib=rb-4.0.3",
+      "title": "Coastal Harmony: Urban Skyline Meets Ocean Waves",
+      "photographer": "Beiheng Guo",
+      "username": "lewistontheway",
+      "ss_url": "https://www.sampleshots.com/photos/6j8jvldZwgo/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

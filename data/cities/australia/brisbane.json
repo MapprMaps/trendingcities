@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -27.46896,
     "lng": 153.0235
+  },
+  "media": {
+    "photo_ids": [
+      "G7RT9L6gP_Y"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1577455120890-055a70121376?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI2Njc2NDJ8&ixlib=rb-4.0.3",
+      "title": "Urban Oasis: Cityscape Beyond the Green Canopy",
+      "photographer": "Javier Quiroga",
+      "username": "javiertenenbaum",
+      "ss_url": "https://www.sampleshots.com/photos/G7RT9L6gP_Y/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

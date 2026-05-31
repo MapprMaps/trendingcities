@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 56.32648,
     "lng": 44.00514
+  },
+  "media": {
+    "photo_ids": [
+      "kytQLoMl5e0"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1666375704352-18561abe7ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjQwNzI1NzN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Kremlin, centre of the city, 25.09.22",
+      "photographer": "Alexandra Komen",
+      "username": "alexkom856",
+      "ss_url": "https://www.sampleshots.com/photos/kytQLoMl5e0/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

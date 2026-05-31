@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -33.4377,
     "lng": -70.65107
+  },
+  "media": {
+    "photo_ids": [
+      "ViSUTyypfrc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1535479086554-4f8020786206?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NzcxOTc5MTJ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Needle: Gran Torre Santiago Against the Andean Horizon",
+      "photographer": "Juan Pablo Ahumada",
+      "username": "jpahca90",
+      "ss_url": "https://www.sampleshots.com/photos/ViSUTyypfrc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

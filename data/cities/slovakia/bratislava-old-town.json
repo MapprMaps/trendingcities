@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 48.15344,
     "lng": 17.1151
+  },
+  "media": {
+    "photo_ids": [
+      "ljJUNYMvGAg"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1610437210770-f09fbc609838?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTUzNjc4OTd8&ixlib=rb-4.1.0",
+      "title": "Timeless Skyline: A Glimpse into Bratislava's Architectural Heritage",
+      "photographer": "Trnava University",
+      "username": "trnavskauni",
+      "ss_url": "https://www.sampleshots.com/photos/ljJUNYMvGAg/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

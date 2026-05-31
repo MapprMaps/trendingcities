@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 39.46971,
     "lng": -0.37634
+  },
+  "media": {
+    "photo_ids": [
+      "fhCDJ1lTCRk"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1574651871048-bfa6ba4c3268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjQ2MjI4MzF8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Rooftop view of Valencia.",
+      "photographer": "Howie Mapson",
+      "username": "howiehowei",
+      "ss_url": "https://www.sampleshots.com/photos/fhCDJ1lTCRk/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

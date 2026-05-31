@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 22.18994,
     "lng": 113.53805
+  },
+  "media": {
+    "photo_ids": [
+      "HR2awndNZi8"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1584640962068-f860edeb6f12?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTcyMjU1MDd8&ixlib=rb-4.1.0",
+      "title": "Golden Lotus: The Icon of Macau's Skyline",
+      "photographer": "Ray F",
+      "username": "ray86869",
+      "ss_url": "https://www.sampleshots.com/photos/HR2awndNZi8/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

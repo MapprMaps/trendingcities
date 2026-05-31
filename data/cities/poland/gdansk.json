@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 54.4288,
     "lng": 18.79833
+  },
+  "media": {
+    "photo_ids": [
+      "IFVdKH-9VnI"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1614706522012-9e4c9c4b5e2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTMxNDI4Nzd8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Historic Skyline of Gdańsk under Clear Skies",
+      "photographer": "Vitaliy Gavrushchenko",
+      "username": "gavrushchenko",
+      "ss_url": "https://www.sampleshots.com/photos/IFVdKH-9VnI/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

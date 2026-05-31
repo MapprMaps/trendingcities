@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 47.79813,
     "lng": 13.04648
+  },
+  "media": {
+    "photo_ids": [
+      "AqAujn67fqM"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1603530066651-32c3a4cb09f3?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI2NzA5NTB8&ixlib=rb-4.0.3",
+      "title": "Historical Skyline Beneath Majestic Clouds",
+      "photographer": "Marina Ahammer",
+      "username": "maha4597",
+      "ss_url": "https://www.sampleshots.com/photos/AqAujn67fqM/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

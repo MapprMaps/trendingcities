@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -20.27897,
     "lng": 57.36914
+  },
+  "media": {
+    "photo_ids": [
+      "6UfoB1LFg6M"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1651104677157-f14b80602682?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMyNzYzMTN8&ixlib=rb-4.0.3",
+      "title": "Coastal Harmony: Urban and Oceanic Interplay",
+      "photographer": "Anton Marchuk",
+      "username": "tatarbunarin",
+      "ss_url": "https://www.sampleshots.com/photos/6UfoB1LFg6M/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

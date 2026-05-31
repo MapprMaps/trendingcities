@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 34.7744,
     "lng": 32.42316
+  },
+  "media": {
+    "photo_ids": [
+      "y0EQ1ztE4BQ"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1631087090375-930bb123be0a?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDIyODUxNDd8&ixlib=rb-4.0.3",
+      "title": "Coastal Harmony: Where Ancient Lands Meet Modern Shores",
+      "photographer": "Dyomir Kalaitsev",
+      "username": "dio_kal",
+      "ss_url": "https://www.sampleshots.com/photos/y0EQ1ztE4BQ/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 24.45384,
     "lng": 54.3774
+  },
+  "media": {
+    "photo_ids": [
+      "hNg-zO_mHQk"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1603565095944-2a6f33bb517c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA1NzQ3NDV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Oasis: Abu Dhabi's Coastal Skyline",
+      "photographer": "Nick Fewings",
+      "username": "jannerboy62",
+      "ss_url": "https://www.sampleshots.com/photos/hNg-zO_mHQk/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

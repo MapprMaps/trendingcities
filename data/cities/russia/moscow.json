@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 55.62558,
     "lng": 37.60639
+  },
+  "media": {
+    "photo_ids": [
+      "X_Kz8viER3s"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1670997630182-d6176774417e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGNvbGxlY3Rpb258N3xKZ19ZaVJ3cDYtY3x8fHx8Mnx8MTc0MTE0MzU0OHw&ixlib=rb-4.0.3&q=80&w=1600",
+      "title": "Golden Hues Over Moscow's Skyline",
+      "photographer": "Veronika Klimchuk",
+      "username": "nikkilimkin",
+      "ss_url": "https://www.sampleshots.com/photos/X_Kz8viER3s/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

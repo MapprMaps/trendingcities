@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 36.16743,
     "lng": -115.14841
+  },
+  "media": {
+    "photo_ids": [
+      "3NrET4bLM4Y"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1730754030469-4f07790b577e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjYyMzIzMjV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Gilded Glass Tower and Pyramid Beacon Over a Las Vegas Skyline",
+      "photographer": "Flavio Waser",
+      "username": "flawas",
+      "ss_url": "https://www.sampleshots.com/photos/3NrET4bLM4Y/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

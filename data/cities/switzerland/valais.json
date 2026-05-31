@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 46.23031,
     "lng": 7.66058
+  },
+  "media": {
+    "photo_ids": [
+      "W2pV5q1Ilzw"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1667748146658-03598c9f5721?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjYzODA1Mjh8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "a town below a mountain",
+      "photographer": "Ilia Bronskiy",
+      "username": "idbronskiy",
+      "ss_url": "https://www.sampleshots.com/photos/W2pV5q1Ilzw/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

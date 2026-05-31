@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 32.81912,
     "lng": 34.99839
+  },
+  "media": {
+    "photo_ids": [
+      "jY_1Cyt_4b8"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1624143523387-e8a8ba21e42a?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA2ODE0MDZ8&ixlib=rb-4.1.0",
+      "title": "Urban Symphony: A Coastal Cityscape",
+      "photographer": "Levi Meir Clancy",
+      "username": "levimeirclancy",
+      "ss_url": "https://www.sampleshots.com/photos/jY_1Cyt_4b8/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

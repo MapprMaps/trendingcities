@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 47.60383,
     "lng": -122.33006
+  },
+  "media": {
+    "photo_ids": [
+      "seDjEQZkBOY"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1696605837787-c79ffcf6d8f5?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjE0NTg5NDZ8&ixlib=rb-4.1.0",
+      "title": "Urban Silhouettes: The Seattle Skyline at Dusk",
+      "photographer": "Willian Justen de Vasconcellos",
+      "username": "willianjusten",
+      "ss_url": "https://www.sampleshots.com/photos/seDjEQZkBOY/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

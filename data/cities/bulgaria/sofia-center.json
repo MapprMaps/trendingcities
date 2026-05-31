@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 42.6977,
     "lng": 23.32174
+  },
+  "media": {
+    "photo_ids": [
+      "U_7473luWPg"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1585645740103-36761f582c22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTg5MzIyNzh8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Oasis: Cityscape Embraced by Nature",
+      "photographer": "Roaming Pictures",
+      "username": "roamingpictures",
+      "ss_url": "https://www.sampleshots.com/photos/U_7473luWPg/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

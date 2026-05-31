@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 34.02185,
     "lng": -6.84089
+  },
+  "media": {
+    "photo_ids": [
+      "PqX7EELWjh0"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1598022124758-26d09adcb7b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjAyOTM0MzJ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Golden Hour at Rabat's Iconic Landmark",
+      "photographer": "mehdi lamaaffar",
+      "username": "mehdi_lamaaffar",
+      "ss_url": "https://www.sampleshots.com/photos/PqX7EELWjh0/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

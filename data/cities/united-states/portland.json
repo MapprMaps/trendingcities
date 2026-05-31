@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 45.52025,
     "lng": -122.67419
+  },
+  "media": {
+    "photo_ids": [
+      "HIjFu082zFk"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1438955224980-4f333574560d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA4NTUxNTh8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Harmony: Cityscape Embraced by Nature",
+      "photographer": "Andrey Yachmenov",
+      "username": "yachmenov",
+      "ss_url": "https://www.sampleshots.com/photos/HIjFu082zFk/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

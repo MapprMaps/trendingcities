@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 22.28183,
     "lng": 114.15828
+  },
+  "media": {
+    "photo_ids": [
+      "QhcObh11GyA"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1728839753246-90337bdb5dcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjQwODY2NzV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Harbor Silhouettes: Glass Spires Rise Over a Calm Waterfront",
+      "photographer": "Christie Chau",
+      "username": "christiechau",
+      "ss_url": "https://www.sampleshots.com/photos/QhcObh11GyA/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 37.88458,
     "lng": -4.77601
+  },
+  "media": {
+    "photo_ids": [
+      "LCXnlxFYBkQ"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1707583056849-4c8a7fb5570d?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMwOTkzNTR8&ixlib=rb-4.0.3",
+      "title": "Twilight Over the Ancient Bridge",
+      "photographer": "Jordi Vich Navarro",
+      "username": "jvich",
+      "ss_url": "https://www.sampleshots.com/photos/LCXnlxFYBkQ/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

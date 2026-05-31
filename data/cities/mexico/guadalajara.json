@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 20.67204,
     "lng": -103.3384
+  },
+  "media": {
+    "photo_ids": [
+      "R2e7JvTC9J8"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1709066677338-5df32ba43697?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI0MTg1NzZ8&ixlib=rb-4.0.3",
+      "title": "Urban Panorama with Architectural Contrast",
+      "photographer": "Sergio Rodríguez",
+      "username": "sergiordgz",
+      "ss_url": "https://www.sampleshots.com/photos/R2e7JvTC9J8/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

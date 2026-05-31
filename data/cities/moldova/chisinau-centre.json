@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 47.02922,
     "lng": 28.83813
+  },
+  "media": {
+    "photo_ids": [
+      "iiT_ZHbJyLM"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1593517667260-7b4c3ab229d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjE4MDU5NjR8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Panorama Under Overcast Skies",
+      "photographer": "Vitalie Sitnic",
+      "username": "vitalisit",
+      "ss_url": "https://www.sampleshots.com/photos/iiT_ZHbJyLM/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 45.42088,
     "lng": -75.69011
+  },
+  "media": {
+    "photo_ids": [
+      "TlA1QqhYnnY"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1581225988470-afc564b38ba4?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTcwMzE4NzR8&ixlib=rb-4.1.0",
+      "title": "A Glimpse of History Amidst Modernity",
+      "photographer": "Erik Mclean",
+      "username": "introspectivedsgn",
+      "ss_url": "https://www.sampleshots.com/photos/TlA1QqhYnnY/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

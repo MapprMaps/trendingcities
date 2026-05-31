@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 38.11123,
     "lng": 13.35244
+  },
+  "media": {
+    "photo_ids": [
+      "rDQhm-8WV5g"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1600552075974-3554ccabf596?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjE3ODI1NTd8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Mediterranean Urban Panorama",
+      "photographer": "Roaming Pictures",
+      "username": "roamingpictures",
+      "ss_url": "https://www.sampleshots.com/photos/rDQhm-8WV5g/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

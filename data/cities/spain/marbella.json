@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 36.50748,
     "lng": -4.80472
+  },
+  "media": {
+    "photo_ids": [
+      "YH20D0197eo"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1572899437526-c26571772193?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI3MjcyNDV8&ixlib=rb-4.0.3",
+      "title": "Harmonious Urban and Natural Landscape from Above",
+      "photographer": "Robert Kovacevic",
+      "username": "pixel19",
+      "ss_url": "https://www.sampleshots.com/photos/YH20D0197eo/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

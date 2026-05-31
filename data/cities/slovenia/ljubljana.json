@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 46.05003,
     "lng": 14.50693
+  },
+  "media": {
+    "photo_ids": [
+      "YN5USP2srrE"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1731537271897-94ca2f2eb0ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA5MTg5MTB8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Harmony: A Colorful Intersection of History and Modernity",
+      "photographer": "Henry Ren",
+      "username": "henryren",
+      "ss_url": "https://www.sampleshots.com/photos/YN5USP2srrE/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

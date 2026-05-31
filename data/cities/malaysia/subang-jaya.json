@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 3.05149,
     "lng": 101.58233
+  },
+  "media": {
+    "photo_ids": [
+      "HWTg4GkPXJw"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1709754954361-c36e86f75fa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjQwNjE1NDN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Glass Needle and Tower Crown: Dusk Over a Modern City Skyline",
+      "photographer": "Najib Samatar",
+      "username": "samatarstudios",
+      "ss_url": "https://www.sampleshots.com/photos/HWTg4GkPXJw/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

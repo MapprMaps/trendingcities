@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 60.16662,
     "lng": 24.94354
+  },
+  "media": {
+    "photo_ids": [
+      "tFnZnjYrd9g"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1683119167031-19bf5bd185de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTk1Mzc0Nzl8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Symphony: A Glimpse of Helsinki's Skyline",
+      "photographer": "Martti Salmi",
+      "username": "marttisalmi",
+      "ss_url": "https://www.sampleshots.com/photos/tFnZnjYrd9g/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

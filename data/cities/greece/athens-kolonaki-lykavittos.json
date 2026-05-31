@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 37.97556,
     "lng": 23.73483
+  },
+  "media": {
+    "photo_ids": [
+      "zcTnYRW4pGc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1504050376847-144186a87c66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjQxMDgyMjd8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Athens Cityscape",
+      "photographer": "Yannis Papanastasopoulos",
+      "username": "yannispap",
+      "ss_url": "https://www.sampleshots.com/photos/zcTnYRW4pGc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

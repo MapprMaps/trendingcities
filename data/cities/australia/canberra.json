@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": -35.29759,
     "lng": 149.10127
+  },
+  "media": {
+    "photo_ids": [
+      "V_pvQ96focY"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1611231731916-826fe315c533?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI3MTcyMzV8&ixlib=rb-4.0.3",
+      "title": "Urban Silhouette Against a Vibrant Sky",
+      "photographer": "Daniel Morton",
+      "username": "themortz",
+      "ss_url": "https://www.sampleshots.com/photos/V_pvQ96focY/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

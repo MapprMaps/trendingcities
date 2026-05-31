@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 49.61146,
     "lng": 6.10792
+  },
+  "media": {
+    "photo_ids": [
+      "umsmLWESOrk"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1593131540915-5f04482fc6de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjUzNzIzMzR8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Luxembourg",
+      "photographer": "Yuri Li",
+      "username": "itshoobastank",
+      "ss_url": "https://www.sampleshots.com/photos/umsmLWESOrk/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

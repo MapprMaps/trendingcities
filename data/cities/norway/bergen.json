@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 60.39431,
     "lng": 5.32592
+  },
+  "media": {
+    "photo_ids": [
+      "l9Drq2W234U"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1623219298185-dd88ef07820e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA4NzU5Mzl8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Harmony: A Glimpse of Bergen's Landscape",
+      "photographer": "Marcel Ardivan",
+      "username": "worldsofmaru",
+      "ss_url": "https://www.sampleshots.com/photos/l9Drq2W234U/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

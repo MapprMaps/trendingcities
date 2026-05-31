@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 32.0853,
     "lng": 34.78181
+  },
+  "media": {
+    "photo_ids": [
+      "AzZqSkG7zec"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1528565601451-339ada44a73a?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDI5Mzg4Njd8&ixlib=rb-4.0.3",
+      "title": "Urban Harmony in Tel Aviv",
+      "photographer": "Blake Campbell",
+      "username": "blakecampbell",
+      "ss_url": "https://www.sampleshots.com/photos/AzZqSkG7zec/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

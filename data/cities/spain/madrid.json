@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 40.41678,
     "lng": -3.70351
+  },
+  "media": {
+    "photo_ids": [
+      "G6_h7Vu7r2Y"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1712174453508-63882bfcd4af?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTU0OTgwODV8&ixlib=rb-4.1.0",
+      "title": "Architectural Harmony: A Glimpse of Madrid's Grandeur",
+      "photographer": "Dmitrii E.",
+      "username": "dmitriielj",
+      "ss_url": "https://www.sampleshots.com/photos/G6_h7Vu7r2Y/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

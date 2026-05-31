@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 37.38863,
     "lng": -5.99534
+  },
+  "media": {
+    "photo_ids": [
+      "4v8fxKEs9WA"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1508242348618-ec606da0b3e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3Njk2ODExNzR8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Seville’s Cathedral Framed by Sunlit Terracotta Rooftops",
+      "photographer": "Jaime Ruedas",
+      "username": "jaimeruedas",
+      "ss_url": "https://www.sampleshots.com/photos/4v8fxKEs9WA/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }
