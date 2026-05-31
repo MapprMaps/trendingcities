@@ -25,9 +25,27 @@ def git(*a, check=True):
         sys.exit(f"git {' '.join(a)} failed: {r.stderr.strip()}")
     return r.stdout.strip()
 
+def get_token():
+    """Prefer GITHUB_TOKEN; otherwise mint a GitHub App installation token so the
+    PR is authored by trendingcities-agent[bot] (set GH_APP_ID + GH_APP_PRIVATE_KEY[_PATH])."""
+    t = os.environ.get("GITHUB_TOKEN")
+    if t:
+        return t
+    here = os.path.dirname(os.path.abspath(__file__))
+    out = subprocess.run([sys.executable, os.path.join(here, "gh-app-token.py")],
+                         capture_output=True, text=True)
+    if out.returncode != 0:
+        sys.exit("could not get a token (set GITHUB_TOKEN, or GH_APP_ID + key): " + out.stderr.strip())
+    return out.stdout.strip()
+
+TOKEN = None
+
 def api(method, path, data=None):
+    global TOKEN
+    if TOKEN is None:
+        TOKEN = get_token()
     req = urllib.request.Request("https://api.github.com" + path, method=method,
-        headers={"Authorization": "token " + os.environ["GITHUB_TOKEN"],
+        headers={"Authorization": "token " + TOKEN,
                  "Accept": "application/vnd.github+json", "User-Agent": "tc-agent"})
     if data is not None:
         req.data = json.dumps(data).encode(); req.add_header("Content-Type", "application/json")

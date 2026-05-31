@@ -62,7 +62,7 @@ jobs:
             // Auto-merge gate: clean + high-confidence QC AND the PR author is a
             // trusted agent identity (spoof-proof, unlike a label or branch name).
             // Empty list => auto-merge effectively off (safe default).
-            const AGENT_AUTHORS = ['aderosi']; // TODO: swap for a dedicated agent bot account
+            const AGENT_AUTHORS = ['trendingcities-agent[bot]']; // dedicated agent bot identity (GitHub App)
             const author = context.payload.pull_request.user.login;
             if (v.auto_mergeable && AGENT_AUTHORS.includes(author)) {
               try {
