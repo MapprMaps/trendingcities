@@ -18,7 +18,7 @@
       "confidence": "medium"
     },
     "home_price_2bed_usd": {
-      "value": 249000,
+      "value": 230000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
@@ -30,7 +30,7 @@
       "confidence": "medium"
     },
     "home_price_3bed_usd": {
-      "value": 230000,
+      "value": 249000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [

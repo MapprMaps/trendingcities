@@ -6,7 +6,7 @@
   "country_code": "TR",
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 87000,
+      "value": 80000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
@@ -18,7 +18,7 @@
       "confidence": "medium"
     },
     "home_price_2bed_usd": {
-      "value": 80000,
+      "value": 87000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [

@@ -6,7 +6,7 @@
   "country_code": "MY",
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 191000,
+      "value": 147000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
@@ -30,7 +30,7 @@
       "confidence": "medium"
     },
     "home_price_3bed_usd": {
-      "value": 147000,
+      "value": 191000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [

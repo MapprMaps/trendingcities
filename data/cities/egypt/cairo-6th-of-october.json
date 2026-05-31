@@ -6,18 +6,6 @@
   "country_code": "EG",
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 203000,
-      "unit": "USD",
-      "as_of": "2026-05",
-      "sources": [
-        "globalpropertyguide",
-        "numbeo",
-        "web"
-      ],
-      "method": "cross-source-median",
-      "confidence": "medium"
-    },
-    "home_price_2bed_usd": {
       "value": 179000,
       "unit": "USD",
       "as_of": "2026-05",
@@ -29,8 +17,20 @@
       "method": "cross-source-median",
       "confidence": "medium"
     },
-    "home_price_3bed_usd": {
+    "home_price_2bed_usd": {
       "value": 188000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 203000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [

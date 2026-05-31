@@ -6,7 +6,7 @@
   "country_code": "CO",
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 88000,
+      "value": 79000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
@@ -18,7 +18,7 @@
       "confidence": "medium"
     },
     "home_price_2bed_usd": {
-      "value": 79000,
+      "value": 88000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
