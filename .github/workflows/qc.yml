@@ -56,7 +56,11 @@ jobs:
             }
 
             // labels reflect the verdict (best-effort — never block on labels)
+            const MANAGED = ['qc-pass', 'qc-fail', 'needs-review'];
             const add = v.overall_pass ? (v.auto_mergeable ? ['qc-pass'] : ['qc-pass', 'needs-review']) : ['qc-fail'];
+            for (const stale of MANAGED.filter(l => !add.includes(l))) {
+              try { await github.rest.issues.removeLabel({ owner, repo, issue_number: number, name: stale }); } catch (e) { /* not present */ }
+            }
             try { await github.rest.issues.addLabels({ owner, repo, issue_number: number, labels: add }); }
             catch (e) { core.warning('label add failed: ' + e.message); }
 
