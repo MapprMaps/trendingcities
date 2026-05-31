@@ -6,45 +6,42 @@
   "country_code": "AU",
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 695000,
+      "value": 5000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
-        "globalpropertyguide",
-        "numbeo",
-        "web"
+        "community"
       ],
-      "method": "cross-source-median",
-      "confidence": "medium"
+      "method": "community-submission",
+      "confidence": "low",
+      "notes": "I am Micky Mouse and this is just a fun test."
     },
     "home_price_2bed_usd": {
-      "value": 1252000,
+      "value": 100000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
-        "globalpropertyguide",
-        "numbeo",
-        "web"
+        "community"
       ],
-      "method": "cross-source-median",
-      "confidence": "medium"
+      "method": "community-submission",
+      "confidence": "low",
+      "notes": "I am Micky Mouse and this is just a fun test."
     },
     "home_price_3bed_usd": {
-      "value": 3477000,
+      "value": 200000,
       "unit": "USD",
       "as_of": "2026-05",
       "sources": [
-        "globalpropertyguide",
-        "numbeo",
-        "web"
+        "community"
       ],
-      "method": "cross-source-median",
-      "confidence": "medium"
+      "method": "community-submission",
+      "confidence": "low",
+      "notes": "I am Micky Mouse and this is just a fun test."
     }
   },
   "provenance": {
-    "compiled_by": "starter-2026.1",
-    "compiled_at": "2026-05-31",
-    "status": "published"
+    "compiled_by": "community",
+    "compiled_at": "2026-05-01",
+    "status": "draft"
   }
 }
