@@ -53,16 +53,16 @@
   },
   "media": {
     "photo_ids": [
-      "54545517958"
+      "hFaPkmOH4h4"
     ],
     "hero": {
-      "url": "https://live.staticflickr.com/65535/54545517958_396b9cdbda_b.jpg",
-      "title": "Berlin City Center Panorama from Lustgarten: Berliner Dom, Museum Island, and Skyline (May 16, 2025)",
-      "photographer": "cseeman",
-      "username": "cseeman",
-      "ss_url": "https://www.sampleshots.com/flickr-photos/54545517958/",
-      "source": "flickr",
-      "license": "Attribution-NonCommercial-ShareAlike License"
+      "url": "https://images.unsplash.com/photo-1708532398949-26e022012c1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjMxODI5NTV8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Toward the Tower: A Monochrome Riverside Skyline",
+      "photographer": "Don Fontijn",
+      "username": "donfontijn",
+      "ss_url": "https://www.sampleshots.com/photos/hFaPkmOH4h4/",
+      "source": "unsplash",
+      "license": "Unsplash License"
     }
   }
 }
