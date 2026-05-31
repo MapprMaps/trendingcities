@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 52.51739,
     "lng": 13.39513
+  },
+  "media": {
+    "photo_ids": [
+      "54545517958"
+    ],
+    "hero": {
+      "url": "https://live.staticflickr.com/65535/54545517958_396b9cdbda_b.jpg",
+      "title": "Berlin City Center Panorama from Lustgarten: Berliner Dom, Museum Island, and Skyline (May 16, 2025)",
+      "photographer": "",
+      "source": "flickr",
+      "license": "Attribution-NonCommercial-ShareAlike License"
+    }
   }
 }

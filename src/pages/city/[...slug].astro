@@ -47,23 +47,48 @@ const breadcrumbLd = {
   ogType="article"
   jsonLd={[jsonLd, breadcrumbLd]}
 >
-  <section class="page-head">
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="/">Home</a><span>/</span>
-        <span>{city.country}</span><span>/</span>
-        <span style="color:var(--fg-2)">{city.city}</span>
+  {city.hero ? (
+    <section class="city-hero">
+      <img src={city.hero.url} alt={`${city.city}, ${city.country}`} loading="eager" decoding="async" crossorigin="anonymous" />
+      <div class="city-hero__scrim"></div>
+      <div class="city-hero__overlay">
+        <div class="container">
+          <div class="breadcrumb breadcrumb--photo">
+            <a href="/">Home</a><span>/</span><span>{city.country}</span><span>/</span><span>{city.city}</span>
+          </div>
+          <h1 class="tc-h1">{city.city}</h1>
+          <div class="affordline">
+            <span class="tc-secondary" style="color:rgba(255,255,255,.85)">{city.country}</span>
+            <span class={`tc-badge ${cheaper ? 'tc-badge--park' : 'tc-badge--down'}`}>
+              {cheaper ? 'Below global median' : 'Above global median'} · {pct(d3)} (3-bed)
+            </span>
+          </div>
+        </div>
       </div>
-      <h1 class="tc-h1">{city.city}</h1>
-      <div class="affordline">
-        <span class="tc-secondary">{city.country}</span>
-        <span class={`tc-badge ${cheaper ? 'tc-badge--park' : 'tc-badge--down'}`}>
-          {cheaper ? 'Below global median' : 'Above global median'} · {pct(d3)} (3-bed)
-        </span>
+      <span class="city-hero__credit">Photo: {city.hero.photographer || 'Unknown'} / {city.hero.source === 'unsplash' ? 'Unsplash' : city.hero.source}</span>
+    </section>
+    <section class="section" style="padding-block:28px 0">
+      <div class="container"><p class="tc-lg tc-secondary" style="max-width:680px;margin:0">{summary}</p></div>
+    </section>
+  ) : (
+    <section class="page-head">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">Home</a><span>/</span>
+          <span>{city.country}</span><span>/</span>
+          <span style="color:var(--fg-2)">{city.city}</span>
+        </div>
+        <h1 class="tc-h1">{city.city}</h1>
+        <div class="affordline">
+          <span class="tc-secondary">{city.country}</span>
+          <span class={`tc-badge ${cheaper ? 'tc-badge--park' : 'tc-badge--down'}`}>
+            {cheaper ? 'Below global median' : 'Above global median'} · {pct(d3)} (3-bed)
+          </span>
+        </div>
+        <p class="tc-lg tc-secondary" style="max-width:680px;margin-top:14px">{summary}</p>
       </div>
-      <p class="tc-lg tc-secondary" style="max-width:680px;margin-top:14px">{summary}</p>
-    </div>
-  </section>
+    </section>
+  )}
 
   <section class="section" style="padding-top:28px">
     <div class="container">

@@ -194,3 +194,18 @@ select.tc-input { width: 100%; height: 44px; appearance: none; background-image:
 .theme-toggle .icon-dark { display:none; }
 [data-theme="dark"] .theme-toggle .icon-light { display:none; }
 [data-theme="dark"] .theme-toggle .icon-dark { display:inline; }
+
+/* ── City hero photo (design-system image treatment) ─────────────────── */
+.city-hero { position: relative; width: 100%; aspect-ratio: 16/9; max-height: 460px; overflow: hidden;
+  background: linear-gradient(135deg, var(--primary) 0%, #0E1726 100%); }
+.city-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.city-hero__scrim { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(10,17,30,.88) 0%, rgba(10,17,30,.45) 38%, rgba(10,17,30,.05) 70%); }
+.city-hero__overlay { position: absolute; left: 0; right: 0; bottom: 0; padding-bottom: 28px; }
+.city-hero__overlay h1 { color: #fff; margin: 6px 0 8px; }
+.city-hero__overlay .breadcrumb { color: rgba(255,255,255,.75); margin-bottom: 4px; }
+.city-hero__overlay .breadcrumb a:hover { color: #fff; }
+.city-hero__credit { position: absolute; bottom: 10px; right: 14px; z-index: 2;
+  font-family: var(--font-mono); font-size: 11px; color: rgba(255,255,255,.85);
+  background: rgba(10,17,30,.45); backdrop-filter: blur(4px); padding: 4px 9px; border-radius: var(--r-pill); }
+@media (max-width: 640px) { .city-hero { aspect-ratio: 4/5; max-height: 560px; } }
