@@ -6,6 +6,7 @@ const API = 'https://api.trendingcities.com/v1';
 const endpoints = [
   { path: '/meta.json', desc: 'Dataset version, counts, global medians, and the full endpoint list.' },
   { path: '/cities.json', desc: `All ${CITY_COUNT + DISTRICT_COUNT} places (cities + districts) with prices, coordinates, photo and nearest airports.` },
+  { path: '/cities.geojson', desc: 'All places as a GeoJSON FeatureCollection — drops straight into MapLibre / Leaflet / Mapbox (geometry + price + affordability colour per feature).' },
   { path: '/city/{country}/{city}.json', desc: 'One city — full record plus its districts and related cities. e.g. /city/germany/berlin.json' },
   { path: '/city/{country}/{city}/{district}.json', desc: 'One district. e.g. /city/germany/berlin/mitte.json' },
   { path: '/countries.json', desc: `All ${COUNTRY_COUNT} countries with median prices and city counts.` },

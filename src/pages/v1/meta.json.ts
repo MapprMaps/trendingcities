@@ -10,6 +10,7 @@ export const GET: APIRoute = () =>
     endpoints: [
       '/v1/meta.json',
       '/v1/cities.json',
+      '/v1/cities.geojson',
       '/v1/city/{country}/{city}.json',
       '/v1/city/{country}/{city}/{district}.json',
       '/v1/countries.json',
