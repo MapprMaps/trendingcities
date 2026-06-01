@@ -1,0 +1,106 @@
+---
+import Base from '../../layouts/Base.astro';
+import CityCard from '../../components/CityCard.astro';
+import { countries, medians, vsMedian, DATA_UPDATED, DATA_VERSION, type CountryAgg } from '../../lib/data';
+import { usd, usdShort, pct } from '../../lib/format';
+
+export function getStaticPaths() {
+  return countries.map((c) => ({ params: { country: c.countrySlug }, props: { agg: c } }));
+}
+
+const { agg } = Astro.props as { agg: CountryAgg };
+const d3 = vsMedian(agg.three, 'three');
+const cheaper = d3 < 0;
+const beds = [
+  { label: '1-bedroom', price: agg.one, key: 'one' as const },
+  { label: '2-bedroom', price: agg.two, key: 'two' as const },
+  { label: '3-bedroom', price: agg.three, key: 'three' as const },
+];
+
+const SITE = 'https://www.trendingcities.com';
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: agg.country, item: `${SITE}/country/${agg.countrySlug}/` },
+  ],
+};
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: agg.cities.map((c, i) => ({
+    '@type': 'ListItem', position: i + 1, name: `${c.city}, ${agg.country}`, url: `${SITE}${c.url}`,
+  })),
+};
+---
+<Base
+  title={`${agg.country} home prices — ${agg.count} cities, 1/2/3-bed medians | TrendingCities`}
+  description={`Median home prices across ${agg.count} cities in ${agg.country}: 1-bed ${usd(agg.one)}, 2-bed ${usd(agg.two)}, 3-bed ${usd(agg.three)}. Compare cities and see how ${agg.country} ranks globally.`}
+  path={`/country/${agg.countrySlug}/`}
+  jsonLd={[breadcrumbLd, itemListLd]}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a><span>/</span>
+        <span style="color:var(--fg-2)">{agg.country}</span>
+      </div>
+      <h1 class="tc-h1">{agg.country}</h1>
+      <div class="affordline">
+        <span class="tc-secondary">{agg.count} {agg.count === 1 ? 'city' : 'cities'}</span>
+        <span class={`tc-badge ${cheaper ? 'tc-badge--park' : 'tc-badge--down'}`}>
+          {cheaper ? 'Below global median' : 'Above global median'} · {pct(d3)} (3-bed)
+        </span>
+      </div>
+      <p class="tc-lg tc-secondary" style="max-width:680px;margin-top:14px">
+        Median home prices across {agg.count} {agg.count === 1 ? 'city' : 'cities'} in {agg.country}. A 3-bedroom home runs about {pct(d3)} versus the global median of {usdShort(medians.three)}.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:28px">
+    <div class="container">
+      <span class="tc-label" style="display:block;margin-bottom:12px">Country median price</span>
+      <div class="grid grid--prices">
+        {beds.map((b) => {
+          const diff = vsMedian(b.price, b.key);
+          const below = diff < 0;
+          return (
+            <div class="tc-card pricecard">
+              <span class="tc-label">{b.label}</span>
+              <span class="pricecard__val">{usd(b.price)}</span>
+              <span class="pricecard__sub">
+                <span class={`tc-delta ${below ? 'tc-delta--up' : 'tc-delta--down'}`}>{pct(diff)}</span>
+                vs global median {usdShort(medians[b.key])}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" style="padding-top:40px">
+    <div class="container">
+      <div class="section__head">
+        <span class="tc-label">All locations</span>
+        <h2 class="tc-h3">Cities in {agg.country}</h2>
+      </div>
+      <div class="grid grid--cities">
+        {agg.cities.map((c) => <CityCard city={c} bed="three" />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="tc-callout tc-callout--source">
+        <span data-lucide="database" aria-hidden="true"></span>
+        <div>
+          <strong>Source &amp; date.</strong> Median home-purchase prices in USD, starter dataset v{DATA_VERSION} ({DATA_UPDATED}). Directional figures for comparing markets. <a href="/data/" style="color:var(--primary)">Methodology →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
