@@ -1,0 +1,62 @@
+---
+import Base from '../../layouts/Base.astro';
+import { CITY_COUNT, DISTRICT_COUNT, COUNTRY_COUNT, DATA_VERSION, DATA_UPDATED } from '../../lib/data';
+
+const API = 'https://api.trendingcities.com/v1';
+const endpoints = [
+  { path: '/meta.json', desc: 'Dataset version, counts, global medians, and the full endpoint list.' },
+  { path: '/cities.json', desc: `All ${CITY_COUNT + DISTRICT_COUNT} places (cities + districts) with prices, coordinates, photo and nearest airports.` },
+  { path: '/city/{country}/{city}.json', desc: 'One city — full record plus its districts and related cities. e.g. /city/germany/berlin.json' },
+  { path: '/city/{country}/{city}/{district}.json', desc: 'One district. e.g. /city/germany/berlin/mitte.json' },
+  { path: '/countries.json', desc: `All ${COUNTRY_COUNT} countries with median prices and city counts.` },
+  { path: '/rankings/most-expensive-3-bed.json', desc: 'Cities ranked by 3-bed price (also: most-affordable-1-bed, best-2-bed-under-250k).' },
+];
+---
+<Base
+  title="TrendingCities API — free home-price data"
+  description="A free, public JSON API for median home prices across hundreds of cities worldwide. No key required. CC BY 4.0."
+  path="/v1/"
+  noindex={false}
+>
+  <section class="page-head">
+    <div class="container">
+      <span class="tc-label" style="color:var(--livability)">Developers</span>
+      <h1 class="tc-h1">TrendingCities API <span class="tc-secondary" style="font-size:0.5em;font-weight:500">v1</span></h1>
+      <p class="tc-lg tc-secondary" style="max-width:680px">
+        Free, public JSON for median home prices across {CITY_COUNT} cities ({DISTRICT_COUNT} extra districts) in {COUNTRY_COUNT} countries.
+        No API key, no auth, open CORS. Just GET the URLs below.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:8px">
+    <div class="container" style="max-width:820px">
+      <div class="tc-callout tc-callout--source" style="margin-bottom:24px">
+        <span data-lucide="terminal" aria-hidden="true"></span>
+        <div>
+          <strong>Base URL.</strong> <code>{API}</code> — everything is static JSON, edge-cached, CORS-open.
+          <pre style="margin:10px 0 0;white-space:pre-wrap"><code>curl {API}/city/japan/tokyo.json</code></pre>
+        </div>
+      </div>
+
+      <span class="tc-label" style="display:block;margin-bottom:12px">Endpoints</span>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        {endpoints.map((e) => (
+          <div class="tc-card" style="padding:16px 18px">
+            <code style="color:var(--primary);font-weight:600">GET {e.path}</code>
+            <p class="tc-sm tc-secondary" style="margin:6px 0 0">{e.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="tc-callout" style="margin-top:24px">
+        <span data-lucide="scale" aria-hidden="true"></span>
+        <div>
+          <strong>License — CC BY 4.0.</strong> Free for any use, including commercial. Please credit
+          <a href="https://www.trendingcities.com" style="color:var(--primary)">TrendingCities</a> with a link.
+          Dataset v{DATA_VERSION} ({DATA_UPDATED}); prices are directional median home-purchase figures in USD.
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

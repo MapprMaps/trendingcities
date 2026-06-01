@@ -1,0 +1,5 @@
+/v1/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, OPTIONS
+  Cache-Control: public, max-age=3600
+  X-Attribution: Data by TrendingCities (https://www.trendingcities.com) - CC BY 4.0
