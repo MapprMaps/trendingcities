@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "italy/milan/garibaldi-porto-venezia",
+  "city": "Milan (Garibaldi-Porto Venezia)",
+  "country": "Italy",
+  "country_code": "IT",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 440000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 690000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 985000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 45.46419,
+    "lng": 9.18963
+  },
+  "media": {
+    "photo_ids": [
+      "kU9oLfenU3Y"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1659207284591-aa32bb25d2fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjYxMDM0MjZ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Rooftop view of the cathedral church of Milan, Lombardy, Italy. Cathedral-Basilica of the Nativity of Saint Mary.",
+      "photographer": "Eric Barrett",
+      "username": "bariceric",
+      "ss_url": "https://www.sampleshots.com/photos/kU9oLfenU3Y/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

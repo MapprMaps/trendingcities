@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "croatia/zagreb/donji-grad",
+  "city": "Zagreb (Donji Grad)",
+  "country": "Croatia",
+  "country_code": "HR",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 190000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 249000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 375000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 45.80973,
+    "lng": 15.96985
+  },
+  "media": {
+    "photo_ids": [
+      "rpphVi-wVs4"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1574456676380-40c9a9701a04?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDMyMzk1MTh8&ixlib=rb-4.0.3",
+      "title": "Sunlit Rooftops of Zagreb",
+      "photographer": "Erin East",
+      "username": "mserineast",
+      "ss_url": "https://www.sampleshots.com/photos/rpphVi-wVs4/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

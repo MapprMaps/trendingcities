@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CityCard from '../../components/CityCard.astro';
-import { cities, vsMedian, relatedTo, medians, DATA_UPDATED, DATA_VERSION, type City } from '../../lib/data';
+import { cities, vsMedian, relatedTo, districtsOf, medians, DATA_UPDATED, DATA_VERSION, type City } from '../../lib/data';
 import { usd, usdShort, pct } from '../../lib/format';
 
 export function getStaticPaths() {
@@ -10,6 +10,10 @@ export function getStaticPaths() {
 
 const { city } = Astro.props as { city: City };
 const related = relatedTo(city);
+const districts = city.isDistrict ? [] : districtsOf(city.slug);
+const parentCity = city.isDistrict ? cities.find((c) => c.slug === city.parentSlug) : undefined;
+// Short leaf label for breadcrumbs: "Berlin (Mitte)" -> "Mitte"
+const leaf = city.isDistrict ? (city.city.match(/\(([^)]+)\)/)?.[1] ?? city.city) : city.city;
 
 const beds = [
   { key: 'one' as const, label: '1-bedroom', price: city.one },
@@ -54,7 +58,7 @@ const breadcrumbLd = {
       <div class="city-hero__overlay">
         <div class="container">
           <div class="breadcrumb breadcrumb--photo">
-            <a href="/">Home</a><span>/</span><span>{city.country}</span><span>/</span><span>{city.city}</span>
+            <a href="/">Home</a><span>/</span><span>{city.country}</span><span>/</span>{city.isDistrict && parentCity && (<><a href={parentCity.url}>{parentCity.city}</a><span>/</span></>)}<span>{leaf}</span>
           </div>
           <h1 class="tc-h1">{city.city}</h1>
           <div class="affordline">
@@ -84,7 +88,8 @@ const breadcrumbLd = {
         <div class="breadcrumb">
           <a href="/">Home</a><span>/</span>
           <span>{city.country}</span><span>/</span>
-          <span style="color:var(--fg-2)">{city.city}</span>
+          {city.isDistrict && parentCity && (<><a href={parentCity.url}>{parentCity.city}</a><span>/</span></>)}
+          <span style="color:var(--fg-2)">{leaf}</span>
         </div>
         <h1 class="tc-h1">{city.city}</h1>
         <div class="affordline">
@@ -130,6 +135,21 @@ const breadcrumbLd = {
       </div>
     </div>
   </section>
+
+  {districts.length > 0 && (
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <span class="tc-label">Within {city.city}</span>
+          <h2 class="tc-h3">Districts &amp; neighbourhoods</h2>
+        </div>
+        <div class="grid grid--cities">
+          {districts.map((d) => <CityCard city={d} bed="three" />)}
+        </div>
+        <p class="tc-xs tc-muted" style="margin-top:12px">Area-level prices inside {city.city}. The figures above are for {city.city} as a whole.</p>
+      </div>
+    </section>
+  )}
 
   {city.airports && city.airports.length > 0 && (
     <section class="section" style="padding-top:0">

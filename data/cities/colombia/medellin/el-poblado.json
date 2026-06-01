@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "colombia/medellin/el-poblado",
+  "city": "Medellin (El Poblado)",
+  "country": "Colombia",
+  "country_code": "CO",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 198000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 262000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 273000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 6.26973,
+    "lng": -75.60256
+  },
+  "media": {
+    "photo_ids": [
+      "OLkvRri7Das"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1633627422584-853a4ecfc7ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjU4NTQxNDl8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Main avenue in Medellín, Colombia",
+      "photographer": "Juan Nino",
+      "username": "juanfernino",
+      "ss_url": "https://www.sampleshots.com/photos/OLkvRri7Das/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

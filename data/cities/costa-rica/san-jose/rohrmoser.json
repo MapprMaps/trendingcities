@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "costa-rica/san-jose/rohrmoser",
+  "city": "San Jose (Rohrmoser)",
+  "country": "Costa Rica",
+  "country_code": "CR",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 170000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 235000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 394000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 9.93277,
+    "lng": -84.07961
+  },
+  "media": {
+    "photo_ids": [
+      "BDbRtvE3R9s"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1699385603731-809beff16639?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjExNTczMzN8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Serenity: A Skyline Embraced by Dawn",
+      "photographer": "César Badilla Miranda",
+      "username": "xbmpro",
+      "ss_url": "https://www.sampleshots.com/photos/BDbRtvE3R9s/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "thailand/bangkok/pathum-wan",
+  "city": "Bangkok (Pathum Wan)",
+  "country": "Thailand",
+  "country_code": "TH",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 330000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 928000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 2584000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 13.75249,
+    "lng": 100.49351
+  },
+  "media": {
+    "photo_ids": [
+      "b9sDRqomYuA"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1581090070596-0a4c914a6b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjMxMDAyNDl8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Bangkok city",
+      "photographer": "Tan Kaninthanond",
+      "username": "12tan34",
+      "ss_url": "https://www.sampleshots.com/photos/b9sDRqomYuA/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "georgia/tbilisi/vake",
+  "city": "Tbilisi (Vake)",
+  "country": "Georgia",
+  "country_code": "GE",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 130000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 195000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 296000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 41.69346,
+    "lng": 44.80145
+  },
+  "media": {
+    "photo_ids": [
+      "xVLdFIxcDCc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1603350576276-24747f7bbf40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NjA2ODIxODF8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Architectural Harmony of Tbilisi's Urban Landscape",
+      "photographer": "Kent Tupas",
+      "username": "zplits",
+      "ss_url": "https://www.sampleshots.com/photos/xVLdFIxcDCc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "united-kingdom/london/westminster",
+  "city": "London (Westminster)",
+  "country": "United Kingdom",
+  "country_code": "GB",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 741000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 1367000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 2497000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 51.50041,
+    "lng": -0.12813
+  },
+  "media": {
+    "photo_ids": [
+      "TbAmVx48LVA"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1667429135701-0df2b16de1b8?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTQwMjg3MjB8&ixlib=rb-4.1.0",
+      "title": "Twilight Over Westminster: A Symphony of Shadows and Light",
+      "photographer": "Anthony Fomin",
+      "username": "aginsbrook",
+      "ss_url": "https://www.sampleshots.com/photos/TbAmVx48LVA/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

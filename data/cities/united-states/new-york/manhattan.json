@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "united-states/new-york/manhattan",
+  "city": "New York (Manhattan)",
+  "country": "United States",
+  "country_code": "US",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 1150000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 2295000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 4050000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 40.71367,
+    "lng": -74.00262
+  },
+  "media": {
+    "photo_ids": [
+      "tKF8eYC4dK0"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1758968058103-b3badcadb582?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NTkxMTU4Njd8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "The Iconic Skyline: A Glimpse of New York's Heart",
+      "photographer": "NIR HIMI",
+      "username": "nirhimi",
+      "ss_url": "https://www.sampleshots.com/photos/tKF8eYC4dK0/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

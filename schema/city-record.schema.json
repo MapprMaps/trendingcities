@@ -20,8 +20,8 @@
     },
     "id": {
       "type": "string",
-      "description": "Stable identity: {country-slug}/{city-slug}. Lowercase, hyphenated. Drives the URL /city/{id}/.",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "description": "Stable identity = file path: {country}/{city} or {country}/{parent}/{district} for districts. Lowercase, hyphenated. Drives the URL /city/{id}/.",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*){1,2}$"
     },
     "city": {
       "type": "string",

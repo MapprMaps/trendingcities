@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "chile/santiago/santa-isabel",
+  "city": "Santiago (Santa Isabel)",
+  "country": "Chile",
+  "country_code": "CL",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 83000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 120000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 148000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": -33.4377,
+    "lng": -70.65107
+  },
+  "media": {
+    "photo_ids": [
+      "ViSUTyypfrc"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1535479086554-4f8020786206?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NzcxOTc5MTJ8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Urban Needle: Gran Torre Santiago Against the Andean Horizon",
+      "photographer": "Juan Pablo Ahumada",
+      "username": "jpahca90",
+      "ss_url": "https://www.sampleshots.com/photos/ViSUTyypfrc/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}

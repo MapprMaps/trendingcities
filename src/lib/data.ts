@@ -48,6 +48,9 @@ export interface City {
   lng?: number;
   hero?: Hero;
   airports?: Airport[];
+  isDistrict: boolean;   // true if this is a district nested under a parent city
+  parentSlug?: string;   // parent city's full slug (e.g. "germany/berlin")
+  parentUrl?: string;    // parent city's URL
 }
 
 export const DATA_VERSION = '2026.1';
@@ -72,11 +75,16 @@ function build(): City[] {
   for (const [path, mod] of Object.entries(recordModules)) {
     const rec = mod.default;
     if (rec?.provenance?.status !== 'published') continue; // only published records go live
-    // Slug is the file path: /data/cities/{countrySlug}/{citySlug}.json
-    const m = path.match(/\/data\/cities\/([^/]+)\/([^/]+)\.json$/);
+    // Slug = file path after /data/cities/: {country}/{city} or {country}/{parent}/{district}
+    const m = path.match(/\/data\/cities\/(.+)\.json$/);
     if (!m) continue;
-    const countrySlug = m[1];
-    const citySlug = m[2];
+    const segs = m[1].split('/');
+    if (segs.length < 2 || segs.length > 3) continue;
+    const countrySlug = segs[0];
+    const citySlug = segs[segs.length - 1];
+    const isDistrict = segs.length === 3;
+    const parentSlug = isDistrict ? `${segs[0]}/${segs[1]}` : undefined;
+    const slug = segs.join('/');
     const one = rec.metrics.home_price_1bed_usd;
     const two = rec.metrics.home_price_2bed_usd;
     const three = rec.metrics.home_price_3bed_usd;
@@ -87,8 +95,8 @@ function build(): City[] {
       countrySlug,
       city: rec.city,
       citySlug,
-      slug: `${countrySlug}/${citySlug}`,
-      url: `/city/${countrySlug}/${citySlug}/`,
+      slug,
+      url: `/city/${slug}/`,
       one: one.value,
       two: two.value,
       three: three.value,
@@ -98,12 +106,22 @@ function build(): City[] {
       lng: rec.coordinates?.lng,
       hero: rec.media?.hero,
       airports: rec.airports,
+      isDistrict,
+      parentSlug,
+      parentUrl: parentSlug ? `/city/${parentSlug}/` : undefined,
     });
   }
   return out.sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city));
 }
 
 export const cities: City[] = build();
+/** Top-level cities only (districts excluded) — drives rankings, medians, country aggregates, counts. */
+export const topCities: City[] = cities.filter((c) => !c.isDistrict);
+/** Districts nested under a given parent city slug (e.g. "germany/berlin"). */
+export function districtsOf(parentSlug: string): City[] {
+  return cities.filter((c) => c.isDistrict && c.parentSlug === parentSlug)
+    .sort((a, b) => a.three - b.three);
+}
 
 function median(nums: number[]): number {
   const s = [...nums].sort((a, b) => a - b);
@@ -112,9 +130,9 @@ function median(nums: number[]): number {
 }
 
 export const medians = {
-  one: median(cities.map((c) => c.one)),
-  two: median(cities.map((c) => c.two)),
-  three: median(cities.map((c) => c.three)),
+  one: median(topCities.map((c) => c.one)),
+  two: median(topCities.map((c) => c.two)),
+  three: median(topCities.map((c) => c.three)),
 };
 
 export const bedField: Record<Bed, keyof Pick<City, 'one' | 'two' | 'three'>> = {
@@ -147,7 +165,7 @@ export interface CountryAgg {
 
 export function byCountry(): CountryAgg[] {
   const map = new Map<string, City[]>();
-  for (const c of cities) {
+  for (const c of topCities) {
     if (!map.has(c.country)) map.set(c.country, []);
     map.get(c.country)!.push(c);
   }
@@ -168,20 +186,30 @@ export function byCountry(): CountryAgg[] {
 
 export const countries = byCountry();
 export const COUNTRY_COUNT = countries.length;
-export const CITY_COUNT = cities.length;
+export const CITY_COUNT = topCities.length;       // headline count = cities (districts are a sub-layer)
+export const DISTRICT_COUNT = cities.length - topCities.length;
+export const PLACE_COUNT = cities.length;          // every place that has its own page
 
-/** Related = other cities in the same country (excluding self). */
+/** Related places. For a district: its parent + sibling districts. For a city: other top-level cities in the country. */
 export function relatedTo(c: City, limit = 6): City[] {
-  return cities
+  if (c.isDistrict) {
+    const parent = cities.find((x) => x.slug === c.parentSlug);
+    const siblings = cities.filter((x) => x.isDistrict && x.parentSlug === c.parentSlug && x.slug !== c.slug);
+    const rest = topCities.filter((x) => x.country === c.country && x.slug !== c.parentSlug);
+    return [...(parent ? [parent] : []), ...siblings, ...rest].slice(0, limit);
+  }
+  return topCities
     .filter((x) => x.country === c.country && x.slug !== c.slug)
     .sort((a, b) => a.three - b.three)
     .slice(0, limit);
 }
 
-// ── Rankings ─────────────────────────────────────────────────────────────
-export const mostExpensive3 = [...cities].sort((a, b) => b.three - a.three);
-export const mostAffordable1 = [...cities].sort((a, b) => a.one - b.one);
-export const best2Under250k = [...cities]
+// ── Rankings ───────────────────────────────────────────────────────────────
+// Rankings & comparisons use top-level cities only — districts would double-count
+// a metro (e.g. Berlin + Berlin Mitte) and clutter the lists.
+export const mostExpensive3 = [...topCities].sort((a, b) => b.three - a.three);
+export const mostAffordable1 = [...topCities].sort((a, b) => a.one - b.one);
+export const best2Under250k = [...topCities]
   .filter((c) => c.two < 250000)
   .sort((a, b) => a.two - b.two);
 export const countryRanking = [...countries].sort((a, b) => b.three - a.three);

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "panama/panama-city/san-francisco",
+  "city": "Panama City (San Francisco)",
+  "country": "Panama",
+  "country_code": "PA",
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 205000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_2bed_usd": {
+      "value": 215000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    },
+    "home_price_3bed_usd": {
+      "value": 315000,
+      "unit": "USD",
+      "as_of": "2026-05",
+      "sources": [
+        "globalpropertyguide",
+        "numbeo",
+        "web"
+      ],
+      "method": "cross-source-median",
+      "confidence": "medium"
+    }
+  },
+  "provenance": {
+    "compiled_by": "starter-2026.1",
+    "compiled_at": "2026-05-31",
+    "status": "published"
+  },
+  "coordinates": {
+    "lat": 8.97145,
+    "lng": -79.53418
+  },
+  "media": {
+    "photo_ids": [
+      "Ejf16T81DpI"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1675090696282-b97a00d22f07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NzUyOTc0Nzd8&ixlib=rb-4.1.0&q=80&w=1600",
+      "title": "Harbor Horizon: Panoramic City Skyline Over Calm Waters",
+      "photographer": "Armands Brants",
+      "username": "armandsbrants",
+      "ss_url": "https://www.sampleshots.com/photos/Ejf16T81DpI/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
+  }
+}
