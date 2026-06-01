@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 38.70775,
     "lng": -9.13659
-  }
+  },
+  "airports": [
+    {
+      "iata": "LIS",
+      "icao": "LPPT",
+      "name": "Lisbon Humberto Delgado Airport",
+      "type": "large_airport",
+      "distance_km": 8,
+      "destinations": 157,
+      "airlines": 84,
+      "url": "https://www.airportroutes.com/airports/LPPT/"
+    }
+  ]
 }

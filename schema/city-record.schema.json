@@ -111,7 +111,7 @@
     },
     "media": {
       "type": "object",
-      "description": "Optional — SampleShots/Unsplash photo ids only (size at call site). Never invent scene descriptions.",
+      "description": "Optional — SampleShots/Unsplash photo ids + the curated hero. Never invent scene descriptions.",
       "additionalProperties": false,
       "properties": {
         "photo_ids": {
@@ -119,6 +119,48 @@
           "items": {
             "type": "string"
           }
+        },
+        "hero": {
+          "type": "object",
+          "description": "Curated hero image from the SampleShots Discovery Engine (licensed corpus). Set by scripts/photos-all.py.",
+          "additionalProperties": false,
+          "required": [
+            "url",
+            "source"
+          ],
+          "properties": {
+            "url": { "type": "string", "format": "uri" },
+            "title": { "type": "string" },
+            "photographer": { "type": "string" },
+            "username": { "type": "string" },
+            "ss_url": { "type": "string" },
+            "source": { "type": "string" },
+            "license": { "type": "string" }
+          }
+        }
+      }
+    },
+    "airports": {
+      "type": "array",
+      "description": "Nearest airports with scheduled service, from AirportRoutes (scripts/airports-enrich.py). Ordered nearest-first. Build-time enrichment, refreshed monthly.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "icao",
+          "name",
+          "distance_km",
+          "url"
+        ],
+        "properties": {
+          "iata": { "type": "string" },
+          "icao": { "type": "string" },
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "distance_km": { "type": "number" },
+          "destinations": { "type": "integer" },
+          "airlines": { "type": "integer" },
+          "url": { "type": "string", "format": "uri" }
         }
       }
     },

@@ -131,6 +131,35 @@ const breadcrumbLd = {
     </div>
   </section>
 
+  {city.airports && city.airports.length > 0 && (
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section__head">
+          <span class="tc-label">Getting there</span>
+          <h2 class="tc-h3">Nearest airports</h2>
+        </div>
+        <div class="grid grid--airports">
+          {city.airports.map((a) => (
+            <a class="tc-card airportcard" href={a.url} target="_blank" rel="noopener">
+              <div class="airportcard__head">
+                <span class="airportcard__code">{a.iata || a.icao}</span>
+                <span class="airportcard__dist">{a.distance_km} km</span>
+              </div>
+              <span class="airportcard__name">{a.name}</span>
+              {(a.destinations || a.airlines) && (
+                <span class="airportcard__meta">
+                  {a.destinations ? `${a.destinations} destinations` : ''}{a.destinations && a.airlines ? ' · ' : ''}{a.airlines ? `${a.airlines} airlines` : ''}
+                </span>
+              )}
+              <span class="airportcard__cta">Routes &amp; flights →</span>
+            </a>
+          ))}
+        </div>
+        <p class="tc-xs tc-muted" style="margin-top:12px">Scheduled-service airports near {city.city}, nearest first. Flight data from <a href="https://www.airportroutes.com/" target="_blank" rel="noopener" style="color:var(--primary)">AirportRoutes</a>.</p>
+      </div>
+    </section>
+  )}
+
   {related.length > 0 && (
     <section class="section section--tint" style="padding-top:48px">
       <div class="container">

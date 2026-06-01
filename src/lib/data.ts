@@ -23,11 +23,13 @@ export interface CityRecord {
   country_code: string;
   coordinates?: { lat: number; lng: number };
   media?: { photo_ids?: string[]; hero?: Hero };
+  airports?: Airport[];
   metrics: Record<string, MetricValue>;
   provenance: { compiled_by: string; compiled_at: string; status: string };
 }
 
 export interface Hero { url: string; title: string; photographer: string; username?: string; ss_url?: string; source: string; license: string; }
+export interface Airport { iata?: string; icao: string; name: string; type?: string; distance_km: number; destinations?: number; airlines?: number; url: string; }
 
 export interface City {
   country: string;
@@ -45,6 +47,7 @@ export interface City {
   lat?: number;
   lng?: number;
   hero?: Hero;
+  airports?: Airport[];
 }
 
 export const DATA_VERSION = '2026.1';
@@ -94,6 +97,7 @@ function build(): City[] {
       lat: rec.coordinates?.lat,
       lng: rec.coordinates?.lng,
       hero: rec.media?.hero,
+      airports: rec.airports,
     });
   }
   return out.sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city));

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LGA",
+      "icao": "KLGA",
+      "name": "LaGuardia Airport",
+      "type": "large_airport",
+      "distance_km": 13,
+      "destinations": 88,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/KLGA/"
+    },
+    {
+      "iata": "EWR",
+      "icao": "KEWR",
+      "name": "Newark Liberty International Airport",
+      "type": "large_airport",
+      "distance_km": 14,
+      "destinations": 232,
+      "airlines": 69,
+      "url": "https://www.airportroutes.com/airports/KEWR/"
+    },
+    {
+      "iata": "JFK",
+      "icao": "KJFK",
+      "name": "John F Kennedy International Airport",
+      "type": "large_airport",
+      "distance_km": 21,
+      "destinations": 248,
+      "airlines": 122,
+      "url": "https://www.airportroutes.com/airports/KJFK/"
+    }
+  ]
 }
