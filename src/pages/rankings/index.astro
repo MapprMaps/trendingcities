@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import {
+  mostExpensive3, mostAffordable1, best2Under250k, countryRanking,
+  rankByMetric, metricVal, CITY_COUNT, COUNTRY_COUNT, DATA_UPDATED, type City,
+} from '../../lib/data';
+import { usdShort, fmtMetric } from '../../lib/format';
+
+const cheapestCol = rankByMetric('cost_of_living_index', 'asc');
+const highestPp = rankByMetric('local_purchasing_power_index', 'desc');
+
+type Card = {
+  href: string; eyebrow: string; title: string; blurb: string; accent: string;
+  preview: { name: string; sub: string; val: string }[];
+};
+const cityPrev = (rows: City[], val: (c: City) => string, n = 3) =>
+  rows.slice(0, n).map((c) => ({ name: c.city, sub: c.country, val: val(c) }));
+
+const cards: Card[] = [
+  {
+    href: '/rankings/most-affordable-1-bed/', eyebrow: 'Price · lowest 1-bed', accent: 'var(--park-strong)',
+    title: 'Most affordable cities (1-bed)',
+    blurb: 'The smallest entry prices in the dataset, by 1-bedroom median.',
+    preview: cityPrev(mostAffordable1, (c) => usdShort(c.one)),
+  },
+  {
+    href: '/rankings/most-expensive-3-bed/', eyebrow: 'Price · highest 3-bed', accent: 'var(--coral, #F4604D)',
+    title: 'Most expensive cities (3-bed)',
+    blurb: 'The priciest markets here, by 3-bedroom median home price.',
+    preview: cityPrev(mostExpensive3, (c) => usdShort(c.three)),
+  },
+  {
+    href: '/rankings/best-2-bed-under-250k/', eyebrow: 'Price · value 2-bed', accent: 'var(--primary)',
+    title: 'Best 2-bed under $250k',
+    blurb: 'Cities where a 2-bedroom home still comes in under $250,000.',
+    preview: cityPrev(best2Under250k, (c) => usdShort(c.two)),
+  },
+  {
+    href: '/rankings/cheapest-cost-of-living/', eyebrow: 'Cost of living · lowest', accent: 'var(--park-strong)',
+    title: 'Cheapest cost of living',
+    blurb: 'Lowest day-to-day costs, on the Numbeo index (NYC = 100, excl. rent).',
+    preview: cityPrev(cheapestCol, (c) => fmtMetric(metricVal(c, 'cost_of_living_index')!, 'index_nyc100')),
+  },
+  {
+    href: '/rankings/highest-purchasing-power/', eyebrow: 'Earnings · highest', accent: 'var(--insight, #0E9E96)',
+    title: 'Highest purchasing power',
+    blurb: 'Where a typical local salary stretches furthest, after local prices.',
+    preview: cityPrev(highestPp, (c) => fmtMetric(metricVal(c, 'local_purchasing_power_index')!, 'index_nyc100')),
+  },
+  {
+    href: '/rankings/country-comparison/', eyebrow: 'Countries', accent: 'var(--insight, #0E9E96)',
+    title: 'Country comparison',
+    blurb: `All ${COUNTRY_COUNT} countries ranked by median 3-bedroom price.`,
+    preview: countryRanking.slice(0, 3).map((c) => ({ name: c.country, sub: `${c.count} ${c.count === 1 ? 'city' : 'cities'}`, val: usdShort(c.three) })),
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage',
+  name: 'City & country rankings — TrendingCities',
+  url: 'https://www.trendingcities.com/rankings/',
+  hasPart: cards.map((c) => ({ '@type': 'ItemList', name: c.title, url: `https://www.trendingcities.com${c.href}` })),
+};
+---
+<Base
+  title="City rankings — home prices, cost of living & purchasing power | TrendingCities"
+  description={`Every TrendingCities ranking in one place: most affordable and most expensive homes, best-value 2-beds, cheapest cost of living, highest purchasing power, and a ${COUNTRY_COUNT}-country comparison — across ${CITY_COUNT} cities.`}
+  path="/rankings/"
+  jsonLd={jsonLd}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Rankings</span></div>
+      <span class="tc-label" style="color:var(--primary)">Rankings</span>
+      <h1 class="tc-h1">City &amp; country rankings</h1>
+      <p>Every ranking in one place — homes by price, day-to-day cost of living, and how far local salaries stretch. {CITY_COUNT} cities across {COUNTRY_COUNT} countries, each figure carrying its own source and date.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <div class="grid grid--cities">
+        {cards.map((c) => (
+          <a class="tc-card rankhub-card" href={c.href}>
+            <span class="tc-label" style={`color:${c.accent}`}>{c.eyebrow}</span>
+            <h2 class="tc-h4" style="margin:6px 0 4px">{c.title}</h2>
+            <p class="tc-sm tc-secondary" style="margin:0 0 14px">{c.blurb}</p>
+            <ol class="rankhub-prev">
+              {c.preview.map((p, i) => (
+                <li>
+                  <span class="rankhub-prev__pos">{i + 1}</span>
+                  <span class="rankhub-prev__name">{p.name}<span class="rankhub-prev__sub"> · {p.sub}</span></span>
+                  <span class="rankhub-prev__val">{p.val}</span>
+                </li>
+              ))}
+            </ol>
+            <span class="rankhub-card__cta">See full ranking →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

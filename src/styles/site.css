@@ -164,6 +164,17 @@ a { color: inherit; text-decoration: none; }
 .rankrow-card__metrics div { display: flex; flex-direction: column; }
 .rankrow-card__metrics .tc-metric { font-size: var(--text-sm); }
 
+/* Rankings hub cards */
+.rankhub-card { padding: 22px; display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: border-color .15s ease, transform .15s ease; }
+.rankhub-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+.rankhub-prev { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.rankhub-prev li { display: flex; align-items: baseline; gap: 9px; font-size: var(--text-sm); }
+.rankhub-prev__pos { font-family: var(--font-mono); color: var(--fg-3); font-size: var(--text-xs); width: 14px; flex: none; }
+.rankhub-prev__name { color: var(--fg); font-weight: 600; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rankhub-prev__sub { color: var(--fg-3); font-weight: 400; }
+.rankhub-prev__val { font-family: var(--font-mono); color: var(--fg-2); font-variant-numeric: tabular-nums; flex: none; }
+.rankhub-card__cta { margin-top: auto; font-size: var(--text-sm); font-weight: 600; color: var(--primary); }
+
 /* Metric ranking table (cost of living / purchasing power) — scrolls on mobile */
 .metric-rank-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .metric-rank-table { min-width: 520px; }
