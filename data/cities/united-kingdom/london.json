@@ -42,7 +42,7 @@
       "confidence": "medium"
     },
     "cost_of_living_index": {
-      "value": 90.2,
+      "value": 87.5,
       "unit": "index_numbeo_nyc100",
       "as_of": "2026-06",
       "sources": [
@@ -52,7 +52,7 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 88.5,
+      "value": 117.5,
       "unit": "index_numbeo_nyc100",
       "as_of": "2026-06",
       "sources": [
