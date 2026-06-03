@@ -10,11 +10,13 @@ Overwrites COL/LPP (Numbeo is authoritative) but preserves all other metrics
 
 Run: python3 scripts/enrich-numbeo-table.py   (expects /tmp/numbeo_rankings.html)
 """
-import re, json, glob, os, unicodedata, sys
+import re, json, glob, os, unicodedata, sys, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-AS_OF = "2026-06"
-HTML = sys.argv[1] if len(sys.argv) > 1 else "/tmp/numbeo_rankings.html"
+# as_of stamps the per-metric "last updated". The monthly refresh cron re-runs
+# this so every record gets a fresh date each cycle — that's the freshness signal.
+AS_OF = os.environ.get("TC_AS_OF") or datetime.date.today().strftime("%Y-%m")
+HTML = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("-") else "/tmp/numbeo_rankings.html"
 
 def norm(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
