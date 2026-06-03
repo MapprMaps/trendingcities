@@ -267,6 +267,21 @@ export function freshestAsOf(c: City): string {
   return dates.length ? dates[dates.length - 1] : c.asOf;
 }
 
+/** Top-level cities that carry `key`, sorted by its value ('asc' = smallest first). */
+export function rankByMetric(key: string, dir: 'asc' | 'desc' = 'desc'): City[] {
+  return topCities
+    .filter((c) => c.metricsRaw[key] && typeof c.metricsRaw[key].value === 'number')
+    .sort((a, b) =>
+      dir === 'asc'
+        ? a.metricsRaw[key].value - b.metricsRaw[key].value
+        : b.metricsRaw[key].value - a.metricsRaw[key].value
+    );
+}
+/** Read a city's metric value (or undefined). */
+export function metricVal(c: City, key: string): number | undefined {
+  return c.metricsRaw[key]?.value;
+}
+
 export const mostExpensive3 = [...topCities].sort((a, b) => b.three - a.three);
 export const mostAffordable1 = [...topCities].sort((a, b) => a.one - b.one);
 export const best2Under250k = [...topCities]

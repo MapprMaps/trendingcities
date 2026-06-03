@@ -1,0 +1,39 @@
+---
+import Base from '../../../layouts/Base.astro';
+import MetricRankingTable from '../../../components/MetricRankingTable.astro';
+import { rankByMetric } from '../../../lib/data';
+
+const rows = rankByMetric('cost_of_living_index', 'asc');
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'ItemList',
+  name: 'Cities with the lowest cost of living',
+  itemListElement: rows.slice(0, 25).map((c, i) => ({
+    '@type': 'ListItem', position: i + 1, name: `${c.city}, ${c.country}`,
+    url: `https://www.trendingcities.com${c.url}`,
+  })),
+};
+---
+<Base
+  title="Cheapest cities by cost of living (2026) | TrendingCities"
+  description={`The lowest cost-of-living cities in the dataset, ranked on the Numbeo Cost of Living Index (New York City = 100, excluding rent). ${rows.length} cities with data.`}
+  path="/rankings/cheapest-cost-of-living/"
+  jsonLd={jsonLd}
+>
+  <section class="page-head">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Rankings</span></div>
+      <span class="tc-label" style="color:var(--park-strong)">Ranking · lowest cost of living</span>
+      <h1 class="tc-h1">Cheapest cities by cost of living</h1>
+      <p>Ranked by the Numbeo Cost of Living Index (New York City = 100, excluding rent), lowest first — across {rows.length} cities with cost-of-living data. A lower index means day-to-day costs are cheaper than New York.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <MetricRankingTable rows={rows} highlight="cost_of_living_index" limit={100} />
+      <div class="tc-callout tc-callout--source" style="margin-top:24px">
+        <span data-lucide="info" aria-hidden="true"></span>
+        <div><strong>How this is ranked.</strong> Cities sorted by the Numbeo Cost of Living Index (NYC = 100, excl. rent), ascending. Each city page shows the same figure with its source and “last updated” date. <a href="/data/" style="color:var(--primary)">Methodology →</a></div>
+      </div>
+    </div>
+  </section>
+</Base>

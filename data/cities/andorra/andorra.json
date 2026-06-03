@@ -71,6 +71,28 @@
       "confidence": "medium",
       "method": "home_price_3bed_usd / (12 * rent_3bed_usd_month)",
       "notes": "Years of 3-bed rent to equal the 3-bed purchase price"
+    },
+    "cost_of_living_index": {
+      "value": 43.0,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "low",
+      "method": "perplexity-grounded (not in Numbeo ranked table)",
+      "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
+    },
+    "local_purchasing_power_index": {
+      "value": 63.8,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "low",
+      "method": "perplexity-grounded (not in Numbeo ranked table)",
+      "notes": "Numbeo Local Purchasing Power Index, NYC=100"
     }
   },
   "provenance": {

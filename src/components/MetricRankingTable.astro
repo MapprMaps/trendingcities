@@ -1,0 +1,39 @@
+---
+import { metricVal, type City } from '../lib/data';
+import { usdShort, fmtMetric } from '../lib/format';
+
+export interface Props { rows: City[]; highlight: 'cost_of_living_index' | 'local_purchasing_power_index'; limit?: number; }
+const { rows, highlight, limit = 100 } = Astro.props;
+const list = rows.slice(0, limit);
+const cell = (c: City, key: string, fmt: string) => {
+  const v = metricVal(c, key);
+  return v === undefined ? '—' : fmtMetric(v, fmt);
+};
+---
+<div class="metric-rank-wrap">
+<table class="tc-table metric-rank-table">
+  <thead>
+    <tr>
+      <th style="width:48px">#</th>
+      <th>City</th>
+      <th>Country</th>
+      <th class="num" class:list={[{ 'rank-table__hi': highlight === 'cost_of_living_index' }]}>Cost of living</th>
+      <th class="num" class:list={[{ 'rank-table__hi': highlight === 'local_purchasing_power_index' }]}>Purchasing power</th>
+      <th class="num">3-bed median</th>
+    </tr>
+  </thead>
+  <tbody>
+    {list.map((c, i) => (
+      <tr>
+        <td class="rank-table__pos">{i + 1}</td>
+        <td><a href={c.url}>{c.city}</a></td>
+        <td class="rank-table__country">{c.country}</td>
+        <td class="num" class:list={[{ 'rank-table__hi': highlight === 'cost_of_living_index' }]}>{cell(c, 'cost_of_living_index', 'index_nyc100')}</td>
+        <td class="num" class:list={[{ 'rank-table__hi': highlight === 'local_purchasing_power_index' }]}>{cell(c, 'local_purchasing_power_index', 'index_nyc100')}</td>
+        <td class="num">{usdShort(c.three)}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+</div>
+<p class="tc-xs tc-muted" style="margin-top:10px">Indices are Numbeo-style, New York City = 100. Cost of living excludes rent. “—” = not yet covered for that city.</p>
