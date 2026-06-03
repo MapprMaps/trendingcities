@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BCN",
+      "icao": "LEBL",
+      "name": "Josep Tarradellas Barcelona-El Prat Airport",
+      "type": "large_airport",
+      "distance_km": 13,
+      "destinations": 222,
+      "airlines": 115,
+      "url": "https://www.airportroutes.com/airports/LEBL/"
+    },
+    {
+      "iata": "GRO",
+      "icao": "LEGE",
+      "name": "Girona-Costa Brava Airport",
+      "type": "medium_airport",
+      "distance_km": 76,
+      "destinations": 50,
+      "airlines": 11,
+      "url": "https://www.airportroutes.com/airports/LEGE/"
+    },
+    {
+      "iata": "REU",
+      "icao": "LERS",
+      "name": "Reus Airport",
+      "type": "medium_airport",
+      "distance_km": 89,
+      "destinations": 28,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/LERS/"
+    }
+  ]
 }

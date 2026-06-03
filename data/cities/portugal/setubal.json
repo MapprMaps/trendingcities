@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 38.52418,
     "lng": -8.89323
-  }
+  },
+  "airports": [
+    {
+      "iata": "LIS",
+      "icao": "LPPT",
+      "name": "Lisbon Humberto Delgado Airport",
+      "type": "large_airport",
+      "distance_km": 36,
+      "destinations": 158,
+      "airlines": 84,
+      "url": "https://www.airportroutes.com/airports/LPPT/"
+    },
+    {
+      "iata": "FAO",
+      "icao": "LPFR",
+      "name": "Faro Airport",
+      "type": "large_airport",
+      "distance_km": 186,
+      "destinations": 92,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LPFR/"
+    }
+  ]
 }

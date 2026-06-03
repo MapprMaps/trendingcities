@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "HAM",
+      "icao": "EDDH",
+      "name": "Hamburg Helmut Schmidt Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 114,
+      "airlines": 70,
+      "url": "https://www.airportroutes.com/airports/EDDH/"
+    },
+    {
+      "iata": "BRE",
+      "icao": "EDDW",
+      "name": "Bremen Airport",
+      "type": "large_airport",
+      "distance_km": 98,
+      "destinations": 26,
+      "airlines": 20,
+      "url": "https://www.airportroutes.com/airports/EDDW/"
+    },
+    {
+      "iata": "HAJ",
+      "icao": "EDDV",
+      "name": "Hannover Airport",
+      "type": "large_airport",
+      "distance_km": 123,
+      "destinations": 66,
+      "airlines": 40,
+      "url": "https://www.airportroutes.com/airports/EDDV/"
+    }
+  ]
 }

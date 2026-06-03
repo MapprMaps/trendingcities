@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SNN",
+      "icao": "EINN",
+      "name": "Shannon Airport",
+      "type": "large_airport",
+      "distance_km": 95,
+      "destinations": 66,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EINN/"
+    },
+    {
+      "iata": "ORK",
+      "icao": "EICK",
+      "name": "Cork Airport",
+      "type": "medium_airport",
+      "distance_km": 6,
+      "destinations": 49,
+      "airlines": 11,
+      "url": "https://www.airportroutes.com/airports/EICK/"
+    }
+  ]
 }

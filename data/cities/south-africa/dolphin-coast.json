@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": -33.6813,
     "lng": 26.66342
-  }
+  },
+  "airports": [
+    {
+      "iata": "PLZ",
+      "icao": "FAPE",
+      "name": "Chief Dawid Stuurman International Airport",
+      "type": "large_airport",
+      "distance_km": 103,
+      "destinations": 4,
+      "airlines": 6,
+      "url": "https://www.airportroutes.com/airports/FAPE/"
+    }
+  ]
 }

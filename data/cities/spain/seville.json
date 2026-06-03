@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GIB",
+      "icao": "LXGB",
+      "name": "Gibraltar Airport",
+      "type": "large_airport",
+      "distance_km": 149,
+      "destinations": 5,
+      "airlines": 2,
+      "url": "https://www.airportroutes.com/airports/LXGB/"
+    },
+    {
+      "iata": "AGP",
+      "icao": "LEMG",
+      "name": "Málaga-Costa del Sol Airport",
+      "type": "large_airport",
+      "distance_km": 155,
+      "destinations": 160,
+      "airlines": 66,
+      "url": "https://www.airportroutes.com/airports/LEMG/"
+    },
+    {
+      "iata": "FAO",
+      "icao": "LPFR",
+      "name": "Faro Airport",
+      "type": "large_airport",
+      "distance_km": 180,
+      "destinations": 92,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LPFR/"
+    }
+  ]
 }

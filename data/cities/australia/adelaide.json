@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ADL",
+      "icao": "YPAD",
+      "name": "Adelaide International Airport",
+      "type": "large_airport",
+      "distance_km": 6,
+      "destinations": 34,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/YPAD/"
+    }
+  ]
 }

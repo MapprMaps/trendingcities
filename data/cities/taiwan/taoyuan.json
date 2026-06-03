@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 24.993,
     "lng": 121.301
-  }
+  },
+  "airports": [
+    {
+      "iata": "TPE",
+      "icao": "RCTP",
+      "name": "Taiwan Taoyuan International Airport",
+      "type": "large_airport",
+      "distance_km": 12,
+      "destinations": 110,
+      "airlines": 69,
+      "url": "https://www.airportroutes.com/airports/RCTP/"
+    },
+    {
+      "iata": "FOC",
+      "icao": "ZSFZ",
+      "name": "Fuzhou Changle International Airport",
+      "type": "large_airport",
+      "distance_km": 195,
+      "destinations": 97,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/ZSFZ/"
+    },
+    {
+      "iata": "TSA",
+      "icao": "RCSS",
+      "name": "Taipei Songshan Airport",
+      "type": "medium_airport",
+      "distance_km": 27,
+      "destinations": 16,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/RCSS/"
+    }
+  ]
 }

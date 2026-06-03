@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 35.33908,
     "lng": 25.13328
-  }
+  },
+  "airports": [
+    {
+      "iata": "HER",
+      "icao": "LGIR",
+      "name": "Heraklion International Nikos Kazantzakis Airport",
+      "type": "large_airport",
+      "distance_km": 4,
+      "destinations": 120,
+      "airlines": 65,
+      "url": "https://www.airportroutes.com/airports/LGIR/"
+    },
+    {
+      "iata": "CHQ",
+      "icao": "LGSA",
+      "name": "Chania International Airport",
+      "type": "medium_airport",
+      "distance_km": 92,
+      "destinations": 67,
+      "airlines": 33,
+      "url": "https://www.airportroutes.com/airports/LGSA/"
+    },
+    {
+      "iata": "JTR",
+      "icao": "LGSR",
+      "name": "Santorini Airport",
+      "type": "medium_airport",
+      "distance_km": 122,
+      "destinations": 49,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/LGSR/"
+    }
+  ]
 }

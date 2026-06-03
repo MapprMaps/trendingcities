@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "IAH",
+      "icao": "KIAH",
+      "name": "George Bush Intercontinental Houston Airport",
+      "type": "large_airport",
+      "distance_km": 25,
+      "destinations": 237,
+      "airlines": 62,
+      "url": "https://www.airportroutes.com/airports/KIAH/"
+    },
+    {
+      "iata": "HOU",
+      "icao": "KHOU",
+      "name": "William P Hobby Airport",
+      "type": "medium_airport",
+      "distance_km": 15,
+      "destinations": 220,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/KHOU/"
+    },
+    {
+      "iata": "CLL",
+      "icao": "KCLL",
+      "name": "Easterwood Field",
+      "type": "medium_airport",
+      "distance_km": 133,
+      "destinations": 39,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/KCLL/"
+    }
+  ]
 }

@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 10.37678,
     "lng": -84.01397
-  }
+  },
+  "airports": [
+    {
+      "iata": "SJO",
+      "icao": "MROC",
+      "name": "Juan Santamaría International Airport",
+      "type": "large_airport",
+      "distance_km": 47,
+      "destinations": 53,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/MROC/"
+    },
+    {
+      "iata": "LIR",
+      "icao": "MRLB",
+      "name": "Guanacaste Airport",
+      "type": "large_airport",
+      "distance_km": 169,
+      "destinations": 51,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/MRLB/"
+    }
+  ]
 }

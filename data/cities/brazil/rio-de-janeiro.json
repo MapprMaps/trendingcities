@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GIG",
+      "icao": "SBGL",
+      "name": "Rio Galeão – Tom Jobim International Airport",
+      "type": "large_airport",
+      "distance_km": 12,
+      "destinations": 53,
+      "airlines": 29,
+      "url": "https://www.airportroutes.com/airports/SBGL/"
+    }
+  ]
 }

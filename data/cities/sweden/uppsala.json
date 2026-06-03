@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ARN",
+      "icao": "ESSA",
+      "name": "Stockholm-Arlanda Airport",
+      "type": "large_airport",
+      "distance_km": 29,
+      "destinations": 164,
+      "airlines": 67,
+      "url": "https://www.airportroutes.com/airports/ESSA/"
+    }
+  ]
 }

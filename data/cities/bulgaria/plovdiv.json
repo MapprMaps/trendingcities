@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SOF",
+      "icao": "LBSF",
+      "name": "Sofia Airport",
+      "type": "large_airport",
+      "distance_km": 126,
+      "destinations": 105,
+      "airlines": 40,
+      "url": "https://www.airportroutes.com/airports/LBSF/"
+    },
+    {
+      "iata": "KVA",
+      "icao": "LGKV",
+      "name": "Kavala Alexander the Great International Airport",
+      "type": "medium_airport",
+      "distance_km": 137,
+      "destinations": 15,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/LGKV/"
+    }
+  ]
 }

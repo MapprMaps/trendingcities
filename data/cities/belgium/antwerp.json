@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 51.22111,
     "lng": 4.39971
-  }
+  },
+  "airports": [
+    {
+      "iata": "BRU",
+      "icao": "EBBR",
+      "name": "Brussels Airport",
+      "type": "large_airport",
+      "distance_km": 36,
+      "destinations": 184,
+      "airlines": 100,
+      "url": "https://www.airportroutes.com/airports/EBBR/"
+    },
+    {
+      "iata": "EIN",
+      "icao": "EHEH",
+      "name": "Eindhoven Airport",
+      "type": "large_airport",
+      "distance_km": 73,
+      "destinations": 78,
+      "airlines": 13,
+      "url": "https://www.airportroutes.com/airports/EHEH/"
+    },
+    {
+      "iata": "RTM",
+      "icao": "EHRD",
+      "name": "Rotterdam The Hague Airport",
+      "type": "large_airport",
+      "distance_km": 82,
+      "destinations": 55,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/EHRD/"
+    }
+  ]
 }

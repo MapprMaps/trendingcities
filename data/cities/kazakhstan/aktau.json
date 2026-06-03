@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 43.63534,
     "lng": 51.16822
-  }
+  },
+  "airports": [
+    {
+      "iata": "SCO",
+      "icao": "UATE",
+      "name": "Aktau Airport",
+      "type": "medium_airport",
+      "distance_km": 26,
+      "destinations": 20,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/UATE/"
+    }
+  ]
 }

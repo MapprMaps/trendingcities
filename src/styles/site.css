@@ -121,6 +121,22 @@ a { color: inherit; text-decoration: none; }
 .metricgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 @media (max-width: 640px) { .metricgrid, .grid--prices { grid-template-columns: 1fr; } }
 
+/* Metric cards (city page: cost of living, rent, purchasing power, …) */
+.grid--metrics { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1024px) { .grid--metrics { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .grid--metrics { grid-template-columns: 1fr; } }
+.metriccard { padding: 18px 20px; display: flex; flex-direction: column; gap: 5px; }
+.metriccard__val { font-family: var(--font-mono); font-weight: 600; font-size: 26px; letter-spacing: -0.02em; color: var(--fg); font-variant-numeric: tabular-nums; }
+.metriccard__base { font-size: var(--text-xs); color: var(--fg-3); }
+.metriccard__prov { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 6px; font-size: var(--text-xs); color: var(--fg-2); }
+.metriccard__src { font-weight: 600; }
+.metriccard__date { color: var(--fg-3); }
+.metriccard__date::before { content: "· "; }
+.tc-conf { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; padding: 1px 6px; border-radius: 999px; line-height: 1.5; }
+.tc-conf--high { background: rgba(44,158,84,.14); color: #1f7a40; }
+.tc-conf--medium { background: rgba(232,146,11,.14); color: #9a5e05; }
+.tc-conf--low { background: rgba(244,96,77,.14); color: #c23d2c; }
+
 /* Airport cards (city page "Getting there") */
 .grid--airports { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 1024px) { .grid--airports { grid-template-columns: repeat(2, 1fr); } }

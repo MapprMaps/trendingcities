@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "VNO",
+      "icao": "EYVI",
+      "name": "Vilnius International Airport",
+      "type": "large_airport",
+      "distance_km": 94,
+      "destinations": 64,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/EYVI/"
+    },
+    {
+      "iata": "KUN",
+      "icao": "EYKA",
+      "name": "Kaunas International Airport",
+      "type": "medium_airport",
+      "distance_km": 14,
+      "destinations": 27,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/EYKA/"
+    }
+  ]
 }

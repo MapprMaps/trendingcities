@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ITM",
+      "icao": "RJOO",
+      "name": "Osaka International Airport",
+      "type": "large_airport",
+      "distance_km": 25,
+      "destinations": 26,
+      "airlines": 6,
+      "url": "https://www.airportroutes.com/airports/RJOO/"
+    },
+    {
+      "iata": "KIX",
+      "icao": "RJBB",
+      "name": "Kansai International Airport",
+      "type": "large_airport",
+      "distance_km": 30,
+      "destinations": 97,
+      "airlines": 82,
+      "url": "https://www.airportroutes.com/airports/RJBB/"
+    },
+    {
+      "iata": "NGO",
+      "icao": "RJGG",
+      "name": "Chubu Centrair International Airport",
+      "type": "large_airport",
+      "distance_km": 149,
+      "destinations": 46,
+      "airlines": 43,
+      "url": "https://www.airportroutes.com/airports/RJGG/"
+    }
+  ]
 }

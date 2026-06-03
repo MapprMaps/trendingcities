@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "KUL",
+      "icao": "WMKK",
+      "name": "Kuala Lumpur International Airport",
+      "type": "large_airport",
+      "distance_km": 42,
+      "destinations": 150,
+      "airlines": 80,
+      "url": "https://www.airportroutes.com/airports/WMKK/"
+    },
+    {
+      "iata": "SZB",
+      "icao": "WMSA",
+      "name": "Sultan Abdul Aziz Shah International Airport",
+      "type": "medium_airport",
+      "distance_km": 7,
+      "destinations": 15,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/WMSA/"
+    }
+  ]
 }

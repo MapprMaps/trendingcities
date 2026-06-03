@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BOJ",
+      "icao": "LBBG",
+      "name": "Burgas Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 57,
+      "airlines": 38,
+      "url": "https://www.airportroutes.com/airports/LBBG/"
+    },
+    {
+      "iata": "VAR",
+      "icao": "LBWN",
+      "name": "Varna Airport",
+      "type": "large_airport",
+      "distance_km": 87,
+      "destinations": 51,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/LBWN/"
+    },
+    {
+      "iata": "IST",
+      "icao": "LTFM",
+      "name": "İstanbul Airport",
+      "type": "large_airport",
+      "distance_km": 173,
+      "destinations": 324,
+      "airlines": 113,
+      "url": "https://www.airportroutes.com/airports/LTFM/"
+    }
+  ]
 }

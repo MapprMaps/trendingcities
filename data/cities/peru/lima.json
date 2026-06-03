@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LIM",
+      "icao": "SPJC",
+      "name": "Jorge Chávez International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 73,
+      "airlines": 40,
+      "url": "https://www.airportroutes.com/airports/SPJC/"
+    }
+  ]
 }

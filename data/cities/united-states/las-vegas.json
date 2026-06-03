@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LAS",
+      "icao": "KLAS",
+      "name": "Harry Reid International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 221,
+      "airlines": 61,
+      "url": "https://www.airportroutes.com/airports/KLAS/"
+    }
+  ]
 }

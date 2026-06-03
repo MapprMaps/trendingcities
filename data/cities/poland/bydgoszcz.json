@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 53.12196,
     "lng": 18.00025
+  },
+  "media": {
+    "photo_ids": [
+      "xLjhaZIDWCQ"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1664452066236-6318531c48a1?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDIzOTAzMTB8&ixlib=rb-4.0.3",
+      "title": "Vibrant Facades of a European Square",
+      "photographer": "Szymon Shields",
+      "username": "shields_mcmxcix",
+      "ss_url": "https://www.sampleshots.com/photos/xLjhaZIDWCQ/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

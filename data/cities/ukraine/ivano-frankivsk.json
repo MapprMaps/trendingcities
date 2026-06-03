@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 48.74817,
     "lng": 24.52075
-  }
+  },
+  "airports": [
+    {
+      "iata": "LWO",
+      "icao": "UKLL",
+      "name": "Lviv International Airport",
+      "type": "large_airport",
+      "distance_km": 125,
+      "destinations": 0,
+      "airlines": 0,
+      "url": "https://www.airportroutes.com/airports/UKLL/"
+    },
+    {
+      "iata": "SCV",
+      "icao": "LRSV",
+      "name": "Suceava Stefan cel Mare Airport",
+      "type": "medium_airport",
+      "distance_km": 180,
+      "destinations": 15,
+      "airlines": 6,
+      "url": "https://www.airportroutes.com/airports/LRSV/"
+    }
+  ]
 }

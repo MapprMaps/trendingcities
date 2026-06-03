@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "RMO",
+      "icao": "LUKK",
+      "name": "Chişinău International Airport",
+      "type": "medium_airport",
+      "distance_km": 13,
+      "destinations": 71,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/LUKK/"
+    },
+    {
+      "iata": "IAS",
+      "icao": "LRIA",
+      "name": "Iaşi Airport",
+      "type": "medium_airport",
+      "distance_km": 94,
+      "destinations": 31,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/LRIA/"
+    }
+  ]
 }

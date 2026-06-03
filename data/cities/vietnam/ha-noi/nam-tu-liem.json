@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "HAN",
+      "icao": "VVNB",
+      "name": "Noi Bai International Airport",
+      "type": "large_airport",
+      "distance_km": 24,
+      "destinations": 104,
+      "airlines": 77,
+      "url": "https://www.airportroutes.com/airports/VVNB/"
+    },
+    {
+      "iata": "HPH",
+      "icao": "VVCI",
+      "name": "Cat Bi International Airport",
+      "type": "medium_airport",
+      "distance_km": 104,
+      "destinations": 14,
+      "airlines": 9,
+      "url": "https://www.airportroutes.com/airports/VVCI/"
+    }
+  ]
 }

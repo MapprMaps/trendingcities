@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 43.85707,
     "lng": 18.41261
-  }
+  },
+  "airports": [
+    {
+      "iata": "SJJ",
+      "icao": "LQSA",
+      "name": "Sarajevo International Airport",
+      "type": "large_airport",
+      "distance_km": 7,
+      "destinations": 41,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/LQSA/"
+    },
+    {
+      "iata": "TGD",
+      "icao": "LYPG",
+      "name": "Podgorica Airport / Podgorica Golubovci Airbase",
+      "type": "large_airport",
+      "distance_km": 180,
+      "destinations": 43,
+      "airlines": 20,
+      "url": "https://www.airportroutes.com/airports/LYPG/"
+    },
+    {
+      "iata": "BEG",
+      "icao": "LYBE",
+      "name": "Belgrade Nikola Tesla Airport",
+      "type": "large_airport",
+      "distance_km": 185,
+      "destinations": 105,
+      "airlines": 32,
+      "url": "https://www.airportroutes.com/airports/LYBE/"
+    }
+  ]
 }

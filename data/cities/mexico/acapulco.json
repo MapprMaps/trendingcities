@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ZIH",
+      "icao": "MMZH",
+      "name": "Ixtapa-Zihuatanejo International Airport",
+      "type": "medium_airport",
+      "distance_km": 185,
+      "destinations": 18,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/MMZH/"
+    }
+  ]
 }

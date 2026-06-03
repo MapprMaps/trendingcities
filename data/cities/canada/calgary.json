@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "YYC",
+      "icao": "CYYC",
+      "name": "Calgary International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 151,
+      "airlines": 44,
+      "url": "https://www.airportroutes.com/airports/CYYC/"
+    }
+  ]
 }

@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MNL",
+      "icao": "RPLL",
+      "name": "Ninoy Aquino International Airport",
+      "type": "large_airport",
+      "distance_km": 10,
+      "destinations": 97,
+      "airlines": 64,
+      "url": "https://www.airportroutes.com/airports/RPLL/"
+    },
+    {
+      "iata": "CRK",
+      "icao": "RPLC",
+      "name": "Clark International Airport / Clark Air Base",
+      "type": "medium_airport",
+      "distance_km": 80,
+      "destinations": 32,
+      "airlines": 23,
+      "url": "https://www.airportroutes.com/airports/RPLC/"
+    }
+  ]
 }

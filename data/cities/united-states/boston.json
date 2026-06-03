@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BOS",
+      "icao": "KBOS",
+      "name": "Logan International Airport",
+      "type": "large_airport",
+      "distance_km": 4,
+      "destinations": 175,
+      "airlines": 77,
+      "url": "https://www.airportroutes.com/airports/KBOS/"
+    },
+    {
+      "iata": "PVD",
+      "icao": "KPVD",
+      "name": "Theodore Francis Green State Airport",
+      "type": "large_airport",
+      "distance_km": 77,
+      "destinations": 48,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/KPVD/"
+    },
+    {
+      "iata": "BDL",
+      "icao": "KBDL",
+      "name": "Bradley International Airport",
+      "type": "large_airport",
+      "distance_km": 143,
+      "destinations": 101,
+      "airlines": 33,
+      "url": "https://www.airportroutes.com/airports/KBDL/"
+    }
+  ]
 }

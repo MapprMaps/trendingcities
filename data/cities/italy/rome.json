@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "FCO",
+      "icao": "LIRF",
+      "name": "Rome–Fiumicino Leonardo da Vinci International Airport",
+      "type": "large_airport",
+      "distance_km": 22,
+      "destinations": 222,
+      "airlines": 117,
+      "url": "https://www.airportroutes.com/airports/LIRF/"
+    },
+    {
+      "iata": "NAP",
+      "icao": "LIRN",
+      "name": "Naples International Airport",
+      "type": "large_airport",
+      "distance_km": 188,
+      "destinations": 145,
+      "airlines": 76,
+      "url": "https://www.airportroutes.com/airports/LIRN/"
+    },
+    {
+      "iata": "CIA",
+      "icao": "LIRA",
+      "name": "Ciampino–G. B. Pastine International Airport",
+      "type": "medium_airport",
+      "distance_km": 14,
+      "destinations": 46,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/LIRA/"
+    }
+  ]
 }

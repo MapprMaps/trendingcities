@@ -64,5 +64,17 @@
       "source": "flickr",
       "license": "Attribution-NonCommercial-NoDerivs License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "DRW",
+      "icao": "YPDN",
+      "name": "Darwin International Airport / RAAF Darwin",
+      "type": "large_airport",
+      "distance_km": 7,
+      "destinations": 27,
+      "airlines": 13,
+      "url": "https://www.airportroutes.com/airports/YPDN/"
+    }
+  ]
 }

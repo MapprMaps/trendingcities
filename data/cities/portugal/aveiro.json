@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 40.6405,
     "lng": -8.65378
-  }
+  },
+  "airports": [
+    {
+      "iata": "OPO",
+      "icao": "LPPR",
+      "name": "Francisco de Sá Carneiro Airport",
+      "type": "large_airport",
+      "distance_km": 68,
+      "destinations": 144,
+      "airlines": 69,
+      "url": "https://www.airportroutes.com/airports/LPPR/"
+    }
+  ]
 }

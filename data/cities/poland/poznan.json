@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "POZ",
+      "icao": "EPPO",
+      "name": "Poznań-Ławica Airport",
+      "type": "large_airport",
+      "distance_km": 8,
+      "destinations": 61,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/EPPO/"
+    },
+    {
+      "iata": "WRO",
+      "icao": "EPWR",
+      "name": "Copernicus Wrocław Airport",
+      "type": "large_airport",
+      "distance_km": 145,
+      "destinations": 83,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPWR/"
+    },
+    {
+      "iata": "LCJ",
+      "icao": "EPLL",
+      "name": "Łódź Władysław Reymont Airport",
+      "type": "large_airport",
+      "distance_km": 185,
+      "destinations": 10,
+      "airlines": 4,
+      "url": "https://www.airportroutes.com/airports/EPLL/"
+    }
+  ]
 }

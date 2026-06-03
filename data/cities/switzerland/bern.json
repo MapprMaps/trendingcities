@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BSL",
+      "icao": "LFSB",
+      "name": "EuroAirport Basel–Mulhouse–Freiburg",
+      "type": "large_airport",
+      "distance_km": 73,
+      "destinations": 115,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/LFSB/"
+    },
+    {
+      "iata": "ZRH",
+      "icao": "LSZH",
+      "name": "Zürich Airport",
+      "type": "large_airport",
+      "distance_km": 101,
+      "destinations": 198,
+      "airlines": 82,
+      "url": "https://www.airportroutes.com/airports/LSZH/"
+    },
+    {
+      "iata": "GVA",
+      "icao": "LSGG",
+      "name": "Geneva Cointrin International Airport",
+      "type": "large_airport",
+      "distance_km": 130,
+      "destinations": 157,
+      "airlines": 77,
+      "url": "https://www.airportroutes.com/airports/LSGG/"
+    }
+  ]
 }

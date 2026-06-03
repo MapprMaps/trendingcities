@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "VIE",
+      "icao": "LOWW",
+      "name": "Vienna International Airport",
+      "type": "large_airport",
+      "distance_km": 18,
+      "destinations": 198,
+      "airlines": 91,
+      "url": "https://www.airportroutes.com/airports/LOWW/"
+    },
+    {
+      "iata": "BTS",
+      "icao": "LZIB",
+      "name": "M. R. Štefánik Airport",
+      "type": "large_airport",
+      "distance_km": 63,
+      "destinations": 90,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/LZIB/"
+    },
+    {
+      "iata": "BRQ",
+      "icao": "LKTB",
+      "name": "Brno-Tuřany Airport",
+      "type": "medium_airport",
+      "distance_km": 108,
+      "destinations": 33,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/LKTB/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "OAK",
+      "icao": "KOAK",
+      "name": "San Francisco Bay Oakland International Airport",
+      "type": "large_airport",
+      "distance_km": 18,
+      "destinations": 72,
+      "airlines": 27,
+      "url": "https://www.airportroutes.com/airports/KOAK/"
+    },
+    {
+      "iata": "SFO",
+      "icao": "KSFO",
+      "name": "San Francisco International Airport",
+      "type": "large_airport",
+      "distance_km": 19,
+      "destinations": 178,
+      "airlines": 80,
+      "url": "https://www.airportroutes.com/airports/KSFO/"
+    },
+    {
+      "iata": "SJC",
+      "icao": "KSJC",
+      "name": "Norman Y. Mineta San Jose International Airport",
+      "type": "large_airport",
+      "distance_km": 63,
+      "destinations": 64,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/KSJC/"
+    }
+  ]
 }

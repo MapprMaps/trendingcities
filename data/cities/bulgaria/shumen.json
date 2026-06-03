@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 43.30882,
     "lng": 27.01973
-  }
+  },
+  "airports": [
+    {
+      "iata": "VAR",
+      "icao": "LBWN",
+      "name": "Varna Airport",
+      "type": "large_airport",
+      "distance_km": 66,
+      "destinations": 51,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/LBWN/"
+    },
+    {
+      "iata": "BOJ",
+      "icao": "LBBG",
+      "name": "Burgas Airport",
+      "type": "large_airport",
+      "distance_km": 92,
+      "destinations": 57,
+      "airlines": 38,
+      "url": "https://www.airportroutes.com/airports/LBBG/"
+    },
+    {
+      "iata": "OTP",
+      "icao": "LROP",
+      "name": "Bucharest Henri Coandă International Airport",
+      "type": "large_airport",
+      "distance_km": 158,
+      "destinations": 137,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LROP/"
+    }
+  ]
 }

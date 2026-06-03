@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 4.56938,
     "lng": 102.26568
-  }
+  },
+  "airports": [
+    {
+      "iata": "SZB",
+      "icao": "WMSA",
+      "name": "Sultan Abdul Aziz Shah International Airport",
+      "type": "medium_airport",
+      "distance_km": 178,
+      "destinations": 15,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/WMSA/"
+    }
+  ]
 }

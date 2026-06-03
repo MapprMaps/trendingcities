@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 25.77377,
     "lng": 55.93823
-  }
+  },
+  "airports": [
+    {
+      "iata": "SHJ",
+      "icao": "OMSJ",
+      "name": "Sharjah International Airport",
+      "type": "large_airport",
+      "distance_km": 65,
+      "destinations": 117,
+      "airlines": 27,
+      "url": "https://www.airportroutes.com/airports/OMSJ/"
+    },
+    {
+      "iata": "DXB",
+      "icao": "OMDB",
+      "name": "Dubai International Airport",
+      "type": "large_airport",
+      "distance_km": 82,
+      "destinations": 273,
+      "airlines": 108,
+      "url": "https://www.airportroutes.com/airports/OMDB/"
+    },
+    {
+      "iata": "DWC",
+      "icao": "OMDW",
+      "name": "Al Maktoum International Airport",
+      "type": "large_airport",
+      "distance_km": 125,
+      "destinations": 126,
+      "airlines": 56,
+      "url": "https://www.airportroutes.com/airports/OMDW/"
+    }
+  ]
 }

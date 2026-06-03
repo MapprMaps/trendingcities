@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 52.06156,
     "lng": 62.93727
-  }
+  },
+  "airports": [
+    {
+      "iata": "KSN",
+      "icao": "UAUU",
+      "name": "Kostanay West Airport",
+      "type": "medium_airport",
+      "distance_km": 134,
+      "destinations": 6,
+      "airlines": 4,
+      "url": "https://www.airportroutes.com/airports/UAUU/"
+    }
+  ]
 }

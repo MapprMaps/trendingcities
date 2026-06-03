@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "WAW",
+      "icao": "EPWA",
+      "name": "Warsaw Chopin Airport",
+      "type": "large_airport",
+      "distance_km": 10,
+      "destinations": 166,
+      "airlines": 58,
+      "url": "https://www.airportroutes.com/airports/EPWA/"
+    },
+    {
+      "iata": "LCJ",
+      "icao": "EPLL",
+      "name": "Łódź Władysław Reymont Airport",
+      "type": "large_airport",
+      "distance_km": 128,
+      "destinations": 10,
+      "airlines": 4,
+      "url": "https://www.airportroutes.com/airports/EPLL/"
+    },
+    {
+      "iata": "LUZ",
+      "icao": "EPLB",
+      "name": "Lublin Airport",
+      "type": "large_airport",
+      "distance_km": 158,
+      "destinations": 13,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/EPLB/"
+    }
+  ]
 }

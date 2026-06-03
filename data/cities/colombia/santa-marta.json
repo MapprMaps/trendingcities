@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BAQ",
+      "icao": "SKBQ",
+      "name": "Ernesto Cortissoz International Airport",
+      "type": "medium_airport",
+      "distance_km": 74,
+      "destinations": 16,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/SKBQ/"
+    },
+    {
+      "iata": "CTG",
+      "icao": "SKCG",
+      "name": "Rafael Nuñez International Airport",
+      "type": "medium_airport",
+      "distance_km": 169,
+      "destinations": 26,
+      "airlines": 24,
+      "url": "https://www.airportroutes.com/airports/SKCG/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SEA",
+      "icao": "KSEA",
+      "name": "Seattle–Tacoma International Airport",
+      "type": "large_airport",
+      "distance_km": 17,
+      "destinations": 151,
+      "airlines": 58,
+      "url": "https://www.airportroutes.com/airports/KSEA/"
+    },
+    {
+      "iata": "YVR",
+      "icao": "CYVR",
+      "name": "Vancouver International Airport",
+      "type": "large_airport",
+      "distance_km": 188,
+      "destinations": 141,
+      "airlines": 68,
+      "url": "https://www.airportroutes.com/airports/CYVR/"
+    },
+    {
+      "iata": "BFI",
+      "icao": "KBFI",
+      "name": "Boeing Field King County International Airport",
+      "type": "medium_airport",
+      "distance_km": 8,
+      "destinations": 14,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/KBFI/"
+    }
+  ]
 }

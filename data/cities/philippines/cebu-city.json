@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 10.29349,
     "lng": 123.90182
-  }
+  },
+  "airports": [
+    {
+      "iata": "CEB",
+      "icao": "RPVM",
+      "name": "Mactan Cebu International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 46,
+      "airlines": 30,
+      "url": "https://www.airportroutes.com/airports/RPVM/"
+    },
+    {
+      "iata": "ILO",
+      "icao": "RPVI",
+      "name": "Iloilo International Airport",
+      "type": "medium_airport",
+      "distance_km": 165,
+      "destinations": 15,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/RPVI/"
+    }
+  ]
 }

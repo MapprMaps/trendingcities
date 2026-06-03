@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SCL",
+      "icao": "SCEL",
+      "name": "Comodoro Arturo Merino Benítez International Airport",
+      "type": "large_airport",
+      "distance_km": 82,
+      "destinations": 66,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/SCEL/"
+    }
+  ]
 }

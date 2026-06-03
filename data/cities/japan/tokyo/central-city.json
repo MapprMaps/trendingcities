@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "HND",
+      "icao": "RJTT",
+      "name": "Tokyo Haneda International Airport",
+      "type": "large_airport",
+      "distance_km": 14,
+      "destinations": 102,
+      "airlines": 51,
+      "url": "https://www.airportroutes.com/airports/RJTT/"
+    },
+    {
+      "iata": "NRT",
+      "icao": "RJAA",
+      "name": "Narita International Airport",
+      "type": "large_airport",
+      "distance_km": 57,
+      "destinations": 120,
+      "airlines": 103,
+      "url": "https://www.airportroutes.com/airports/RJAA/"
+    }
+  ]
 }

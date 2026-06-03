@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ZAG",
+      "icao": "LDZA",
+      "name": "Zagreb Franjo Tuđman International Airport",
+      "type": "large_airport",
+      "distance_km": 11,
+      "destinations": 66,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/LDZA/"
+    },
+    {
+      "iata": "LJU",
+      "icao": "LJLJ",
+      "name": "Ljubljana Jože Pučnik Airport",
+      "type": "large_airport",
+      "distance_km": 126,
+      "destinations": 36,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/LJLJ/"
+    },
+    {
+      "iata": "RJK",
+      "icao": "LDRI",
+      "name": "Rijeka Airport",
+      "type": "medium_airport",
+      "distance_km": 128,
+      "destinations": 18,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/LDRI/"
+    }
+  ]
 }

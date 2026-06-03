@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "NCE",
+      "icao": "LFMN",
+      "name": "Nice-Côte d'Azur Airport",
+      "type": "large_airport",
+      "distance_km": 6,
+      "destinations": 140,
+      "airlines": 87,
+      "url": "https://www.airportroutes.com/airports/LFMN/"
+    },
+    {
+      "iata": "GOA",
+      "icao": "LIMJ",
+      "name": "Genoa Cristoforo Colombo Airport",
+      "type": "large_airport",
+      "distance_km": 149,
+      "destinations": 28,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/LIMJ/"
+    },
+    {
+      "iata": "MRS",
+      "icao": "LFML",
+      "name": "Marseille Provence Airport",
+      "type": "large_airport",
+      "distance_km": 169,
+      "destinations": 134,
+      "airlines": 52,
+      "url": "https://www.airportroutes.com/airports/LFML/"
+    }
+  ]
 }

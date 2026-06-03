@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "VAR",
+      "icao": "LBWN",
+      "name": "Varna Airport",
+      "type": "large_airport",
+      "distance_km": 124,
+      "destinations": 51,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/LBWN/"
+    }
+  ]
 }

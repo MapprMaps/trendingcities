@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "PER",
+      "icao": "YPPH",
+      "name": "Perth International Airport",
+      "type": "large_airport",
+      "distance_km": 10,
+      "destinations": 57,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/YPPH/"
+    }
+  ]
 }

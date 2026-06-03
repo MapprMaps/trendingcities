@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "CBR",
+      "icao": "YSCB",
+      "name": "Canberra Airport",
+      "type": "medium_airport",
+      "distance_km": 9,
+      "destinations": 12,
+      "airlines": 9,
+      "url": "https://www.airportroutes.com/airports/YSCB/"
+    }
+  ]
 }

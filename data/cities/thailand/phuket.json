@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 7.9366,
     "lng": 98.35293
-  }
+  },
+  "airports": [
+    {
+      "iata": "HKT",
+      "icao": "VTSP",
+      "name": "Phuket International Airport",
+      "type": "large_airport",
+      "distance_km": 20,
+      "destinations": 82,
+      "airlines": 62,
+      "url": "https://www.airportroutes.com/airports/VTSP/"
+    },
+    {
+      "iata": "KBV",
+      "icao": "VTSG",
+      "name": "Krabi Airport",
+      "type": "medium_airport",
+      "distance_km": 72,
+      "destinations": 15,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/VTSG/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SKP",
+      "icao": "LWSK",
+      "name": "Skopje International Airport",
+      "type": "large_airport",
+      "distance_km": 16,
+      "destinations": 56,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/LWSK/"
+    },
+    {
+      "iata": "PRN",
+      "icao": "BKPR",
+      "name": "Priština Adem Jashari International Airport",
+      "type": "large_airport",
+      "distance_km": 72,
+      "destinations": 37,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/BKPR/"
+    },
+    {
+      "iata": "TIA",
+      "icao": "LATI",
+      "name": "Tirana International Airport Mother Teresa",
+      "type": "large_airport",
+      "distance_km": 156,
+      "destinations": 104,
+      "airlines": 58,
+      "url": "https://www.airportroutes.com/airports/LATI/"
+    }
+  ]
 }

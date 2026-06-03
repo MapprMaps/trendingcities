@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "CGK",
+      "icao": "WIII",
+      "name": "Soekarno-Hatta International Airport",
+      "type": "large_airport",
+      "distance_km": 6,
+      "destinations": 97,
+      "airlines": 61,
+      "url": "https://www.airportroutes.com/airports/WIII/"
+    },
+    {
+      "iata": "HLP",
+      "icao": "WIHH",
+      "name": "Halim Perdanakusuma International Airport",
+      "type": "medium_airport",
+      "distance_km": 30,
+      "destinations": 17,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/WIHH/"
+    }
+  ]
 }

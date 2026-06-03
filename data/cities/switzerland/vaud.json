@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GVA",
+      "icao": "LSGG",
+      "name": "Geneva Cointrin International Airport",
+      "type": "large_airport",
+      "distance_km": 55,
+      "destinations": 157,
+      "airlines": 77,
+      "url": "https://www.airportroutes.com/airports/LSGG/"
+    },
+    {
+      "iata": "BSL",
+      "icao": "LFSB",
+      "name": "EuroAirport Basel–Mulhouse–Freiburg",
+      "type": "large_airport",
+      "distance_km": 131,
+      "destinations": 115,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/LFSB/"
+    },
+    {
+      "iata": "LYS",
+      "icao": "LFLL",
+      "name": "Lyon Saint-Exupéry Airport",
+      "type": "large_airport",
+      "distance_km": 150,
+      "destinations": 137,
+      "airlines": 65,
+      "url": "https://www.airportroutes.com/airports/LFLL/"
+    }
+  ]
 }

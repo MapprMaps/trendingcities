@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TRN",
+      "icao": "LIMF",
+      "name": "Turin Airport",
+      "type": "large_airport",
+      "distance_km": 15,
+      "destinations": 67,
+      "airlines": 36,
+      "url": "https://www.airportroutes.com/airports/LIMF/"
+    },
+    {
+      "iata": "MXP",
+      "icao": "LIMC",
+      "name": "Milan Malpensa International Airport",
+      "type": "large_airport",
+      "distance_km": 103,
+      "destinations": 216,
+      "airlines": 118,
+      "url": "https://www.airportroutes.com/airports/LIMC/"
+    },
+    {
+      "iata": "GOA",
+      "icao": "LIMJ",
+      "name": "Genoa Cristoforo Colombo Airport",
+      "type": "large_airport",
+      "distance_km": 117,
+      "destinations": 28,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/LIMJ/"
+    }
+  ]
 }

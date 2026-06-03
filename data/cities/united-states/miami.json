@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MIA",
+      "icao": "KMIA",
+      "name": "Miami International Airport",
+      "type": "large_airport",
+      "distance_km": 10,
+      "destinations": 269,
+      "airlines": 127,
+      "url": "https://www.airportroutes.com/airports/KMIA/"
+    },
+    {
+      "iata": "FLL",
+      "icao": "KFLL",
+      "name": "Fort Lauderdale Hollywood International Airport",
+      "type": "large_airport",
+      "distance_km": 33,
+      "destinations": 278,
+      "airlines": 74,
+      "url": "https://www.airportroutes.com/airports/KFLL/"
+    },
+    {
+      "iata": "PBI",
+      "icao": "KPBI",
+      "name": "Palm Beach International Airport",
+      "type": "large_airport",
+      "distance_km": 101,
+      "destinations": 103,
+      "airlines": 30,
+      "url": "https://www.airportroutes.com/airports/KPBI/"
+    }
+  ]
 }

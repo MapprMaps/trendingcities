@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MTY",
+      "icao": "MMMY",
+      "name": "Monterrey International Airport",
+      "type": "large_airport",
+      "distance_km": 24,
+      "destinations": 73,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/MMMY/"
+    }
+  ]
 }

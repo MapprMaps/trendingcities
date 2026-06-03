@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SKG",
+      "icao": "LGTS",
+      "name": "Thessaloniki Macedonia International Airport",
+      "type": "large_airport",
+      "distance_km": 130,
+      "destinations": 98,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LGTS/"
+    },
+    {
+      "iata": "KVA",
+      "icao": "LGKV",
+      "name": "Kavala Alexander the Great International Airport",
+      "type": "medium_airport",
+      "distance_km": 18,
+      "destinations": 15,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/LGKV/"
+    }
+  ]
 }

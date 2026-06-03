@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": -7.24628,
     "lng": 112.73777
-  }
+  },
+  "airports": [
+    {
+      "iata": "SUB",
+      "icao": "WARR",
+      "name": "Juanda International Airport",
+      "type": "large_airport",
+      "distance_km": 16,
+      "destinations": 39,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/WARR/"
+    }
+  ]
 }

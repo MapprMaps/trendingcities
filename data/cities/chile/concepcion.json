@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": -36.82707,
     "lng": -73.05021
-  }
+  },
+  "airports": [
+    {
+      "iata": "CCP",
+      "icao": "SCIE",
+      "name": "Carriel Sur Airport",
+      "type": "medium_airport",
+      "distance_km": 6,
+      "destinations": 6,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/SCIE/"
+    }
+  ]
 }

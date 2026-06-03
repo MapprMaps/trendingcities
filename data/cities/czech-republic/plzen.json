@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "PRG",
+      "icao": "LKPR",
+      "name": "Václav Havel Airport Prague",
+      "type": "large_airport",
+      "distance_km": 75,
+      "destinations": 185,
+      "airlines": 98,
+      "url": "https://www.airportroutes.com/airports/LKPR/"
+    },
+    {
+      "iata": "NUE",
+      "icao": "EDDN",
+      "name": "Nuremberg Airport",
+      "type": "large_airport",
+      "distance_km": 168,
+      "destinations": 65,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/EDDN/"
+    },
+    {
+      "iata": "MUC",
+      "icao": "EDDM",
+      "name": "Munich Airport",
+      "type": "large_airport",
+      "distance_km": 194,
+      "destinations": 216,
+      "airlines": 107,
+      "url": "https://www.airportroutes.com/airports/EDDM/"
+    }
+  ]
 }

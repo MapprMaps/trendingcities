@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 3.41084,
     "lng": -76.58121
-  }
+  },
+  "airports": [
+    {
+      "iata": "CLO",
+      "icao": "SKCL",
+      "name": "Alfonso Bonilla Aragon International Airport",
+      "type": "medium_airport",
+      "distance_km": 27,
+      "destinations": 30,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/SKCL/"
+    }
+  ]
 }

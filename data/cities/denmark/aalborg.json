@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BLL",
+      "icao": "EKBI",
+      "name": "Billund Airport",
+      "type": "large_airport",
+      "distance_km": 153,
+      "destinations": 61,
+      "airlines": 44,
+      "url": "https://www.airportroutes.com/airports/EKBI/"
+    },
+    {
+      "iata": "GOT",
+      "icao": "ESGG",
+      "name": "Göteborg Landvetter Airport",
+      "type": "large_airport",
+      "distance_km": 158,
+      "destinations": 72,
+      "airlines": 40,
+      "url": "https://www.airportroutes.com/airports/ESGG/"
+    },
+    {
+      "iata": "ODE",
+      "icao": "EKOD",
+      "name": "Odense Hans Christian Andersen Airport",
+      "type": "large_airport",
+      "distance_km": 177,
+      "destinations": 1,
+      "airlines": 1,
+      "url": "https://www.airportroutes.com/airports/EKOD/"
+    }
+  ]
 }

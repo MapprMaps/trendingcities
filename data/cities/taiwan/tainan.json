@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 22.99123,
     "lng": 120.18498
-  }
+  },
+  "airports": [
+    {
+      "iata": "KHH",
+      "icao": "RCKH",
+      "name": "Kaohsiung International Airport",
+      "type": "large_airport",
+      "distance_km": 49,
+      "destinations": 36,
+      "airlines": 27,
+      "url": "https://www.airportroutes.com/airports/RCKH/"
+    },
+    {
+      "iata": "RMQ",
+      "icao": "RCMQ",
+      "name": "Taichung International Airport / Ching Chuang Kang Air Base",
+      "type": "medium_airport",
+      "distance_km": 148,
+      "destinations": 22,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/RCMQ/"
+    }
+  ]
 }

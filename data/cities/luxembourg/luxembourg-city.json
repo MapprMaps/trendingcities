@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LUX",
+      "icao": "ELLX",
+      "name": "Luxembourg-Findel International Airport",
+      "type": "large_airport",
+      "distance_km": 10,
+      "destinations": 135,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/ELLX/"
+    },
+    {
+      "iata": "CGN",
+      "icao": "EDDK",
+      "name": "Cologne Bonn Airport",
+      "type": "large_airport",
+      "distance_km": 160,
+      "destinations": 143,
+      "airlines": 51,
+      "url": "https://www.airportroutes.com/airports/EDDK/"
+    },
+    {
+      "iata": "BRU",
+      "icao": "EBBR",
+      "name": "Brussels Airport",
+      "type": "large_airport",
+      "distance_km": 183,
+      "destinations": 184,
+      "airlines": 100,
+      "url": "https://www.airportroutes.com/airports/EBBR/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "DUB",
+      "icao": "EIDW",
+      "name": "Dublin Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 203,
+      "airlines": 71,
+      "url": "https://www.airportroutes.com/airports/EIDW/"
+    },
+    {
+      "iata": "BFS",
+      "icao": "EGAA",
+      "name": "Belfast International Airport",
+      "type": "large_airport",
+      "distance_km": 146,
+      "destinations": 59,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/EGAA/"
+    },
+    {
+      "iata": "SNN",
+      "icao": "EINN",
+      "name": "Shannon Airport",
+      "type": "large_airport",
+      "distance_km": 193,
+      "destinations": 66,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EINN/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "AGP",
+      "icao": "LEMG",
+      "name": "Málaga-Costa del Sol Airport",
+      "type": "large_airport",
+      "distance_km": 11,
+      "destinations": 160,
+      "airlines": 66,
+      "url": "https://www.airportroutes.com/airports/LEMG/"
+    },
+    {
+      "iata": "GIB",
+      "icao": "LXGB",
+      "name": "Gibraltar Airport",
+      "type": "large_airport",
+      "distance_km": 106,
+      "destinations": 5,
+      "airlines": 2,
+      "url": "https://www.airportroutes.com/airports/LXGB/"
+    },
+    {
+      "iata": "TNG",
+      "icao": "GMTT",
+      "name": "Tangier Ibn Battuta Airport",
+      "type": "large_airport",
+      "distance_km": 176,
+      "destinations": 48,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/GMTT/"
+    }
+  ]
 }

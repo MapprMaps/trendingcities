@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MUC",
+      "icao": "EDDM",
+      "name": "Munich Airport",
+      "type": "large_airport",
+      "distance_km": 29,
+      "destinations": 216,
+      "airlines": 107,
+      "url": "https://www.airportroutes.com/airports/EDDM/"
+    },
+    {
+      "iata": "NUE",
+      "icao": "EDDN",
+      "name": "Nuremberg Airport",
+      "type": "large_airport",
+      "distance_km": 156,
+      "destinations": 65,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/EDDN/"
+    },
+    {
+      "iata": "STR",
+      "icao": "EDDS",
+      "name": "Stuttgart Airport",
+      "type": "large_airport",
+      "distance_km": 185,
+      "destinations": 131,
+      "airlines": 49,
+      "url": "https://www.airportroutes.com/airports/EDDS/"
+    }
+  ]
 }

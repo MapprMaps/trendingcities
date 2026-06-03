@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "PUJ",
+      "icao": "MDPC",
+      "name": "Punta Cana International Airport",
+      "type": "large_airport",
+      "distance_km": 7,
+      "destinations": 131,
+      "airlines": 66,
+      "url": "https://www.airportroutes.com/airports/MDPC/"
+    },
+    {
+      "iata": "LRM",
+      "icao": "MDLR",
+      "name": "Casa De Campo International Airport",
+      "type": "large_airport",
+      "distance_km": 54,
+      "destinations": 42,
+      "airlines": 19,
+      "url": "https://www.airportroutes.com/airports/MDLR/"
+    },
+    {
+      "iata": "SDQ",
+      "icao": "MDSD",
+      "name": "Las Américas International Airport",
+      "type": "large_airport",
+      "distance_km": 133,
+      "destinations": 60,
+      "airlines": 36,
+      "url": "https://www.airportroutes.com/airports/MDSD/"
+    }
+  ]
 }

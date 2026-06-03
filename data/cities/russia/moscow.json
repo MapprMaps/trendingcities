@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "VKO",
+      "icao": "UUWW",
+      "name": "Vnukovo International Airport",
+      "type": "large_airport",
+      "distance_km": 22,
+      "destinations": 74,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/UUWW/"
+    },
+    {
+      "iata": "DME",
+      "icao": "UUDD",
+      "name": "Domodedovo International Airport",
+      "type": "large_airport",
+      "distance_km": 31,
+      "destinations": 82,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/UUDD/"
+    },
+    {
+      "iata": "ZIA",
+      "icao": "UUBW",
+      "name": "Zhukovsky International Airport",
+      "type": "large_airport",
+      "distance_km": 35,
+      "destinations": 31,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/UUBW/"
+    }
+  ]
 }

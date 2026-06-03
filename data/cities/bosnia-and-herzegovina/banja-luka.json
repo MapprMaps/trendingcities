@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 44.77208,
     "lng": 17.19177
-  }
+  },
+  "airports": [
+    {
+      "iata": "SJJ",
+      "icao": "LQSA",
+      "name": "Sarajevo International Airport",
+      "type": "large_airport",
+      "distance_km": 139,
+      "destinations": 41,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/LQSA/"
+    },
+    {
+      "iata": "ZAG",
+      "icao": "LDZA",
+      "name": "Zagreb Franjo Tuđman International Airport",
+      "type": "large_airport",
+      "distance_km": 139,
+      "destinations": 66,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/LDZA/"
+    },
+    {
+      "iata": "TZL",
+      "icao": "LQTZ",
+      "name": "Tuzla International Airport",
+      "type": "medium_airport",
+      "distance_km": 127,
+      "destinations": 14,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/LQTZ/"
+    }
+  ]
 }

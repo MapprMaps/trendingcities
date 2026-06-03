@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "DCA",
+      "icao": "KDCA",
+      "name": "Ronald Reagan Washington National Airport",
+      "type": "large_airport",
+      "distance_km": 5,
+      "destinations": 110,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/KDCA/"
+    },
+    {
+      "iata": "IAD",
+      "icao": "KIAD",
+      "name": "Washington Dulles International Airport",
+      "type": "large_airport",
+      "distance_km": 37,
+      "destinations": 323,
+      "airlines": 125,
+      "url": "https://www.airportroutes.com/airports/KIAD/"
+    },
+    {
+      "iata": "BWI",
+      "icao": "KBWI",
+      "name": "Baltimore/Washington International Thurgood Marshall Airport",
+      "type": "large_airport",
+      "distance_km": 45,
+      "destinations": 108,
+      "airlines": 35,
+      "url": "https://www.airportroutes.com/airports/KBWI/"
+    }
+  ]
 }

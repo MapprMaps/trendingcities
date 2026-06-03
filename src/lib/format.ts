@@ -18,3 +18,16 @@ export function pct(n: number): string {
   const sign = n > 0 ? '+' : n < 0 ? '−' : '';
   return sign + Math.abs(n).toFixed(1) + '%';
 }
+
+/** Format a metric value for display per its render type (see METRIC_META.fmt). */
+export function fmtMetric(value: number, fmt: string): string {
+  switch (fmt) {
+    case 'usd': return usd(Math.round(value));
+    case 'usd_month': return usd(Math.round(value)) + '/mo';
+    case 'index_nyc100': return value.toFixed(1);
+    case 'ratio': return value.toFixed(1) + '×';
+    case 'pct': return value.toFixed(1) + '%';
+    case 'count': return value.toLocaleString('en-US');
+    default: return String(value);
+  }
+}

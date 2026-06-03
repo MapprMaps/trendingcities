@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 41.0316,
     "lng": 21.33025
-  }
+  },
+  "airports": [
+    {
+      "iata": "SKP",
+      "icao": "LWSK",
+      "name": "Skopje International Airport",
+      "type": "large_airport",
+      "distance_km": 106,
+      "destinations": 56,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/LWSK/"
+    },
+    {
+      "iata": "TIA",
+      "icao": "LATI",
+      "name": "Tirana International Airport Mother Teresa",
+      "type": "large_airport",
+      "distance_km": 142,
+      "destinations": 104,
+      "airlines": 58,
+      "url": "https://www.airportroutes.com/airports/LATI/"
+    },
+    {
+      "iata": "SKG",
+      "icao": "LGTS",
+      "name": "Thessaloniki Macedonia International Airport",
+      "type": "large_airport",
+      "distance_km": 150,
+      "destinations": 98,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LGTS/"
+    }
+  ]
 }

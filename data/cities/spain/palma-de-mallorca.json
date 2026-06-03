@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 39.56958,
     "lng": 2.65007
-  }
+  },
+  "airports": [
+    {
+      "iata": "PMI",
+      "icao": "LEPA",
+      "name": "Palma de Mallorca Airport",
+      "type": "large_airport",
+      "distance_km": 8,
+      "destinations": 167,
+      "airlines": 73,
+      "url": "https://www.airportroutes.com/airports/LEPA/"
+    },
+    {
+      "iata": "IBZ",
+      "icao": "LEIB",
+      "name": "Ibiza Airport",
+      "type": "large_airport",
+      "distance_km": 135,
+      "destinations": 90,
+      "airlines": 57,
+      "url": "https://www.airportroutes.com/airports/LEIB/"
+    },
+    {
+      "iata": "BCN",
+      "icao": "LEBL",
+      "name": "Josep Tarradellas Barcelona-El Prat Airport",
+      "type": "large_airport",
+      "distance_km": 198,
+      "destinations": 222,
+      "airlines": 115,
+      "url": "https://www.airportroutes.com/airports/LEBL/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "VIE",
+      "icao": "LOWW",
+      "name": "Vienna International Airport",
+      "type": "large_airport",
+      "distance_km": 120,
+      "destinations": 198,
+      "airlines": 91,
+      "url": "https://www.airportroutes.com/airports/LOWW/"
+    },
+    {
+      "iata": "BTS",
+      "icao": "LZIB",
+      "name": "M. R. Štefánik Airport",
+      "type": "large_airport",
+      "distance_km": 122,
+      "destinations": 90,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/LZIB/"
+    },
+    {
+      "iata": "PRG",
+      "icao": "LKPR",
+      "name": "Václav Havel Airport Prague",
+      "type": "large_airport",
+      "distance_km": 198,
+      "destinations": 185,
+      "airlines": 98,
+      "url": "https://www.airportroutes.com/airports/LKPR/"
+    }
+  ]
 }

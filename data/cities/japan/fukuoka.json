@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "FUK",
+      "icao": "RJFF",
+      "name": "Fukuoka Airport",
+      "type": "large_airport",
+      "distance_km": 16,
+      "destinations": 44,
+      "airlines": 45,
+      "url": "https://www.airportroutes.com/airports/RJFF/"
+    },
+    {
+      "iata": "KMJ",
+      "icao": "RJFT",
+      "name": "Kumamoto Airport",
+      "type": "medium_airport",
+      "distance_km": 90,
+      "destinations": 12,
+      "airlines": 13,
+      "url": "https://www.airportroutes.com/airports/RJFT/"
+    }
+  ]
 }

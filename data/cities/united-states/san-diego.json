@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SAN",
+      "icao": "KSAN",
+      "name": "San Diego International Airport",
+      "type": "large_airport",
+      "distance_km": 3,
+      "destinations": 115,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/KSAN/"
+    },
+    {
+      "iata": "TIJ",
+      "icao": "MMTJ",
+      "name": "General Abelardo L. Rodriguez International Airport",
+      "type": "large_airport",
+      "distance_km": 27,
+      "destinations": 43,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/MMTJ/"
+    },
+    {
+      "iata": "SNA",
+      "icao": "KSNA",
+      "name": "John Wayne Orange County International Airport",
+      "type": "large_airport",
+      "distance_km": 125,
+      "destinations": 74,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/KSNA/"
+    }
+  ]
 }

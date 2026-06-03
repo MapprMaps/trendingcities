@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GRU",
+      "icao": "SBGR",
+      "name": "Guarulhos - Governador André Franco Montoro International Airport",
+      "type": "large_airport",
+      "distance_km": 21,
+      "destinations": 107,
+      "airlines": 45,
+      "url": "https://www.airportroutes.com/airports/SBGR/"
+    },
+    {
+      "iata": "CGH",
+      "icao": "SBSP",
+      "name": "Congonhas Airport",
+      "type": "medium_airport",
+      "distance_km": 9,
+      "destinations": 29,
+      "airlines": 3,
+      "url": "https://www.airportroutes.com/airports/SBSP/"
+    },
+    {
+      "iata": "VCP",
+      "icao": "SBKP",
+      "name": "Viracopos International Airport",
+      "type": "medium_airport",
+      "distance_km": 79,
+      "destinations": 73,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/SBKP/"
+    }
+  ]
 }

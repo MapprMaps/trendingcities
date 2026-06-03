@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TLS",
+      "icao": "LFBO",
+      "name": "Toulouse-Blagnac Airport",
+      "type": "large_airport",
+      "distance_km": 125,
+      "destinations": 90,
+      "airlines": 35,
+      "url": "https://www.airportroutes.com/airports/LFBO/"
+    },
+    {
+      "iata": "BCN",
+      "icao": "LEBL",
+      "name": "Josep Tarradellas Barcelona-El Prat Airport",
+      "type": "large_airport",
+      "distance_km": 142,
+      "destinations": 222,
+      "airlines": 115,
+      "url": "https://www.airportroutes.com/airports/LEBL/"
+    },
+    {
+      "iata": "GRO",
+      "icao": "LEGE",
+      "name": "Girona-Costa Brava Airport",
+      "type": "medium_airport",
+      "distance_km": 122,
+      "destinations": 50,
+      "airlines": 11,
+      "url": "https://www.airportroutes.com/airports/LEGE/"
+    }
+  ]
 }

@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 61.49779,
     "lng": 23.76164
-  }
+  },
+  "airports": [
+    {
+      "iata": "HEL",
+      "icao": "EFHK",
+      "name": "Helsinki Vantaa Airport",
+      "type": "large_airport",
+      "distance_km": 147,
+      "destinations": 132,
+      "airlines": 36,
+      "url": "https://www.airportroutes.com/airports/EFHK/"
+    }
+  ]
 }

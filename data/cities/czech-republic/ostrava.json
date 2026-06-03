@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "KTW",
+      "icao": "EPKT",
+      "name": "Katowice Wojciech Korfanty International Airport",
+      "type": "large_airport",
+      "distance_km": 91,
+      "destinations": 81,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPKT/"
+    },
+    {
+      "iata": "KRK",
+      "icao": "EPKK",
+      "name": "Kraków John Paul II International Airport",
+      "type": "large_airport",
+      "distance_km": 111,
+      "destinations": 133,
+      "airlines": 45,
+      "url": "https://www.airportroutes.com/airports/EPKK/"
+    },
+    {
+      "iata": "WRO",
+      "icao": "EPWR",
+      "name": "Copernicus Wrocław Airport",
+      "type": "large_airport",
+      "distance_km": 173,
+      "destinations": 83,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPWR/"
+    }
+  ]
 }

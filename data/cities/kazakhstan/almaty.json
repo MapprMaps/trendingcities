@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ALA",
+      "icao": "UAAA",
+      "name": "Almaty International Airport",
+      "type": "large_airport",
+      "distance_km": 15,
+      "destinations": 83,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/UAAA/"
+    }
+  ]
 }

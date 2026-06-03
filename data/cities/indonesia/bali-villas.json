@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": -8.22713,
     "lng": 115.19192
-  }
+  },
+  "airports": [
+    {
+      "iata": "DPS",
+      "icao": "WADD",
+      "name": "Denpasar I Gusti Ngurah Rai International Airport",
+      "type": "large_airport",
+      "distance_km": 58,
+      "destinations": 63,
+      "airlines": 50,
+      "url": "https://www.airportroutes.com/airports/WADD/"
+    },
+    {
+      "iata": "LOP",
+      "icao": "WADL",
+      "name": "Lombok International Airport",
+      "type": "medium_airport",
+      "distance_km": 133,
+      "destinations": 15,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/WADL/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "RBA",
+      "icao": "GMME",
+      "name": "Rabat-Salé Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 58,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/GMME/"
+    },
+    {
+      "iata": "CMN",
+      "icao": "GMMN",
+      "name": "Mohammed V International Airport",
+      "type": "large_airport",
+      "distance_km": 100,
+      "destinations": 118,
+      "airlines": 38,
+      "url": "https://www.airportroutes.com/airports/GMMN/"
+    },
+    {
+      "iata": "FEZ",
+      "icao": "GMFF",
+      "name": "Fes Saïss International Airport",
+      "type": "large_airport",
+      "distance_km": 172,
+      "destinations": 41,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/GMFF/"
+    }
+  ]
 }

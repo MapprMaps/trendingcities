@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SJU",
+      "icao": "TJSJ",
+      "name": "Luis Munoz Marin International Airport",
+      "type": "large_airport",
+      "distance_km": 3,
+      "destinations": 122,
+      "airlines": 49,
+      "url": "https://www.airportroutes.com/airports/TJSJ/"
+    },
+    {
+      "iata": "PSE",
+      "icao": "TJPS",
+      "name": "Mercedita International Airport",
+      "type": "large_airport",
+      "distance_km": 75,
+      "destinations": 2,
+      "airlines": 2,
+      "url": "https://www.airportroutes.com/airports/TJPS/"
+    },
+    {
+      "iata": "STT",
+      "icao": "TIST",
+      "name": "Cyril E. King Airport",
+      "type": "large_airport",
+      "distance_km": 111,
+      "destinations": 34,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/TIST/"
+    }
+  ]
 }

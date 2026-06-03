@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TLL",
+      "icao": "EETN",
+      "name": "Lennart Meri Tallinn Airport",
+      "type": "large_airport",
+      "distance_km": 5,
+      "destinations": 52,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/EETN/"
+    },
+    {
+      "iata": "HEL",
+      "icao": "EFHK",
+      "name": "Helsinki Vantaa Airport",
+      "type": "large_airport",
+      "distance_km": 99,
+      "destinations": 132,
+      "airlines": 36,
+      "url": "https://www.airportroutes.com/airports/EFHK/"
+    }
+  ]
 }

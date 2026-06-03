@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 37.87273,
     "lng": 32.49244
-  }
+  },
+  "airports": [
+    {
+      "iata": "AYT",
+      "icao": "LTAI",
+      "name": "Antalya International Airport",
+      "type": "large_airport",
+      "distance_km": 185,
+      "destinations": 190,
+      "airlines": 71,
+      "url": "https://www.airportroutes.com/airports/LTAI/"
+    },
+    {
+      "iata": "GZP",
+      "icao": "LTFG",
+      "name": "Gazipaşa-Alanya Airport",
+      "type": "medium_airport",
+      "distance_km": 175,
+      "destinations": 16,
+      "airlines": 11,
+      "url": "https://www.airportroutes.com/airports/LTFG/"
+    }
+  ]
 }

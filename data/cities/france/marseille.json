@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MRS",
+      "icao": "LFML",
+      "name": "Marseille Provence Airport",
+      "type": "large_airport",
+      "distance_km": 21,
+      "destinations": 134,
+      "airlines": 52,
+      "url": "https://www.airportroutes.com/airports/LFML/"
+    },
+    {
+      "iata": "NCE",
+      "icao": "LFMN",
+      "name": "Nice-Côte d'Azur Airport",
+      "type": "large_airport",
+      "distance_km": 154,
+      "destinations": 140,
+      "airlines": 87,
+      "url": "https://www.airportroutes.com/airports/LFMN/"
+    },
+    {
+      "iata": "MPL",
+      "icao": "LFMT",
+      "name": "Montpellier-Méditerranée Airport",
+      "type": "medium_airport",
+      "distance_km": 119,
+      "destinations": 37,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/LFMT/"
+    }
+  ]
 }

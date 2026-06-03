@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 55.60529,
     "lng": 13.00016
-  }
+  },
+  "airports": [
+    {
+      "iata": "CPH",
+      "icao": "EKCH",
+      "name": "Copenhagen Kastrup Airport",
+      "type": "large_airport",
+      "distance_km": 22,
+      "destinations": 173,
+      "airlines": 84,
+      "url": "https://www.airportroutes.com/airports/EKCH/"
+    },
+    {
+      "iata": "ODE",
+      "icao": "EKOD",
+      "name": "Odense Hans Christian Andersen Airport",
+      "type": "large_airport",
+      "distance_km": 169,
+      "destinations": 1,
+      "airlines": 1,
+      "url": "https://www.airportroutes.com/airports/EKOD/"
+    },
+    {
+      "iata": "MMX",
+      "icao": "ESMS",
+      "name": "Malmö Sturup Airport",
+      "type": "medium_airport",
+      "distance_km": 25,
+      "destinations": 15,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/ESMS/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ATL",
+      "icao": "KATL",
+      "name": "Hartsfield Jackson Atlanta International Airport",
+      "type": "large_airport",
+      "distance_km": 14,
+      "destinations": 278,
+      "airlines": 59,
+      "url": "https://www.airportroutes.com/airports/KATL/"
+    },
+    {
+      "iata": "PDK",
+      "icao": "KPDK",
+      "name": "DeKalb Peachtree Airport",
+      "type": "medium_airport",
+      "distance_km": 16,
+      "destinations": 99,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/KPDK/"
+    },
+    {
+      "iata": "MCN",
+      "icao": "KMCN",
+      "name": "Middle Georgia Regional Airport",
+      "type": "medium_airport",
+      "distance_km": 136,
+      "destinations": 99,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/KMCN/"
+    }
+  ]
 }

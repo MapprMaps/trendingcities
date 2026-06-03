@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SKP",
+      "icao": "LWSK",
+      "name": "Skopje International Airport",
+      "type": "large_airport",
+      "distance_km": 0,
+      "destinations": 56,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/LWSK/"
+    },
+    {
+      "iata": "PRN",
+      "icao": "BKPR",
+      "name": "Priština Adem Jashari International Airport",
+      "type": "large_airport",
+      "distance_km": 83,
+      "destinations": 37,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/BKPR/"
+    },
+    {
+      "iata": "SOF",
+      "icao": "LBSF",
+      "name": "Sofia Airport",
+      "type": "large_airport",
+      "distance_km": 169,
+      "destinations": 105,
+      "airlines": 40,
+      "url": "https://www.airportroutes.com/airports/LBSF/"
+    }
+  ]
 }

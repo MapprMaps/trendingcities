@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GDL",
+      "icao": "MMGL",
+      "name": "Guadalajara International Airport",
+      "type": "large_airport",
+      "distance_km": 17,
+      "destinations": 88,
+      "airlines": 33,
+      "url": "https://www.airportroutes.com/airports/MMGL/"
+    },
+    {
+      "iata": "PVR",
+      "icao": "MMPR",
+      "name": "Puerto Vallarta International Airport",
+      "type": "large_airport",
+      "distance_km": 200,
+      "destinations": 109,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/MMPR/"
+    },
+    {
+      "iata": "BJX",
+      "icao": "MMLO",
+      "name": "Del Bajío International Airport",
+      "type": "medium_airport",
+      "distance_km": 197,
+      "destinations": 24,
+      "airlines": 9,
+      "url": "https://www.airportroutes.com/airports/MMLO/"
+    }
+  ]
 }

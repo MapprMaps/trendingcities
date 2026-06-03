@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 8.73009,
     "lng": -79.87558
-  }
+  },
+  "airports": [
+    {
+      "iata": "PTY",
+      "icao": "MPTO",
+      "name": "Tocumen International Airport",
+      "type": "large_airport",
+      "distance_km": 66,
+      "destinations": 115,
+      "airlines": 47,
+      "url": "https://www.airportroutes.com/airports/MPTO/"
+    }
+  ]
 }

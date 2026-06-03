@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "OSL",
+      "icao": "ENGM",
+      "name": "Oslo Airport, Gardermoen",
+      "type": "large_airport",
+      "distance_km": 37,
+      "destinations": 157,
+      "airlines": 62,
+      "url": "https://www.airportroutes.com/airports/ENGM/"
+    },
+    {
+      "iata": "TRF",
+      "icao": "ENTO",
+      "name": "Sandefjord Airport, Torp",
+      "type": "medium_airport",
+      "distance_km": 85,
+      "destinations": 29,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/ENTO/"
+    }
+  ]
 }

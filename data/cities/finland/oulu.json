@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 65.01179,
     "lng": 25.4702
-  }
+  },
+  "airports": [
+    {
+      "iata": "RVN",
+      "icao": "EFRO",
+      "name": "Rovaniemi Airport",
+      "type": "medium_airport",
+      "distance_km": 174,
+      "destinations": 38,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EFRO/"
+    }
+  ]
 }

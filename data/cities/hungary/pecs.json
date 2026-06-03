@@ -50,5 +50,19 @@
   "coordinates": {
     "lat": 46.07651,
     "lng": 18.22803
+  },
+  "media": {
+    "photo_ids": [
+      "komqz90yevU"
+    ],
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1667745537797-f5d53e5eab9b?ixid=M3w2OTEyOTF8MHwxfGFsbHx8fHx8fHx8fDE3NDQzMzczMzF8&ixlib=rb-4.0.3",
+      "title": "Autumn's Edge Overlooking the Cityscape",
+      "photographer": "vadszeder",
+      "username": "vadszeder",
+      "ss_url": "https://www.sampleshots.com/photos/komqz90yevU/",
+      "source": "unsplash",
+      "license": "Unsplash License"
+    }
   }
 }

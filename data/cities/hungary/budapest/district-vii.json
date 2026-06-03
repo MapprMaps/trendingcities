@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BUD",
+      "icao": "LHBP",
+      "name": "Budapest Liszt Ferenc International Airport",
+      "type": "large_airport",
+      "distance_km": 18,
+      "destinations": 172,
+      "airlines": 80,
+      "url": "https://www.airportroutes.com/airports/LHBP/"
+    },
+    {
+      "iata": "BTS",
+      "icao": "LZIB",
+      "name": "M. R. Štefánik Airport",
+      "type": "large_airport",
+      "distance_km": 156,
+      "destinations": 90,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/LZIB/"
+    },
+    {
+      "iata": "VIE",
+      "icao": "LOWW",
+      "name": "Vienna International Airport",
+      "type": "large_airport",
+      "distance_km": 197,
+      "destinations": 198,
+      "airlines": 91,
+      "url": "https://www.airportroutes.com/airports/LOWW/"
+    }
+  ]
 }

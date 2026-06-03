@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "OPO",
+      "icao": "LPPR",
+      "name": "Francisco de Sá Carneiro Airport",
+      "type": "large_airport",
+      "distance_km": 12,
+      "destinations": 144,
+      "airlines": 69,
+      "url": "https://www.airportroutes.com/airports/LPPR/"
+    },
+    {
+      "iata": "SCQ",
+      "icao": "LEST",
+      "name": "Santiago-Rosalía de Castro Airport",
+      "type": "large_airport",
+      "distance_km": 195,
+      "destinations": 34,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/LEST/"
+    }
+  ]
 }

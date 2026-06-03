@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 20.96708,
     "lng": -89.62374
-  }
+  },
+  "airports": [
+    {
+      "iata": "MID",
+      "icao": "MMMD",
+      "name": "Manuel Crescencio Rejón International Airport",
+      "type": "large_airport",
+      "distance_km": 5,
+      "destinations": 37,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/MMMD/"
+    }
+  ]
 }

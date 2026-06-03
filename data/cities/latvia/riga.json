@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "RIX",
+      "icao": "EVRA",
+      "name": "Riga International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 102,
+      "airlines": 24,
+      "url": "https://www.airportroutes.com/airports/EVRA/"
+    }
+  ]
 }

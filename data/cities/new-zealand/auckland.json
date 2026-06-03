@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "AKL",
+      "icao": "NZAA",
+      "name": "Auckland International Airport",
+      "type": "large_airport",
+      "distance_km": 18,
+      "destinations": 65,
+      "airlines": 32,
+      "url": "https://www.airportroutes.com/airports/NZAA/"
+    }
+  ]
 }

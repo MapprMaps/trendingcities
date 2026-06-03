@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 10.60866,
     "lng": 104.17933
-  }
+  },
+  "airports": [
+    {
+      "iata": "KTI",
+      "icao": "VDTI",
+      "name": "Techo International Airport",
+      "type": "large_airport",
+      "distance_km": 116,
+      "destinations": 36,
+      "airlines": 30,
+      "url": "https://www.airportroutes.com/airports/VDTI/"
+    },
+    {
+      "iata": "PNH",
+      "icao": "VDPP",
+      "name": "Phnom Penh International Airport",
+      "type": "large_airport",
+      "distance_km": 127,
+      "destinations": 30,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/VDPP/"
+    },
+    {
+      "iata": "PQC",
+      "icao": "VVPQ",
+      "name": "Phu Quoc International Airport",
+      "type": "medium_airport",
+      "distance_km": 53,
+      "destinations": 32,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/VVPQ/"
+    }
+  ]
 }

@@ -7,13 +7,15 @@ const recordModules = import.meta.glob('/data/cities/**/*.json', { eager: true }
 
 export type Bed = 'one' | 'two' | 'three';
 
-interface MetricValue {
+export interface MetricValue {
   value: number;
   unit: string;
   as_of: string;
   sources: string[];
   confidence?: string;
   method?: string;
+  source_urls?: string[];
+  notes?: string;
 }
 export interface CityRecord {
   schema_version: string;
@@ -44,6 +46,7 @@ export interface City {
   three: number;
   asOf: string;       // metric as_of (e.g. "2026-05")
   sources: string[];  // upstream sources for the price metrics
+  metricsRaw: Record<string, MetricValue>; // every metric on the record, with provenance, for generic rendering
   lat?: number;
   lng?: number;
   hero?: Hero;
@@ -102,6 +105,7 @@ function build(): City[] {
       three: three.value,
       asOf: three.as_of || two.as_of || one.as_of,
       sources: three.sources || [],
+      metricsRaw: rec.metrics || {},
       lat: rec.coordinates?.lat,
       lng: rec.coordinates?.lng,
       hero: rec.media?.hero,
@@ -207,6 +211,62 @@ export function relatedTo(c: City, limit = 6): City[] {
 // ── Rankings ───────────────────────────────────────────────────────────────
 // Rankings & comparisons use top-level cities only — districts would double-count
 // a metro (e.g. Berlin + Berlin Mitte) and clutter the lists.
+// ── Metric registry (drives the generic per-metric rendering + provenance) ──
+// Every non-price metric a record can carry. The city page renders whichever
+// of these are present, each with its own source + "last updated" badge.
+export type MetricFmt = 'usd' | 'usd_month' | 'index_nyc100' | 'pct' | 'ratio' | 'count';
+export interface MetricMeta {
+  key: string;
+  label: string;
+  group: 'cost' | 'income' | 'quality' | 'demographics';
+  fmt: MetricFmt;
+  baseline?: string;     // short note shown under the value (e.g. "NYC = 100")
+  higherBetter?: boolean; // for future colour-coding
+}
+export const METRIC_META: MetricMeta[] = [
+  { key: 'cost_of_living_index', label: 'Cost of living', group: 'cost', fmt: 'index_nyc100', baseline: 'NYC = 100, excl. rent' },
+  { key: 'rent_1bed_usd_month', label: 'Rent · 1-bed (centre)', group: 'cost', fmt: 'usd_month' },
+  { key: 'rent_2bed_usd_month', label: 'Rent · 2-bed (centre)', group: 'cost', fmt: 'usd_month' },
+  { key: 'rent_3bed_usd_month', label: 'Rent · 3-bed (centre)', group: 'cost', fmt: 'usd_month' },
+  { key: 'price_to_rent_ratio', label: 'Price-to-rent ratio', group: 'cost', fmt: 'ratio', baseline: 'years of rent to equal purchase' },
+  { key: 'local_purchasing_power_index', label: 'Local purchasing power', group: 'income', fmt: 'index_nyc100', baseline: 'NYC = 100', higherBetter: true },
+  { key: 'median_household_income_usd', label: 'Median household income', group: 'income', fmt: 'usd', higherBetter: true },
+  { key: 'safety_index', label: 'Safety', group: 'quality', fmt: 'index_nyc100', baseline: '0–100', higherBetter: true },
+  { key: 'healthcare_index', label: 'Healthcare', group: 'quality', fmt: 'index_nyc100', baseline: '0–100', higherBetter: true },
+  { key: 'climate_comfort_index', label: 'Climate comfort', group: 'quality', fmt: 'index_nyc100', baseline: '0–100', higherBetter: true },
+  { key: 'air_quality_index', label: 'Air quality', group: 'quality', fmt: 'index_nyc100', baseline: '0–100', higherBetter: true },
+  { key: 'population', label: 'Population', group: 'demographics', fmt: 'count' },
+  { key: 'unemployment_pct', label: 'Unemployment', group: 'demographics', fmt: 'pct' },
+  { key: 'job_growth_pct_yoy', label: 'Job growth (YoY)', group: 'demographics', fmt: 'pct', higherBetter: true },
+];
+export const METRIC_GROUP_LABEL: Record<MetricMeta['group'], string> = {
+  cost: 'Cost of living & rent',
+  income: 'Earnings & affordability',
+  quality: 'Quality of life',
+  demographics: 'People & jobs',
+};
+/** Human label + profile link for each provenance source id. */
+export const SOURCE_LABEL: Record<string, string> = {
+  globalpropertyguide: 'Global Property Guide',
+  numbeo: 'Numbeo',
+  official_statistics: 'Official statistics',
+  web: 'Public web research',
+  model_estimate: 'Model estimate',
+  community: 'Community submission',
+};
+/** "2026-06" -> "Jun 2026" for the "last updated" badges. */
+export function asOfLabel(s?: string): string {
+  if (!s) return '';
+  const [y, m] = s.split('-');
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return m ? `${months[+m - 1]} ${y}` : y;
+}
+/** Newest as_of across a record's metrics — the page-level "data current as of". */
+export function freshestAsOf(c: City): string {
+  const dates = Object.values(c.metricsRaw).map((mv) => mv.as_of).filter(Boolean).sort();
+  return dates.length ? dates[dates.length - 1] : c.asOf;
+}
+
 export const mostExpensive3 = [...topCities].sort((a, b) => b.three - a.three);
 export const mostAffordable1 = [...topCities].sort((a, b) => a.one - b.one);
 export const best2Under250k = [...topCities]

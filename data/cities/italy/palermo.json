@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "PMO",
+      "icao": "LICJ",
+      "name": "Falcone–Borsellino Airport",
+      "type": "large_airport",
+      "distance_km": 24,
+      "destinations": 99,
+      "airlines": 44,
+      "url": "https://www.airportroutes.com/airports/LICJ/"
+    },
+    {
+      "iata": "CTA",
+      "icao": "LICC",
+      "name": "Catania-Fontanarossa Airport",
+      "type": "large_airport",
+      "distance_km": 167,
+      "destinations": 90,
+      "airlines": 55,
+      "url": "https://www.airportroutes.com/airports/LICC/"
+    },
+    {
+      "iata": "TPS",
+      "icao": "LICT",
+      "name": "Vincenzo Florio Airport Trapani-Birgi",
+      "type": "medium_airport",
+      "distance_km": 79,
+      "destinations": 23,
+      "airlines": 3,
+      "url": "https://www.airportroutes.com/airports/LICT/"
+    }
+  ]
 }

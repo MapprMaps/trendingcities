@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MDW",
+      "icao": "KMDW",
+      "name": "Chicago Midway International Airport",
+      "type": "large_airport",
+      "distance_km": 15,
+      "destinations": 118,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/KMDW/"
+    },
+    {
+      "iata": "ORD",
+      "icao": "KORD",
+      "name": "Chicago O'Hare International Airport",
+      "type": "large_airport",
+      "distance_km": 26,
+      "destinations": 304,
+      "airlines": 92,
+      "url": "https://www.airportroutes.com/airports/KORD/"
+    },
+    {
+      "iata": "MKE",
+      "icao": "KMKE",
+      "name": "General Mitchell International Airport",
+      "type": "large_airport",
+      "distance_km": 121,
+      "destinations": 111,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/KMKE/"
+    }
+  ]
 }

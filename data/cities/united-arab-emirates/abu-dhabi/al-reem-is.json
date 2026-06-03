@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "AUH",
+      "icao": "OMAA",
+      "name": "Zayed International Airport",
+      "type": "large_airport",
+      "distance_km": 28,
+      "destinations": 156,
+      "airlines": 44,
+      "url": "https://www.airportroutes.com/airports/OMAA/"
+    },
+    {
+      "iata": "DWC",
+      "icao": "OMDW",
+      "name": "Al Maktoum International Airport",
+      "type": "large_airport",
+      "distance_km": 93,
+      "destinations": 126,
+      "airlines": 56,
+      "url": "https://www.airportroutes.com/airports/OMDW/"
+    },
+    {
+      "iata": "AAN",
+      "icao": "OMAL",
+      "name": "Al Ain International Airport",
+      "type": "large_airport",
+      "distance_km": 127,
+      "destinations": 6,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/OMAL/"
+    }
+  ]
 }

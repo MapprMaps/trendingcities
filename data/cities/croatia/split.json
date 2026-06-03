@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SJJ",
+      "icao": "LQSA",
+      "name": "Sarajevo International Airport",
+      "type": "large_airport",
+      "distance_km": 156,
+      "destinations": 41,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/LQSA/"
+    },
+    {
+      "iata": "SPU",
+      "icao": "LDSP",
+      "name": "Split Airport",
+      "type": "medium_airport",
+      "distance_km": 12,
+      "destinations": 72,
+      "airlines": 46,
+      "url": "https://www.airportroutes.com/airports/LDSP/"
+    },
+    {
+      "iata": "ZAD",
+      "icao": "LDZD",
+      "name": "Zadar Airport",
+      "type": "medium_airport",
+      "distance_km": 109,
+      "destinations": 70,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/LDZD/"
+    }
+  ]
 }

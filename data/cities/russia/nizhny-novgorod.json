@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GOJ",
+      "icao": "UWGG",
+      "name": "Nizhny Novgorod / Strigino International Airport",
+      "type": "medium_airport",
+      "distance_km": 17,
+      "destinations": 28,
+      "airlines": 13,
+      "url": "https://www.airportroutes.com/airports/UWGG/"
+    }
+  ]
 }

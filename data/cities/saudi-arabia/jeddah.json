@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "JED",
+      "icao": "OEJN",
+      "name": "King Abdulaziz International Airport",
+      "type": "large_airport",
+      "distance_km": 14,
+      "destinations": 190,
+      "airlines": 82,
+      "url": "https://www.airportroutes.com/airports/OEJN/"
+    }
+  ]
 }

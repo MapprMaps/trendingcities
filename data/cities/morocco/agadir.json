@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "AGA",
+      "icao": "GMAD",
+      "name": "Al Massira Airport",
+      "type": "large_airport",
+      "distance_km": 20,
+      "destinations": 67,
+      "airlines": 30,
+      "url": "https://www.airportroutes.com/airports/GMAD/"
+    },
+    {
+      "iata": "RAK",
+      "icao": "GMMX",
+      "name": "Menara Airport",
+      "type": "large_airport",
+      "distance_km": 198,
+      "destinations": 115,
+      "airlines": 54,
+      "url": "https://www.airportroutes.com/airports/GMMX/"
+    },
+    {
+      "iata": "ESU",
+      "icao": "GMMI",
+      "name": "Essaouira-Mogador Airport",
+      "type": "medium_airport",
+      "distance_km": 109,
+      "destinations": 13,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/GMMI/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TBS",
+      "icao": "UGTB",
+      "name": "Tbilisi International Airport",
+      "type": "large_airport",
+      "distance_km": 13,
+      "destinations": 77,
+      "airlines": 50,
+      "url": "https://www.airportroutes.com/airports/UGTB/"
+    },
+    {
+      "iata": "EVN",
+      "icao": "UDYZ",
+      "name": "Zvartnots International Airport",
+      "type": "large_airport",
+      "distance_km": 175,
+      "destinations": 76,
+      "airlines": 41,
+      "url": "https://www.airportroutes.com/airports/UDYZ/"
+    },
+    {
+      "iata": "KUT",
+      "icao": "UGKO",
+      "name": "David the Builder Kutaisi International Airport",
+      "type": "medium_airport",
+      "distance_km": 200,
+      "destinations": 34,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/UGKO/"
+    }
+  ]
 }

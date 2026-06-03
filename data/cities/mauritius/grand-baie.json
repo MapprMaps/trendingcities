@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": -20.01302,
     "lng": 57.58463
-  }
+  },
+  "airports": [
+    {
+      "iata": "MRU",
+      "icao": "FIMP",
+      "name": "Sir Seewoosagur Ramgoolam International Airport",
+      "type": "large_airport",
+      "distance_km": 47,
+      "destinations": 26,
+      "airlines": 23,
+      "url": "https://www.airportroutes.com/airports/FIMP/"
+    }
+  ]
 }

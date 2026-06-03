@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "CUN",
+      "icao": "MMUN",
+      "name": "Cancún International Airport",
+      "type": "large_airport",
+      "distance_km": 13,
+      "destinations": 143,
+      "airlines": 73,
+      "url": "https://www.airportroutes.com/airports/MMUN/"
+    },
+    {
+      "iata": "CZM",
+      "icao": "MMCZ",
+      "name": "Cozumel International Airport",
+      "type": "large_airport",
+      "distance_km": 71,
+      "destinations": 25,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/MMCZ/"
+    },
+    {
+      "iata": "TQO",
+      "icao": "MMTL",
+      "name": "Felipe Carrillo Puerto International Airport",
+      "type": "medium_airport",
+      "distance_km": 138,
+      "destinations": 21,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/MMTL/"
+    }
+  ]
 }

@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 54.72614,
     "lng": 55.9475
-  }
+  },
+  "airports": [
+    {
+      "iata": "UFA",
+      "icao": "UWUU",
+      "name": "Ufa International Airport",
+      "type": "large_airport",
+      "distance_km": 19,
+      "destinations": 55,
+      "airlines": 27,
+      "url": "https://www.airportroutes.com/airports/UWUU/"
+    }
+  ]
 }

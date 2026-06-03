@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 45.43382,
     "lng": 28.05494
-  }
+  },
+  "airports": [
+    {
+      "iata": "OTP",
+      "icao": "LROP",
+      "name": "Bucharest Henri Coandă International Airport",
+      "type": "large_airport",
+      "distance_km": 181,
+      "destinations": 137,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LROP/"
+    },
+    {
+      "iata": "GHV",
+      "icao": "LRBV",
+      "name": "Brașov-Ghimbav International Airport",
+      "type": "large_airport",
+      "distance_km": 200,
+      "destinations": 13,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/LRBV/"
+    },
+    {
+      "iata": "RMO",
+      "icao": "LUKK",
+      "name": "Chişinău International Airport",
+      "type": "medium_airport",
+      "distance_km": 179,
+      "destinations": 71,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/LUKK/"
+    }
+  ]
 }

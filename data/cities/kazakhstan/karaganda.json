@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 49.17673,
     "lng": 74.18113
-  }
+  },
+  "airports": [
+    {
+      "iata": "KGF",
+      "icao": "UAKK",
+      "name": "Sary-Arka Airport",
+      "type": "medium_airport",
+      "distance_km": 82,
+      "destinations": 9,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/UAKK/"
+    }
+  ]
 }

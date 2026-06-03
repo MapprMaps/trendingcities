@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 43.60446,
     "lng": 1.44424
-  }
+  },
+  "airports": [
+    {
+      "iata": "TLS",
+      "icao": "LFBO",
+      "name": "Toulouse-Blagnac Airport",
+      "type": "large_airport",
+      "distance_km": 7,
+      "destinations": 90,
+      "airlines": 35,
+      "url": "https://www.airportroutes.com/airports/LFBO/"
+    },
+    {
+      "iata": "LDE",
+      "icao": "LFBT",
+      "name": "Tarbes-Lourdes-Pyrénées Airport",
+      "type": "medium_airport",
+      "distance_km": 127,
+      "destinations": 17,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/LFBT/"
+    }
+  ]
 }

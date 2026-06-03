@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 1.4582,
     "lng": 103.76491
-  }
+  },
+  "airports": [
+    {
+      "iata": "SIN",
+      "icao": "WSSS",
+      "name": "Singapore Changi Airport",
+      "type": "large_airport",
+      "distance_km": 28,
+      "destinations": 171,
+      "airlines": 100,
+      "url": "https://www.airportroutes.com/airports/WSSS/"
+    },
+    {
+      "iata": "JHB",
+      "icao": "WMKJ",
+      "name": "Senai International Airport",
+      "type": "medium_airport",
+      "distance_km": 23,
+      "destinations": 19,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/WMKJ/"
+    },
+    {
+      "iata": "BTH",
+      "icao": "WIDD",
+      "name": "Hang Nadim International Airport",
+      "type": "medium_airport",
+      "distance_km": 54,
+      "destinations": 19,
+      "airlines": 11,
+      "url": "https://www.airportroutes.com/airports/WIDD/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LCA",
+      "icao": "LCLK",
+      "name": "Larnaca International Airport",
+      "type": "large_airport",
+      "distance_km": 111,
+      "destinations": 94,
+      "airlines": 76,
+      "url": "https://www.airportroutes.com/airports/LCLK/"
+    },
+    {
+      "iata": "PFO",
+      "icao": "LCPH",
+      "name": "Paphos International Airport",
+      "type": "medium_airport",
+      "distance_km": 8,
+      "destinations": 60,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/LCPH/"
+    },
+    {
+      "iata": "GZP",
+      "icao": "LTFG",
+      "name": "Gazipaşa-Alanya Airport",
+      "type": "medium_airport",
+      "distance_km": 170,
+      "destinations": 16,
+      "airlines": 11,
+      "url": "https://www.airportroutes.com/airports/LTFG/"
+    }
+  ]
 }

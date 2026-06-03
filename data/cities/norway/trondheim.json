@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TRD",
+      "icao": "ENVA",
+      "name": "Trondheim Airport, Værnes",
+      "type": "large_airport",
+      "distance_km": 27,
+      "destinations": 29,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/ENVA/"
+    }
+  ]
 }

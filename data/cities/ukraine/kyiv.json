@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "KBP",
+      "icao": "UKBB",
+      "name": "Boryspil International Airport",
+      "type": "large_airport",
+      "distance_km": 29,
+      "destinations": 0,
+      "airlines": 0,
+      "url": "https://www.airportroutes.com/airports/UKBB/"
+    }
+  ]
 }

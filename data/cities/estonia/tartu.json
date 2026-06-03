@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 58.37795,
     "lng": 26.729
-  }
+  },
+  "airports": [
+    {
+      "iata": "TLL",
+      "icao": "EETN",
+      "name": "Lennart Meri Tallinn Airport",
+      "type": "large_airport",
+      "distance_km": 159,
+      "destinations": 52,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/EETN/"
+    }
+  ]
 }

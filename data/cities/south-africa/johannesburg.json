@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "JNB",
+      "icao": "FAOR",
+      "name": "O.R. Tambo International Airport",
+      "type": "large_airport",
+      "distance_km": 21,
+      "destinations": 84,
+      "airlines": 55,
+      "url": "https://www.airportroutes.com/airports/FAOR/"
+    }
+  ]
 }

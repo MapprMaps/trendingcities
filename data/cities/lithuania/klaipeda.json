@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "KGD",
+      "icao": "UMKK",
+      "name": "Khrabrovo Airport",
+      "type": "medium_airport",
+      "distance_km": 98,
+      "destinations": 29,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/UMKK/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "DWC",
+      "icao": "OMDW",
+      "name": "Al Maktoum International Airport",
+      "type": "large_airport",
+      "distance_km": 20,
+      "destinations": 126,
+      "airlines": 56,
+      "url": "https://www.airportroutes.com/airports/OMDW/"
+    },
+    {
+      "iata": "DXB",
+      "icao": "OMDB",
+      "name": "Dubai International Airport",
+      "type": "large_airport",
+      "distance_km": 30,
+      "destinations": 273,
+      "airlines": 108,
+      "url": "https://www.airportroutes.com/airports/OMDB/"
+    },
+    {
+      "iata": "SHJ",
+      "icao": "OMSJ",
+      "name": "Sharjah International Airport",
+      "type": "large_airport",
+      "distance_km": 47,
+      "destinations": 117,
+      "airlines": 27,
+      "url": "https://www.airportroutes.com/airports/OMSJ/"
+    }
+  ]
 }

@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SVX",
+      "icao": "USSS",
+      "name": "Koltsovo Airport",
+      "type": "large_airport",
+      "distance_km": 16,
+      "destinations": 90,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/USSS/"
+    },
+    {
+      "iata": "CEK",
+      "icao": "USCC",
+      "name": "Chelyabinsk Balandino Airport",
+      "type": "medium_airport",
+      "distance_km": 180,
+      "destinations": 25,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/USCC/"
+    }
+  ]
 }

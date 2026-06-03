@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "CPT",
+      "icao": "FACT",
+      "name": "Cape Town International Airport",
+      "type": "large_airport",
+      "distance_km": 18,
+      "destinations": 40,
+      "airlines": 27,
+      "url": "https://www.airportroutes.com/airports/FACT/"
+    }
+  ]
 }

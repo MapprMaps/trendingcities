@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 49.22347,
     "lng": 18.73931
-  }
+  },
+  "airports": [
+    {
+      "iata": "KRK",
+      "icao": "EPKK",
+      "name": "Kraków John Paul II International Airport",
+      "type": "large_airport",
+      "distance_km": 121,
+      "destinations": 133,
+      "airlines": 45,
+      "url": "https://www.airportroutes.com/airports/EPKK/"
+    },
+    {
+      "iata": "KTW",
+      "icao": "EPKT",
+      "name": "Katowice Wojciech Korfanty International Airport",
+      "type": "large_airport",
+      "distance_km": 141,
+      "destinations": 81,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPKT/"
+    },
+    {
+      "iata": "BTS",
+      "icao": "LZIB",
+      "name": "M. R. Štefánik Airport",
+      "type": "large_airport",
+      "distance_km": 162,
+      "destinations": 90,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/LZIB/"
+    }
+  ]
 }

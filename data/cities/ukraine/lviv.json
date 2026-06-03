@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LWO",
+      "icao": "UKLL",
+      "name": "Lviv International Airport",
+      "type": "large_airport",
+      "distance_km": 6,
+      "destinations": 0,
+      "airlines": 0,
+      "url": "https://www.airportroutes.com/airports/UKLL/"
+    },
+    {
+      "iata": "RZE",
+      "icao": "EPRZ",
+      "name": "Rzeszów-Jasionka Airport",
+      "type": "large_airport",
+      "distance_km": 147,
+      "destinations": 24,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/EPRZ/"
+    },
+    {
+      "iata": "LUZ",
+      "icao": "EPLB",
+      "name": "Lublin Airport",
+      "type": "large_airport",
+      "distance_km": 181,
+      "destinations": 13,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/EPLB/"
+    }
+  ]
 }

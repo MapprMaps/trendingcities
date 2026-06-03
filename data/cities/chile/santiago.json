@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SCL",
+      "icao": "SCEL",
+      "name": "Comodoro Arturo Merino Benítez International Airport",
+      "type": "large_airport",
+      "distance_km": 13,
+      "destinations": 66,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/SCEL/"
+    },
+    {
+      "iata": "MDZ",
+      "icao": "SAME",
+      "name": "El Plumerillo Airport",
+      "type": "medium_airport",
+      "distance_km": 186,
+      "destinations": 14,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/SAME/"
+    }
+  ]
 }

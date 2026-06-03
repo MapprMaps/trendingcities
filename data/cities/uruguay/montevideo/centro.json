@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MVD",
+      "icao": "SUMU",
+      "name": "Carrasco General Cesáreo L. Berisso International Airport",
+      "type": "large_airport",
+      "distance_km": 17,
+      "destinations": 23,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/SUMU/"
+    }
+  ]
 }

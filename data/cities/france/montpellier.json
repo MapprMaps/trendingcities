@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 43.61124,
     "lng": 3.87673
-  }
+  },
+  "airports": [
+    {
+      "iata": "MRS",
+      "icao": "LFML",
+      "name": "Marseille Provence Airport",
+      "type": "large_airport",
+      "distance_km": 110,
+      "destinations": 134,
+      "airlines": 52,
+      "url": "https://www.airportroutes.com/airports/LFML/"
+    },
+    {
+      "iata": "MPL",
+      "icao": "LFMT",
+      "name": "Montpellier-Méditerranée Airport",
+      "type": "medium_airport",
+      "distance_km": 8,
+      "destinations": 37,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/LFMT/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "STR",
+      "icao": "EDDS",
+      "name": "Stuttgart Airport",
+      "type": "large_airport",
+      "distance_km": 10,
+      "destinations": 131,
+      "airlines": 49,
+      "url": "https://www.airportroutes.com/airports/EDDS/"
+    },
+    {
+      "iata": "FRA",
+      "icao": "EDDF",
+      "name": "Frankfurt Airport",
+      "type": "large_airport",
+      "distance_km": 146,
+      "destinations": 281,
+      "airlines": 114,
+      "url": "https://www.airportroutes.com/airports/EDDF/"
+    },
+    {
+      "iata": "ZRH",
+      "icao": "LSZH",
+      "name": "Zürich Airport",
+      "type": "large_airport",
+      "distance_km": 154,
+      "destinations": 198,
+      "airlines": 82,
+      "url": "https://www.airportroutes.com/airports/LSZH/"
+    }
+  ]
 }

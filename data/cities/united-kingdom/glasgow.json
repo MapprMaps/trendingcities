@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GLA",
+      "icao": "EGPF",
+      "name": "Glasgow Airport",
+      "type": "large_airport",
+      "distance_km": 12,
+      "destinations": 85,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/EGPF/"
+    },
+    {
+      "iata": "EDI",
+      "icao": "EGPH",
+      "name": "Edinburgh Airport",
+      "type": "large_airport",
+      "distance_km": 56,
+      "destinations": 166,
+      "airlines": 58,
+      "url": "https://www.airportroutes.com/airports/EGPH/"
+    },
+    {
+      "iata": "BFS",
+      "icao": "EGAA",
+      "name": "Belfast International Airport",
+      "type": "large_airport",
+      "distance_km": 183,
+      "destinations": 59,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/EGAA/"
+    }
+  ]
 }

@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 58.38707,
     "lng": 24.50261
-  }
+  },
+  "airports": [
+    {
+      "iata": "TLL",
+      "icao": "EETN",
+      "name": "Lennart Meri Tallinn Airport",
+      "type": "large_airport",
+      "distance_km": 116,
+      "destinations": 52,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/EETN/"
+    },
+    {
+      "iata": "RIX",
+      "icao": "EVRA",
+      "name": "Riga International Airport",
+      "type": "large_airport",
+      "distance_km": 166,
+      "destinations": 102,
+      "airlines": 24,
+      "url": "https://www.airportroutes.com/airports/EVRA/"
+    }
+  ]
 }

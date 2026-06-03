@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LAX",
+      "icao": "KLAX",
+      "name": "Los Angeles International Airport",
+      "type": "large_airport",
+      "distance_km": 20,
+      "destinations": 230,
+      "airlines": 115,
+      "url": "https://www.airportroutes.com/airports/KLAX/"
+    },
+    {
+      "iata": "LGB",
+      "icao": "KLGB",
+      "name": "Long Beach International Airport",
+      "type": "large_airport",
+      "distance_km": 28,
+      "destinations": 49,
+      "airlines": 11,
+      "url": "https://www.airportroutes.com/airports/KLGB/"
+    },
+    {
+      "iata": "SNA",
+      "icao": "KSNA",
+      "name": "John Wayne Orange County International Airport",
+      "type": "large_airport",
+      "distance_km": 54,
+      "destinations": 74,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/KSNA/"
+    }
+  ]
 }

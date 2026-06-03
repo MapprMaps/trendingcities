@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 43.06194,
     "lng": 141.35429
-  }
+  },
+  "airports": [
+    {
+      "iata": "CTS",
+      "icao": "RJCC",
+      "name": "New Chitose Airport",
+      "type": "large_airport",
+      "distance_km": 42,
+      "destinations": 41,
+      "airlines": 37,
+      "url": "https://www.airportroutes.com/airports/RJCC/"
+    },
+    {
+      "iata": "OKD",
+      "icao": "RJCO",
+      "name": "Sapporo Okadama Airport",
+      "type": "medium_airport",
+      "distance_km": 7,
+      "destinations": 13,
+      "airlines": 3,
+      "url": "https://www.airportroutes.com/airports/RJCO/"
+    }
+  ]
 }

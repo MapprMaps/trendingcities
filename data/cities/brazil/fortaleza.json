@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "FOR",
+      "icao": "SBFZ",
+      "name": "Pinto Martins International Airport",
+      "type": "large_airport",
+      "distance_km": 2,
+      "destinations": 27,
+      "airlines": 9,
+      "url": "https://www.airportroutes.com/airports/SBFZ/"
+    }
+  ]
 }

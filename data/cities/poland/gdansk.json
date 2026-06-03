@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GDN",
+      "icao": "EPGD",
+      "name": "Gdańsk Lech Wałęsa Airport",
+      "type": "large_airport",
+      "distance_km": 22,
+      "destinations": 90,
+      "airlines": 23,
+      "url": "https://www.airportroutes.com/airports/EPGD/"
+    },
+    {
+      "iata": "KGD",
+      "icao": "UMKK",
+      "name": "Khrabrovo Airport",
+      "type": "medium_airport",
+      "distance_km": 127,
+      "destinations": 29,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/UMKK/"
+    }
+  ]
 }

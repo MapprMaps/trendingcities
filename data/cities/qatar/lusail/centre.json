@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "DOH",
+      "icao": "OTHH",
+      "name": "Hamad International Airport",
+      "type": "large_airport",
+      "distance_km": 19,
+      "destinations": 190,
+      "airlines": 54,
+      "url": "https://www.airportroutes.com/airports/OTHH/"
+    },
+    {
+      "iata": "BAH",
+      "icao": "OBBI",
+      "name": "Bahrain International Airport",
+      "type": "large_airport",
+      "distance_km": 129,
+      "destinations": 56,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/OBBI/"
+    }
+  ]
 }

@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 49.94844,
     "lng": 82.62748
-  }
+  },
+  "airports": [
+    {
+      "iata": "UKK",
+      "icao": "UASK",
+      "name": "Ust-Kamenogorsk Airport",
+      "type": "medium_airport",
+      "distance_km": 14,
+      "destinations": 5,
+      "airlines": 4,
+      "url": "https://www.airportroutes.com/airports/UASK/"
+    }
+  ]
 }

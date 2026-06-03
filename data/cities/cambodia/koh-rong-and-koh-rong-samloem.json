@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 12.54332,
     "lng": 104.81449
-  }
+  },
+  "airports": [
+    {
+      "iata": "PNH",
+      "icao": "VDPP",
+      "name": "Phnom Penh International Airport",
+      "type": "large_airport",
+      "distance_km": 110,
+      "destinations": 30,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/VDPP/"
+    },
+    {
+      "iata": "SAI",
+      "icao": "VDSA",
+      "name": "Siem Reap-Angkor International Airport",
+      "type": "large_airport",
+      "distance_km": 112,
+      "destinations": 17,
+      "airlines": 13,
+      "url": "https://www.airportroutes.com/airports/VDSA/"
+    },
+    {
+      "iata": "KTI",
+      "icao": "VDTI",
+      "name": "Techo International Airport",
+      "type": "large_airport",
+      "distance_km": 131,
+      "destinations": 36,
+      "airlines": 30,
+      "url": "https://www.airportroutes.com/airports/VDTI/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TFS",
+      "icao": "GCTS",
+      "name": "Tenerife Sur Airport",
+      "type": "large_airport",
+      "distance_km": 28,
+      "destinations": 121,
+      "airlines": 57,
+      "url": "https://www.airportroutes.com/airports/GCTS/"
+    },
+    {
+      "iata": "LPA",
+      "icao": "GCLP",
+      "name": "Gran Canaria Airport",
+      "type": "large_airport",
+      "distance_km": 128,
+      "destinations": 124,
+      "airlines": 59,
+      "url": "https://www.airportroutes.com/airports/GCLP/"
+    },
+    {
+      "iata": "TFN",
+      "icao": "GCXO",
+      "name": "Tenerife Norte-Ciudad de La Laguna Airport",
+      "type": "medium_airport",
+      "distance_km": 35,
+      "destinations": 20,
+      "airlines": 13,
+      "url": "https://www.airportroutes.com/airports/GCXO/"
+    }
+  ]
 }

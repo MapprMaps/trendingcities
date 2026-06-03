@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "WRO",
+      "icao": "EPWR",
+      "name": "Copernicus Wrocław Airport",
+      "type": "large_airport",
+      "distance_km": 11,
+      "destinations": 83,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPWR/"
+    },
+    {
+      "iata": "POZ",
+      "icao": "EPPO",
+      "name": "Poznań-Ławica Airport",
+      "type": "large_airport",
+      "distance_km": 147,
+      "destinations": 61,
+      "airlines": 25,
+      "url": "https://www.airportroutes.com/airports/EPPO/"
+    },
+    {
+      "iata": "KTW",
+      "icao": "EPKT",
+      "name": "Katowice Wojciech Korfanty International Airport",
+      "type": "large_airport",
+      "distance_km": 161,
+      "destinations": 81,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPKT/"
+    }
+  ]
 }

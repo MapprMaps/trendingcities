@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MXP",
+      "icao": "LIMC",
+      "name": "Milan Malpensa International Airport",
+      "type": "large_airport",
+      "distance_km": 41,
+      "destinations": 216,
+      "airlines": 118,
+      "url": "https://www.airportroutes.com/airports/LIMC/"
+    },
+    {
+      "iata": "BGY",
+      "icao": "LIME",
+      "name": "Milan Bergamo Airport / Antonio Locatelli Air Base",
+      "type": "large_airport",
+      "distance_km": 47,
+      "destinations": 160,
+      "airlines": 44,
+      "url": "https://www.airportroutes.com/airports/LIME/"
+    },
+    {
+      "iata": "GOA",
+      "icao": "LIMJ",
+      "name": "Genoa Cristoforo Colombo Airport",
+      "type": "large_airport",
+      "distance_km": 120,
+      "destinations": 28,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/LIMJ/"
+    }
+  ]
 }

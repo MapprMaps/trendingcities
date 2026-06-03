@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "KEF",
+      "icao": "BIKF",
+      "name": "Keflavik International Airport",
+      "type": "large_airport",
+      "distance_km": 37,
+      "destinations": 110,
+      "airlines": 52,
+      "url": "https://www.airportroutes.com/airports/BIKF/"
+    }
+  ]
 }

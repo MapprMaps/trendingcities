@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BEG",
+      "icao": "LYBE",
+      "name": "Belgrade Nikola Tesla Airport",
+      "type": "large_airport",
+      "distance_km": 61,
+      "destinations": 105,
+      "airlines": 32,
+      "url": "https://www.airportroutes.com/airports/LYBE/"
+    },
+    {
+      "iata": "SJJ",
+      "icao": "LQSA",
+      "name": "Sarajevo International Airport",
+      "type": "large_airport",
+      "distance_km": 199,
+      "destinations": 41,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/LQSA/"
+    },
+    {
+      "iata": "TZL",
+      "icao": "LQTZ",
+      "name": "Tuzla International Airport",
+      "type": "medium_airport",
+      "distance_km": 125,
+      "destinations": 14,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/LQTZ/"
+    }
+  ]
 }

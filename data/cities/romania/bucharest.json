@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 44.43614,
     "lng": 26.10268
-  }
+  },
+  "airports": [
+    {
+      "iata": "OTP",
+      "icao": "LROP",
+      "name": "Bucharest Henri Coandă International Airport",
+      "type": "large_airport",
+      "distance_km": 15,
+      "destinations": 137,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LROP/"
+    },
+    {
+      "iata": "GHV",
+      "icao": "LRBV",
+      "name": "Brașov-Ghimbav International Airport",
+      "type": "large_airport",
+      "distance_km": 148,
+      "destinations": 13,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/LRBV/"
+    },
+    {
+      "iata": "VAR",
+      "icao": "LBWN",
+      "name": "Varna Airport",
+      "type": "large_airport",
+      "distance_km": 193,
+      "destinations": 51,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/LBWN/"
+    }
+  ]
 }

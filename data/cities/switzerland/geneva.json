@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GVA",
+      "icao": "LSGG",
+      "name": "Geneva Cointrin International Airport",
+      "type": "large_airport",
+      "distance_km": 5,
+      "destinations": 157,
+      "airlines": 77,
+      "url": "https://www.airportroutes.com/airports/LSGG/"
+    },
+    {
+      "iata": "LYS",
+      "icao": "LFLL",
+      "name": "Lyon Saint-Exupéry Airport",
+      "type": "large_airport",
+      "distance_km": 97,
+      "destinations": 137,
+      "airlines": 65,
+      "url": "https://www.airportroutes.com/airports/LFLL/"
+    },
+    {
+      "iata": "TRN",
+      "icao": "LIMF",
+      "name": "Turin Airport",
+      "type": "large_airport",
+      "distance_km": 161,
+      "destinations": 67,
+      "airlines": 36,
+      "url": "https://www.airportroutes.com/airports/LIMF/"
+    }
+  ]
 }

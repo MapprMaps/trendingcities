@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "NTE",
+      "icao": "LFRS",
+      "name": "Nantes Atlantique Airport",
+      "type": "medium_airport",
+      "distance_km": 8,
+      "destinations": 94,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/LFRS/"
+    },
+    {
+      "iata": "RNS",
+      "icao": "LFRN",
+      "name": "Rennes-Saint-Jacques Airport",
+      "type": "medium_airport",
+      "distance_km": 96,
+      "destinations": 15,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/LFRN/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BUS",
+      "icao": "UGSB",
+      "name": "Batumi International Airport",
+      "type": "medium_airport",
+      "distance_km": 5,
+      "destinations": 27,
+      "airlines": 20,
+      "url": "https://www.airportroutes.com/airports/UGSB/"
+    },
+    {
+      "iata": "KUT",
+      "icao": "UGKO",
+      "name": "David the Builder Kutaisi International Airport",
+      "type": "medium_airport",
+      "distance_km": 91,
+      "destinations": 34,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/UGKO/"
+    },
+    {
+      "iata": "TZX",
+      "icao": "LTCG",
+      "name": "Trabzon International Airport",
+      "type": "medium_airport",
+      "distance_km": 171,
+      "destinations": 29,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/LTCG/"
+    }
+  ]
 }

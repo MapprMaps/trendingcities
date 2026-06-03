@@ -1,8 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CityCard from '../../components/CityCard.astro';
-import { cities, vsMedian, relatedTo, districtsOf, medians, DATA_UPDATED, DATA_VERSION, type City } from '../../lib/data';
-import { usd, usdShort, pct } from '../../lib/format';
+import { cities, vsMedian, relatedTo, districtsOf, medians, DATA_UPDATED, DATA_VERSION, METRIC_META, METRIC_GROUP_LABEL, SOURCE_LABEL, asOfLabel, type City } from '../../lib/data';
+import { usd, usdShort, pct, fmtMetric } from '../../lib/format';
 
 export function getStaticPaths() {
   return cities.map((c) => ({ params: { slug: c.slug }, props: { city: c } }));
@@ -26,6 +26,19 @@ const cheaper = d3 < 0;
 const summary = cheaper
   ? `${city.city} is more affordable than most of the dataset. A 3-bedroom home runs about ${pct(d3)} versus the global median of ${usdShort(medians.three)}.`
   : `${city.city} is one of the pricier markets here. A 3-bedroom home runs about ${pct(d3)} versus the global median of ${usdShort(medians.three)}.`;
+
+// Non-price metrics present on this record, grouped for rendering. Each renders
+// generically with its own source + "last updated" badge (the freshness signal).
+const metricGroups = (['cost', 'income', 'quality', 'demographics'] as const)
+  .map((g) => ({
+    key: g,
+    label: METRIC_GROUP_LABEL[g],
+    items: METRIC_META.filter((m) => m.group === g && city.metricsRaw[m.key]).map((m) => ({
+      meta: m,
+      mv: city.metricsRaw[m.key],
+    })),
+  }))
+  .filter((grp) => grp.items.length > 0);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -133,12 +146,34 @@ const breadcrumbLd = {
     </div>
   </section>
 
+  {metricGroups.map((grp) => (
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <span class="tc-label" style="display:block;margin-bottom:12px">{grp.label}</span>
+        <div class="grid grid--metrics">
+          {grp.items.map(({ meta, mv }) => (
+            <div class="tc-card metriccard">
+              <span class="tc-label">{meta.label}</span>
+              <span class="metriccard__val">{fmtMetric(mv.value, meta.fmt)}</span>
+              {meta.baseline && <span class="metriccard__base">{meta.baseline}</span>}
+              <span class="metriccard__prov">
+                <span class="metriccard__src">{(mv.sources || []).map((s) => SOURCE_LABEL[s] || s).join(' · ')}</span>
+                {mv.as_of && <span class="metriccard__date">Updated {asOfLabel(mv.as_of)}</span>}
+                {mv.confidence && <span class={`tc-conf tc-conf--${mv.confidence}`}>{mv.confidence} confidence</span>}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
   <section class="section" style="padding-top:0">
     <div class="container">
       <div class="tc-callout tc-callout--source">
         <span data-lucide="database" aria-hidden="true"></span>
         <div>
-          <strong>Source &amp; date.</strong> Median home-purchase prices in USD, starter dataset v{DATA_VERSION} ({DATA_UPDATED}). Directional figures for comparing markets — not a valuation of any specific property. <a href="/data/" style="color:var(--primary)">Methodology →</a>
+          <strong>Source &amp; date.</strong> Median home-purchase prices in USD, starter dataset v{DATA_VERSION} ({DATA_UPDATED}). Other metrics carry their own source &amp; date on each card above. Directional figures for comparing markets — not a valuation of any specific property. <a href="/data/" style="color:var(--primary)">Methodology →</a>
         </div>
       </div>
     </div>

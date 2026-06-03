@@ -50,5 +50,27 @@
   "coordinates": {
     "lat": 43.20739,
     "lng": 27.91667
-  }
+  },
+  "airports": [
+    {
+      "iata": "VAR",
+      "icao": "LBWN",
+      "name": "Varna Airport",
+      "type": "large_airport",
+      "distance_km": 8,
+      "destinations": 51,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/LBWN/"
+    },
+    {
+      "iata": "BOJ",
+      "icao": "LBBG",
+      "name": "Burgas Airport",
+      "type": "large_airport",
+      "distance_km": 78,
+      "destinations": 57,
+      "airlines": 38,
+      "url": "https://www.airportroutes.com/airports/LBBG/"
+    }
+  ]
 }

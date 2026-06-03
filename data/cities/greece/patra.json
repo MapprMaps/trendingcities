@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 38.24624,
     "lng": 21.73508
-  }
+  },
+  "airports": [
+    {
+      "iata": "ATH",
+      "icao": "LGAV",
+      "name": "Athens Eleftherios Venizelos International Airport",
+      "type": "large_airport",
+      "distance_km": 197,
+      "destinations": 176,
+      "airlines": 88,
+      "url": "https://www.airportroutes.com/airports/LGAV/"
+    },
+    {
+      "iata": "GPA",
+      "icao": "LGRX",
+      "name": "Patras Araxos Agamemnon Airport",
+      "type": "medium_airport",
+      "distance_km": 29,
+      "destinations": 15,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/LGRX/"
+    },
+    {
+      "iata": "ZTH",
+      "icao": "LGZA",
+      "name": "Zakynthos International Airport Dionysios Solomos",
+      "type": "medium_airport",
+      "distance_km": 93,
+      "destinations": 58,
+      "airlines": 32,
+      "url": "https://www.airportroutes.com/airports/LGZA/"
+    }
+  ]
 }

@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 45.65251,
     "lng": 25.61057
-  }
+  },
+  "airports": [
+    {
+      "iata": "GHV",
+      "icao": "LRBV",
+      "name": "Brașov-Ghimbav International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 13,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/LRBV/"
+    },
+    {
+      "iata": "OTP",
+      "icao": "LROP",
+      "name": "Bucharest Henri Coandă International Airport",
+      "type": "large_airport",
+      "distance_km": 126,
+      "destinations": 137,
+      "airlines": 53,
+      "url": "https://www.airportroutes.com/airports/LROP/"
+    },
+    {
+      "iata": "SBZ",
+      "icao": "LRSB",
+      "name": "Sibiu International Airport",
+      "type": "medium_airport",
+      "distance_km": 120,
+      "destinations": 15,
+      "airlines": 6,
+      "url": "https://www.airportroutes.com/airports/LRSB/"
+    }
+  ]
 }

@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BEG",
+      "icao": "LYBE",
+      "name": "Belgrade Nikola Tesla Airport",
+      "type": "large_airport",
+      "distance_km": 126,
+      "destinations": 105,
+      "airlines": 32,
+      "url": "https://www.airportroutes.com/airports/LYBE/"
+    },
+    {
+      "iata": "TSR",
+      "icao": "LRTR",
+      "name": "Timişoara Traian Vuia Airport",
+      "type": "medium_airport",
+      "distance_km": 11,
+      "destinations": 32,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/LRTR/"
+    }
+  ]
 }

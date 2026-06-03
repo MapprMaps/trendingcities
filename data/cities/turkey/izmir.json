@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 38.41925,
     "lng": 27.12847
-  }
+  },
+  "airports": [
+    {
+      "iata": "ADB",
+      "icao": "LTBJ",
+      "name": "Adnan Menderes International Airport",
+      "type": "large_airport",
+      "distance_km": 14,
+      "destinations": 104,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/LTBJ/"
+    },
+    {
+      "iata": "BJV",
+      "icao": "LTFE",
+      "name": "Milas Bodrum International Airport",
+      "type": "large_airport",
+      "distance_km": 138,
+      "destinations": 46,
+      "airlines": 31,
+      "url": "https://www.airportroutes.com/airports/LTFE/"
+    },
+    {
+      "iata": "SMI",
+      "icao": "LGSM",
+      "name": "Samos Airport",
+      "type": "medium_airport",
+      "distance_km": 83,
+      "destinations": 18,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/LGSM/"
+    }
+  ]
 }

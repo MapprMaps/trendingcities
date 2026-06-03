@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "FLR",
+      "icao": "LIRQ",
+      "name": "Florence Airport, Peretola",
+      "type": "large_airport",
+      "distance_km": 6,
+      "destinations": 45,
+      "airlines": 30,
+      "url": "https://www.airportroutes.com/airports/LIRQ/"
+    },
+    {
+      "iata": "PSA",
+      "icao": "LIRP",
+      "name": "Pisa International Airport",
+      "type": "large_airport",
+      "distance_km": 70,
+      "destinations": 105,
+      "airlines": 37,
+      "url": "https://www.airportroutes.com/airports/LIRP/"
+    },
+    {
+      "iata": "BLQ",
+      "icao": "LIPE",
+      "name": "Bologna Guglielmo Marconi Airport",
+      "type": "large_airport",
+      "distance_km": 85,
+      "destinations": 98,
+      "airlines": 57,
+      "url": "https://www.airportroutes.com/airports/LIPE/"
+    }
+  ]
 }

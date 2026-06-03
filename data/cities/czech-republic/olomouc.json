@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 49.59406,
     "lng": 17.25114
-  }
+  },
+  "airports": [
+    {
+      "iata": "BTS",
+      "icao": "LZIB",
+      "name": "M. R. Štefánik Airport",
+      "type": "large_airport",
+      "distance_km": 158,
+      "destinations": 90,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/LZIB/"
+    },
+    {
+      "iata": "KTW",
+      "icao": "EPKT",
+      "name": "Katowice Wojciech Korfanty International Airport",
+      "type": "large_airport",
+      "distance_km": 164,
+      "destinations": 81,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPKT/"
+    },
+    {
+      "iata": "WRO",
+      "icao": "EPWR",
+      "name": "Copernicus Wrocław Airport",
+      "type": "large_airport",
+      "distance_km": 170,
+      "destinations": 83,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPWR/"
+    }
+  ]
 }

@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": -38.73589,
     "lng": -72.59054
-  }
+  },
+  "airports": [
+    {
+      "iata": "ZCO",
+      "icao": "SCQP",
+      "name": "La Araucanía Airport",
+      "type": "medium_airport",
+      "distance_km": 22,
+      "destinations": 2,
+      "airlines": 3,
+      "url": "https://www.airportroutes.com/airports/SCQP/"
+    }
+  ]
 }

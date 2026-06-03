@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LJU",
+      "icao": "LJLJ",
+      "name": "Ljubljana Jože Pučnik Airport",
+      "type": "large_airport",
+      "distance_km": 100,
+      "destinations": 36,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/LJLJ/"
+    },
+    {
+      "iata": "ZAG",
+      "icao": "LDZA",
+      "name": "Zagreb Franjo Tuđman International Airport",
+      "type": "large_airport",
+      "distance_km": 135,
+      "destinations": 66,
+      "airlines": 26,
+      "url": "https://www.airportroutes.com/airports/LDZA/"
+    },
+    {
+      "iata": "VCE",
+      "icao": "LIPZ",
+      "name": "Venice Marco Polo Airport",
+      "type": "large_airport",
+      "distance_km": 165,
+      "destinations": 100,
+      "airlines": 75,
+      "url": "https://www.airportroutes.com/airports/LIPZ/"
+    }
+  ]
 }

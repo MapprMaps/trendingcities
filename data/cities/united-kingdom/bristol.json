@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BHX",
+      "icao": "EGBB",
+      "name": "Birmingham Airport",
+      "type": "large_airport",
+      "distance_km": 126,
+      "destinations": 144,
+      "airlines": 43,
+      "url": "https://www.airportroutes.com/airports/EGBB/"
+    },
+    {
+      "iata": "LHR",
+      "icao": "EGLL",
+      "name": "London Heathrow Airport",
+      "type": "large_airport",
+      "distance_km": 148,
+      "destinations": 213,
+      "airlines": 88,
+      "url": "https://www.airportroutes.com/airports/EGLL/"
+    },
+    {
+      "iata": "LTN",
+      "icao": "EGGW",
+      "name": "London Luton Airport",
+      "type": "large_airport",
+      "distance_km": 161,
+      "destinations": 135,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/EGGW/"
+    }
+  ]
 }

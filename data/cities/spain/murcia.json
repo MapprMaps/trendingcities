@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 37.93475,
     "lng": -1.1131
-  }
+  },
+  "airports": [
+    {
+      "iata": "ALC",
+      "icao": "LEAL",
+      "name": "Alicante-Elche Miguel Hernández Airport",
+      "type": "large_airport",
+      "distance_km": 62,
+      "destinations": 147,
+      "airlines": 55,
+      "url": "https://www.airportroutes.com/airports/LEAL/"
+    },
+    {
+      "iata": "VLC",
+      "icao": "LEVC",
+      "name": "Valencia Airport",
+      "type": "large_airport",
+      "distance_km": 181,
+      "destinations": 114,
+      "airlines": 54,
+      "url": "https://www.airportroutes.com/airports/LEVC/"
+    },
+    {
+      "iata": "RMU",
+      "icao": "LEMI",
+      "name": "Región de Murcia International Airport",
+      "type": "medium_airport",
+      "distance_km": 15,
+      "destinations": 22,
+      "airlines": 9,
+      "url": "https://www.airportroutes.com/airports/LEMI/"
+    }
+  ]
 }

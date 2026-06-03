@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "RMO",
+      "icao": "LUKK",
+      "name": "Chişinău International Airport",
+      "type": "medium_airport",
+      "distance_km": 146,
+      "destinations": 71,
+      "airlines": 28,
+      "url": "https://www.airportroutes.com/airports/LUKK/"
+    }
+  ]
 }

@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TLV",
+      "icao": "LLBG",
+      "name": "Ben Gurion International Airport",
+      "type": "large_airport",
+      "distance_km": 13,
+      "destinations": 127,
+      "airlines": 74,
+      "url": "https://www.airportroutes.com/airports/LLBG/"
+    },
+    {
+      "iata": "AMM",
+      "icao": "OJAI",
+      "name": "Queen Alia International Airport",
+      "type": "large_airport",
+      "distance_km": 121,
+      "destinations": 104,
+      "airlines": 43,
+      "url": "https://www.airportroutes.com/airports/OJAI/"
+    }
+  ]
 }

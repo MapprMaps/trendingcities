@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MAN",
+      "icao": "EGCC",
+      "name": "Manchester Airport",
+      "type": "large_airport",
+      "distance_km": 70,
+      "destinations": 203,
+      "airlines": 71,
+      "url": "https://www.airportroutes.com/airports/EGCC/"
+    },
+    {
+      "iata": "BHX",
+      "icao": "EGBB",
+      "name": "Birmingham Airport",
+      "type": "large_airport",
+      "distance_km": 150,
+      "destinations": 144,
+      "airlines": 43,
+      "url": "https://www.airportroutes.com/airports/EGBB/"
+    },
+    {
+      "iata": "LBA",
+      "icao": "EGNM",
+      "name": "Leeds Bradford Airport",
+      "type": "medium_airport",
+      "distance_km": 11,
+      "destinations": 75,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/EGNM/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "CTA",
+      "icao": "LICC",
+      "name": "Catania-Fontanarossa Airport",
+      "type": "large_airport",
+      "distance_km": 4,
+      "destinations": 90,
+      "airlines": 55,
+      "url": "https://www.airportroutes.com/airports/LICC/"
+    },
+    {
+      "iata": "MLA",
+      "icao": "LMML",
+      "name": "Malta International Airport",
+      "type": "large_airport",
+      "distance_km": 190,
+      "destinations": 120,
+      "airlines": 49,
+      "url": "https://www.airportroutes.com/airports/LMML/"
+    },
+    {
+      "iata": "PMO",
+      "icao": "LICJ",
+      "name": "Falcone–Borsellino Airport",
+      "type": "large_airport",
+      "distance_km": 191,
+      "destinations": 99,
+      "airlines": 44,
+      "url": "https://www.airportroutes.com/airports/LICJ/"
+    }
+  ]
 }

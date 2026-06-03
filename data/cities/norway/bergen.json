@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BGO",
+      "icao": "ENBR",
+      "name": "Bergen Airport, Flesland",
+      "type": "large_airport",
+      "distance_km": 13,
+      "destinations": 61,
+      "airlines": 21,
+      "url": "https://www.airportroutes.com/airports/ENBR/"
+    },
+    {
+      "iata": "SVG",
+      "icao": "ENZV",
+      "name": "Stavanger Airport, Sola",
+      "type": "large_airport",
+      "distance_km": 170,
+      "destinations": 33,
+      "airlines": 20,
+      "url": "https://www.airportroutes.com/airports/ENZV/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "PDX",
+      "icao": "KPDX",
+      "name": "Portland International Airport",
+      "type": "large_airport",
+      "distance_km": 10,
+      "destinations": 122,
+      "airlines": 37,
+      "url": "https://www.airportroutes.com/airports/KPDX/"
+    },
+    {
+      "iata": "EUG",
+      "icao": "KEUG",
+      "name": "Mahlon Sweet Field",
+      "type": "medium_airport",
+      "distance_km": 161,
+      "destinations": 77,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/KEUG/"
+    },
+    {
+      "iata": "RDM",
+      "icao": "KRDM",
+      "name": "Roberts Field",
+      "type": "medium_airport",
+      "distance_km": 185,
+      "destinations": 32,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/KRDM/"
+    }
+  ]
 }

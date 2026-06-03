@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "YUL",
+      "icao": "CYUL",
+      "name": "Montreal / Pierre Elliott Trudeau International Airport",
+      "type": "large_airport",
+      "distance_km": 14,
+      "destinations": 206,
+      "airlines": 70,
+      "url": "https://www.airportroutes.com/airports/CYUL/"
+    },
+    {
+      "iata": "YOW",
+      "icao": "CYOW",
+      "name": "Ottawa Macdonald-Cartier International Airport",
+      "type": "large_airport",
+      "distance_km": 166,
+      "destinations": 60,
+      "airlines": 24,
+      "url": "https://www.airportroutes.com/airports/CYOW/"
+    },
+    {
+      "iata": "YHU",
+      "icao": "CYHU",
+      "name": "Montréal / Saint-Hubert Metropolitan Airport",
+      "type": "medium_airport",
+      "distance_km": 12,
+      "destinations": 94,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/CYHU/"
+    }
+  ]
 }

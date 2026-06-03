@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "YVR",
+      "icao": "CYVR",
+      "name": "Vancouver International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 141,
+      "airlines": 68,
+      "url": "https://www.airportroutes.com/airports/CYVR/"
+    },
+    {
+      "iata": "YXX",
+      "icao": "CYXX",
+      "name": "Abbotsford International Airport",
+      "type": "medium_airport",
+      "distance_km": 61,
+      "destinations": 13,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/CYXX/"
+    },
+    {
+      "iata": "BLI",
+      "icao": "KBLI",
+      "name": "Bellingham International Airport",
+      "type": "medium_airport",
+      "distance_km": 67,
+      "destinations": 70,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/KBLI/"
+    }
+  ]
 }

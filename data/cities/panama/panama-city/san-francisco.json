@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "PTY",
+      "icao": "MPTO",
+      "name": "Tocumen International Airport",
+      "type": "large_airport",
+      "distance_km": 20,
+      "destinations": 115,
+      "airlines": 47,
+      "url": "https://www.airportroutes.com/airports/MPTO/"
+    }
+  ]
 }

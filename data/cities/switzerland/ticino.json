@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 46.33519,
     "lng": 8.75259
-  }
+  },
+  "airports": [
+    {
+      "iata": "MXP",
+      "icao": "LIMC",
+      "name": "Milan Malpensa International Airport",
+      "type": "large_airport",
+      "distance_km": 78,
+      "destinations": 216,
+      "airlines": 118,
+      "url": "https://www.airportroutes.com/airports/LIMC/"
+    },
+    {
+      "iata": "BGY",
+      "icao": "LIME",
+      "name": "Milan Bergamo Airport / Antonio Locatelli Air Base",
+      "type": "large_airport",
+      "distance_km": 105,
+      "destinations": 160,
+      "airlines": 44,
+      "url": "https://www.airportroutes.com/airports/LIME/"
+    },
+    {
+      "iata": "ZRH",
+      "icao": "LSZH",
+      "name": "Zürich Airport",
+      "type": "large_airport",
+      "distance_km": 126,
+      "destinations": 198,
+      "airlines": 82,
+      "url": "https://www.airportroutes.com/airports/LSZH/"
+    }
+  ]
 }

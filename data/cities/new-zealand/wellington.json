@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "WLG",
+      "icao": "NZWN",
+      "name": "Wellington International Airport",
+      "type": "large_airport",
+      "distance_km": 5,
+      "destinations": 23,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/NZWN/"
+    }
+  ]
 }

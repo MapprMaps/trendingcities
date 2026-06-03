@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 22.33799,
     "lng": 114.18263
-  }
+  },
+  "airports": [
+    {
+      "iata": "HKG",
+      "icao": "VHHH",
+      "name": "Hong Kong International Airport",
+      "type": "large_airport",
+      "distance_km": 28,
+      "destinations": 174,
+      "airlines": 106,
+      "url": "https://www.airportroutes.com/airports/VHHH/"
+    },
+    {
+      "iata": "SZX",
+      "icao": "ZGSZ",
+      "name": "Shenzhen Bao'an International Airport",
+      "type": "large_airport",
+      "distance_km": 51,
+      "destinations": 189,
+      "airlines": 67,
+      "url": "https://www.airportroutes.com/airports/ZGSZ/"
+    },
+    {
+      "iata": "MFM",
+      "icao": "VMMC",
+      "name": "Macau International Airport",
+      "type": "large_airport",
+      "distance_km": 64,
+      "destinations": 56,
+      "airlines": 32,
+      "url": "https://www.airportroutes.com/airports/VMMC/"
+    }
+  ]
 }

@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "VIX",
+      "icao": "SBVT",
+      "name": "Eurico de Aguiar Salles Airport",
+      "type": "large_airport",
+      "distance_km": 51,
+      "destinations": 8,
+      "airlines": 3,
+      "url": "https://www.airportroutes.com/airports/SBVT/"
+    }
+  ]
 }

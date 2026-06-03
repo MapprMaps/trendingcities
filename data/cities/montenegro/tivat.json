@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 42.43038,
     "lng": 18.69881
-  }
+  },
+  "airports": [
+    {
+      "iata": "TGD",
+      "icao": "LYPG",
+      "name": "Podgorica Airport / Podgorica Golubovci Airbase",
+      "type": "large_airport",
+      "distance_km": 46,
+      "destinations": 43,
+      "airlines": 20,
+      "url": "https://www.airportroutes.com/airports/LYPG/"
+    },
+    {
+      "iata": "TIA",
+      "icao": "LATI",
+      "name": "Tirana International Airport Mother Teresa",
+      "type": "large_airport",
+      "distance_km": 141,
+      "destinations": 104,
+      "airlines": 58,
+      "url": "https://www.airportroutes.com/airports/LATI/"
+    },
+    {
+      "iata": "SJJ",
+      "icao": "LQSA",
+      "name": "Sarajevo International Airport",
+      "type": "large_airport",
+      "distance_km": 158,
+      "destinations": 41,
+      "airlines": 34,
+      "url": "https://www.airportroutes.com/airports/LQSA/"
+    }
+  ]
 }

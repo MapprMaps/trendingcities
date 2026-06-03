@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "TPE",
+      "icao": "RCTP",
+      "name": "Taiwan Taoyuan International Airport",
+      "type": "large_airport",
+      "distance_km": 34,
+      "destinations": 110,
+      "airlines": 69,
+      "url": "https://www.airportroutes.com/airports/RCTP/"
+    },
+    {
+      "iata": "TSA",
+      "icao": "RCSS",
+      "name": "Taipei Songshan Airport",
+      "type": "medium_airport",
+      "distance_km": 4,
+      "destinations": 16,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/RCSS/"
+    },
+    {
+      "iata": "RMQ",
+      "icao": "RCMQ",
+      "name": "Taichung International Airport / Ching Chuang Kang Air Base",
+      "type": "medium_airport",
+      "distance_km": 128,
+      "destinations": 22,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/RCMQ/"
+    }
+  ]
 }

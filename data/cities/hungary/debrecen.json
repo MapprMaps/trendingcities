@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 47.5314,
     "lng": 21.62598
-  }
+  },
+  "airports": [
+    {
+      "iata": "BUD",
+      "icao": "LHBP",
+      "name": "Budapest Liszt Ferenc International Airport",
+      "type": "large_airport",
+      "distance_km": 178,
+      "destinations": 172,
+      "airlines": 80,
+      "url": "https://www.airportroutes.com/airports/LHBP/"
+    },
+    {
+      "iata": "KSC",
+      "icao": "LZKZ",
+      "name": "Košice International Airport",
+      "type": "medium_airport",
+      "distance_km": 129,
+      "destinations": 23,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/LZKZ/"
+    },
+    {
+      "iata": "CLJ",
+      "icao": "LRCL",
+      "name": "Cluj Avram Iancu International Airport",
+      "type": "medium_airport",
+      "distance_km": 177,
+      "destinations": 55,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/LRCL/"
+    }
+  ]
 }

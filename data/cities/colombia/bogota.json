@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BOG",
+      "icao": "SKBO",
+      "name": "El Dorado International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 112,
+      "airlines": 62,
+      "url": "https://www.airportroutes.com/airports/SKBO/"
+    }
+  ]
 }

@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "GOT",
+      "icao": "ESGG",
+      "name": "Göteborg Landvetter Airport",
+      "type": "large_airport",
+      "distance_km": 19,
+      "destinations": 72,
+      "airlines": 40,
+      "url": "https://www.airportroutes.com/airports/ESGG/"
+    },
+    {
+      "iata": "AAL",
+      "icao": "EKYT",
+      "name": "Aalborg Airport",
+      "type": "medium_airport",
+      "distance_km": 144,
+      "destinations": 14,
+      "airlines": 12,
+      "url": "https://www.airportroutes.com/airports/EKYT/"
+    },
+    {
+      "iata": "AAR",
+      "icao": "EKAH",
+      "name": "Aarhus Airport",
+      "type": "medium_airport",
+      "distance_km": 177,
+      "destinations": 12,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/EKAH/"
+    }
+  ]
 }

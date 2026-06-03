@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LED",
+      "icao": "ULLI",
+      "name": "Pulkovo Airport",
+      "type": "large_airport",
+      "distance_km": 19,
+      "destinations": 94,
+      "airlines": 40,
+      "url": "https://www.airportroutes.com/airports/ULLI/"
+    }
+  ]
 }

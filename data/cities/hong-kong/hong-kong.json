@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "HKG",
+      "icao": "VHHH",
+      "name": "Hong Kong International Airport",
+      "type": "large_airport",
+      "distance_km": 25,
+      "destinations": 174,
+      "airlines": 106,
+      "url": "https://www.airportroutes.com/airports/VHHH/"
+    },
+    {
+      "iata": "SZX",
+      "icao": "ZGSZ",
+      "name": "Shenzhen Bao'an International Airport",
+      "type": "large_airport",
+      "distance_km": 53,
+      "destinations": 189,
+      "airlines": 67,
+      "url": "https://www.airportroutes.com/airports/ZGSZ/"
+    },
+    {
+      "iata": "MFM",
+      "icao": "VMMC",
+      "name": "Macau International Airport",
+      "type": "large_airport",
+      "distance_km": 60,
+      "destinations": 56,
+      "airlines": 32,
+      "url": "https://www.airportroutes.com/airports/VMMC/"
+    }
+  ]
 }

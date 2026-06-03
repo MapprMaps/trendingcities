@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SAW",
+      "icao": "LTFJ",
+      "name": "Istanbul Sabiha Gökçen International Airport",
+      "type": "large_airport",
+      "distance_km": 31,
+      "destinations": 166,
+      "airlines": 27,
+      "url": "https://www.airportroutes.com/airports/LTFJ/"
+    },
+    {
+      "iata": "IST",
+      "icao": "LTFM",
+      "name": "İstanbul Airport",
+      "type": "large_airport",
+      "distance_km": 34,
+      "destinations": 324,
+      "airlines": 113,
+      "url": "https://www.airportroutes.com/airports/LTFM/"
+    }
+  ]
 }

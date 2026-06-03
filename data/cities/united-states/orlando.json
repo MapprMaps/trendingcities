@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MCO",
+      "icao": "KMCO",
+      "name": "Orlando International Airport",
+      "type": "large_airport",
+      "distance_km": 14,
+      "destinations": 225,
+      "airlines": 76,
+      "url": "https://www.airportroutes.com/airports/KMCO/"
+    },
+    {
+      "iata": "SFB",
+      "icao": "KSFB",
+      "name": "Orlando Sanford International Airport",
+      "type": "large_airport",
+      "distance_km": 30,
+      "destinations": 162,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/KSFB/"
+    },
+    {
+      "iata": "TPA",
+      "icao": "KTPA",
+      "name": "Tampa International Airport",
+      "type": "large_airport",
+      "distance_km": 129,
+      "destinations": 114,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/KTPA/"
+    }
+  ]
 }

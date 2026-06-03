@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 46.67891,
     "lng": 7.10271
-  }
+  },
+  "airports": [
+    {
+      "iata": "GVA",
+      "icao": "LSGG",
+      "name": "Geneva Cointrin International Airport",
+      "type": "large_airport",
+      "distance_km": 91,
+      "destinations": 157,
+      "airlines": 77,
+      "url": "https://www.airportroutes.com/airports/LSGG/"
+    },
+    {
+      "iata": "BSL",
+      "icao": "LFSB",
+      "name": "EuroAirport Basel–Mulhouse–Freiburg",
+      "type": "large_airport",
+      "distance_km": 107,
+      "destinations": 115,
+      "airlines": 39,
+      "url": "https://www.airportroutes.com/airports/LFSB/"
+    },
+    {
+      "iata": "ZRH",
+      "icao": "LSZH",
+      "name": "Zürich Airport",
+      "type": "large_airport",
+      "distance_km": 140,
+      "destinations": 198,
+      "airlines": 82,
+      "url": "https://www.airportroutes.com/airports/LSZH/"
+    }
+  ]
 }

@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 46.76938,
     "lng": 23.58995
-  }
+  },
+  "airports": [
+    {
+      "iata": "GHV",
+      "icao": "LRBV",
+      "name": "Brașov-Ghimbav International Airport",
+      "type": "large_airport",
+      "distance_km": 190,
+      "destinations": 13,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/LRBV/"
+    },
+    {
+      "iata": "CLJ",
+      "icao": "LRCL",
+      "name": "Cluj Avram Iancu International Airport",
+      "type": "medium_airport",
+      "distance_km": 7,
+      "destinations": 55,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/LRCL/"
+    },
+    {
+      "iata": "SBZ",
+      "icao": "LRSB",
+      "name": "Sibiu International Airport",
+      "type": "medium_airport",
+      "distance_km": 116,
+      "destinations": 15,
+      "airlines": 6,
+      "url": "https://www.airportroutes.com/airports/LRSB/"
+    }
+  ]
 }

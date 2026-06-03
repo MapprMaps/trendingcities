@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "CGN",
+      "icao": "EDDK",
+      "name": "Cologne Bonn Airport",
+      "type": "large_airport",
+      "distance_km": 15,
+      "destinations": 143,
+      "airlines": 51,
+      "url": "https://www.airportroutes.com/airports/EDDK/"
+    },
+    {
+      "iata": "DUS",
+      "icao": "EDDL",
+      "name": "Düsseldorf Airport",
+      "type": "large_airport",
+      "distance_km": 41,
+      "destinations": 158,
+      "airlines": 72,
+      "url": "https://www.airportroutes.com/airports/EDDL/"
+    },
+    {
+      "iata": "DTM",
+      "icao": "EDLW",
+      "name": "Dortmund Airport",
+      "type": "large_airport",
+      "distance_km": 79,
+      "destinations": 39,
+      "airlines": 9,
+      "url": "https://www.airportroutes.com/airports/EDLW/"
+    }
+  ]
 }

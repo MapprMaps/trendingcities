@@ -50,5 +50,17 @@
   "coordinates": {
     "lat": 38.7219,
     "lng": 35.48732
-  }
+  },
+  "airports": [
+    {
+      "iata": "ASR",
+      "icao": "LTAU",
+      "name": "Kayseri Erkilet Airport",
+      "type": "medium_airport",
+      "distance_km": 5,
+      "destinations": 24,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/LTAU/"
+    }
+  ]
 }

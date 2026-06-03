@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "RZE",
+      "icao": "EPRZ",
+      "name": "Rzeszów-Jasionka Airport",
+      "type": "large_airport",
+      "distance_km": 165,
+      "destinations": 24,
+      "airlines": 14,
+      "url": "https://www.airportroutes.com/airports/EPRZ/"
+    },
+    {
+      "iata": "KRK",
+      "icao": "EPKK",
+      "name": "Kraków John Paul II International Airport",
+      "type": "large_airport",
+      "distance_km": 185,
+      "destinations": 133,
+      "airlines": 45,
+      "url": "https://www.airportroutes.com/airports/EPKK/"
+    },
+    {
+      "iata": "KSC",
+      "icao": "LZKZ",
+      "name": "Košice International Airport",
+      "type": "medium_airport",
+      "distance_km": 6,
+      "destinations": 23,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/LZKZ/"
+    }
+  ]
 }

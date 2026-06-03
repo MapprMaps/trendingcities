@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "BOG",
+      "icao": "SKBO",
+      "name": "El Dorado International Airport",
+      "type": "large_airport",
+      "distance_km": 182,
+      "destinations": 112,
+      "airlines": 62,
+      "url": "https://www.airportroutes.com/airports/SKBO/"
+    },
+    {
+      "iata": "CLO",
+      "icao": "SKCL",
+      "name": "Alfonso Bonilla Aragon International Airport",
+      "type": "medium_airport",
+      "distance_km": 152,
+      "destinations": 30,
+      "airlines": 16,
+      "url": "https://www.airportroutes.com/airports/SKCL/"
+    },
+    {
+      "iata": "MDE",
+      "icao": "SKRG",
+      "name": "Jose Maria Córdova International Airport",
+      "type": "medium_airport",
+      "distance_km": 158,
+      "destinations": 40,
+      "airlines": 23,
+      "url": "https://www.airportroutes.com/airports/SKRG/"
+    }
+  ]
 }

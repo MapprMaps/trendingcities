@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "SGN",
+      "icao": "VVTS",
+      "name": "Tan Son Nhat International Airport",
+      "type": "large_airport",
+      "distance_km": 9,
+      "destinations": 98,
+      "airlines": 60,
+      "url": "https://www.airportroutes.com/airports/VVTS/"
+    }
+  ]
 }

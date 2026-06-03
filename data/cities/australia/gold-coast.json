@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "OOL",
+      "icao": "YBCG",
+      "name": "Gold Coast Airport",
+      "type": "large_airport",
+      "distance_km": 20,
+      "destinations": 17,
+      "airlines": 6,
+      "url": "https://www.airportroutes.com/airports/YBCG/"
+    },
+    {
+      "iata": "BNE",
+      "icao": "YBBN",
+      "name": "Brisbane International Airport",
+      "type": "large_airport",
+      "distance_km": 75,
+      "destinations": 75,
+      "airlines": 29,
+      "url": "https://www.airportroutes.com/airports/YBBN/"
+    },
+    {
+      "iata": "MCY",
+      "icao": "YBSU",
+      "name": "Sunshine Coast Airport",
+      "type": "large_airport",
+      "distance_km": 160,
+      "destinations": 9,
+      "airlines": 7,
+      "url": "https://www.airportroutes.com/airports/YBSU/"
+    }
+  ]
 }

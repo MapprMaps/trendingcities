@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 31.79528,
     "lng": -94.18036
-  }
+  },
+  "airports": [
+    {
+      "iata": "SHV",
+      "icao": "KSHV",
+      "name": "Shreveport Regional Airport",
+      "type": "medium_airport",
+      "distance_km": 80,
+      "destinations": 113,
+      "airlines": 19,
+      "url": "https://www.airportroutes.com/airports/KSHV/"
+    },
+    {
+      "iata": "TYR",
+      "icao": "KTYR",
+      "name": "Tyler Pounds Regional Airport",
+      "type": "medium_airport",
+      "distance_km": 131,
+      "destinations": 44,
+      "airlines": 6,
+      "url": "https://www.airportroutes.com/airports/KTYR/"
+    },
+    {
+      "iata": "AEX",
+      "icao": "KAEX",
+      "name": "Alexandria International Airport",
+      "type": "medium_airport",
+      "distance_km": 163,
+      "destinations": 29,
+      "airlines": 10,
+      "url": "https://www.airportroutes.com/airports/KAEX/"
+    }
+  ]
 }

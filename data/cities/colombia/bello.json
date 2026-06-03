@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "EOH",
+      "icao": "SKMD",
+      "name": "Enrique Olaya Herrera Airport",
+      "type": "medium_airport",
+      "distance_km": 13,
+      "destinations": 19,
+      "airlines": 2,
+      "url": "https://www.airportroutes.com/airports/SKMD/"
+    },
+    {
+      "iata": "MDE",
+      "icao": "SKRG",
+      "name": "Jose Maria Córdova International Airport",
+      "type": "medium_airport",
+      "distance_km": 24,
+      "destinations": 40,
+      "airlines": 23,
+      "url": "https://www.airportroutes.com/airports/SKRG/"
+    }
+  ]
 }

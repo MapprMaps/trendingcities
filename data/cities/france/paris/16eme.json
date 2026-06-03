@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ORY",
+      "icao": "LFPO",
+      "name": "Paris-Orly Airport",
+      "type": "large_airport",
+      "distance_km": 15,
+      "destinations": 172,
+      "airlines": 36,
+      "url": "https://www.airportroutes.com/airports/LFPO/"
+    },
+    {
+      "iata": "CDG",
+      "icao": "LFPG",
+      "name": "Charles de Gaulle International Airport",
+      "type": "large_airport",
+      "distance_km": 23,
+      "destinations": 269,
+      "airlines": 142,
+      "url": "https://www.airportroutes.com/airports/LFPG/"
+    },
+    {
+      "iata": "BVA",
+      "icao": "LFOB",
+      "name": "Beauvais Tillé airport",
+      "type": "medium_airport",
+      "distance_km": 69,
+      "destinations": 84,
+      "airlines": 9,
+      "url": "https://www.airportroutes.com/airports/LFOB/"
+    }
+  ]
 }

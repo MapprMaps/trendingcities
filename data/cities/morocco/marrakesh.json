@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "RAK",
+      "icao": "GMMX",
+      "name": "Menara Airport",
+      "type": "large_airport",
+      "distance_km": 5,
+      "destinations": 115,
+      "airlines": 54,
+      "url": "https://www.airportroutes.com/airports/GMMX/"
+    },
+    {
+      "iata": "CMN",
+      "icao": "GMMN",
+      "name": "Mohammed V International Airport",
+      "type": "large_airport",
+      "distance_km": 197,
+      "destinations": 118,
+      "airlines": 38,
+      "url": "https://www.airportroutes.com/airports/GMMN/"
+    },
+    {
+      "iata": "AGA",
+      "icao": "GMAD",
+      "name": "Al Massira Airport",
+      "type": "large_airport",
+      "distance_km": 198,
+      "destinations": 67,
+      "airlines": 30,
+      "url": "https://www.airportroutes.com/airports/GMAD/"
+    }
+  ]
 }

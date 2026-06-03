@@ -64,5 +64,27 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "DMK",
+      "icao": "VTBD",
+      "name": "Don Mueang International Airport",
+      "type": "large_airport",
+      "distance_km": 22,
+      "destinations": 94,
+      "airlines": 15,
+      "url": "https://www.airportroutes.com/airports/VTBD/"
+    },
+    {
+      "iata": "BKK",
+      "icao": "VTBS",
+      "name": "Suvarnabhumi Airport",
+      "type": "large_airport",
+      "distance_km": 29,
+      "destinations": 169,
+      "airlines": 134,
+      "url": "https://www.airportroutes.com/airports/VTBS/"
+    }
+  ]
 }

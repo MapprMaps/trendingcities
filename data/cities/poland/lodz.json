@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 51.77282,
     "lng": 19.47849
-  }
+  },
+  "airports": [
+    {
+      "iata": "LCJ",
+      "icao": "EPLL",
+      "name": "Łódź Władysław Reymont Airport",
+      "type": "large_airport",
+      "distance_km": 8,
+      "destinations": 10,
+      "airlines": 4,
+      "url": "https://www.airportroutes.com/airports/EPLL/"
+    },
+    {
+      "iata": "WAW",
+      "icao": "EPWA",
+      "name": "Warsaw Chopin Airport",
+      "type": "large_airport",
+      "distance_km": 111,
+      "destinations": 166,
+      "airlines": 58,
+      "url": "https://www.airportroutes.com/airports/EPWA/"
+    },
+    {
+      "iata": "KTW",
+      "icao": "EPKT",
+      "name": "Katowice Wojciech Korfanty International Airport",
+      "type": "large_airport",
+      "distance_km": 147,
+      "destinations": 81,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/EPKT/"
+    }
+  ]
 }

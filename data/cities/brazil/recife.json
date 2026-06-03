@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "REC",
+      "icao": "SBRF",
+      "name": "Recife/Guararapes - Gilberto Freyre International Airport",
+      "type": "medium_airport",
+      "distance_km": 9,
+      "destinations": 36,
+      "airlines": 8,
+      "url": "https://www.airportroutes.com/airports/SBRF/"
+    },
+    {
+      "iata": "JPA",
+      "icao": "SBJP",
+      "name": "Presidente Castro Pinto International Airport",
+      "type": "medium_airport",
+      "distance_km": 101,
+      "destinations": 14,
+      "airlines": 3,
+      "url": "https://www.airportroutes.com/airports/SBJP/"
+    },
+    {
+      "iata": "MCZ",
+      "icao": "SBMO",
+      "name": "Zumbi dos Palmares Airport",
+      "type": "medium_airport",
+      "distance_km": 189,
+      "destinations": 20,
+      "airlines": 5,
+      "url": "https://www.airportroutes.com/airports/SBMO/"
+    }
+  ]
 }

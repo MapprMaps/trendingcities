@@ -64,5 +64,17 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "ESB",
+      "icao": "LTAC",
+      "name": "Esenboğa International Airport",
+      "type": "large_airport",
+      "distance_km": 26,
+      "destinations": 90,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/LTAC/"
+    }
+  ]
 }

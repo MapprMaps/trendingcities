@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "LHR",
+      "icao": "EGLL",
+      "name": "London Heathrow Airport",
+      "type": "large_airport",
+      "distance_km": 23,
+      "destinations": 213,
+      "airlines": 88,
+      "url": "https://www.airportroutes.com/airports/EGLL/"
+    },
+    {
+      "iata": "LGW",
+      "icao": "EGKK",
+      "name": "London Gatwick Airport",
+      "type": "large_airport",
+      "distance_km": 39,
+      "destinations": 223,
+      "airlines": 71,
+      "url": "https://www.airportroutes.com/airports/EGKK/"
+    },
+    {
+      "iata": "LTN",
+      "icao": "EGGW",
+      "name": "London Luton Airport",
+      "type": "large_airport",
+      "distance_km": 45,
+      "destinations": 135,
+      "airlines": 17,
+      "url": "https://www.airportroutes.com/airports/EGGW/"
+    }
+  ]
 }

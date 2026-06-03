@@ -50,5 +50,37 @@
   "coordinates": {
     "lat": 48.73543,
     "lng": 19.14573
-  }
+  },
+  "airports": [
+    {
+      "iata": "BUD",
+      "icao": "LHBP",
+      "name": "Budapest Liszt Ferenc International Airport",
+      "type": "large_airport",
+      "distance_km": 145,
+      "destinations": 172,
+      "airlines": 80,
+      "url": "https://www.airportroutes.com/airports/LHBP/"
+    },
+    {
+      "iata": "BTS",
+      "icao": "LZIB",
+      "name": "M. R. Štefánik Airport",
+      "type": "large_airport",
+      "distance_km": 156,
+      "destinations": 90,
+      "airlines": 22,
+      "url": "https://www.airportroutes.com/airports/LZIB/"
+    },
+    {
+      "iata": "KRK",
+      "icao": "EPKK",
+      "name": "Kraków John Paul II International Airport",
+      "type": "large_airport",
+      "distance_km": 156,
+      "destinations": 133,
+      "airlines": 45,
+      "url": "https://www.airportroutes.com/airports/EPKK/"
+    }
+  ]
 }

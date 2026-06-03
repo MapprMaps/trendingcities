@@ -64,5 +64,37 @@
       "source": "unsplash",
       "license": "Unsplash License"
     }
-  }
+  },
+  "airports": [
+    {
+      "iata": "MUC",
+      "icao": "EDDM",
+      "name": "Munich Airport",
+      "type": "large_airport",
+      "distance_km": 112,
+      "destinations": 216,
+      "airlines": 107,
+      "url": "https://www.airportroutes.com/airports/EDDM/"
+    },
+    {
+      "iata": "SZG",
+      "icao": "LOWS",
+      "name": "Salzburg Airport",
+      "type": "medium_airport",
+      "distance_km": 3,
+      "destinations": 51,
+      "airlines": 36,
+      "url": "https://www.airportroutes.com/airports/LOWS/"
+    },
+    {
+      "iata": "INN",
+      "icao": "LOWI",
+      "name": "Innsbruck Airport",
+      "type": "medium_airport",
+      "distance_km": 141,
+      "destinations": 27,
+      "airlines": 18,
+      "url": "https://www.airportroutes.com/airports/LOWI/"
+    }
+  ]
 }
