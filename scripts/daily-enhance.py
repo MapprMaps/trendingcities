@@ -30,6 +30,36 @@ def logln(m):
     print(line, flush=True)
     with open(LOG, "a") as fh: fh.write(line + "\n")
 
+def gsc_opportunity_slugs():
+    """City slugs with Google Search Console impressions but weak position — real
+    'we could rank for this' opportunity. Activates automatically once the service
+    account (gemini-burn-bot@sitemetrics-458214) is added to the GSC property.
+    Falls back to empty (→ Plausible) on any error or until access/data exist."""
+    prop = os.environ.get("TC_GSC_PROPERTY", "sc-domain:trendingcities.com")
+    try:
+        import subprocess as sp
+        tok = sp.run(["gcloud", "auth", "print-access-token",
+                      "--scopes=https://www.googleapis.com/auth/webmasters.readonly"],
+                     capture_output=True, text=True).stdout.strip()
+        if not tok: return set()
+        end = datetime.date.today(); start = end - datetime.timedelta(days=28)
+        body = json.dumps({"startDate": start.isoformat(), "endDate": end.isoformat(),
+            "dimensions": ["page"], "rowLimit": 500}).encode()
+        url = f"https://www.googleapis.com/webmasters/v3/sites/{urllib.parse.quote(prop, safe='')}/searchAnalytics/query"
+        req = urllib.request.Request(url, data=body,
+            headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+        r = json.loads(urllib.request.urlopen(req, timeout=30).read())
+    except Exception as ex:
+        logln(f"GSC unavailable ({ex}) — using Plausible only"); return set()
+    slugs = set()
+    for row in r.get("rows", []):
+        # opportunity = has impressions but ranking past page 1 (position > 8)
+        if row.get("impressions", 0) >= 3 and row.get("position", 99) > 8:
+            m = re.search(r'/city/([a-z0-9-]+/[a-z0-9-]+)/?$', row["keys"][0])
+            if m: slugs.add(m.group(1))
+    if slugs: logln(f"GSC: {len(slugs)} city pages with ranking opportunity")
+    return slugs
+
 def plausible_traffic_slugs():
     """City slugs (country/city) with traffic in the last 14 days, for prioritising."""
     if not PLAUS: return set()
@@ -96,12 +126,14 @@ def main():
             backlog.append((f, d))
     if not backlog:
         logln("rents backlog empty — nothing to do this cycle"); return
-    # prioritise cities with recent traffic
+    # prioritise: GSC ranking-opportunity pages → Plausible-traffic pages → rest
+    gsc = gsc_opportunity_slugs()
     traffic = plausible_traffic_slugs()
-    backlog.sort(key=lambda fd: (fd[1]["id"] not in traffic, fd[1]["id"]))
+    backlog.sort(key=lambda fd: (fd[1]["id"] not in gsc, fd[1]["id"] not in traffic, fd[1]["id"]))
     todo = backlog[:batch]
     logln(f"=== daily-enhance: {len(backlog)} cities need rents; doing {len(todo)} "
-          f"({sum(1 for _,d in todo if d['id'] in traffic)} with recent traffic) ===")
+          f"({sum(1 for _,d in todo if d['id'] in gsc)} GSC-opportunity, "
+          f"{sum(1 for _,d in todo if d['id'] in traffic)} with traffic) ===")
     placed = 0; examples = []
     for f, d in todo:
         try:
