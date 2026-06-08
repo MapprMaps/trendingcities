@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "zimbabwe/harare",
+  "city": "Harare",
+  "country": "Zimbabwe",
+  "country_code": "ZW",
+  "coordinates": {
+    "lat": -17.82,
+    "lng": 31.03
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 80000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/m² scaled to typical Harare CBD flat sizes and local listing medians"
+    },
+    "home_price_2bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/m² scaled to typical Harare CBD flat sizes and local listing medians"
+    },
+    "home_price_3bed_usd": {
+      "value": 150000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/m² scaled to typical Harare CBD flat sizes and local listing medians"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

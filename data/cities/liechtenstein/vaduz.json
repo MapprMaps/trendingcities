@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "liechtenstein/vaduz",
+  "city": "Vaduz",
+  "country": "Liechtenstein",
+  "country_code": "LI",
+  "coordinates": {
+    "lat": 47.13,
+    "lng": 9.52
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 1310000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Liechtenstein purchase price per sq ft plus regional Vaduz/Liechtenstein market comparables; estimated city-centre apartment sizes and CHF/USD conversion"
+    },
+    "home_price_2bed_usd": {
+      "value": 1880000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Liechtenstein purchase price per sq ft plus regional Vaduz/Liechtenstein market comparables; estimated city-centre apartment sizes and CHF/USD conversion"
+    },
+    "home_price_3bed_usd": {
+      "value": 2520000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Liechtenstein purchase price per sq ft plus regional Vaduz/Liechtenstein market comparables; estimated city-centre apartment sizes and CHF/USD conversion"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

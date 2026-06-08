@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "cameroon/yaounde",
+  "city": "Yaoundé",
+  "country": "Cameroon",
+  "country_code": "CM",
+  "coordinates": {
+    "lat": 3.85,
+    "lng": 11.5
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from national Cameroon apartment price ranges and city-centre price/m² data, assuming Yaoundé at upper-mid segment but below top luxury hubs"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from national Cameroon apartment price ranges and city-centre price/m² data, assuming Yaoundé at upper-mid segment but below top luxury hubs"
+    },
+    "home_price_3bed_usd": {
+      "value": 130000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from national Cameroon apartment price ranges and city-centre price/m² data, assuming Yaoundé at upper-mid segment but below top luxury hubs"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

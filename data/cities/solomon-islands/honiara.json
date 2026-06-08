@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "solomon-islands/honiara",
+  "city": "Honiara",
+  "country": "Solomon Islands",
+  "country_code": "SB",
+  "coordinates": {
+    "lat": -9.43,
+    "lng": 159.95
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 1050000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise city-centre price-per-m² plus sparse local/expat-market comparables; inferred from Honiara apartment stock"
+    },
+    "home_price_2bed_usd": {
+      "value": 1550000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise city-centre price-per-m² plus sparse local/expat-market comparables; inferred from Honiara apartment stock"
+    },
+    "home_price_3bed_usd": {
+      "value": 2100000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise city-centre price-per-m² plus sparse local/expat-market comparables; inferred from Honiara apartment stock"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

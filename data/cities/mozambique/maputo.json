@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "mozambique/maputo",
+  "city": "Maputo",
+  "country": "Mozambique",
+  "country_code": "MZ",
+  "coordinates": {
+    "lat": -25.95,
+    "lng": 32.58
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 435000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo price/sqm for Maputo city centre plus listed Maputo sale prices and regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 650000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo price/sqm for Maputo city centre plus listed Maputo sale prices and regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 1020000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo price/sqm for Maputo city centre plus listed Maputo sale prices and regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "eritrea/asmara",
+  "city": "Asmara",
+  "country": "Eritrea",
+  "country_code": "ER",
+  "coordinates": {
+    "lat": 15.33,
+    "lng": 38.93
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 42000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Asmara scaled by typical 1/2/3BR sizes and cross-checked with regional cost-of-living data; no robust local sales market dat"
+    },
+    "home_price_2bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Asmara scaled by typical 1/2/3BR sizes and cross-checked with regional cost-of-living data; no robust local sales market dat"
+    },
+    "home_price_3bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Asmara scaled by typical 1/2/3BR sizes and cross-checked with regional cost-of-living data; no robust local sales market dat"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

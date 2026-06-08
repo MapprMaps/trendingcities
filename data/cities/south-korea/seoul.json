@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "south-korea/seoul",
+  "city": "Seoul",
+  "country": "South Korea",
+  "country_code": "KR",
+  "coordinates": {
+    "lat": 37.55,
+    "lng": 126.98
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 650000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo Seoul city-centre price-per-m² and local listing levels converted to typical 1/2/3‑bedroom sizes"
+    },
+    "home_price_2bed_usd": {
+      "value": 900000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo Seoul city-centre price-per-m² and local listing levels converted to typical 1/2/3‑bedroom sizes"
+    },
+    "home_price_3bed_usd": {
+      "value": 1150000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo Seoul city-centre price-per-m² and local listing levels converted to typical 1/2/3‑bedroom sizes"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

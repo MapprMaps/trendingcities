@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "barbados/bridgetown",
+  "city": "Bridgetown",
+  "country": "Barbados",
+  "country_code": "BB",
+  "coordinates": {
+    "lat": 13.1,
+    "lng": -59.62
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 175000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Barbados median price per sq ft and central Barbados listings; no Bridgetown-specific size/price data for city-centre apartments"
+    },
+    "home_price_2bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Barbados median price per sq ft and central Barbados listings; no Bridgetown-specific size/price data for city-centre apartments"
+    },
+    "home_price_3bed_usd": {
+      "value": 350000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Barbados median price per sq ft and central Barbados listings; no Bridgetown-specific size/price data for city-centre apartments"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

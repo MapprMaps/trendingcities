@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "guinea-bissau/bissau",
+  "city": "Bissau",
+  "country": "Guinea-Bissau",
+  "country_code": "GW",
+  "coordinates": {
+    "lat": 11.85,
+    "lng": -15.58
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 7400,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "CAHF 2023 Bissau apartment prices by type scaled to 1/2/3-bed"
+    },
+    "home_price_2bed_usd": {
+      "value": 11100,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "CAHF 2023 Bissau apartment prices by type scaled to 1/2/3-bed"
+    },
+    "home_price_3bed_usd": {
+      "value": 21000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "CAHF 2023 Bissau apartment prices by type scaled to 1/2/3-bed"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

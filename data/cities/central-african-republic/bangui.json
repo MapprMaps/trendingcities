@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "central-african-republic/bangui",
+  "city": "Bangui",
+  "country": "Central African Republic",
+  "country_code": "CF",
+  "coordinates": {
+    "lat": 4.37,
+    "lng": 18.58
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 25000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo price-per-m² for city-centre Bangui extrapolated to typical 1–3BR sizes with large uncertainty"
+    },
+    "home_price_2bed_usd": {
+      "value": 40000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo price-per-m² for city-centre Bangui extrapolated to typical 1–3BR sizes with large uncertainty"
+    },
+    "home_price_3bed_usd": {
+      "value": 55000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo price-per-m² for city-centre Bangui extrapolated to typical 1–3BR sizes with large uncertainty"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

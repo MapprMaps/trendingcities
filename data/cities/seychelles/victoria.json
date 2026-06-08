@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "seychelles/victoria",
+  "city": "Victoria",
+  "country": "Seychelles",
+  "country_code": "SC",
+  "coordinates": {
+    "lat": -4.62,
+    "lng": 55.45
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 93000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price-per-m2 for Seychelles scaled by typical 1–3BR sizes and cross-checked with local listing psm ranges"
+    },
+    "home_price_2bed_usd": {
+      "value": 139000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price-per-m2 for Seychelles scaled by typical 1–3BR sizes and cross-checked with local listing psm ranges"
+    },
+    "home_price_3bed_usd": {
+      "value": 185000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price-per-m2 for Seychelles scaled by typical 1–3BR sizes and cross-checked with local listing psm ranges"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

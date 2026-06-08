@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "monaco/monaco",
+  "city": "Monaco",
+  "country": "Monaco",
+  "country_code": "MC",
+  "coordinates": {
+    "lat": 43.73,
+    "lng": 7.42
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 3500000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre €/ft² plus local listing €/m² and typical Monaco unit sizes, converted to USD"
+    },
+    "home_price_2bed_usd": {
+      "value": 5500000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre €/ft² plus local listing €/m² and typical Monaco unit sizes, converted to USD"
+    },
+    "home_price_3bed_usd": {
+      "value": 7500000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre €/ft² plus local listing €/m² and typical Monaco unit sizes, converted to USD"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

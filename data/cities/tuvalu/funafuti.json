@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "tuvalu/funafuti",
+  "city": "Funafuti",
+  "country": "Tuvalu",
+  "country_code": "TV",
+  "coordinates": {
+    "lat": -8.52,
+    "lng": 179.22
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 56000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Funafuti scaled by typical 1–3 BR sizes"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Funafuti scaled by typical 1–3 BR sizes"
+    },
+    "home_price_3bed_usd": {
+      "value": 112000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Funafuti scaled by typical 1–3 BR sizes"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

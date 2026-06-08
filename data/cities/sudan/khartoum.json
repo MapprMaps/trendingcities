@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "sudan/khartoum",
+  "city": "Khartoum",
+  "country": "Sudan",
+  "country_code": "SD",
+  "coordinates": {
+    "lat": 15.6,
+    "lng": 32.53
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 165000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy price per sq ft in Sudan extrapolated to apartment sizes; no reliable Khartoum median sale comps found"
+    },
+    "home_price_2bed_usd": {
+      "value": 255000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy price per sq ft in Sudan extrapolated to apartment sizes; no reliable Khartoum median sale comps found"
+    },
+    "home_price_3bed_usd": {
+      "value": 355000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy price per sq ft in Sudan extrapolated to apartment sizes; no reliable Khartoum median sale comps found"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

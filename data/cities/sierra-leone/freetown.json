@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "sierra-leone/freetown",
+  "city": "Freetown",
+  "country": "Sierra Leone",
+  "country_code": "SL",
+  "coordinates": {
+    "lat": 8.48,
+    "lng": -13.23
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 180000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional/market estimate from sparse Freetown sale listings plus buy-price proxy; no solid city-centre median sale data found"
+    },
+    "home_price_2bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional/market estimate from sparse Freetown sale listings plus buy-price proxy; no solid city-centre median sale data found"
+    },
+    "home_price_3bed_usd": {
+      "value": 350000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional/market estimate from sparse Freetown sale listings plus buy-price proxy; no solid city-centre median sale data found"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

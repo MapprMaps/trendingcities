@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "bhutan/thimphu",
+  "city": "Thimphu",
+  "country": "Bhutan",
+  "country_code": "BT",
+  "coordinates": {
+    "lat": 27.47,
+    "lng": 89.63
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 28000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² in Thimphu converted from BTN to USD and multiplied by typical 1/2/3BR sizes; cross-checked with limited local sale listing"
+    },
+    "home_price_2bed_usd": {
+      "value": 52000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² in Thimphu converted from BTN to USD and multiplied by typical 1/2/3BR sizes; cross-checked with limited local sale listing"
+    },
+    "home_price_3bed_usd": {
+      "value": 75000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² in Thimphu converted from BTN to USD and multiplied by typical 1/2/3BR sizes; cross-checked with limited local sale listing"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

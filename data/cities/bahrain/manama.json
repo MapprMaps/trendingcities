@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "bahrain/manama",
+  "city": "Manama",
+  "country": "Bahrain",
+  "country_code": "BH",
+  "coordinates": {
+    "lat": 26.23,
+    "lng": 50.57
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 175000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/m² for Manama (~$2,620/m²) combined with typical Bahrain 1–3BR sizes and local listing benchmarks"
+    },
+    "home_price_2bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/m² for Manama (~$2,620/m²) combined with typical Bahrain 1–3BR sizes and local listing benchmarks"
+    },
+    "home_price_3bed_usd": {
+      "value": 345000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/m² for Manama (~$2,620/m²) combined with typical Bahrain 1–3BR sizes and local listing benchmarks"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

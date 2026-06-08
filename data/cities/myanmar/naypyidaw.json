@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "myanmar/naypyidaw",
+  "city": "Naypyidaw",
+  "country": "Myanmar",
+  "country_code": "MM",
+  "coordinates": {
+    "lat": 19.76,
+    "lng": 96.07
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 25000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Naypyidaw city-centre price-per-m2 and Myanmar-wide apartment prices"
+    },
+    "home_price_2bed_usd": {
+      "value": 35000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Naypyidaw city-centre price-per-m2 and Myanmar-wide apartment prices"
+    },
+    "home_price_3bed_usd": {
+      "value": 45000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Naypyidaw city-centre price-per-m2 and Myanmar-wide apartment prices"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

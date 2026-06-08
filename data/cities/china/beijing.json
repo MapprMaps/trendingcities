@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "china/beijing",
+  "city": "Beijing",
+  "country": "China",
+  "country_code": "CN",
+  "coordinates": {
+    "lat": 39.92,
+    "lng": 116.38
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 450000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo Beijing city-centre price per m² (~$12.6k)[6] combined with typical 1/2/3BR sizes (~35/60/85 m²)"
+    },
+    "home_price_2bed_usd": {
+      "value": 750000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo Beijing city-centre price per m² (~$12.6k)[6] combined with typical 1/2/3BR sizes (~35/60/85 m²)"
+    },
+    "home_price_3bed_usd": {
+      "value": 1050000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo Beijing city-centre price per m² (~$12.6k)[6] combined with typical 1/2/3BR sizes (~35/60/85 m²)"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

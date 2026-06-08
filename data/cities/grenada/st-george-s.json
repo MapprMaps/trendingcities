@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "grenada/st-george-s",
+  "city": "St. George's",
+  "country": "Grenada",
+  "country_code": "GD",
+  "coordinates": {
+    "lat": 32.38,
+    "lng": -64.68
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "inferred from Numbeo city-centre price/sqft and regional Caribbean comparables with limited direct sales data"
+    },
+    "home_price_2bed_usd": {
+      "value": 150000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "inferred from Numbeo city-centre price/sqft and regional Caribbean comparables with limited direct sales data"
+    },
+    "home_price_3bed_usd": {
+      "value": 210000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "inferred from Numbeo city-centre price/sqft and regional Caribbean comparables with limited direct sales data"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "kiribati/south-tarawa",
+  "city": "South Tarawa",
+  "country": "Kiribati",
+  "country_code": "KI",
+  "coordinates": {
+    "lat": 1.33,
+    "lng": 172.98
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 23000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no sale price data for South Tarawa; rough estimate by capitalizing local city-centre rents from livingcost.org and regional Pacific microstate comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 42000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no sale price data for South Tarawa; rough estimate by capitalizing local city-centre rents from livingcost.org and regional Pacific microstate comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no sale price data for South Tarawa; rough estimate by capitalizing local city-centre rents from livingcost.org and regional Pacific microstate comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

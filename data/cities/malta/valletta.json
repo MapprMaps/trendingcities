@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "malta/valletta",
+  "city": "Valletta",
+  "country": "Malta",
+  "country_code": "MT",
+  "coordinates": {
+    "lat": 35.88,
+    "lng": 14.5
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 475000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Valletta sale listings and €/m² market ranges; limited city-centre purchase data, estimated from local comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 700000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Valletta sale listings and €/m² market ranges; limited city-centre purchase data, estimated from local comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 950000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Valletta sale listings and €/m² market ranges; limited city-centre purchase data, estimated from local comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

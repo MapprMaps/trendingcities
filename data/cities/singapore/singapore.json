@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "singapore/singapore",
+  "city": "Singapore",
+  "country": "Singapore",
+  "country_code": "SG",
+  "coordinates": {
+    "lat": 1.28,
+    "lng": 103.85
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 800000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per sq ft in SGD converted to USD and multiplied by typical 1/2/3BR sizes; cross-checked with local portal asking prices"
+    },
+    "home_price_2bed_usd": {
+      "value": 1300000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per sq ft in SGD converted to USD and multiplied by typical 1/2/3BR sizes; cross-checked with local portal asking prices"
+    },
+    "home_price_3bed_usd": {
+      "value": 1800000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per sq ft in SGD converted to USD and multiplied by typical 1/2/3BR sizes; cross-checked with local portal asking prices"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

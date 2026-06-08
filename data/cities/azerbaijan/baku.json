@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "azerbaijan/baku",
+  "city": "Baku",
+  "country": "Azerbaijan",
+  "country_code": "AZ",
+  "coordinates": {
+    "lat": 40.38,
+    "lng": 49.87
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 180000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre asking prices plus Baku completed-property USD/m² and regional Baku market range; estimated apartment sizes applied"
+    },
+    "home_price_2bed_usd": {
+      "value": 250000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre asking prices plus Baku completed-property USD/m² and regional Baku market range; estimated apartment sizes applied"
+    },
+    "home_price_3bed_usd": {
+      "value": 350000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre asking prices plus Baku completed-property USD/m² and regional Baku market range; estimated apartment sizes applied"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

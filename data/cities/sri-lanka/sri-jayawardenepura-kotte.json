@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "sri-lanka/sri-jayawardenepura-kotte",
+  "city": "Sri Jayawardenepura Kotte",
+  "country": "Sri Lanka",
+  "country_code": "LK",
+  "coordinates": {
+    "lat": 6.89,
+    "lng": 79.9
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from local listing around $140k for larger units and Sri Lanka urban price per m²; no direct Numbeo/Global Property Guide purchase data for Kotte"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from local listing around $140k for larger units and Sri Lanka urban price per m²; no direct Numbeo/Global Property Guide purchase data for Kotte"
+    },
+    "home_price_3bed_usd": {
+      "value": 130000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from local listing around $140k for larger units and Sri Lanka urban price per m²; no direct Numbeo/Global Property Guide purchase data for Kotte"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

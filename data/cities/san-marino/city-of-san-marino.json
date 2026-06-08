@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "san-marino/city-of-san-marino",
+  "city": "City of San Marino",
+  "country": "San Marino",
+  "country_code": "SM",
+  "coordinates": {
+    "lat": 43.94,
+    "lng": 12.45
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 160000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from San Marino City average price per m² (~$3,000) and typical apartment sizes due to lack of specific Numbeo/official sale-price data"
+    },
+    "home_price_2bed_usd": {
+      "value": 240000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from San Marino City average price per m² (~$3,000) and typical apartment sizes due to lack of specific Numbeo/official sale-price data"
+    },
+    "home_price_3bed_usd": {
+      "value": 320000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from San Marino City average price per m² (~$3,000) and typical apartment sizes due to lack of specific Numbeo/official sale-price data"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "somalia/mogadishu",
+  "city": "Mogadishu",
+  "country": "Somalia",
+  "country_code": "SO",
+  "coordinates": {
+    "lat": 2.07,
+    "lng": 45.33
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise/Somali Investor city-centre price per m² (~$1.2–2.4k) × typical sizes; market very illiquid, data inconsistent"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise/Somali Investor city-centre price per m² (~$1.2–2.4k) × typical sizes; market very illiquid, data inconsistent"
+    },
+    "home_price_3bed_usd": {
+      "value": 120000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise/Somali Investor city-centre price per m² (~$1.2–2.4k) × typical sizes; market very illiquid, data inconsistent"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

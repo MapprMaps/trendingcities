@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "north-korea/pyongyang",
+  "city": "Pyongyang",
+  "country": "North Korea",
+  "country_code": "KP",
+  "coordinates": {
+    "lat": 39.02,
+    "lng": 125.75
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 85000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Pyongyang apartment market reports and black-market price references, scaled from scarce city-centre data and regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 125000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Pyongyang apartment market reports and black-market price references, scaled from scarce city-centre data and regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 170000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Pyongyang apartment market reports and black-market price references, scaled from scarce city-centre data and regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

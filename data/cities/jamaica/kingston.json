@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "jamaica/kingston",
+  "city": "Kingston",
+  "country": "Jamaica",
+  "country_code": "JM",
+  "coordinates": {
+    "lat": 17.997,
+    "lng": -76.7936
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 200000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Jamaica city-centre prices plus Kingston market listings and regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 325000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Jamaica city-centre prices plus Kingston market listings and regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 450000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Jamaica city-centre prices plus Kingston market listings and regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "tajikistan/dushanbe",
+  "city": "Dushanbe",
+  "country": "Tajikistan",
+  "country_code": "TJ",
+  "coordinates": {
+    "lat": 38.55,
+    "lng": 68.77
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 48000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre USD/m² (~1189) with typical sizes: 1BR~40m², 2BR~66m², 3BR~93m²"
+    },
+    "home_price_2bed_usd": {
+      "value": 79000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre USD/m² (~1189) with typical sizes: 1BR~40m², 2BR~66m², 3BR~93m²"
+    },
+    "home_price_3bed_usd": {
+      "value": 111000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre USD/m² (~1189) with typical sizes: 1BR~40m², 2BR~66m², 3BR~93m²"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

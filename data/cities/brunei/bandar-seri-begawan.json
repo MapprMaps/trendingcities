@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "brunei/bandar-seri-begawan",
+  "city": "Bandar Seri Begawan",
+  "country": "Brunei",
+  "country_code": "BN",
+  "coordinates": {
+    "lat": 4.88,
+    "lng": 114.93
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 70000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Brunei, typical unit sizes, and regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 120000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Brunei, typical unit sizes, and regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 170000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Brunei, typical unit sizes, and regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

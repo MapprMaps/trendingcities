@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "kyrgyzstan/bishkek",
+  "city": "Bishkek",
+  "country": "Kyrgyzstan",
+  "country_code": "KG",
+  "coordinates": {
+    "lat": 42.87,
+    "lng": 74.6
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 35000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Bishkek district listings plus Kyrgyzstan city-center per-m² data; no clean market median by bedroom for centre-only sales"
+    },
+    "home_price_2bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Bishkek district listings plus Kyrgyzstan city-center per-m² data; no clean market median by bedroom for centre-only sales"
+    },
+    "home_price_3bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Bishkek district listings plus Kyrgyzstan city-center per-m² data; no clean market median by bedroom for centre-only sales"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

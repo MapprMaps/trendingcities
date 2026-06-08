@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "marshall-islands/majuro",
+  "city": "Majuro",
+  "country": "Marshall Islands",
+  "country_code": "MH",
+  "coordinates": {
+    "lat": 7.1,
+    "lng": 171.38
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 70000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Majuro city-centre rents and comparable Pacific island capital price-to-rent ratios"
+    },
+    "home_price_2bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Majuro city-centre rents and comparable Pacific island capital price-to-rent ratios"
+    },
+    "home_price_3bed_usd": {
+      "value": 150000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Majuro city-centre rents and comparable Pacific island capital price-to-rent ratios"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

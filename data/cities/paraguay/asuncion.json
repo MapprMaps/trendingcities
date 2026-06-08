@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "paraguay/asuncion",
+  "city": "Asunción",
+  "country": "Paraguay",
+  "country_code": "PY",
+  "coordinates": {
+    "lat": -25.28,
+    "lng": -57.57
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 80000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m² and local listing medians (TuLugar, agencies) scaled by typical 1–3BR sizes in central Asunción"
+    },
+    "home_price_2bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m² and local listing medians (TuLugar, agencies) scaled by typical 1–3BR sizes in central Asunción"
+    },
+    "home_price_3bed_usd": {
+      "value": 150000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m² and local listing medians (TuLugar, agencies) scaled by typical 1–3BR sizes in central Asunción"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

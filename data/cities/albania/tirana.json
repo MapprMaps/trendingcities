@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "albania/tirana",
+  "city": "Tirana",
+  "country": "Albania",
+  "country_code": "AL",
+  "coordinates": {
+    "lat": 41.32,
+    "lng": 19.82
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 140000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre €/m² and 2026 Tirana central market range converted to USD"
+    },
+    "home_price_2bed_usd": {
+      "value": 210000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre €/m² and 2026 Tirana central market range converted to USD"
+    },
+    "home_price_3bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre €/m² and 2026 Tirana central market range converted to USD"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

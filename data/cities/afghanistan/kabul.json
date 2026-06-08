@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "afghanistan/kabul",
+  "city": "Kabul",
+  "country": "Afghanistan",
+  "country_code": "AF",
+  "coordinates": {
+    "lat": 34.52,
+    "lng": 69.18
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 35000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/sqft plus Kabul listing sites (MaskanYab, Maskaneman, bdeex) and rough size assumptions"
+    },
+    "home_price_2bed_usd": {
+      "value": 55000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/sqft plus Kabul listing sites (MaskanYab, Maskaneman, bdeex) and rough size assumptions"
+    },
+    "home_price_3bed_usd": {
+      "value": 70000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/sqft plus Kabul listing sites (MaskanYab, Maskaneman, bdeex) and rough size assumptions"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

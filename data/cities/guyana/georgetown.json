@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "guyana/georgetown",
+  "city": "Georgetown",
+  "country": "Guyana",
+  "country_code": "GY",
+  "coordinates": {
+    "lat": 6.8,
+    "lng": -58.15
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 95000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² (~$3,800–$4,000) times typical 1/2/3‑bed sizes; cross-checked vs local agent listings showing very limited but consistently high"
+    },
+    "home_price_2bed_usd": {
+      "value": 165000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² (~$3,800–$4,000) times typical 1/2/3‑bed sizes; cross-checked vs local agent listings showing very limited but consistently high"
+    },
+    "home_price_3bed_usd": {
+      "value": 235000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² (~$3,800–$4,000) times typical 1/2/3‑bed sizes; cross-checked vs local agent listings showing very limited but consistently high"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

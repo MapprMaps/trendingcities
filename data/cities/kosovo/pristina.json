@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "kosovo/pristina",
+  "city": "Pristina",
+  "country": "Kosovo",
+  "country_code": "XK",
+  "coordinates": {
+    "lat": 42.67,
+    "lng": 21.17
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 57000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy price per m² plus Kosovo/Pristina sales range and regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 92000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy price per m² plus Kosovo/Pristina sales range and regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 123000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy price per m² plus Kosovo/Pristina sales range and regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

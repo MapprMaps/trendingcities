@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "mauritania/nouakchott",
+  "city": "Nouakchott",
+  "country": "Mauritania",
+  "country_code": "MR",
+  "coordinates": {
+    "lat": 18.07,
+    "lng": -15.97
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 47000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo & Wise city-centre price per m² extrapolated to typical unit sizes"
+    },
+    "home_price_2bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo & Wise city-centre price per m² extrapolated to typical unit sizes"
+    },
+    "home_price_3bed_usd": {
+      "value": 85000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo & Wise city-centre price per m² extrapolated to typical unit sizes"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

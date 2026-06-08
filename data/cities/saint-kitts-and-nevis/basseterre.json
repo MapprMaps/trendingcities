@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "saint-kitts-and-nevis/basseterre",
+  "city": "Basseterre",
+  "country": "Saint Kitts and Nevis",
+  "country_code": "KN",
+  "coordinates": {
+    "lat": 17.3,
+    "lng": -62.72
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 170000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo-like avg $5,000/sqm city-centre and regional St Kitts condo prices extrapolated to 35/52/70 sqm 1–3BR"
+    },
+    "home_price_2bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo-like avg $5,000/sqm city-centre and regional St Kitts condo prices extrapolated to 35/52/70 sqm 1–3BR"
+    },
+    "home_price_3bed_usd": {
+      "value": 350000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo-like avg $5,000/sqm city-centre and regional St Kitts condo prices extrapolated to 35/52/70 sqm 1–3BR"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "syria/damascus",
+  "city": "Damascus",
+  "country": "Syria",
+  "country_code": "SY",
+  "coordinates": {
+    "lat": 33.5,
+    "lng": 36.3
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 35000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Syria city-centre price per m² plus local reports of $2k–4k/m² in Damascus and small-unit size estimates"
+    },
+    "home_price_2bed_usd": {
+      "value": 70000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Syria city-centre price per m² plus local reports of $2k–4k/m² in Damascus and small-unit size estimates"
+    },
+    "home_price_3bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Syria city-centre price per m² plus local reports of $2k–4k/m² in Damascus and small-unit size estimates"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "yemen/sana-a",
+  "city": "Sana'a",
+  "country": "Yemen",
+  "country_code": "YE",
+  "coordinates": {
+    "lat": 15.37,
+    "lng": 44.19
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 52014,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Sanaa city-centre price per m² with assumed 45/75/105 m² sizes in very illiquid conflict market"
+    },
+    "home_price_2bed_usd": {
+      "value": 88523,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Sanaa city-centre price per m² with assumed 45/75/105 m² sizes in very illiquid conflict market"
+    },
+    "home_price_3bed_usd": {
+      "value": 125031,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Sanaa city-centre price per m² with assumed 45/75/105 m² sizes in very illiquid conflict market"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

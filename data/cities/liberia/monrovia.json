@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "liberia/monrovia",
+  "city": "Monrovia",
+  "country": "Liberia",
+  "country_code": "LR",
+  "coordinates": {
+    "lat": 6.3,
+    "lng": -10.8
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 200000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "No verified purchase-price market data found for Monrovia, Liberia; estimate scaled from local rent levels in Numbeo and regional housing comparables."
+    },
+    "home_price_2bed_usd": {
+      "value": 350000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "No verified purchase-price market data found for Monrovia, Liberia; estimate scaled from local rent levels in Numbeo and regional housing comparables."
+    },
+    "home_price_3bed_usd": {
+      "value": 500000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "No verified purchase-price market data found for Monrovia, Liberia; estimate scaled from local rent levels in Numbeo and regional housing comparables."
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

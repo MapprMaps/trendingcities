@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "libya/tripoli",
+  "city": "Tripoli",
+  "country": "Libya",
+  "country_code": "LY",
+  "coordinates": {
+    "lat": 32.88,
+    "lng": 13.17
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 28000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Numbeo Libya city-centre price-per-m² and local listings; no specific Tripoli size/bedroom data"
+    },
+    "home_price_2bed_usd": {
+      "value": 42000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Numbeo Libya city-centre price-per-m² and local listings; no specific Tripoli size/bedroom data"
+    },
+    "home_price_3bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Numbeo Libya city-centre price-per-m² and local listings; no specific Tripoli size/bedroom data"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

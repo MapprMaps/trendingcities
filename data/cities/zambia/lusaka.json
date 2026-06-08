@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "zambia/lusaka",
+  "city": "Lusaka",
+  "country": "Zambia",
+  "country_code": "ZM",
+  "coordinates": {
+    "lat": -15.42,
+    "lng": 28.28
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/m² and typical Lusaka unit sizes, cross-checked with local listing ranges"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/m² and typical Lusaka unit sizes, cross-checked with local listing ranges"
+    },
+    "home_price_3bed_usd": {
+      "value": 130000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/m² and typical Lusaka unit sizes, cross-checked with local listing ranges"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

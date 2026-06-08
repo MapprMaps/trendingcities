@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "bolivia/sucre",
+  "city": "Sucre",
+  "country": "Bolivia",
+  "country_code": "BO",
+  "coordinates": {
+    "lat": -19.02,
+    "lng": -65.26
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 52000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise Sucre city-centre price per m² scaled by typical 40/60/80 m² sizes; limited direct sale data for Sucre"
+    },
+    "home_price_2bed_usd": {
+      "value": 78000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise Sucre city-centre price per m² scaled by typical 40/60/80 m² sizes; limited direct sale data for Sucre"
+    },
+    "home_price_3bed_usd": {
+      "value": 104000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/Wise Sucre city-centre price per m² scaled by typical 40/60/80 m² sizes; limited direct sale data for Sucre"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

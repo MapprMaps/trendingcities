@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "nauru/yaren",
+  "city": "Yaren",
+  "country": "Nauru",
+  "country_code": "NR",
+  "coordinates": {
+    "lat": -0.55,
+    "lng": 166.92
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 40000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no transaction data for Nauru; inferred from very small market, low local incomes, and regional Pacific island comparables with high construction/import costs"
+    },
+    "home_price_2bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no transaction data for Nauru; inferred from very small market, low local incomes, and regional Pacific island comparables with high construction/import costs"
+    },
+    "home_price_3bed_usd": {
+      "value": 80000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no transaction data for Nauru; inferred from very small market, low local incomes, and regional Pacific island comparables with high construction/import costs"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "pakistan/islamabad",
+  "city": "Islamabad",
+  "country": "Pakistan",
+  "country_code": "PK",
+  "coordinates": {
+    "lat": 33.68,
+    "lng": 73.05
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 51000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per m² for Islamabad with typical 1/2/3BR sizes"
+    },
+    "home_price_2bed_usd": {
+      "value": 83000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per m² for Islamabad with typical 1/2/3BR sizes"
+    },
+    "home_price_3bed_usd": {
+      "value": 117000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per m² for Islamabad with typical 1/2/3BR sizes"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "haiti/port-au-prince",
+  "city": "Port-au-Prince",
+  "country": "Haiti",
+  "country_code": "HT",
+  "coordinates": {
+    "lat": 18.53,
+    "lng": -72.33
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "informal listings + extrapolation from PAP rental prices"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "informal listings + extrapolation from PAP rental prices"
+    },
+    "home_price_3bed_usd": {
+      "value": 130000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "informal listings + extrapolation from PAP rental prices"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

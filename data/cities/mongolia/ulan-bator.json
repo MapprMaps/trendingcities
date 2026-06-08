@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "mongolia/ulan-bator",
+  "city": "Ulan Bator",
+  "country": "Mongolia",
+  "country_code": "MN",
+  "coordinates": {
+    "lat": 47.92,
+    "lng": 106.91
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 48000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/ft² × typical UB apartment sizes, cross-checked with local listings and regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 78000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/ft² × typical UB apartment sizes, cross-checked with local listings and regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 105000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/ft² × typical UB apartment sizes, cross-checked with local listings and regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

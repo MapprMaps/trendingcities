@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "antigua-and-barbuda/saint-john-s",
+  "city": "Saint John's",
+  "country": "Antigua and Barbuda",
+  "country_code": "AG",
+  "coordinates": {
+    "lat": 17.12,
+    "lng": -61.85
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 200000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Antigua apartment price-per-m² estimates and nationwide apartment price ranges, adjusted to Saint John’s city centre"
+    },
+    "home_price_2bed_usd": {
+      "value": 275000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Antigua apartment price-per-m² estimates and nationwide apartment price ranges, adjusted to Saint John’s city centre"
+    },
+    "home_price_3bed_usd": {
+      "value": 350000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Antigua apartment price-per-m² estimates and nationwide apartment price ranges, adjusted to Saint John’s city centre"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "saint-lucia/castries",
+  "city": "Castries",
+  "country": "Saint Lucia",
+  "country_code": "LC",
+  "coordinates": {
+    "lat": 14.0,
+    "lng": -61.0
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from St Lucia condo and house sale prices plus Castries city-centre rent-to-price ratios and national price-per-sqft data"
+    },
+    "home_price_2bed_usd": {
+      "value": 160000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from St Lucia condo and house sale prices plus Castries city-centre rent-to-price ratios and national price-per-sqft data"
+    },
+    "home_price_3bed_usd": {
+      "value": 250000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from St Lucia condo and house sale prices plus Castries city-centre rent-to-price ratios and national price-per-sqft data"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

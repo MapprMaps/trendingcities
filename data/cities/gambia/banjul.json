@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "gambia/banjul",
+  "city": "Banjul",
+  "country": "Gambia",
+  "country_code": "GM",
+  "coordinates": {
+    "lat": 13.45,
+    "lng": -16.57
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 45000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Banjul price/m² plus local Gambian house price guides and regional listings"
+    },
+    "home_price_2bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Banjul price/m² plus local Gambian house price guides and regional listings"
+    },
+    "home_price_3bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Banjul price/m² plus local Gambian house price guides and regional listings"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

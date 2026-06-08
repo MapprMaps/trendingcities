@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "benin/porto-novo",
+  "city": "Porto-Novo",
+  "country": "Benin",
+  "country_code": "BJ",
+  "coordinates": {
+    "lat": 6.48,
+    "lng": 2.62
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 8000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no purchase data for Porto-Novo; inferred from Benin sale listings and typical price-to-rent ratios for similar West African secondary cities"
+    },
+    "home_price_2bed_usd": {
+      "value": 14000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no purchase data for Porto-Novo; inferred from Benin sale listings and typical price-to-rent ratios for similar West African secondary cities"
+    },
+    "home_price_3bed_usd": {
+      "value": 20000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "no purchase data for Porto-Novo; inferred from Benin sale listings and typical price-to-rent ratios for similar West African secondary cities"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

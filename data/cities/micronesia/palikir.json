@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "micronesia/palikir",
+  "city": "Palikir",
+  "country": "Micronesia",
+  "country_code": "FM",
+  "coordinates": {
+    "lat": 6.92,
+    "lng": 158.15
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Micronesia city-centre price-per-sqft on Numbeo with size assumptions for 1–3BR; no Palikir-specific transaction data"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Micronesia city-centre price-per-sqft on Numbeo with size assumptions for 1–3BR; no Palikir-specific transaction data"
+    },
+    "home_price_3bed_usd": {
+      "value": 120000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Micronesia city-centre price-per-sqft on Numbeo with size assumptions for 1–3BR; no Palikir-specific transaction data"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

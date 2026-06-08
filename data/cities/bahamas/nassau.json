@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "bahamas/nassau",
+  "city": "Nassau",
+  "country": "Bahamas",
+  "country_code": "BS",
+  "coordinates": {
+    "lat": 25.08,
+    "lng": -77.35
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 250000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Nassau (~$4,174/m²) scaled by typical 1/2/3-bed sizes and cross-checked against national and Nassau averages from Properstar"
+    },
+    "home_price_2bed_usd": {
+      "value": 360000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Nassau (~$4,174/m²) scaled by typical 1/2/3-bed sizes and cross-checked against national and Nassau averages from Properstar"
+    },
+    "home_price_3bed_usd": {
+      "value": 470000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price per m² for Nassau (~$4,174/m²) scaled by typical 1/2/3-bed sizes and cross-checked against national and Nassau averages from Properstar"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

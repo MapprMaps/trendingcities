@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "guinea/conakry",
+  "city": "Conakry",
+  "country": "Guinea",
+  "country_code": "GN",
+  "coordinates": {
+    "lat": 9.5,
+    "lng": -13.7
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 42000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from sparse Conakry sale listings and rent-to-price ratios from regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 60000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from sparse Conakry sale listings and rent-to-price ratios from regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 80000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from sparse Conakry sale listings and rent-to-price ratios from regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "dr-congo/kinshasa",
+  "city": "Kinshasa",
+  "country": "DR Congo",
+  "country_code": "CD",
+  "coordinates": {
+    "lat": -4.32,
+    "lng": 15.3
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 115000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Kinshasa city-centre price/sqft scaled by typical unit sizes and cross-checked with local listings and national median"
+    },
+    "home_price_2bed_usd": {
+      "value": 185000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Kinshasa city-centre price/sqft scaled by typical unit sizes and cross-checked with local listings and national median"
+    },
+    "home_price_3bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Kinshasa city-centre price/sqft scaled by typical unit sizes and cross-checked with local listings and national median"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

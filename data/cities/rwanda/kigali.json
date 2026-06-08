@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "rwanda/kigali",
+  "city": "Kigali",
+  "country": "Rwanda",
+  "country_code": "RW",
+  "coordinates": {
+    "lat": -1.95,
+    "lng": 30.05
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 80000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "numbeo city-centre rent, local Kigali listings & YouTube project prices, inferred yield-based multiples"
+    },
+    "home_price_2bed_usd": {
+      "value": 120000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "numbeo city-centre rent, local Kigali listings & YouTube project prices, inferred yield-based multiples"
+    },
+    "home_price_3bed_usd": {
+      "value": 170000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "numbeo city-centre rent, local Kigali listings & YouTube project prices, inferred yield-based multiples"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

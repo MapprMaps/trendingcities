@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "south-sudan/juba",
+  "city": "Juba",
+  "country": "South Sudan",
+  "country_code": "SS",
+  "coordinates": {
+    "lat": 4.85,
+    "lng": 31.62
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 55000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Juba city-centre price/sqft extrapolated to typical 1–3BR sizes, cross-checked with high local rents"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Juba city-centre price/sqft extrapolated to typical 1–3BR sizes, cross-checked with high local rents"
+    },
+    "home_price_3bed_usd": {
+      "value": 130000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Juba city-centre price/sqft extrapolated to typical 1–3BR sizes, cross-checked with high local rents"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

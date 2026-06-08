@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "lebanon/beirut",
+  "city": "Beirut",
+  "country": "Lebanon",
+  "country_code": "LB",
+  "coordinates": {
+    "lat": 33.87,
+    "lng": 35.5
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 190000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m2 (~$3,750) and local 2025 Beirut CBD prices (~$3,000–4,000/m2) applied to typical 50/85/115 m2 1/2/3-bed units"
+    },
+    "home_price_2bed_usd": {
+      "value": 320000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m2 (~$3,750) and local 2025 Beirut CBD prices (~$3,000–4,000/m2) applied to typical 50/85/115 m2 1/2/3-bed units"
+    },
+    "home_price_3bed_usd": {
+      "value": 430000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m2 (~$3,750) and local 2025 Beirut CBD prices (~$3,000–4,000/m2) applied to typical 50/85/115 m2 1/2/3-bed units"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

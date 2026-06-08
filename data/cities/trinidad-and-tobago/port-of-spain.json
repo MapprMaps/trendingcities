@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "trinidad-and-tobago/port-of-spain",
+  "city": "Port of Spain",
+  "country": "Trinidad and Tobago",
+  "country_code": "TT",
+  "coordinates": {
+    "lat": 10.65,
+    "lng": -61.52
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 220000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional comparables; purchase data sparse, inferred from city-center rents and asking prices"
+    },
+    "home_price_2bed_usd": {
+      "value": 330000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional comparables; purchase data sparse, inferred from city-center rents and asking prices"
+    },
+    "home_price_3bed_usd": {
+      "value": 480000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional comparables; purchase data sparse, inferred from city-center rents and asking prices"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

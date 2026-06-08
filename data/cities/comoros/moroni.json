@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "comoros/moroni",
+  "city": "Moroni",
+  "country": "Comoros",
+  "country_code": "KM",
+  "coordinates": {
+    "lat": -11.7,
+    "lng": 43.23
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Comoros city-centre price per m² extrapolated by typical unit sizes; no direct Moroni sale data"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Comoros city-centre price per m² extrapolated by typical unit sizes; no direct Moroni sale data"
+    },
+    "home_price_3bed_usd": {
+      "value": 115000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Comoros city-centre price per m² extrapolated by typical unit sizes; no direct Moroni sale data"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

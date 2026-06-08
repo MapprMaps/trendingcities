@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "fiji/suva",
+  "city": "Suva",
+  "country": "Fiji",
+  "country_code": "FJ",
+  "coordinates": {
+    "lat": -18.13,
+    "lng": 178.42
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 70000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price/sqm for Suva (~$678) scaled by typical 1–3BR sizes and cross-checked with Fiji residential market levels"
+    },
+    "home_price_2bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price/sqm for Suva (~$678) scaled by typical 1–3BR sizes and cross-checked with Fiji residential market levels"
+    },
+    "home_price_3bed_usd": {
+      "value": 150000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price/sqm for Suva (~$678) scaled by typical 1–3BR sizes and cross-checked with Fiji residential market levels"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

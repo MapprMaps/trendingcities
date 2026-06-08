@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "algeria/algiers",
+  "city": "Algiers",
+  "country": "Algeria",
+  "country_code": "DZ",
+  "coordinates": {
+    "lat": 36.75,
+    "lng": 3.05
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 140000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "SandsOfWealth 2026 median price per m² for 90m², scaled to ~55m² (1br), ~80m² (2br), ~105m² (3br) city-centre apartments in Algiers"
+    },
+    "home_price_2bed_usd": {
+      "value": 210000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "SandsOfWealth 2026 median price per m² for 90m², scaled to ~55m² (1br), ~80m² (2br), ~105m² (3br) city-centre apartments in Algiers"
+    },
+    "home_price_3bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "SandsOfWealth 2026 median price per m² for 90m², scaled to ~55m² (1br), ~80m² (2br), ~105m² (3br) city-centre apartments in Algiers"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

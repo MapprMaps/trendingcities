@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "brazil/brasilia",
+  "city": "Brasília",
+  "country": "Brazil",
+  "country_code": "BR",
+  "coordinates": {
+    "lat": -15.79,
+    "lng": -47.88
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 124000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "estimated from Numbeo buy prices per m² for Brasília and local listing comparables; no clean bedroom-specific city-centre purchase medians found"
+    },
+    "home_price_2bed_usd": {
+      "value": 235000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "estimated from Numbeo buy prices per m² for Brasília and local listing comparables; no clean bedroom-specific city-centre purchase medians found"
+    },
+    "home_price_3bed_usd": {
+      "value": 320000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "estimated from Numbeo buy prices per m² for Brasília and local listing comparables; no clean bedroom-specific city-centre purchase medians found"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

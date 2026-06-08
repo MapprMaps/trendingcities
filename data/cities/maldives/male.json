@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "maldives/male",
+  "city": "Malé",
+  "country": "Maldives",
+  "country_code": "MV",
+  "coordinates": {
+    "lat": 4.17,
+    "lng": 73.51
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 180000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per sq ft for Male plus typical sizes (1BR~55m²,2BR~80m²,3BR~105m²) and local market range $3,000–5,000/m² for Greater Male apartments"
+    },
+    "home_price_2bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per sq ft for Male plus typical sizes (1BR~55m²,2BR~80m²,3BR~105m²) and local market range $3,000–5,000/m² for Greater Male apartments"
+    },
+    "home_price_3bed_usd": {
+      "value": 340000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price per sq ft for Male plus typical sizes (1BR~55m²,2BR~80m²,3BR~105m²) and local market range $3,000–5,000/m² for Greater Male apartments"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

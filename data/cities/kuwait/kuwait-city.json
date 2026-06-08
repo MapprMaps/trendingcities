@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "kuwait/kuwait-city",
+  "city": "Kuwait City",
+  "country": "Kuwait",
+  "country_code": "KW",
+  "coordinates": {
+    "lat": 29.37,
+    "lng": 47.97
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 180000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Kuwait average city-centre price per m² (~US$4,950) and typical sizes; no bedroom-specific Kuwait City sale data"
+    },
+    "home_price_2bed_usd": {
+      "value": 260000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Kuwait average city-centre price per m² (~US$4,950) and typical sizes; no bedroom-specific Kuwait City sale data"
+    },
+    "home_price_3bed_usd": {
+      "value": 340000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "extrapolated from Kuwait average city-centre price per m² (~US$4,950) and typical sizes; no bedroom-specific Kuwait City sale data"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

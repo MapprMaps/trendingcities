@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "uzbekistan/tashkent",
+  "city": "Tashkent",
+  "country": "Uzbekistan",
+  "country_code": "UZ",
+  "coordinates": {
+    "lat": 41.32,
+    "lng": 69.25
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "local listings & $1,100–1,200/m² 2026 city-centre averages applied to typical 40–50m², 70–80m², 95–105m² units"
+    },
+    "home_price_2bed_usd": {
+      "value": 90000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "local listings & $1,100–1,200/m² 2026 city-centre averages applied to typical 40–50m², 70–80m², 95–105m² units"
+    },
+    "home_price_3bed_usd": {
+      "value": 115000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "local listings & $1,100–1,200/m² 2026 city-centre averages applied to typical 40–50m², 70–80m², 95–105m² units"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

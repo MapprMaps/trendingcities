@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "iran/tehran",
+  "city": "Tehran",
+  "country": "Iran",
+  "country_code": "IR",
+  "coordinates": {
+    "lat": 35.7,
+    "lng": 51.42
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m² plus 2024–26 Tehran apartment size/price ranges"
+    },
+    "home_price_2bed_usd": {
+      "value": 95000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m² plus 2024–26 Tehran apartment size/price ranges"
+    },
+    "home_price_3bed_usd": {
+      "value": 130000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre $/m² plus 2024–26 Tehran apartment size/price ranges"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "india/new-delhi",
+  "city": "New Delhi",
+  "country": "India",
+  "country_code": "IN",
+  "coordinates": {
+    "lat": 28.6,
+    "lng": 77.2
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 95000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/m² for New Delhi inflated to 2026, multiplied by typical 1/2/3BR sizes"
+    },
+    "home_price_2bed_usd": {
+      "value": 155000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/m² for New Delhi inflated to 2026, multiplied by typical 1/2/3BR sizes"
+    },
+    "home_price_3bed_usd": {
+      "value": 220000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "cross-source web research (Numbeo/GPG/listings)",
+      "notes": "Numbeo city-centre price/m² for New Delhi inflated to 2026, multiplied by typical 1/2/3BR sizes"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

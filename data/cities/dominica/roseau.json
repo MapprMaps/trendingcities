@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "dominica/roseau",
+  "city": "Roseau",
+  "country": "Dominica",
+  "country_code": "DM",
+  "coordinates": {
+    "lat": 15.3,
+    "lng": -61.4
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 85000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/sqft for Roseau extrapolated to typical 1–3BR sizes; cross-checked with Dominica-wide $500–5000/m² ranges and local low-cost house examples"
+    },
+    "home_price_2bed_usd": {
+      "value": 115000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/sqft for Roseau extrapolated to typical 1–3BR sizes; cross-checked with Dominica-wide $500–5000/m² ranges and local low-cost house examples"
+    },
+    "home_price_3bed_usd": {
+      "value": 145000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre $/sqft for Roseau extrapolated to typical 1–3BR sizes; cross-checked with Dominica-wide $500–5000/m² ranges and local low-cost house examples"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "equatorial-guinea/ciudad-de-la-paz",
+  "city": "Ciudad de la Paz",
+  "country": "Equatorial Guinea",
+  "country_code": "GQ",
+  "coordinates": {
+    "lat": 1.35,
+    "lng": 10.49
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 95000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy prices in Equatorial Guinea plus regional resale/listing comparables; no reliable Ciudad de la Paz-specific market data found"
+    },
+    "home_price_2bed_usd": {
+      "value": 155000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy prices in Equatorial Guinea plus regional resale/listing comparables; no reliable Ciudad de la Paz-specific market data found"
+    },
+    "home_price_3bed_usd": {
+      "value": 225000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre buy prices in Equatorial Guinea plus regional resale/listing comparables; no reliable Ciudad de la Paz-specific market data found"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

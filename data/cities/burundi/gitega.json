@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "burundi/gitega",
+  "city": "Gitega",
+  "country": "Burundi",
+  "country_code": "BI",
+  "coordinates": {
+    "lat": -3.43,
+    "lng": 29.93
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 120000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional comparables; no verified purchase-price data for Gitega"
+    },
+    "home_price_2bed_usd": {
+      "value": 180000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional comparables; no verified purchase-price data for Gitega"
+    },
+    "home_price_3bed_usd": {
+      "value": 250000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "regional comparables; no verified purchase-price data for Gitega"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

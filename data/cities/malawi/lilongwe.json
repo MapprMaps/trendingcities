@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "malawi/lilongwe",
+  "city": "Lilongwe",
+  "country": "Malawi",
+  "country_code": "MW",
+  "coordinates": {
+    "lat": -13.97,
+    "lng": 33.78
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 35000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Lilongwe city-centre price per m² plus Seeff Lilongwe residential range"
+    },
+    "home_price_2bed_usd": {
+      "value": 55000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Lilongwe city-centre price per m² plus Seeff Lilongwe residential range"
+    },
+    "home_price_3bed_usd": {
+      "value": 75000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Lilongwe city-centre price per m² plus Seeff Lilongwe residential range"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

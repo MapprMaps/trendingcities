@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "madagascar/antananarivo",
+  "city": "Antananarivo",
+  "country": "Madagascar",
+  "country_code": "MG",
+  "coordinates": {
+    "lat": -18.92,
+    "lng": 47.52
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 125000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/CAHF city-centre buy prices per m² plus local market comparables; estimated from typical apartment sizes"
+    },
+    "home_price_2bed_usd": {
+      "value": 180000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/CAHF city-centre buy prices per m² plus local market comparables; estimated from typical apartment sizes"
+    },
+    "home_price_3bed_usd": {
+      "value": 235000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo/CAHF city-centre buy prices per m² plus local market comparables; estimated from typical apartment sizes"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

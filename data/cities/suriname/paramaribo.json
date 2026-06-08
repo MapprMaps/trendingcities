@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "suriname/paramaribo",
+  "city": "Paramaribo",
+  "country": "Suriname",
+  "country_code": "SR",
+  "coordinates": {
+    "lat": 5.83,
+    "lng": -55.17
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 50000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price/ft² for Suriname plus local listings and regional capital comparisons"
+    },
+    "home_price_2bed_usd": {
+      "value": 75000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price/ft² for Suriname plus local listings and regional capital comparisons"
+    },
+    "home_price_3bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo city-centre price/ft² for Suriname plus local listings and regional capital comparisons"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}

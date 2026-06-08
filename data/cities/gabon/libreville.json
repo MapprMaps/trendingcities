@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "id": "gabon/libreville",
+  "city": "Libreville",
+  "country": "Gabon",
+  "country_code": "GA",
+  "coordinates": {
+    "lat": 0.38,
+    "lng": 9.45
+  },
+  "metrics": {
+    "home_price_1bed_usd": {
+      "value": 65000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Libreville city-centre rents capitalized at ~10–12% yield; scaled by bedroom count and regional comparables"
+    },
+    "home_price_2bed_usd": {
+      "value": 110000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Libreville city-centre rents capitalized at ~10–12% yield; scaled by bedroom count and regional comparables"
+    },
+    "home_price_3bed_usd": {
+      "value": 150000,
+      "unit": "USD",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "low",
+      "method": "regional-comparable estimate",
+      "notes": "Numbeo Libreville city-centre rents capitalized at ~10–12% yield; scaled by bedroom count and regional comparables"
+    }
+  },
+  "provenance": {
+    "compiled_by": "hugo-capitals-2026-06",
+    "compiled_at": "2026-06-08",
+    "status": "published"
+  }
+}
