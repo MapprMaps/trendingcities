@@ -41,6 +41,26 @@
       "confidence": "medium",
       "method": "cross-source web research (Numbeo/GPG/listings)",
       "notes": "local listings & $1,100–1,200/m² 2026 city-centre averages applied to typical 40–50m², 70–80m², 95–105m² units"
+    },
+    "cost_of_living_index": {
+      "value": 29.4,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
+    },
+    "local_purchasing_power_index": {
+      "value": 51.7,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Local Purchasing Power Index, NYC=100"
     }
   },
   "provenance": {

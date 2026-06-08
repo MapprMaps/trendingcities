@@ -41,6 +41,26 @@
       "confidence": "medium",
       "method": "cross-source web research (Numbeo/GPG/listings)",
       "notes": "Numbeo city-centre USD/sqm for Dhaka plus local per-sqft ranges in Gulshan/Banani/Baridhara/Dhanmondi converted at ~120 BDT/USD and typical 1BR~55sqm, 2BR~95sqm"
+    },
+    "cost_of_living_index": {
+      "value": 25.3,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
+    },
+    "local_purchasing_power_index": {
+      "value": 39.3,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Local Purchasing Power Index, NYC=100"
     }
   },
   "provenance": {

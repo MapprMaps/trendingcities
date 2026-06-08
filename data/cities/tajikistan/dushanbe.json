@@ -41,6 +41,26 @@
       "confidence": "medium",
       "method": "cross-source web research (Numbeo/GPG/listings)",
       "notes": "Numbeo city-centre USD/m² (~1189) with typical sizes: 1BR~40m², 2BR~66m², 3BR~93m²"
+    },
+    "cost_of_living_index": {
+      "value": 28.6,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
+    },
+    "local_purchasing_power_index": {
+      "value": 36.2,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Local Purchasing Power Index, NYC=100"
     }
   },
   "provenance": {

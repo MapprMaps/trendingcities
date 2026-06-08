@@ -41,6 +41,26 @@
       "confidence": "medium",
       "method": "cross-source web research (Numbeo/GPG/listings)",
       "notes": "Numbeo city-centre $1,070/ft² (~$11,500/m²) with typical Yerevan sizes (~40–45 m² 1BR, 60–70 m² 2BR, 80–95 m² 3BR) extrapolated from local listings and Armenia "
+    },
+    "cost_of_living_index": {
+      "value": 42.4,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
+    },
+    "local_purchasing_power_index": {
+      "value": 35.4,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Local Purchasing Power Index, NYC=100"
     }
   },
   "provenance": {
