@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 90000,
+      "value": 101000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "inferred from Numbeo city-centre price/sqft and regional Caribbean comparables with limited direct sales data"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (listings,numbeo): $2011/m² × typical size"
     },
     "home_price_2bed_usd": {
-      "value": 150000,
+      "value": 157000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "inferred from Numbeo city-centre price/sqft and regional Caribbean comparables with limited direct sales data"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (listings,numbeo): $2011/m² × typical size"
     },
     "home_price_3bed_usd": {
-      "value": 210000,
+      "value": 211000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "inferred from Numbeo city-centre price/sqft and regional Caribbean comparables with limited direct sales data"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (listings,numbeo): $2011/m² × typical size"
     },
     "cost_of_living_index": {
       "value": 65.8,

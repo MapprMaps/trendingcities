@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 115000,
+      "value": 230000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Kinshasa city-centre price/sqft scaled by typical unit sizes and cross-checked with local listings and national median"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (numbeo,the africanv): $4592/m² × typical size"
     },
     "home_price_2bed_usd": {
-      "value": 185000,
+      "value": 358000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Kinshasa city-centre price/sqft scaled by typical unit sizes and cross-checked with local listings and national median"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (numbeo,the africanv): $4592/m² × typical size"
     },
     "home_price_3bed_usd": {
-      "value": 260000,
+      "value": 482000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Kinshasa city-centre price/sqft scaled by typical unit sizes and cross-checked with local listings and national median"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (numbeo,the africanv): $4592/m² × typical size"
     },
     "cost_of_living_index": {
       "value": 37.0,

@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 65000,
+      "value": 62000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "no direct sale price data for Belmopan apartments; inferred from Belize inland house prices, national condo ranges, and local Belmopan listings"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (expat exchan,numbeo): $1250/m² × typical size"
     },
     "home_price_2bed_usd": {
-      "value": 90000,
+      "value": 98000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "no direct sale price data for Belmopan apartments; inferred from Belize inland house prices, national condo ranges, and local Belmopan listings"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (expat exchan,numbeo): $1250/m² × typical size"
     },
     "home_price_3bed_usd": {
-      "value": 115000,
+      "value": 131000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "no direct sale price data for Belmopan apartments; inferred from Belize inland house prices, national condo ranges, and local Belmopan listings"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (expat exchan,numbeo): $1250/m² × typical size"
     }
   },
   "provenance": {

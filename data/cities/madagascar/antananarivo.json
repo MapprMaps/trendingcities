@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 125000,
+      "value": 31000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo/CAHF city-centre buy prices per m² plus local market comparables; estimated from typical apartment sizes"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (listings,numbeo): $628/m² × typical size"
     },
     "home_price_2bed_usd": {
-      "value": 180000,
+      "value": 49000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo/CAHF city-centre buy prices per m² plus local market comparables; estimated from typical apartment sizes"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (listings,numbeo): $628/m² × typical size"
     },
     "home_price_3bed_usd": {
-      "value": 235000,
+      "value": 66000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo/CAHF city-centre buy prices per m² plus local market comparables; estimated from typical apartment sizes"
+      "confidence": "medium",
+      "method": "consensus price/m² (2 sources) × typical apartment size",
+      "notes": "Cross-source consensus of 2 independent sources (listings,numbeo): $628/m² × typical size"
     },
     "cost_of_living_index": {
       "value": 26.7,
