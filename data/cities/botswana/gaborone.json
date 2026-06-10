@@ -41,6 +41,26 @@
       "confidence": "low",
       "method": "regional-comparable estimate",
       "notes": "Numbeo/Botswana price per m² with local listings for Gaborone city-centre apartments"
+    },
+    "cost_of_living_index": {
+      "value": 42.1,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
+    },
+    "local_purchasing_power_index": {
+      "value": 49.6,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Local Purchasing Power Index, NYC=100"
     }
   },
   "provenance": {

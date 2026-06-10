@@ -51,6 +51,16 @@
       "confidence": "low",
       "method": "perplexity-grounded (not in Numbeo ranked table)",
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
+    },
+    "rent_1bed_usd_month": {
+      "value": 345,
+      "unit": "USD_per_month",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Avg monthly rent, 1-bed city centre"
     }
   },
   "provenance": {

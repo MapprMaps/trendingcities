@@ -60,6 +60,37 @@
       ],
       "confidence": "medium",
       "notes": "Numbeo Local Purchasing Power Index, NYC=100"
+    },
+    "rent_1bed_usd_month": {
+      "value": 1440,
+      "unit": "USD_per_month",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Avg monthly rent, 1-bed city centre"
+    },
+    "rent_3bed_usd_month": {
+      "value": 2604,
+      "unit": "USD_per_month",
+      "as_of": "2026-06",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Avg monthly rent, 3-bed city centre"
+    },
+    "price_to_rent_ratio": {
+      "value": 4.8,
+      "unit": "ratio",
+      "as_of": "2026-06",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "medium",
+      "method": "home_price_3bed_usd / (12 * rent_3bed_usd_month)",
+      "notes": "Years of 3-bed rent to equal the 3-bed purchase price"
     }
   },
   "provenance": {

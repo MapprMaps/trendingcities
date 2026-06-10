@@ -11,7 +11,7 @@ export NVM_DIR="$HOME/.nvm"; . "$NVM_DIR/nvm.sh" >/dev/null 2>&1; nvm use 22 >/d
 git config core.sshCommand "ssh -i /home/claude-svc/.ssh/trendingcities_deploy -o IdentitiesOnly=yes"
 
 echo "[daily] $(date -u +%Y-%m-%dT%H:%M:%SZ) — enriching batch"
-python3 scripts/daily-enhance.py --batch 15
+python3 scripts/daily-enhance.py --batch 40
 
 if git diff --quiet -- data/cities; then
   echo "[daily] no new data this cycle — nothing to deploy"; exit 0
