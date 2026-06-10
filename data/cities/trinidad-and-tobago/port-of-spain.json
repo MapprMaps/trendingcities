@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 220000,
+      "value": 154000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "regional comparables; purchase data sparse, inferred from city-center rents and asking prices"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched price/m² (listings), corrected from high prior"
     },
     "home_price_2bed_usd": {
-      "value": 330000,
+      "value": 240000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "regional comparables; purchase data sparse, inferred from city-center rents and asking prices"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched price/m² (listings), corrected from high prior"
     },
     "home_price_3bed_usd": {
-      "value": 480000,
+      "value": 323000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "regional comparables; purchase data sparse, inferred from city-center rents and asking prices"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched price/m² (listings), corrected from high prior"
     },
     "cost_of_living_index": {
       "value": 67.5,

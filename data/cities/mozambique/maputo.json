@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 435000,
+      "value": 105000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo price/sqm for Maputo city centre plus listed Maputo sale prices and regional comparables"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $2100/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     },
     "home_price_2bed_usd": {
-      "value": 650000,
+      "value": 164000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo price/sqm for Maputo city centre plus listed Maputo sale prices and regional comparables"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $2100/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     },
     "home_price_3bed_usd": {
-      "value": 1020000,
+      "value": 220000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo price/sqm for Maputo city centre plus listed Maputo sale prices and regional comparables"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $2100/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     }
   },
   "provenance": {

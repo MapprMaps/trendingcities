@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 550000,
+      "value": 45000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Niger city-centre median asks plus Niamey housing comps; converted from CFA to USD and adjusted upward for purchase vs rent"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $900/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     },
     "home_price_2bed_usd": {
-      "value": 750000,
+      "value": 70000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Niger city-centre median asks plus Niamey housing comps; converted from CFA to USD and adjusted upward for purchase vs rent"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $900/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     },
     "home_price_3bed_usd": {
-      "value": 1000000,
+      "value": 94000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Niger city-centre median asks plus Niamey housing comps; converted from CFA to USD and adjusted upward for purchase vs rent"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $900/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     }
   },
   "provenance": {

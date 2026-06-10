@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 1050000,
+      "value": 65000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo/Wise city-centre price-per-m² plus sparse local/expat-market comparables; inferred from Honiara apartment stock"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $1300/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     },
     "home_price_2bed_usd": {
-      "value": 1550000,
+      "value": 101000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo/Wise city-centre price-per-m² plus sparse local/expat-market comparables; inferred from Honiara apartment stock"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $1300/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     },
     "home_price_3bed_usd": {
-      "value": 2100000,
+      "value": 136000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "web"
       ],
       "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo/Wise city-centre price-per-m² plus sparse local/expat-market comparables; inferred from Honiara apartment stock"
+      "method": "researched estimate (price/m² × typical size)",
+      "notes": "Researched estimate $1300/m² × typical size (50/78/105 m²), corrected from implausible prior value"
     }
   },
   "provenance": {
