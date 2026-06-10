@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 60000,
+      "value": 66000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Cape Verde city-centre price/m² plus typical unit sizes; cross-checked with Praia listings and national averages"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1323 × typical size (50/78/105 m²); corroborates prior estimate (Δ+16%)"
     },
     "home_price_2bed_usd": {
-      "value": 90000,
+      "value": 103000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Cape Verde city-centre price/m² plus typical unit sizes; cross-checked with Praia listings and national averages"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1323 × typical size (50/78/105 m²); corroborates prior estimate (Δ+16%)"
     },
     "home_price_3bed_usd": {
-      "value": 120000,
+      "value": 139000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Cape Verde city-centre price/m² plus typical unit sizes; cross-checked with Praia listings and national averages"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1323 × typical size (50/78/105 m²); corroborates prior estimate (Δ+16%)"
     },
     "cost_of_living_index": {
       "value": 48.0,

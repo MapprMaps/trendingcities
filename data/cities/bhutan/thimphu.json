@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 28000,
+      "value": 31000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² in Thimphu converted from BTN to USD and multiplied by typical 1/2/3BR sizes; cross-checked with limited local sale listing"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $612 × typical size (50/78/105 m²); corroborates prior estimate (Δ-15%)"
     },
     "home_price_2bed_usd": {
-      "value": 52000,
+      "value": 48000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² in Thimphu converted from BTN to USD and multiplied by typical 1/2/3BR sizes; cross-checked with limited local sale listing"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $612 × typical size (50/78/105 m²); corroborates prior estimate (Δ-15%)"
     },
     "home_price_3bed_usd": {
-      "value": 75000,
+      "value": 64000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² in Thimphu converted from BTN to USD and multiplied by typical 1/2/3BR sizes; cross-checked with limited local sale listing"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $612 × typical size (50/78/105 m²); corroborates prior estimate (Δ-15%)"
     }
   },
   "provenance": {

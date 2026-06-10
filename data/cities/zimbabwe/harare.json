@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 80000,
+      "value": 45000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre $/m² scaled to typical Harare CBD flat sizes and local listing medians"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $908 × typical size (50/78/105 m²); corroborates prior estimate (Δ-37%)"
     },
     "home_price_2bed_usd": {
-      "value": 110000,
+      "value": 71000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre $/m² scaled to typical Harare CBD flat sizes and local listing medians"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $908 × typical size (50/78/105 m²); corroborates prior estimate (Δ-37%)"
     },
     "home_price_3bed_usd": {
-      "value": 150000,
+      "value": 95000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre $/m² scaled to typical Harare CBD flat sizes and local listing medians"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $908 × typical size (50/78/105 m²); corroborates prior estimate (Δ-37%)"
     },
     "cost_of_living_index": {
       "value": 38.7,

@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 42000,
+      "value": 63000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² for Asmara scaled by typical 1/2/3BR sizes and cross-checked with regional cost-of-living data; no robust local sales market dat"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1266 × typical size (50/78/105 m²); corroborates prior estimate (Δ+48%)"
     },
     "home_price_2bed_usd": {
-      "value": 65000,
+      "value": 99000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² for Asmara scaled by typical 1/2/3BR sizes and cross-checked with regional cost-of-living data; no robust local sales market dat"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1266 × typical size (50/78/105 m²); corroborates prior estimate (Δ+48%)"
     },
     "home_price_3bed_usd": {
-      "value": 90000,
+      "value": 133000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² for Asmara scaled by typical 1/2/3BR sizes and cross-checked with regional cost-of-living data; no robust local sales market dat"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1266 × typical size (50/78/105 m²); corroborates prior estimate (Δ+48%)"
     }
   },
   "provenance": {

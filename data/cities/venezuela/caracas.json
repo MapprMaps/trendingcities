@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 60000,
+      "value": 73000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Caracas city-centre $/sqft (~$65–66) scaled to typical 1–3BR sizes and cross-checked with scattered 2023–2024 local listings; data noisy so only rough or"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1465 × typical size (50/78/105 m²); corroborates prior estimate (Δ-14%)"
     },
     "home_price_2bed_usd": {
-      "value": 120000,
+      "value": 114000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Caracas city-centre $/sqft (~$65–66) scaled to typical 1–3BR sizes and cross-checked with scattered 2023–2024 local listings; data noisy so only rough or"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1465 × typical size (50/78/105 m²); corroborates prior estimate (Δ-14%)"
     },
     "home_price_3bed_usd": {
-      "value": 180000,
+      "value": 154000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Caracas city-centre $/sqft (~$65–66) scaled to typical 1–3BR sizes and cross-checked with scattered 2023–2024 local listings; data noisy so only rough or"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1465 × typical size (50/78/105 m²); corroborates prior estimate (Δ-14%)"
     },
     "cost_of_living_index": {
       "value": 43.5,

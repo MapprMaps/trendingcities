@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 250000,
+      "value": 210000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² for Nassau (~$4,174/m²) scaled by typical 1/2/3-bed sizes and cross-checked against national and Nassau averages from Properstar"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $4191 × typical size (50/78/105 m²); corroborates prior estimate (Δ-6%)"
     },
     "home_price_2bed_usd": {
-      "value": 360000,
+      "value": 327000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² for Nassau (~$4,174/m²) scaled by typical 1/2/3-bed sizes and cross-checked against national and Nassau averages from Properstar"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $4191 × typical size (50/78/105 m²); corroborates prior estimate (Δ-6%)"
     },
     "home_price_3bed_usd": {
-      "value": 470000,
+      "value": 440000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre price per m² for Nassau (~$4,174/m²) scaled by typical 1/2/3-bed sizes and cross-checked against national and Nassau averages from Properstar"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $4191 × typical size (50/78/105 m²); corroborates prior estimate (Δ-6%)"
     },
     "cost_of_living_index": {
       "value": 89.8,

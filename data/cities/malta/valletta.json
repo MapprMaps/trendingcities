@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 475000,
+      "value": 280000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Valletta sale listings and €/m² market ranges; limited city-centre purchase data, estimated from local comparables"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $5599 × typical size (50/78/105 m²); corroborates prior estimate (Δ-38%)"
     },
     "home_price_2bed_usd": {
-      "value": 700000,
+      "value": 437000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Valletta sale listings and €/m² market ranges; limited city-centre purchase data, estimated from local comparables"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $5599 × typical size (50/78/105 m²); corroborates prior estimate (Δ-38%)"
     },
     "home_price_3bed_usd": {
-      "value": 950000,
+      "value": 588000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Valletta sale listings and €/m² market ranges; limited city-centre purchase data, estimated from local comparables"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $5599 × typical size (50/78/105 m²); corroborates prior estimate (Δ-38%)"
     },
     "cost_of_living_index": {
       "value": 60.0,

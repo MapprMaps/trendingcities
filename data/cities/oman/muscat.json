@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 160000,
+      "value": 133000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "extrapolated from Oman-wide 2026 apartment prices and Muscat price-per-sqft data; no direct city-centre-by-bedroom sale medians"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2661 × typical size (50/78/105 m²); corroborates prior estimate (Δ-7%)"
     },
     "home_price_2bed_usd": {
-      "value": 220000,
+      "value": 208000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "extrapolated from Oman-wide 2026 apartment prices and Muscat price-per-sqft data; no direct city-centre-by-bedroom sale medians"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2661 × typical size (50/78/105 m²); corroborates prior estimate (Δ-7%)"
     },
     "home_price_3bed_usd": {
-      "value": 300000,
+      "value": 279000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "extrapolated from Oman-wide 2026 apartment prices and Muscat price-per-sqft data; no direct city-centre-by-bedroom sale medians"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2661 × typical size (50/78/105 m²); corroborates prior estimate (Δ-7%)"
     },
     "cost_of_living_index": {
       "value": 44.3,

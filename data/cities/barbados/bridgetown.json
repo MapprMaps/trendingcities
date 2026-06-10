@@ -14,33 +14,33 @@
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "extrapolated from Barbados median price per sq ft and central Barbados listings; no Bridgetown-specific size/price data for city-centre apartments"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $3500 × typical size (50/78/105 m²); corroborates prior estimate (Δ+5%)"
     },
     "home_price_2bed_usd": {
-      "value": 260000,
+      "value": 273000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "extrapolated from Barbados median price per sq ft and central Barbados listings; no Bridgetown-specific size/price data for city-centre apartments"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $3500 × typical size (50/78/105 m²); corroborates prior estimate (Δ+5%)"
     },
     "home_price_3bed_usd": {
-      "value": 350000,
+      "value": 368000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "extrapolated from Barbados median price per sq ft and central Barbados listings; no Bridgetown-specific size/price data for city-centre apartments"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $3500 × typical size (50/78/105 m²); corroborates prior estimate (Δ+5%)"
     },
     "cost_of_living_index": {
       "value": 70.0,

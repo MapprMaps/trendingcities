@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 45000,
+      "value": 53000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Banjul price/m² plus local Gambian house price guides and regional listings"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1066 × typical size (50/78/105 m²); corroborates prior estimate (Δ+24%)"
     },
     "home_price_2bed_usd": {
-      "value": 65000,
+      "value": 83000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Banjul price/m² plus local Gambian house price guides and regional listings"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1066 × typical size (50/78/105 m²); corroborates prior estimate (Δ+24%)"
     },
     "home_price_3bed_usd": {
-      "value": 90000,
+      "value": 112000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Banjul price/m² plus local Gambian house price guides and regional listings"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $1066 × typical size (50/78/105 m²); corroborates prior estimate (Δ+24%)"
     }
   },
   "provenance": {

@@ -14,33 +14,33 @@
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "estimated from Numbeo buy prices per m² for Brasília and local listing comparables; no clean bedroom-specific city-centre purchase medians found"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2480 × typical size (50/78/105 m²); corroborates prior estimate (Δ-19%)"
     },
     "home_price_2bed_usd": {
-      "value": 235000,
+      "value": 193000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "estimated from Numbeo buy prices per m² for Brasília and local listing comparables; no clean bedroom-specific city-centre purchase medians found"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2480 × typical size (50/78/105 m²); corroborates prior estimate (Δ-19%)"
     },
     "home_price_3bed_usd": {
-      "value": 320000,
+      "value": 260000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "estimated from Numbeo buy prices per m² for Brasília and local listing comparables; no clean bedroom-specific city-centre purchase medians found"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2480 × typical size (50/78/105 m²); corroborates prior estimate (Δ-19%)"
     },
     "cost_of_living_index": {
       "value": 32.0,

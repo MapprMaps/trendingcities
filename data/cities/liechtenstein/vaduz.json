@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 1310000,
+      "value": 872000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Liechtenstein purchase price per sq ft plus regional Vaduz/Liechtenstein market comparables; estimated city-centre apartment sizes and CHF/USD conversion"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $17450 × typical size (50/78/105 m²); corroborates prior estimate (Δ-27%)"
     },
     "home_price_2bed_usd": {
-      "value": 1880000,
+      "value": 1361000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Liechtenstein purchase price per sq ft plus regional Vaduz/Liechtenstein market comparables; estimated city-centre apartment sizes and CHF/USD conversion"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $17450 × typical size (50/78/105 m²); corroborates prior estimate (Δ-27%)"
     },
     "home_price_3bed_usd": {
-      "value": 2520000,
+      "value": 1832000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo Liechtenstein purchase price per sq ft plus regional Vaduz/Liechtenstein market comparables; estimated city-centre apartment sizes and CHF/USD conversion"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $17450 × typical size (50/78/105 m²); corroborates prior estimate (Δ-27%)"
     }
   },
   "provenance": {

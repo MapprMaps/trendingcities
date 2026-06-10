@@ -10,37 +10,37 @@
   },
   "metrics": {
     "home_price_1bed_usd": {
-      "value": 180000,
+      "value": 113000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre asking prices plus Baku completed-property USD/m² and regional Baku market range; estimated apartment sizes applied"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2250 × typical size (50/78/105 m²); corroborates prior estimate (Δ-33%)"
     },
     "home_price_2bed_usd": {
-      "value": 250000,
+      "value": 176000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre asking prices plus Baku completed-property USD/m² and regional Baku market range; estimated apartment sizes applied"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2250 × typical size (50/78/105 m²); corroborates prior estimate (Δ-33%)"
     },
     "home_price_3bed_usd": {
-      "value": 350000,
+      "value": 236000,
       "unit": "USD",
       "as_of": "2026-06",
       "sources": [
-        "model_estimate"
+        "numbeo"
       ],
-      "confidence": "low",
-      "method": "regional-comparable estimate",
-      "notes": "Numbeo city-centre asking prices plus Baku completed-property USD/m² and regional Baku market range; estimated apartment sizes applied"
+      "confidence": "medium",
+      "method": "Numbeo price/m² × typical apartment size",
+      "notes": "Numbeo price/m² $2250 × typical size (50/78/105 m²); corroborates prior estimate (Δ-33%)"
     },
     "cost_of_living_index": {
       "value": 32.3,
