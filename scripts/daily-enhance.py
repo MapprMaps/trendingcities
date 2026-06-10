@@ -91,6 +91,19 @@ def rents(city, country):
     s, e = txt.find("{"), txt.rfind("}")
     return json.loads(txt[s:e+1])
 
+def col_lpp(city, country):
+    prompt = (f'Numbeo publishes cost-of-living data for {city}, {country}. Give its current '
+              f'Cost of Living Index (NYC=100, excluding rent) and Local Purchasing Power Index '
+              f'(NYC=100). Reply ONLY as JSON: {{"col":NN.N or null,"lpp":NN.N or null}}. Provide '
+              f'the actual Numbeo figures; use null only if {city} genuinely has no Numbeo page. '
+              f'Do not fabricate.')
+    body = json.dumps({"model": "sonar-pro", "messages": [{"role": "user", "content": prompt}]}).encode()
+    req = urllib.request.Request("https://api.perplexity.ai/chat/completions", data=body,
+        headers={"Authorization": "Bearer " + PPLX, "Content-Type": "application/json"})
+    txt = json.loads(urllib.request.urlopen(req, timeout=60).read())["choices"][0]["message"]["content"]
+    s, e = txt.find("{"), txt.rfind("}")
+    return json.loads(txt[s:e+1])
+
 def metric(value, unit, sources, conf, method=None, notes=None):
     mv = {"value": value, "unit": unit, "as_of": AS_OF, "sources": sources, "confidence": conf}
     if method: mv["method"] = method
@@ -114,32 +127,50 @@ def notify(text):
 
 import urllib.parse
 
-def main():
-    batch = int(sys.argv[sys.argv.index("--batch")+1]) if "--batch" in sys.argv else 15
-    # backlog: published top-level cities with COL but no rents
-    backlog = []
+def load_published_cities():
+    out = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data/cities/**/*.json"), recursive=True)):
         d = json.load(open(f))
         if d.get("provenance", {}).get("status") != "published" or d["id"].count("/") != 1: continue
-        m = d.get("metrics", {})
-        if "cost_of_living_index" in m and "rent_3bed_usd_month" not in m:
-            backlog.append((f, d))
-    if not backlog:
-        logln("rents backlog empty — nothing to do this cycle"); return
-    # prioritise: GSC ranking-opportunity pages → Plausible-traffic pages → rest
-    gsc = gsc_opportunity_slugs()
-    traffic = plausible_traffic_slugs()
+        out.append((f, d))
+    return out
+
+def prioritise(backlog, gsc, traffic):
     backlog.sort(key=lambda fd: (fd[1]["id"] not in gsc, fd[1]["id"] not in traffic, fd[1]["id"]))
-    todo = backlog[:batch]
-    logln(f"=== daily-enhance: {len(backlog)} cities need rents; doing {len(todo)} "
-          f"({sum(1 for _,d in todo if d['id'] in gsc)} GSC-opportunity, "
-          f"{sum(1 for _,d in todo if d['id'] in traffic)} with traffic) ===")
-    placed = 0; examples = []
+    return backlog
+
+def fill_col(todo):
+    """Add COL+LPP to cities that have none (incl. freshly-added cities)."""
+    done = 0; examples = []
+    for f, d in todo:
+        try:
+            o = col_lpp(d["city"], d["country"])
+        except Exception as ex:
+            logln(f"  {d['id']}: COL ERROR {ex}"); time.sleep(2); continue
+        m = d["metrics"]; n = 0
+        if o.get("col") is not None and 8 <= float(o["col"]) <= 175:
+            m["cost_of_living_index"] = metric(round(float(o["col"]), 1), "index_numbeo_nyc100",
+                ["numbeo"], "medium", notes="Numbeo Cost of Living Index, excl. rent, NYC=100"); n += 1
+        if o.get("lpp") is not None and 0 <= float(o["lpp"]) <= 280:
+            m["local_purchasing_power_index"] = metric(round(float(o["lpp"]), 1), "index_numbeo_nyc100",
+                ["numbeo"], "medium", notes="Numbeo Local Purchasing Power Index, NYC=100"); n += 1
+        if n:
+            json.dump(d, open(f, "w"), indent=2, ensure_ascii=False); open(f, "a").write("\n")
+            done += 1
+            if len(examples) < 4: examples.append(d["city"])
+            logln(f"  {d['id']}: COL {o.get('col')} LPP {o.get('lpp')}")
+        else:
+            logln(f"  {d['id']}: no Numbeo COL — skipped")
+        time.sleep(0.6)
+    return done, examples
+
+def fill_rents(todo):
+    done = 0; examples = []
     for f, d in todo:
         try:
             o = rents(d["city"], d["country"])
         except Exception as ex:
-            logln(f"  {d['id']}: ERROR {ex}"); time.sleep(2); continue
+            logln(f"  {d['id']}: RENT ERROR {ex}"); time.sleep(2); continue
         m = d["metrics"]; n = 0
         r1, r3 = o.get("rent_1bed_usd"), o.get("rent_3bed_usd")
         if r1 and 50 < float(r1) < 30000:
@@ -155,17 +186,48 @@ def main():
                     notes="Years of 3-bed rent to equal the 3-bed purchase price")
         if n:
             json.dump(d, open(f, "w"), indent=2, ensure_ascii=False); open(f, "a").write("\n")
-            placed += 1
+            done += 1
             if len(examples) < 4: examples.append(d["city"])
             logln(f"  {d['id']}: rent1 {r1} rent3 {r3}")
         else:
             logln(f"  {d['id']}: no rent data — skipped")
         time.sleep(0.6)
-    remaining = len(backlog) - placed
-    logln(f"=== DONE: rents added to {placed} cities, {remaining} still need rents ===")
-    if placed:
-        notify(f"🏙️ TrendingCities daily: added rents to {placed} cities "
-               f"({', '.join(examples)}{'…' if placed>len(examples) else ''}). {remaining} cities left to enrich.")
+    return done, examples
+
+def main():
+    batch = int(sys.argv[sys.argv.index("--batch")+1]) if "--batch" in sys.argv else 15
+    cities = load_published_cities()
+    # Two backlogs so freshly-added cities (which have only prices) flow in:
+    #   1) need COL — cities with no cost_of_living_index (incl. new capitals)
+    #   2) need rents — cities that have COL but no rents
+    need_col = [(f, d) for f, d in cities if "cost_of_living_index" not in d.get("metrics", {})]
+    need_rent = [(f, d) for f, d in cities
+                 if "cost_of_living_index" in d.get("metrics", {}) and "rent_3bed_usd_month" not in d["metrics"]]
+    if not need_col and not need_rent:
+        logln("nothing to enrich this cycle — all cities have COL + rents"); return
+    gsc = gsc_opportunity_slugs()
+    traffic = plausible_traffic_slugs()
+    logln(f"=== daily-enhance: {len(need_col)} need COL, {len(need_rent)} need rents ===")
+
+    col_done, col_ex = (0, [])
+    if need_col:
+        todo = prioritise(need_col, gsc, traffic)[:batch]
+        logln(f"-- COL phase: {len(todo)} cities --")
+        col_done, col_ex = fill_col(todo)
+    rent_done, rent_ex = (0, [])
+    if need_rent:
+        todo = prioritise(need_rent, gsc, traffic)[:batch]
+        logln(f"-- rents phase: {len(todo)} cities --")
+        rent_done, rent_ex = fill_rents(todo)
+
+    logln(f"=== DONE: +COL {col_done} (of {len(need_col)} left), "
+          f"+rents {rent_done} (of {len(need_rent)} left) ===")
+    parts = []
+    if col_done: parts.append(f"cost-of-living for {col_done} cities ({', '.join(col_ex)})")
+    if rent_done: parts.append(f"rents for {rent_done} cities ({', '.join(rent_ex)})")
+    if parts:
+        notify("🏙️ TrendingCities daily: added " + "; ".join(parts)
+               + f". Remaining backlog: {len(need_col)-col_done} need COL, {len(need_rent)-rent_done} need rents.")
 
 if __name__ == "__main__":
     main()
