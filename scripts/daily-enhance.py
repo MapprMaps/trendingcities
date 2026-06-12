@@ -104,6 +104,17 @@ def col_lpp(city, country):
     s, e = txt.find("{"), txt.rfind("}")
     return json.loads(txt[s:e+1])
 
+def air_pm25(city, country):
+    prompt = (f'Recent ANNUAL MEAN PM2.5 air pollution (µg/m³) for {city}, {country} per WHO/IQAir/'
+              f'national monitoring. Reply ONLY JSON: {{"pm25":NN.N or null}}. Null only if no '
+              f'measured data exists. Do not fabricate.')
+    body = json.dumps({"model": "sonar-pro", "messages": [{"role": "user", "content": prompt}]}).encode()
+    req = urllib.request.Request("https://api.perplexity.ai/chat/completions", data=body,
+        headers={"Authorization": "Bearer " + PPLX, "Content-Type": "application/json"})
+    txt = json.loads(urllib.request.urlopen(req, timeout=60).read())["choices"][0]["message"]["content"]
+    s, e = txt.find("{"), txt.rfind("}")
+    return json.loads(txt[s:e+1]).get("pm25")
+
 def metric(value, unit, sources, conf, method=None, notes=None):
     mv = {"value": value, "unit": unit, "as_of": AS_OF, "sources": sources, "confidence": conf}
     if method: mv["method"] = method
@@ -194,20 +205,59 @@ def fill_rents(todo):
         time.sleep(0.6)
     return done, examples
 
+def fill_air(todo):
+    done = 0; examples = []
+    for f, d in todo:
+        try:
+            v = air_pm25(d["city"], d["country"])
+        except Exception as ex:
+            logln(f"  {d['id']}: AIR ERROR {ex}"); time.sleep(2); continue
+        if v is None or not (1 <= float(v) <= 300):
+            logln(f"  {d['id']}: no PM2.5 — skipped"); time.sleep(0.4); continue
+        d["metrics"]["air_quality_pm25_ugm3"] = metric(round(float(v), 1), "ugm3", ["web"], "medium",
+            method="annual mean PM2.5 (WHO/IQAir/national monitoring)", notes="Annual mean PM2.5; WHO guideline is 5 µg/m³")
+        json.dump(d, open(f, "w"), indent=2, ensure_ascii=False); open(f, "a").write("\n")
+        done += 1
+        if len(examples) < 4: examples.append(d["city"])
+        logln(f"  {d['id']}: PM2.5 {v}")
+        time.sleep(0.4)
+    return done, examples
+
+def backfill_tax(cities):
+    """Instant, no-API: copy a country's income-tax metrics to any of its cities that
+    lack them (e.g. a freshly-added city in an already-covered country)."""
+    by_country = {}
+    for f, d in cities:
+        by_country.setdefault(d["country"], []).append((f, d))
+    copied = 0
+    for country, lst in by_country.items():
+        src = next((d for _, d in lst if "income_tax_effective_mid_pct" in d["metrics"]), None)
+        if not src: continue
+        keys = [k for k in src["metrics"] if k.startswith("income_tax_effective_")]
+        for f, d in lst:
+            if "income_tax_effective_mid_pct" not in d["metrics"]:
+                for k in keys: d["metrics"][k] = dict(src["metrics"][k])
+                json.dump(d, open(f, "w"), indent=2, ensure_ascii=False); open(f, "a").write("\n")
+                copied += 1
+    if copied: logln(f"-- tax backfill: copied country rates to {copied} city/cities --")
+
 def main():
     batch = int(sys.argv[sys.argv.index("--batch")+1]) if "--batch" in sys.argv else 15
     cities = load_published_cities()
+    backfill_tax(cities)
+    cities = load_published_cities()  # reload after backfill
     # Two backlogs so freshly-added cities (which have only prices) flow in:
     #   1) need COL — cities with no cost_of_living_index (incl. new capitals)
     #   2) need rents — cities that have COL but no rents
     need_col = [(f, d) for f, d in cities if "cost_of_living_index" not in d.get("metrics", {})]
     need_rent = [(f, d) for f, d in cities
                  if "cost_of_living_index" in d.get("metrics", {}) and "rent_3bed_usd_month" not in d["metrics"]]
-    if not need_col and not need_rent:
-        logln("nothing to enrich this cycle — all cities have COL + rents"); return
+    need_air = [(f, d) for f, d in cities if "air_quality_pm25_ugm3" not in d.get("metrics", {})]
+    if not need_col and not need_rent and not need_air:
+        logln("nothing to enrich this cycle — all cities have COL + rents + air quality"); return
     gsc = gsc_opportunity_slugs()
     traffic = plausible_traffic_slugs()
-    logln(f"=== daily-enhance: {len(need_col)} need COL, {len(need_rent)} need rents ===")
+    logln(f"=== daily-enhance: {len(need_col)} need COL, {len(need_rent)} need rents, {len(need_air)} need air ===")
 
     col_done, col_ex = (0, [])
     if need_col:
@@ -219,15 +269,21 @@ def main():
         todo = prioritise(need_rent, gsc, traffic)[:batch]
         logln(f"-- rents phase: {len(todo)} cities --")
         rent_done, rent_ex = fill_rents(todo)
+    air_done, air_ex = (0, [])
+    if need_air:
+        todo = prioritise(need_air, gsc, traffic)[:batch]
+        logln(f"-- air-quality phase: {len(todo)} cities --")
+        air_done, air_ex = fill_air(todo)
 
-    logln(f"=== DONE: +COL {col_done} (of {len(need_col)} left), "
-          f"+rents {rent_done} (of {len(need_rent)} left) ===")
+    logln(f"=== DONE: +COL {col_done} (of {len(need_col)}), +rents {rent_done} (of {len(need_rent)}), "
+          f"+air {air_done} (of {len(need_air)}) ===")
     parts = []
     if col_done: parts.append(f"cost-of-living for {col_done} cities ({', '.join(col_ex)})")
     if rent_done: parts.append(f"rents for {rent_done} cities ({', '.join(rent_ex)})")
+    if air_done: parts.append(f"air quality for {air_done} cities ({', '.join(air_ex)})")
     if parts:
         notify("🏙️ TrendingCities daily: added " + "; ".join(parts)
-               + f". Remaining backlog: {len(need_col)-col_done} need COL, {len(need_rent)-rent_done} need rents.")
+               + f". Backlog: {len(need_col)-col_done} COL, {len(need_rent)-rent_done} rents, {len(need_air)-air_done} air.")
 
 if __name__ == "__main__":
     main()
