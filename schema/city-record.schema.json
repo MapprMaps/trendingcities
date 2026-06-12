@@ -101,6 +101,10 @@
           "healthcare_index",
           "climate_comfort_index",
           "air_quality_index",
+          "air_quality_pm25_ugm3",
+          "income_tax_effective_low_pct",
+          "income_tax_effective_mid_pct",
+          "income_tax_effective_high_pct",
           "job_growth_pct_yoy",
           "unemployment_pct"
         ]
@@ -221,9 +225,10 @@
             "ratio",
             "count",
             "index_numbeo_nyc100",
-            "score_0_100"
+            "score_0_100",
+            "ugm3"
           ],
-          "description": "index_numbeo_nyc100 = Numbeo-style index where New York City = 100."
+          "description": "index_numbeo_nyc100 = Numbeo-style index where New York City = 100. ugm3 = micrograms per cubic metre (e.g. annual mean PM2.5)."
         },
         "as_of": {
           "type": "string",

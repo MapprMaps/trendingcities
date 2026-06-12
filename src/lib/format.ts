@@ -27,6 +27,7 @@ export function fmtMetric(value: number, fmt: string): string {
     case 'index_nyc100': return value.toFixed(1);
     case 'ratio': return value.toFixed(1) + '×';
     case 'pct': return value.toFixed(1) + '%';
+    case 'pm25': return value.toFixed(1) + ' µg/m³';
     case 'count': return value.toLocaleString('en-US');
     default: return String(value);
   }

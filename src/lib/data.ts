@@ -214,11 +214,11 @@ export function relatedTo(c: City, limit = 6): City[] {
 // ── Metric registry (drives the generic per-metric rendering + provenance) ──
 // Every non-price metric a record can carry. The city page renders whichever
 // of these are present, each with its own source + "last updated" badge.
-export type MetricFmt = 'usd' | 'usd_month' | 'index_nyc100' | 'pct' | 'ratio' | 'count';
+export type MetricFmt = 'usd' | 'usd_month' | 'index_nyc100' | 'pct' | 'ratio' | 'count' | 'pm25';
 export interface MetricMeta {
   key: string;
   label: string;
-  group: 'cost' | 'income' | 'quality' | 'demographics';
+  group: 'cost' | 'income' | 'quality' | 'demographics' | 'taxes';
   fmt: MetricFmt;
   baseline?: string;     // short note shown under the value (e.g. "NYC = 100")
   higherBetter?: boolean; // for future colour-coding
@@ -235,6 +235,10 @@ export const METRIC_META: MetricMeta[] = [
   { key: 'healthcare_index', label: 'Healthcare', group: 'quality', fmt: 'index_nyc100', baseline: '0–100', higherBetter: true },
   { key: 'climate_comfort_index', label: 'Climate comfort', group: 'quality', fmt: 'index_nyc100', baseline: '0–100', higherBetter: true },
   { key: 'air_quality_index', label: 'Air quality', group: 'quality', fmt: 'index_nyc100', baseline: '0–100', higherBetter: true },
+  { key: 'air_quality_pm25_ugm3', label: 'Air quality (PM2.5)', group: 'quality', fmt: 'pm25', baseline: 'annual mean · WHO guideline 5' },
+  { key: 'income_tax_effective_low_pct', label: 'Income tax · low earner', group: 'taxes', fmt: 'pct', baseline: 'effective, on ~$30k gross' },
+  { key: 'income_tax_effective_mid_pct', label: 'Income tax · mid earner', group: 'taxes', fmt: 'pct', baseline: 'effective, on ~$75k gross' },
+  { key: 'income_tax_effective_high_pct', label: 'Income tax · high earner', group: 'taxes', fmt: 'pct', baseline: 'effective, on ~$150k gross' },
   { key: 'population', label: 'Population', group: 'demographics', fmt: 'count' },
   { key: 'unemployment_pct', label: 'Unemployment', group: 'demographics', fmt: 'pct' },
   { key: 'job_growth_pct_yoy', label: 'Job growth (YoY)', group: 'demographics', fmt: 'pct', higherBetter: true },
@@ -242,6 +246,7 @@ export const METRIC_META: MetricMeta[] = [
 export const METRIC_GROUP_LABEL: Record<MetricMeta['group'], string> = {
   cost: 'Cost of living & rent',
   income: 'Earnings & affordability',
+  taxes: 'Income tax (effective)',
   quality: 'Quality of life',
   demographics: 'People & jobs',
 };

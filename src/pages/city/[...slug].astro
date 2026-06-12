@@ -29,7 +29,7 @@ const summary = cheaper
 
 // Non-price metrics present on this record, grouped for rendering. Each renders
 // generically with its own source + "last updated" badge (the freshness signal).
-const metricGroups = (['cost', 'income', 'quality', 'demographics'] as const)
+const metricGroups = (['cost', 'income', 'taxes', 'quality', 'demographics'] as const)
   .map((g) => ({
     key: g,
     label: METRIC_GROUP_LABEL[g],
