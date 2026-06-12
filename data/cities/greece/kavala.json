@@ -62,6 +62,39 @@
       "confidence": "low",
       "method": "perplexity-grounded (not in Numbeo ranked table)",
       "notes": "Numbeo Local Purchasing Power Index, NYC=100"
+    },
+    "income_tax_effective_low_pct": {
+      "value": 21.0,
+      "unit": "pct",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "effective rate at $30k/$75k/$150k gross (single filer)",
+      "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "income_tax_effective_mid_pct": {
+      "value": 28.5,
+      "unit": "pct",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "effective rate at $30k/$75k/$150k gross (single filer)",
+      "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "income_tax_effective_high_pct": {
+      "value": 33.5,
+      "unit": "pct",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "effective rate at $30k/$75k/$150k gross (single filer)",
+      "notes": "Effective income tax + employee social contributions, single filer; national rate"
     }
   },
   "provenance": {

@@ -92,6 +92,39 @@
       "confidence": "medium",
       "method": "home_price_3bed_usd / (12 * rent_3bed_usd_month)",
       "notes": "Years of 3-bed rent to equal the 3-bed purchase price"
+    },
+    "income_tax_effective_low_pct": {
+      "value": 18.0,
+      "unit": "pct",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "effective rate at $30k/$75k/$150k gross (single filer)",
+      "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "income_tax_effective_mid_pct": {
+      "value": 24.0,
+      "unit": "pct",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "effective rate at $30k/$75k/$150k gross (single filer)",
+      "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "income_tax_effective_high_pct": {
+      "value": 27.0,
+      "unit": "pct",
+      "as_of": "2026-06",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "effective rate at $30k/$75k/$150k gross (single filer)",
+      "notes": "Effective income tax + employee social contributions, single filer; national rate"
     }
   },
   "provenance": {
