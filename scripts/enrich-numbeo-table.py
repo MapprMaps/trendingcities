@@ -4,7 +4,9 @@ cities from Numbeo's published Cost-of-Living rankings table (one page, ~479
 cities, real data, NYC=100). This is the reliable, honest, scalable source —
 no LLM guessing. Cities not on Numbeo's list are left empty (honest absence).
 
-Matching: exact (city, country) → same-country prefix → unique city-only.
+Matching: exact (city, country) → same-country prefix. City-only matching is
+intentionally avoided because normalized names such as Georgetown/George Town
+can collide across countries.
 Overwrites COL/LPP (Numbeo is authoritative) but preserves all other metrics
 (e.g. the flagship cities' USD rents + price_to_rent).
 
@@ -68,9 +70,6 @@ def match(d, by_pair, by_city):
             for cc, r in lst:
                 if cc == nco and len(a) >= 5 and (c.startswith(a) or a.startswith(c)) and abs(len(c)-len(a)) <= 5:
                     return r
-    for a in ours:  # unique city name globally
-        if a in by_city and len({cc for cc, _ in by_city[a]}) == 1:
-            return by_city[a][0][1]
     return None
 
 def metric(value, notes):
