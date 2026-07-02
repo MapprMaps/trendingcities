@@ -43,7 +43,7 @@ export CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID"
 npx wrangler@latest pages deploy dist --project-name=trendingcities-web --branch=main --commit-dirty=true
 
 echo "[refresh] commit + push"
-git add -A
+git add data/cities
 git commit -q -m "Monthly data refresh $(date -u +%Y-%m): Numbeo cost-of-living + purchasing power"
 git push origin main
 echo "[refresh] done $(date -u +%Y-%m-%dT%H:%M:%SZ)"
