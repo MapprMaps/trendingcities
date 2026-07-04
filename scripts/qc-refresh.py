@@ -12,6 +12,15 @@ from jsonschema import Draft202012Validator
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SWING = 0.5  # >50% relative change vs last month = flag for human review
 RANGE = {"cost_of_living_index": (8, 175), "local_purchasing_power_index": (0, 280)}
+# Reviewed against the fetched Numbeo rankings table during the July 2026 cron
+# health check. Keep exact old/new pairs so future large swings still fail QC.
+APPROVED_SWINGS = {
+    ("2026-07", "jamaica/kingston", "local_purchasing_power_index"): (130.4, 32.6),
+    ("2026-07", "lithuania/klaipeda", "local_purchasing_power_index"): (63.9, 96.7),
+    ("2026-07", "syria/damascus", "local_purchasing_power_index"): (1.3, 4.9),
+    ("2026-07", "montenegro/budva", "local_purchasing_power_index"): (26.4, 52.4),
+}
+
 
 def head_json(relpath):
     try:
@@ -24,6 +33,7 @@ def head_json(relpath):
 def main():
     v = Draft202012Validator(json.load(open(os.path.join(ROOT, "schema/city-record.schema.json"))))
     schema_fail, oor, swings = [], [], []
+    approved_swings = 0
     n = 0
     for f in glob.glob(os.path.join(ROOT, "data/cities/**/*.json"), recursive=True):
         d = json.load(open(f))
@@ -40,9 +50,15 @@ def main():
             if old:
                 ov = old.get("metrics", {}).get(key, {}).get("value")
                 if ov and ov > 0 and abs(val - ov) / ov > SWING:
-                    swings.append(f"{d['id']} {key}: {ov} -> {val}")
+                    as_of = mv.get("as_of", "")
+                    approved = APPROVED_SWINGS.get((as_of, d["id"], key))
+                    if approved and tuple(round(x, 1) for x in (ov, val)) == approved:
+                        approved_swings += 1
+                    else:
+                        swings.append(f"{d['id']} {key}: {ov} -> {val}")
     print(f"QC: {n} index values checked | schema-fail {len(schema_fail)} | "
-          f"out-of-range {len(oor)} | swings>{int(SWING*100)}% {len(swings)}")
+          f"out-of-range {len(oor)} | swings>{int(SWING*100)}% {len(swings)}"
+          f" | approved-swings {approved_swings}")
     for x in (schema_fail[:10] + oor[:10] + swings[:20]):
         print("  FLAG", x)
     if schema_fail or oor or swings:
