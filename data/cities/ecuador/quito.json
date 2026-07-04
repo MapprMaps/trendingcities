@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre price per m² for Quito combined with typical 1–3BR sizes and local listing ranges"
     },
     "cost_of_living_index": {
-      "value": 33.6,
+      "value": 34.9,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 52.9,
+      "value": 47.8,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

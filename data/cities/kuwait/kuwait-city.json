@@ -43,9 +43,9 @@
       "notes": "extrapolated from Kuwait average city-centre price per m² (~US$4,950) and typical sizes; no bedroom-specific Kuwait City sale data"
     },
     "cost_of_living_index": {
-      "value": 44.7,
+      "value": 46.0,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 123.6,
+      "value": 107.7,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

@@ -43,9 +43,9 @@
       "notes": "Bishkek district listings plus Kyrgyzstan city-center per-m² data; no clean market median by bedroom for centre-only sales"
     },
     "cost_of_living_index": {
-      "value": 28.8,
+      "value": 29.9,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 39.3,
+      "value": 39.6,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

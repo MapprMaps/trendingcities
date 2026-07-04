@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre $/m2 (~$3,750) and local 2025 Beirut CBD prices (~$3,000–4,000/m2) applied to typical 50/85/115 m2 1/2/3-bed units"
     },
     "cost_of_living_index": {
-      "value": 48.0,
+      "value": 54.6,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 33.3,
+      "value": 32.0,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

@@ -42,9 +42,9 @@
       "confidence": "medium"
     },
     "cost_of_living_index": {
-      "value": 49.2,
+      "value": 48.6,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -114,6 +114,16 @@
       "confidence": "medium",
       "method": "effective rate at $30k/$75k/$150k gross (single filer)",
       "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "local_purchasing_power_index": {
+      "value": 73.2,
+      "unit": "index_numbeo_nyc100",
+      "as_of": "2026-07",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Numbeo Local Purchasing Power Index, NYC=100"
     }
   },
   "provenance": {

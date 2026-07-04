@@ -43,9 +43,9 @@
       "notes": "Cross-source consensus of 2 independent sources (expatistan,numbeo): $1197/m² × typical size"
     },
     "cost_of_living_index": {
-      "value": 37.4,
+      "value": 40.0,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 72.0,
+      "value": 66.0,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

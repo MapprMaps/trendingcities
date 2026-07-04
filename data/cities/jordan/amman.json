@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre price/ft² converted from JOD plus cross-check with Amman listing ranges"
     },
     "cost_of_living_index": {
-      "value": 42.5,
+      "value": 44.8,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 48.5,
+      "value": 46.3,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

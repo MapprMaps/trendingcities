@@ -43,9 +43,9 @@
       "notes": "SandsOfWealth 2026 median price per m² for 90m², scaled to ~55m² (1br), ~80m² (2br), ~105m² (3br) city-centre apartments in Algiers"
     },
     "cost_of_living_index": {
-      "value": 29.2,
+      "value": 28.8,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 36.3,
+      "value": 35.3,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

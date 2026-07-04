@@ -43,9 +43,9 @@
       "notes": "Numbeo Seoul city-centre price-per-m² and local listing levels converted to typical 1/2/3‑bedroom sizes"
     },
     "cost_of_living_index": {
-      "value": 68.2,
+      "value": 64.5,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 130.0,
+      "value": 124.8,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

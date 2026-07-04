@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre price per m² for Islamabad with typical 1/2/3BR sizes"
     },
     "cost_of_living_index": {
-      "value": 22.8,
+      "value": 25.2,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 37.0,
+      "value": 43.4,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre price per sq ft in SGD converted to USD and multiplied by typical 1/2/3BR sizes; cross-checked with local portal asking prices"
     },
     "cost_of_living_index": {
-      "value": 87.7,
+      "value": 90.8,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 105.5,
+      "value": 91.3,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

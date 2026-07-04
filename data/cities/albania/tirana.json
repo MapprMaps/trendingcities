@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre €/m² and 2026 Tirana central market range converted to USD"
     },
     "cost_of_living_index": {
-      "value": 49.5,
+      "value": 48.9,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 45.6,
+      "value": 47.8,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

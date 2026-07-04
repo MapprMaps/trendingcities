@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre price/m² for El Salvador plus typical San Salvador apartment sizes"
     },
     "cost_of_living_index": {
-      "value": 40.3,
+      "value": 43.3,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 23.5,
+      "value": 20.6,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

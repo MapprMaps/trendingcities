@@ -43,9 +43,9 @@
       "notes": "Numbeo price/m² $1465 × typical size (50/78/105 m²); corroborates prior estimate (Δ-14%)"
     },
     "cost_of_living_index": {
-      "value": 43.5,
+      "value": 48.3,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 19.0,
+      "value": 17.2,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],

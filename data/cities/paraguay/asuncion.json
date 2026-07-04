@@ -43,9 +43,9 @@
       "notes": "Numbeo city-centre $/m² and local listing medians (TuLugar, agencies) scaled by typical 1–3BR sizes in central Asunción"
     },
     "cost_of_living_index": {
-      "value": 29.8,
+      "value": 34.1,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
@@ -53,9 +53,9 @@
       "notes": "Numbeo Cost of Living Index, excl. rent, NYC=100"
     },
     "local_purchasing_power_index": {
-      "value": 47.9,
+      "value": 48.3,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "sources": [
         "numbeo"
       ],
