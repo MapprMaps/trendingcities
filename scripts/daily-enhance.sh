@@ -6,7 +6,9 @@
 set -eu
 REPO="/home/claude-svc/projects/trendingcities"
 cd "$REPO"
-. /home/claude-svc/.secrets 2>/dev/null || true
+# set -a so bare KEY=val lines in ~/.secrets are EXPORTED to python3 children
+# (without it PERPLEXITY_API_KEY is empty in os.environ -> 401 on air/rents enrichment). Fixed 2026-07-18.
+set -a; . /home/claude-svc/.secrets 2>/dev/null || true; set +a
 export NVM_DIR="$HOME/.nvm"; . "$NVM_DIR/nvm.sh" >/dev/null 2>&1; nvm use 22 >/dev/null 2>&1
 git config core.sshCommand "ssh -i /home/claude-svc/.ssh/trendingcities_deploy -o IdentitiesOnly=yes"
 
