@@ -93,6 +93,37 @@
       "confidence": "medium",
       "method": "effective rate at $30k/$75k/$150k gross (single filer)",
       "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "rent_1bed_usd_month": {
+      "value": 276,
+      "unit": "USD_per_month",
+      "as_of": "2026-07",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Avg monthly rent, 1-bed city centre"
+    },
+    "rent_3bed_usd_month": {
+      "value": 527,
+      "unit": "USD_per_month",
+      "as_of": "2026-07",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Avg monthly rent, 3-bed city centre"
+    },
+    "price_to_rent_ratio": {
+      "value": 12.7,
+      "unit": "ratio",
+      "as_of": "2026-07",
+      "sources": [
+        "model_estimate"
+      ],
+      "confidence": "medium",
+      "method": "home_price_3bed_usd / (12 * rent_3bed_usd_month)",
+      "notes": "Years of 3-bed rent to equal the 3-bed purchase price"
     }
   },
   "provenance": {

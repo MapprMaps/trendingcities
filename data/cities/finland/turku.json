@@ -124,6 +124,17 @@
       "confidence": "medium",
       "method": "effective rate at $30k/$75k/$150k gross (single filer)",
       "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "air_quality_pm25_ugm3": {
+      "value": 5.6,
+      "unit": "ugm3",
+      "as_of": "2026-07",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "annual mean PM2.5 (WHO/IQAir/national monitoring)",
+      "notes": "Annual mean PM2.5; WHO guideline is 5 µg/m³"
     }
   },
   "provenance": {
