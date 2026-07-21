@@ -105,6 +105,16 @@
       "confidence": "medium",
       "method": "effective rate at $30k/$75k/$150k gross (single filer)",
       "notes": "Effective income tax + employee social contributions, single filer; national rate"
+    },
+    "rent_1bed_usd_month": {
+      "value": 387,
+      "unit": "USD_per_month",
+      "as_of": "2026-07",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Avg monthly rent, 1-bed city centre"
     }
   },
   "provenance": {
