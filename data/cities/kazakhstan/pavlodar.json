@@ -97,7 +97,7 @@
       "notes": "Effective income tax + employee social contributions, single filer; national rate"
     },
     "rent_1bed_usd_month": {
-      "value": 220,
+      "value": 219,
       "unit": "USD_per_month",
       "as_of": "2026-07",
       "sources": [
@@ -105,6 +105,17 @@
       ],
       "confidence": "medium",
       "notes": "Avg monthly rent, 1-bed city centre"
+    },
+    "air_quality_pm25_ugm3": {
+      "value": 25.1,
+      "unit": "ugm3",
+      "as_of": "2026-07",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "annual mean PM2.5 (WHO/IQAir/national monitoring)",
+      "notes": "Annual mean PM2.5; WHO guideline is 5 µg/m³"
     }
   },
   "provenance": {
