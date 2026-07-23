@@ -125,6 +125,17 @@
       "confidence": "medium",
       "method": "home_price_3bed_usd / (12 * rent_3bed_usd_month)",
       "notes": "Years of 3-bed rent to equal the 3-bed purchase price"
+    },
+    "air_quality_pm25_ugm3": {
+      "value": 9.0,
+      "unit": "ugm3",
+      "as_of": "2026-07",
+      "sources": [
+        "web"
+      ],
+      "confidence": "medium",
+      "method": "annual mean PM2.5 (WHO/IQAir/national monitoring)",
+      "notes": "Annual mean PM2.5; WHO guideline is 5 µg/m³"
     }
   },
   "provenance": {

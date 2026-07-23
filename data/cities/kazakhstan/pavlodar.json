@@ -97,7 +97,7 @@
       "notes": "Effective income tax + employee social contributions, single filer; national rate"
     },
     "rent_1bed_usd_month": {
-      "value": 219,
+      "value": 223,
       "unit": "USD_per_month",
       "as_of": "2026-07",
       "sources": [
