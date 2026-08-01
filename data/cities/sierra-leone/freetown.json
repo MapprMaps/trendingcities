@@ -109,7 +109,7 @@
     "rent_1bed_usd_month": {
       "value": 1321,
       "unit": "USD_per_month",
-      "as_of": "2026-07",
+      "as_of": "2026-08",
       "sources": [
         "numbeo"
       ],
