@@ -45,7 +45,7 @@
     "cost_of_living_index": {
       "value": 64.5,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-07",
+      "as_of": "2026-08",
       "sources": [
         "numbeo"
       ],
@@ -55,7 +55,7 @@
     "local_purchasing_power_index": {
       "value": 124.8,
       "unit": "index_numbeo_nyc100",
-      "as_of": "2026-07",
+      "as_of": "2026-08",
       "sources": [
         "numbeo"
       ],
