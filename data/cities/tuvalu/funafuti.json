@@ -105,6 +105,16 @@
       "confidence": "medium",
       "method": "annual mean PM2.5 (WHO/IQAir/national monitoring)",
       "notes": "Annual mean PM2.5; WHO guideline is 5 µg/m³"
+    },
+    "rent_1bed_usd_month": {
+      "value": 300,
+      "unit": "USD_per_month",
+      "as_of": "2026-08",
+      "sources": [
+        "numbeo"
+      ],
+      "confidence": "medium",
+      "notes": "Avg monthly rent, 1-bed city centre"
     }
   },
   "provenance": {
