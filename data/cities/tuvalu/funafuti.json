@@ -107,7 +107,7 @@
       "notes": "Annual mean PM2.5; WHO guideline is 5 µg/m³"
     },
     "rent_1bed_usd_month": {
-      "value": 300,
+      "value": 350,
       "unit": "USD_per_month",
       "as_of": "2026-08",
       "sources": [
